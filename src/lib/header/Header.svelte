@@ -1,12 +1,68 @@
+<script>
+</script>
+
 <header>
 	<nav>
-		<ul>
-			<li>Home</li>
-			<li>Blog</li>
-			<li>Photography</li>
-			<li>About Me</li>
-			<li>Freelancing</li>
-			<li>Contact Me</li>
-		</ul>
+		<div>
+			<!-- <img src="/favicon.png" alt="website logo" /> -->
+			<p class="nav-title"><a href="/">Matej Groombridge</a></p>
+		</div>
+		<div>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Web Design</a></li>
+				<li><a href="/">Tutoring</a></li>
+				<li><a href="/">About</a></li>
+				<li><a href="/">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul style="font-size: 0.75rem;">
+				<li><a href="/" target="_blank"><i class="fab fa-instagram fa-2x" /></a></li>
+				<li>
+					<a href="https://github.com/MatejGroombridge" target="_blank"
+						><i class="fab fa-github fa-2x" /></a
+					>
+				</li>
+				<li><a href="/" target="_blank"><i class="fab fa-linkedin fa-2x" /></a></li>
+				<li>
+					<a
+						href="https://open.spotify.com/user/odau8v74sintc5j50a9lsgkh9?si=54a1ab54c714459c"
+						target="_blank"><i class="fab fa-spotify fa-2x" /></a
+					>
+				</li>
+				<li><a href="/" target="_blank"><i class="fas fa-envelope fa-2x" /></a></li>
+			</ul>
+		</div>
 	</nav>
 </header>
+
+<style>
+	nav {
+		height: 96px;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	img {
+		width: 48px;
+		height: 48px;
+	}
+
+	ul {
+		list-style-type: none;
+		display: flex;
+	}
+
+	li {
+		margin: 0 0.75em;
+	}
+
+	.nav-title {
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+</style>
