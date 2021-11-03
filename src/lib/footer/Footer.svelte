@@ -9,15 +9,16 @@
 	<section>
 		<p class="footer-title">Disclosure</p>
 		<p>
-			This website contains affiliate links. The support from readers like you helps keep this
+			This website contains affiliate links. It doesn't cost you anything and helps keep this
 			website going.
 		</p>
 	</section>
-	<section>
+	<section class="small-links">
 		<a href="/webdesign">Web Design</a>
 		<a href="/tutoring">Tutoring</a>
-		<a href="/about">About</a>
-		<a href="/contact">Contact Me</a>
+		<a href="/about">About Me</a>
+		<a href="/contact">Contact</a>
+		<a href="/tech">Tech Specs</a>
 		<a href="/legal">Legal Stuff</a>
 	</section>
 	<div class="footer-icons">
@@ -73,8 +74,15 @@
 
 	a {
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		font-size: 14px;
+	}
+
+	.small-links {
+		width: 10vw;
+		margin-top: 1em;
+	}
+
+	.small-links a {
+		color: #ababab;
 	}
 </style>
