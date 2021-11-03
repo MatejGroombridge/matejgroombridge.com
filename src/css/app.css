@@ -25,4 +25,12 @@ footer {
   background: #242525;
   color: #f9f8f4;
 }
+
+footer a {
+  color: #f9f8f4;
+}
+
+.footer-icons a {
+  color: #f9f8f4;
+}
 /*# sourceMappingURL=app.css.map */

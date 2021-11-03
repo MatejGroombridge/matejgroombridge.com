@@ -9,10 +9,10 @@
 		</div>
 		<div>
 			<ul>
-				<li><a href="/">Home</a></li>
 				<li><a href="/">Web Design</a></li>
 				<li><a href="/">Tutoring</a></li>
-				<li><a href="/">About</a></li>
+				<!-- <li><a href="/">Resources<i class="fas fa-angle-down" style="margin: 5px;" /></a></li> -->
+				<li><a href="/">About Me</a></li>
 				<li><a href="/">Contact</a></li>
 			</ul>
 		</div>
@@ -46,10 +46,10 @@
 		align-items: center;
 	}
 
-	img {
+	/* img {
 		width: 48px;
 		height: 48px;
-	}
+	} */
 
 	ul {
 		list-style-type: none;
@@ -58,6 +58,12 @@
 
 	li {
 		margin: 0 0.75em;
+	}
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.nav-title {

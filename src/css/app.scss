@@ -25,4 +25,12 @@ a {
 footer {
 	background: $text-color;
 	color: $background-white;
+
+	a {
+		color: $background-white;
+	}
+}
+
+.footer-icons a {
+	color: $background-white;
 }
