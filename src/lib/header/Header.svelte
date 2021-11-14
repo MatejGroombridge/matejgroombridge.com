@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <header>
 	<nav>
 		<div>
@@ -9,11 +6,11 @@
 		</div>
 		<div>
 			<ul>
-				<li><a href="/webdesign">Web Design 💻</a></li>
-				<li><a href="/tutoring">Tutoring 📚</a></li>
+				<li><a href="/webdesign">Web Design</a></li>
+				<li><a href="/tutoring">Tutoring</a></li>
 				<!-- <li><a href="/">Resources<i class="fas fa-angle-down" style="margin: 5px;" /></a></li> -->
-				<li><a href="/about">About Me 👦</a></li>
-				<li><a href="/contact">Contact 👋</a></li>
+				<li><a href="/about">About Me</a></li>
+				<li><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
 		<div>
