@@ -657,14 +657,3 @@
 	<h2>Lets Get To Work!</h2>
 	<h3>Get a free estimate now:</h3>
 </section> -->
-<style>
-	section {
-		min-height: 70vh;
-		height: max-content;
-	}
-
-	.portfolio-img {
-		width: 100%;
-		height: 100%;
-	}
-</style>

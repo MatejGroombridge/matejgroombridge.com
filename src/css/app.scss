@@ -44,7 +44,7 @@ h2 {
 	font-size: 1.8em;
 	width: fit-content;
 	font-weight: 700;
-	padding: 0 1em 1em 1em;
+	padding: 0 1em 0.5em 1em;
 	font-family: 'Poppins', Helvetica, sans-serif;
 }
 
@@ -63,12 +63,14 @@ h3 {
 	font-family: 'Poppins', Helvetica, sans-serif;
 	color: $text-color;
 	margin: 0.75em 0;
+	text-transform: uppercase;
 }
 
 .row {
 	display: flex;
 	flex-direction: row;
-	//keep going
+	align-items: center;
+	justify-content: center;
 }
 
 p {
@@ -80,12 +82,13 @@ p {
 .large {
 	font-size: 2em;
 	font-weight: 700;
+	color: $tertiary-color;
 	font-family: 'Poppins', Helvetica, sans-serif;
 }
 
 .cost {
 	font-size: 2em;
-	color: $tertiary-color;
+	color: $text-color;
 }
 
 .center {
@@ -121,6 +124,7 @@ section {
 
 .head {
 	height: 70vh;
+	max-height: 500px;
 }
 
 .btn-wrapper {
@@ -174,7 +178,7 @@ td {
 
 .medium-text {
 	font-size: 19px;
-	margin: 0.5em 0;
+	margin: 0.5em 0 2em 0;
 	line-height: 1.7em;
 	font-family: 'Montserrat', Helvetica, sans-serif;
 }
@@ -228,4 +232,22 @@ img {
 	padding: 2em;
 
 	box-shadow: 0 0 10px #00000010;
+}
+
+@media (min-width: 1367px) {
+	.wrapper {
+		width: 65%;
+	}
+}
+
+@media (min-width: 1700px) {
+	.wrapper {
+		width: 55%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.wrapper {
+		width: 90%;
+	}
 }

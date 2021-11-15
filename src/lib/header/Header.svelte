@@ -31,6 +31,11 @@
 				<li><a href="/" target="_blank"><i class="fas fa-envelope fa-2x" /></a></li>
 			</ul>
 		</div>
+		<div class="toggle">
+			<a href="/" style="font-size: 0.75rem;">
+				<i class="fas fa-bars fa-2x" />
+			</a>
+		</div>
 	</nav>
 </header>
 
@@ -42,11 +47,6 @@
 		justify-content: space-around;
 		align-items: center;
 	}
-
-	/* img {
-		width: 48px;
-		height: 48px;
-	} */
 
 	ul {
 		list-style-type: none;
@@ -67,5 +67,9 @@
 		font-size: 18px;
 		font-weight: 600;
 		text-transform: uppercase;
+	}
+
+	.toggle {
+		display: none;
 	}
 </style>
