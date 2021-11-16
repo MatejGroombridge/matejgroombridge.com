@@ -97,6 +97,7 @@ p {
 	align-items: center;
 	justify-content: center;
 }
+
 .center-left {
 	display: flex;
 	flex-direction: column;
@@ -125,19 +126,6 @@ section {
 .head {
 	height: 70vh;
 	max-height: 500px;
-}
-
-.btn-wrapper {
-	display: flex;
-	justify-content: space-evenly;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2em;
-	width: 100%;
-}
-
-.btn-head {
-	width: 70%;
 }
 
 th,
@@ -181,6 +169,19 @@ td {
 	margin: 0.5em 0 2em 0;
 	line-height: 1.7em;
 	font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.btn-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	width: 100%;
+}
+
+.btn-head {
+	width: 70%;
 }
 
 .btn {
@@ -234,6 +235,50 @@ img {
 	box-shadow: 0 0 10px #00000010;
 }
 
+footer {
+	height: 256px;
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+
+	section {
+		width: 30vw;
+
+		padding: 1em;
+	}
+
+	.footer-title {
+		font-weight: 600;
+		margin: 1em 0;
+	}
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+	}
+
+	li {
+		margin: 0.5em 0;
+	}
+
+	a {
+		display: flex;
+		font-size: 14px;
+	}
+
+	.small-links {
+		width: 10vw;
+		margin-top: 1em;
+	}
+
+	.small-links a {
+		color: #ababab;
+	}
+}
+
 @media (min-width: 1367px) {
 	.wrapper {
 		width: 65%;
@@ -247,7 +292,77 @@ img {
 }
 
 @media (max-width: 1200px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.toggle {
+		display: flex;
+	}
+
 	.wrapper {
+		flex-direction: column;
 		width: 90%;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	svg {
+		display: none;
+	}
+
+	.card-wrapper {
+		width: 100%;
+		height: 100%;
+		grid-template-columns: 1fr;
+	}
+
+	.btn-wrapper {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1em;
+	}
+
+	.btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.75em 1em;
+		margin: 0.5em;
+		border-radius: 1em;
+		width: max-content;
+
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	footer {
+		flex-direction: column;
+		height: max-content;
+
+		section {
+			width: 100%;
+		}
+
+		.small-links {
+			width: 100%;
+			margin-top: 1em;
+		}
+	}
+
+	.head {
+		height: max-content;
+		max-height: none;
 	}
 }

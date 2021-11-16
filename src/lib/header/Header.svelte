@@ -4,7 +4,7 @@
 			<!-- <img src="/favicon.png" alt="website logo" /> -->
 			<p class="nav-title"><a href="/">Matej Groombridge</a></p>
 		</div>
-		<div>
+		<div class="nav-links">
 			<ul>
 				<li><a href="/webdesign">Web Design</a></li>
 				<li><a href="/tutoring">Tutoring</a></li>
