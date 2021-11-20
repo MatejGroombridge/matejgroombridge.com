@@ -13,7 +13,7 @@
 			website going.
 		</p>
 	</section>
-	<section class="footer-section small-links">
+	<section class="small-links">
 		<a href="/webdesign">Web Design</a>
 		<a href="/tutoring">Tutoring</a>
 		<a href="/about">About Me</a>

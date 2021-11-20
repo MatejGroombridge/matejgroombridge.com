@@ -10,6 +10,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+	text-align: left;
 }
 
 body {
@@ -38,6 +40,7 @@ footer {
 h1 {
 	font-size: 3em;
 	font-family: 'Poppins', Helvetica, sans-serif;
+	line-height: 1.3em;
 }
 
 h2 {
@@ -76,19 +79,19 @@ h3 {
 p {
 	font-size: 1.1em;
 	line-height: 1.5em;
-	text-align: left;
 }
 
 .large {
 	font-size: 2em;
 	font-weight: 700;
-	color: $tertiary-color;
+	color: $primary-color;
 	font-family: 'Poppins', Helvetica, sans-serif;
 }
 
 .cost {
 	font-size: 2em;
 	color: $text-color;
+	margin-bottom: 1em;
 }
 
 .center {
@@ -145,6 +148,7 @@ td {
 }
 
 .two-margin {
+	display: flex;
 	width: 100%;
 	height: 2em;
 }
@@ -174,6 +178,7 @@ td {
 .btn-wrapper {
 	display: flex;
 	justify-content: space-evenly;
+	align-items: stretch;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2em;
@@ -232,7 +237,7 @@ img {
 	background: $background-white;
 	padding: 2em;
 
-	box-shadow: 0 0 10px #00000010;
+	box-shadow: 0 0 10px #00000020;
 }
 
 footer {
@@ -277,6 +282,11 @@ footer {
 	.small-links a {
 		color: #ababab;
 	}
+
+	.footer-icons ul {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 @media (min-width: 1367px) {
@@ -292,8 +302,20 @@ footer {
 }
 
 @media (max-width: 1200px) {
+	* {
+		text-align: center;
+	}
+
 	body {
 		overflow-x: hidden;
+	}
+
+	section {
+		max-height: none;
+	}
+
+	img {
+		display: none;
 	}
 
 	.toggle {
@@ -302,7 +324,7 @@ footer {
 
 	.wrapper {
 		flex-direction: column;
-		width: 90%;
+		width: 85%;
 	}
 
 	.nav-links {
@@ -320,26 +342,21 @@ footer {
 	}
 
 	.btn-wrapper {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		margin-top: 1em;
+		width: 90%;
 	}
 
 	.btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		padding: 0.75em 1em;
 		margin: 0.5em;
 		border-radius: 1em;
 		width: max-content;
-
-		font-size: 18px;
-		font-weight: 600;
 	}
 
 	h2 {
-		font-size: 25px;
+		font-size: 24px;
 		text-align: center;
 	}
 
@@ -352,12 +369,22 @@ footer {
 		height: max-content;
 
 		section {
-			width: 100%;
+			width: 90%;
 		}
 
 		.small-links {
-			width: 100%;
-			margin-top: 1em;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			width: 70%;
+			margin: 1em;
+		}
+
+		.footer-icons ul {
+			flex-direction: row;
+			li {
+				margin: 1em;
+			}
 		}
 	}
 
@@ -372,5 +399,13 @@ footer {
 
 	.nav-socials {
 		display: none;
+	}
+
+	.two-margin {
+		display: none;
+	}
+
+	.fa-chevron-right {
+		font-size: 0.9em;
 	}
 }
