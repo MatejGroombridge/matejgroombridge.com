@@ -1,4 +1,4 @@
-<table cellspacing="0">
+<table cellspacing="0" class="timetable">
 	<tr>
 		<td />
 		<td>

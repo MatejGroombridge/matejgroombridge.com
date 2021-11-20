@@ -13,7 +13,7 @@
 				<li><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="nav-socials">
 			<ul style="font-size: 0.75rem;">
 				<li><a href="/" target="_blank"><i class="fab fa-instagram fa-2x" /></a></li>
 				<li>

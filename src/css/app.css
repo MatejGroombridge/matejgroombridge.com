@@ -459,5 +459,11 @@ footer .small-links a {
     height: max-content;
     max-height: none;
   }
+  .timetable {
+    display: none;
+  }
+  .nav-socials {
+    display: none;
+  }
 }
 /*# sourceMappingURL=app.css.map */
