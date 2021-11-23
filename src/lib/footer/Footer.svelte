@@ -14,12 +14,12 @@
 		</p>
 	</section>
 	<section class="small-links">
-		<a href="/webdesign">Web Design</a>
-		<a href="/tutoring">Tutoring</a>
-		<a href="/about">About Me</a>
-		<a href="/contact">Contact</a>
-		<a href="/tech">Tech Specs</a>
-		<a href="/legal">Legal Stuff</a>
+		<a class="small-text" href="/webdesign">Web Design</a>
+		<a class="small-text" href="/tutoring">Tutoring</a>
+		<a class="small-text" href="/about">About Me</a>
+		<a class="small-text" href="/contact">Contact</a>
+		<a class="small-text" href="/tech">Tech Specs</a>
+		<a class="small-text" href="/legal">Legal Stuff</a>
 	</section>
 	<div class="footer-icons">
 		<ul style="font-size: 0.6rem;">

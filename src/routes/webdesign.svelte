@@ -652,8 +652,3 @@
 		</div>
 	</div>
 </section> -->
-
-<!-- <section>
-	<h2>Lets Get To Work!</h2>
-	<h3>Get a free estimate now:</h3>
-</section> -->

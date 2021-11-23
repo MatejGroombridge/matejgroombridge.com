@@ -24,8 +24,8 @@ a {
 	color: $text-color;
 	text-decoration: none;
 	font-family: 'Poppins', Helvetica, sans-serif;
-	display: flex;
-	justify-content: center;
+	// display: flex;
+	// justify-content: center;
 }
 
 footer {
@@ -38,11 +38,11 @@ footer {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 2.4em;
 	font-family: 'Poppins', Helvetica, sans-serif;
 	line-height: 1.3em;
 
-	white-space: nowrap;
+	// white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
@@ -81,8 +81,17 @@ h3 {
 }
 
 p {
-	font-size: 1.1em;
-	line-height: 1.5em;
+	// font-size: 1.1em;
+	font-size: 19px;
+	line-height: 1.6em;
+	margin: 0.5em 0;
+
+	font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+hr {
+	border: 0.1px solid $background-grey;
+	margin: 1em 0;
 }
 
 .large {
@@ -133,14 +142,32 @@ section {
 .head {
 	height: 70vh;
 	max-height: 500px;
+
+	h1 {
+		white-space: nowrap;
+	}
 }
 
 th,
 td {
-	border-bottom: 1px solid $text-color;
 	text-align: center;
 	height: 50px;
 	width: 130px;
+}
+
+tr {
+	border-bottom: 80px solid $text-color;
+	background-color: red;
+}
+
+//not working
+
+td:first-child {
+	border-top: none;
+}
+
+td:last-child {
+	border-bottom: none;
 }
 
 .available {
@@ -225,7 +252,8 @@ img {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
-	gap: 1em;
+	gap: 2em;
+	margin: 1em 0;
 }
 
 .card {
@@ -242,6 +270,16 @@ img {
 	padding: 2em;
 
 	box-shadow: 0 0 10px #00000020;
+}
+
+.inverted {
+	background: $text-color;
+
+	h1,
+	h2,
+	h3 {
+		color: $background-white;
+	}
 }
 
 footer {
@@ -283,14 +321,22 @@ footer {
 		margin-top: 1em;
 	}
 
-	.small-links a {
-		color: #ababab;
-	}
-
 	.footer-icons ul {
 		display: flex;
 		flex-direction: column;
 	}
+}
+
+.small-text {
+	font-size: 14px;
+	color: $medium-grey;
+	text-transform: lowercase;
+}
+
+.input-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
 }
 
 @media (min-width: 1367px) {

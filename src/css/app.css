@@ -22,12 +22,6 @@ a {
   color: #242525;
   text-decoration: none;
   font-family: 'Poppins', Helvetica, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 footer {
@@ -40,10 +34,9 @@ footer a {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.4em;
   font-family: 'Poppins', Helvetica, sans-serif;
   line-height: 1.3em;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -93,8 +86,15 @@ h3 {
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.5em;
+  font-size: 19px;
+  line-height: 1.6em;
+  margin: 0.5em 0;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+hr {
+  border: 0.1px solid #f1f1ed;
+  margin: 1em 0;
 }
 
 .large {
@@ -178,12 +178,28 @@ section {
   max-height: 500px;
 }
 
+.head h1 {
+  white-space: nowrap;
+}
+
 th,
 td {
-  border-bottom: 1px solid #242525;
   text-align: center;
   height: 50px;
   width: 130px;
+}
+
+tr {
+  border-bottom: 80px solid #242525;
+  background-color: red;
+}
+
+td:first-child {
+  border-top: none;
+}
+
+td:last-child {
+  border-bottom: none;
 }
 
 .available {
@@ -289,7 +305,8 @@ img {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  gap: 1em;
+  gap: 2em;
+  margin: 1em 0;
 }
 
 .card {
@@ -313,6 +330,16 @@ img {
   padding: 2em;
   -webkit-box-shadow: 0 0 10px #00000020;
           box-shadow: 0 0 10px #00000020;
+}
+
+.inverted {
+  background: #242525;
+}
+
+.inverted h1,
+.inverted h2,
+.inverted h3 {
+  color: #f9f8f4;
 }
 
 footer {
@@ -368,10 +395,6 @@ footer .small-links {
   margin-top: 1em;
 }
 
-footer .small-links a {
-  color: #ababab;
-}
-
 footer .footer-icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,6 +403,21 @@ footer .footer-icons ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.small-text {
+  font-size: 14px;
+  color: #ababab;
+  text-transform: lowercase;
+}
+
+.input-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
 @media (min-width: 1367px) {

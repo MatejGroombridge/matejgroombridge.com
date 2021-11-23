@@ -1,4 +1,5 @@
 <script>
+	import Contact from '$lib/contact/Contact.svelte';
 	import Timetable from '$lib/timetable/Timetable.svelte';
 </script>
 
@@ -360,7 +361,7 @@
 	</div>
 </section>
 
-<section>
+<section class="grey">
 	<div class="wrapper">
 		<h2>Availability</h2>
 	</div>
@@ -375,5 +376,8 @@
 <section>
 	<div class="wrapper">
 		<h2>Book A Lesson</h2>
+	</div>
+	<div class="wrapper">
+		<Contact />
 	</div>
 </section>

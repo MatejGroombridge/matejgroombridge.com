@@ -2,6 +2,7 @@
 	let contactForm = {
 		name: '',
 		subject: '',
+		company: '',
 		email: '',
 		message: ''
 	};
@@ -28,16 +29,28 @@
 	</script>
 </svelte:head>
 
-<body>
-	<form on:submit={handleOnSubmit}>
-		<h3>Name</h3>
-		<input type="text" bind:value={contactForm.name} />
-		<h3>Subject</h3>
-		<input type="text" bind:value={contactForm.subject} />
-		<h3>Email</h3>
-		<input type="email" bind:value={contactForm.email} />
-		<h3>Message</h3>
-		<textarea bind:value={contactForm.message} />
+<form on:submit={handleOnSubmit} class="contact-form">
+	<div class="input-wrapper">
+		<div class="input">
+			<h3>Name</h3>
+			<input type="text" bind:value={contactForm.name} />
+		</div>
+		<div class="input">
+			<h3>Subject</h3>
+			<input type="text" bind:value={contactForm.subject} />
+		</div>
+		<div class="input">
+			<h3>Email</h3>
+			<input type="email" bind:value={contactForm.email} />
+		</div>
+		<div class="input">
+			<h3>Message</h3>
+			<textarea bind:value={contactForm.message} />
+		</div>
+	</div>
+
+	<div class="btn-wrapper">
 		<input type="submit" value="Send" />
-	</form>
-</body>
+		<input type="reset" value="Clear" />
+	</div>
+</form>
