@@ -182,6 +182,22 @@ section {
   white-space: nowrap;
 }
 
+.full-height {
+  height: 80vh;
+}
+
+.contact-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 3em;
+  margin-bottom: 2em;
+  height: 70vh;
+}
+
 th,
 td {
   text-align: center;
@@ -333,13 +349,17 @@ img {
 }
 
 .inverted {
-  background: #242525;
+  background: #444242;
 }
 
+.inverted p,
 .inverted h1,
-.inverted h2,
-.inverted h3 {
+.inverted h2 {
   color: #f9f8f4;
+}
+
+.inverted h3 {
+  color: #def0e6;
 }
 
 footer {
@@ -408,7 +428,7 @@ footer .footer-icons ul {
 .small-text {
   font-size: 14px;
   color: #ababab;
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 
 .input-wrapper {
@@ -418,6 +438,73 @@ footer .footer-icons ul {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+  gap: 1em;
+}
+
+.input-wrapper .btn-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+input {
+  border: 1px solid #ababab;
+  padding: 0 1em;
+  border-radius: 0.25em;
+  height: 2.5em;
+  width: 100%;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-size: 16px;
+  color: #242525;
+}
+
+textarea {
+  border: 1px solid #ababab;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  height: 2.5em;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-size: 16px;
+  color: #242525;
+  line-height: 1.4em;
+}
+
+textarea:focus {
+  outline: none;
+  border-bottom: 3px solid #57ba86;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 3px solid #57ba86;
+}
+
+button {
+  border: none;
+}
+
+.form-btn {
+  text-align: center;
+  border: none;
+  border-radius: 1em;
+  color: #f9f8f4;
+  background: #00ab44;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-btn .lighter {
+  background: #57ba86;
+}
+
+.form-btn:focus {
+  border: none;
+  background-color: #57ba86;
 }
 
 @media (min-width: 1367px) {

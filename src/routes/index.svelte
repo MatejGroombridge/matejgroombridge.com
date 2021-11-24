@@ -1,3 +1,7 @@
+<script>
+	import Contact from '$lib/contact/Contact.svelte';
+</script>
+
 <section>
 	<div class="wrapper">
 		<div class="content">
@@ -1099,6 +1103,18 @@
 					fill="#cacaca"
 				/></svg
 			>
+		</div>
+	</div>
+</section>
+
+<section class="inverted">
+	<div class="wrapper contact-wrapper">
+		<div>
+			<h2>Get in Touch!</h2>
+			<p>I'd love to hear from you.</p>
+		</div>
+		<div>
+			<Contact />
 		</div>
 	</div>
 </section>

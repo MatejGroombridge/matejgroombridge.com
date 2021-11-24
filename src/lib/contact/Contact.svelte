@@ -33,24 +33,26 @@
 	<div class="input-wrapper">
 		<div class="input">
 			<h3>Name</h3>
-			<input type="text" bind:value={contactForm.name} />
+			<input required type="text" bind:value={contactForm.name} />
 		</div>
 		<div class="input">
 			<h3>Subject</h3>
 			<input type="text" bind:value={contactForm.subject} />
 		</div>
 		<div class="input">
-			<h3>Email</h3>
-			<input type="email" bind:value={contactForm.email} />
+			<h3>Message</h3>
+			<textarea required maxlength="1000" bind:value={contactForm.message} />
 		</div>
 		<div class="input">
-			<h3>Message</h3>
-			<textarea bind:value={contactForm.message} />
-		</div>
-	</div>
+			<div>
+				<h3>Email</h3>
+				<input required type="email" bind:value={contactForm.email} />
+			</div>
 
-	<div class="btn-wrapper">
-		<input type="submit" value="Send" />
-		<input type="reset" value="Clear" />
+			<div class="btn-wrapper">
+				<input class="form-btn" type="reset" value="Clear" />
+				<input class="form-btn" type="submit" value="Send" />
+			</div>
+		</div>
 	</div>
 </form>
