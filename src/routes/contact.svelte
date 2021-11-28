@@ -2,6 +2,10 @@
 	import Contact from '$lib/contact/Contact.svelte';
 </script>
 
+<svelte:head>
+	<title>Contact Information</title>
+</svelte:head>
+
 <section class="full-height">
 	<div class="wrapper contact-wrapper">
 		<div>

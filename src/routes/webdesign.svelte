@@ -652,3 +652,7 @@
 		</div>
 	</div>
 </section> -->
+
+<svelte:head>
+	<title>Web Design</title>
+</svelte:head>

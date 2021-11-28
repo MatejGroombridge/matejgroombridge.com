@@ -143,3 +143,7 @@
 		</p>
 	</div>
 </section>
+
+<svelte:head>
+	<title>Matej Groombridge | Tutoring and Web Design</title>
+</svelte:head>

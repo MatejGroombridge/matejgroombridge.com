@@ -203,19 +203,12 @@ td {
   text-align: center;
   height: 50px;
   width: 130px;
-}
-
-tr {
-  border-bottom: 80px solid #242525;
-  background-color: red;
-}
-
-td:first-child {
-  border-top: none;
+  border-bottom: 1px solid #242525;
+  border-right: 1px solid #242525;
 }
 
 td:last-child {
-  border-bottom: none;
+  border-right: none;
 }
 
 .available {
@@ -354,12 +347,9 @@ img {
 
 .inverted p,
 .inverted h1,
-.inverted h2 {
-  color: #f9f8f4;
-}
-
+.inverted h2,
 .inverted h3 {
-  color: #def0e6;
+  color: #f9f8f4;
 }
 
 footer {
@@ -408,6 +398,10 @@ footer a {
   display: -ms-flexbox;
   display: flex;
   font-size: 14px;
+}
+
+footer p {
+  font-size: 17px;
 }
 
 footer .small-links {

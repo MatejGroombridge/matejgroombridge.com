@@ -166,22 +166,13 @@ td {
 	text-align: center;
 	height: 50px;
 	width: 130px;
-}
-
-tr {
-	border-bottom: 80px solid $text-color;
-	background-color: red;
-}
-
-//not working
-
-td:first-child {
-	border-top: none;
+	border-bottom: 1px solid $text-color;
+	border-right: 1px solid $text-color;
 }
 
 td:last-child {
-	border-bottom: none;
-}
+	border-right: none;
+} //to keep or not to keep????
 
 .available {
 	background: $primary-color;
@@ -290,12 +281,9 @@ img {
 
 	p,
 	h1,
-	h2 {
-		color: $background-white;
-	}
-
+	h2,
 	h3 {
-		color: $light-primary-color;
+		color: $background-white;
 	}
 }
 
@@ -331,6 +319,10 @@ footer {
 	a {
 		display: flex;
 		font-size: 14px;
+	}
+
+	p {
+		font-size: 17px;
 	}
 
 	.small-links {

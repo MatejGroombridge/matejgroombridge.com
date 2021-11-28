@@ -2,6 +2,10 @@
 	import Contact from '$lib/contact/Contact.svelte';
 </script>
 
+<svelte:head>
+	<title>Matej Groombridge | Tutoring and Web Design</title>
+</svelte:head>
+
 <section>
 	<div class="wrapper">
 		<div class="content">
@@ -15,7 +19,7 @@
 			</div>
 		</div>
 		<div class="content">
-			<img src="/mainimage.jpg" alt="Matej Groombridge" width="300px" />
+			<img src="/mainimage.jpg" alt="Matej Groombridge" width="280px" />
 		</div>
 	</div>
 </section>

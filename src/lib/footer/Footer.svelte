@@ -2,15 +2,15 @@
 	<section>
 		<p class="footer-title">About</p>
 		<p>
-			Thanks for stopping by👋 <br /> My name is <strong>Matej Groombridge</strong>. I'm a student
-			and web designer from Sydney, Australia.
+			Thanks for stopping by👋 <br /> My name is <strong>Matej Groombridge</strong>. I am a high
+			school student and web designer.
 		</p>
 	</section>
 	<section>
 		<p class="footer-title">Disclosure</p>
 		<p>
-			This website contains affiliate links. It doesn't cost you anything and helps keep this
-			website going.
+			This website contains affiliate links. It costs you nothing and allows this website to
+			continue running.
 		</p>
 	</section>
 	<section class="small-links">

@@ -3,14 +3,18 @@
 	import Timetable from '$lib/timetable/Timetable.svelte';
 </script>
 
+<svelte:head>
+	<title>Private Tutoring</title>
+</svelte:head>
+
 <section class="head">
 	<div class="two-margin" />
 	<div class="wrapper">
 		<div class="content">
-			<h1>Tutoring Services</h1>
+			<h1>Private Tutoring</h1>
 			<div class="body-text">
-				I run one-on-one tutoring sessions to unlock your child's potential, help them build
-				confidence and achieve academic success.
+				I run one-on-one tutoring sessions to help your child build confidence, unlock their
+				potential and achieve academic success.
 			</div>
 			<div class="btn-wrapper">
 				<a class="btn" href="/">Availability</a>
@@ -306,22 +310,18 @@
 			<div class="center-left">
 				<h3>Location</h3>
 				<p>
-					Winston Hills, Northmead, Baulkham Hills and surrounds. Lessons can be held at your
-					residence.
+					Winston Hills, Toongabbie, Northmead, Baulkham Hills and surrounds. Lessons can be held at
+					your residence.
 				</p>
 			</div>
 			<div>
-				<h3>Your Tutor:</h3>
+				<h3>About Me</h3>
 				<div class="row">
 					<p>
-						Hi, I'm Matej. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellat
-						quam ipsum ipsam voluptatibus corporis cum, sed eos qui harum architecto.
+						Hi, I'm Matej. I am in Grade 10 at Baulkham Hills High School, where I have achieved the
+						Top of the Grade for the past two years. I am an enthusiastic learner and would love to
+						help your child be one too.
 					</p>
-					<img
-						src="/profilephoto.png"
-						alt=""
-						style="height: 150px; border-radius: 50%; float: right"
-					/>
 				</div>
 			</div>
 		</div>
@@ -333,7 +333,7 @@
 		<h2>Subjects and Pricing</h2>
 	</div>
 	<div class="wrapper">
-		<p class="medium-text">Payments can be made via cash or card. Pay As You Go or XXX.</p>
+		<p class="medium-text">Payments can be made via cash or card. Prices are subject to change.</p>
 	</div>
 	<div class="wrapper">
 		<div class="card-wrapper">
@@ -350,8 +350,9 @@
 			<div class="card">
 				<h3>Stage 4 (Year 7 and 8)</h3>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quidem magni corrupti qui
-					omnis excepturi placeat dolores, inventore culpa facere?
+					Mathematics for all skill levels. This includes homework help and test preparation. I can
+					give your child the necessary help to keep up, or challenge them with advanced topics that
+					will allow them get ahead in their studies.
 				</p>
 			</div>
 			<div class="center">
@@ -366,14 +367,14 @@
 		<h2>Availability</h2>
 	</div>
 	<div class="wrapper">
-		<p class="medium-text">Lessons are available in both 1 Hour and 30 Minute timeframes.</p>
+		<p class="medium-text">Lessons can be booked for both 1 Hour and 30 Minute periods.</p>
 	</div>
 	<div class="wrapper">
 		<Timetable />
 	</div>
 </section>
 
-<section>
+<section style="height: 80vh;">
 	<div class="wrapper">
 		<h2>Book A Lesson</h2>
 	</div>

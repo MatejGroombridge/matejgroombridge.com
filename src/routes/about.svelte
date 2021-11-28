@@ -3,28 +3,36 @@
 	<div class="wrapper">
 		<div class="content">
 			<h1>About</h1>
+			<p>Thank you for visiting.</p>
 			<p>
-				My name is <strong>Matej Groombridge</strong>. I'm a student, web designer and tutor from
-				Australia.
-			</p>
-			<hr />
-			<img src="/mainimage.jpg" width="100%" alt="/alds" />
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quaerat ut excepturi
-				aut quo sequi tenetur optio quisquam sunt! Numquam?
-			</p>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quaerat, consequatur officia
-				nobis culpa quo optio, odio, non natus voluptate a repellat odit? Molestias distinctio
-				possimus vero veritatis ea quos eveniet. Eligendi, deleniti. Sunt, assumenda reprehenderit?
-				Consequuntur eaque doloribus sapiente tempore, quod tenetur vitae harum quidem aut vero,
-				blanditiis nihil!
-			</p>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam enim aut ipsam unde eos
-				doloribus cum, recusandae ut tenetur saepe!
+				My name is <strong>Matej Groombridge</strong>. I'm a high school student and web designer
+				from Sydney, Australia.
 			</p>
 		</div>
 	</div>
 </section>
+
+<!-- <section>
+	<div class="wrapper">
+		<h2>10 Second Bio</h2>
+	</div>
+	<div class="wrapper">
+		<div class="content">
+			<p>I was born in 🇸🇮 Slovenia</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, porro cupiditate assumenda
+				eveniet sed repellendus asperiores ab officiis id voluptatibus?
+			</p>
+		</div>
+	</div>
+</section> -->
+
+<svelte:head>
+	<title>About Me</title>
+</svelte:head>
+
+<style>
+	.wrapper {
+		width: 60%;
+	}
+</style>
