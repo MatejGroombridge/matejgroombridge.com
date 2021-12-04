@@ -1,3 +1,9 @@
+<script>
+	import Incomplete from '$lib/incomplete/Incomplete.svelte';
+</script>
+
+<Incomplete />
+
 <section>
 	<!-- <div class="two-margin" /> -->
 	<div class="wrapper">

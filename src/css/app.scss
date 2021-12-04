@@ -24,8 +24,6 @@ a {
 	color: $text-color;
 	text-decoration: none;
 	font-family: 'Poppins', Helvetica, sans-serif;
-	// display: flex;
-	// justify-content: center;
 }
 
 footer {
@@ -42,7 +40,6 @@ h1 {
 	font-family: 'Poppins', Helvetica, sans-serif;
 	line-height: 1.3em;
 
-	// white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
@@ -140,7 +137,7 @@ section {
 }
 
 .head {
-	height: 70vh;
+	height: 76vh;
 	max-height: 500px;
 
 	h1 {
@@ -148,17 +145,20 @@ section {
 	}
 }
 
-.full-height {
-	height: 80vh;
-}
-
 .contact-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1.5fr;
-	grid-template-rows: auto;
+	// grid-template-rows: auto;
 	gap: 3em;
 	margin-bottom: 2em;
 	height: 70vh;
+
+	.contact-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: right;
+		align-items: center;
+	}
 }
 
 th,
@@ -245,10 +245,6 @@ img {
 	border-radius: 0.75em;
 }
 
-.grey {
-	background: $background-grey;
-}
-
 .card-wrapper {
 	width: 100%;
 	height: 100%;
@@ -259,6 +255,12 @@ img {
 	gap: 2em;
 	margin: 1em 0;
 }
+
+.grid-column-three {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+//alsdfjalsdfjal
 
 .card {
 	display: flex;
@@ -276,6 +278,10 @@ img {
 	box-shadow: 0 0 10px #00000020;
 }
 
+.grey {
+	background: $background-grey;
+}
+
 .inverted {
 	background: $dark-grey;
 
@@ -286,6 +292,23 @@ img {
 		color: $background-white;
 	}
 }
+
+.notice {
+	background: $primary-color;
+
+	p,
+	a,
+	h1,
+	h2,
+	h3 {
+		color: $background-white;
+	}
+
+	margin: 0;
+	padding: 0.5em;
+}
+
+// alsdfalsjdfksadfas
 
 footer {
 	height: 256px;
@@ -415,9 +438,63 @@ button {
 	}
 }
 
+nav {
+	height: 96px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 1em;
+
+	ul {
+		list-style-type: none;
+		display: flex;
+	}
+
+	li {
+		margin: 0 0.75em;
+	}
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.nav-links {
+	padding: 1em 0;
+}
+
+.nav-socials {
+	padding: 1em 0;
+}
+
+.nav-title {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	height: 100%;
+	padding: 1em 0;
+}
+
+.toggle {
+	display: none;
+}
+
 .form-btn:focus {
 	border: none;
 	background-color: $secondary-color;
+}
+
+.tutoring-image {
+	background: linear-gradient(to bottom, rgba(209, 209, 209, 0.788), rgba(209, 209, 209, 0.788)),
+		url(C:\Users\matej\Desktop\Matej.com\static\tutoring1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	color: $dark-grey;
 }
 
 @media (min-width: 1367px) {
@@ -483,13 +560,29 @@ button {
 		display: flex;
 	}
 
+	nav {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		height: auto;
+
+		.nav-links ul {
+			flex-direction: column;
+			width: 100vw;
+
+			li {
+				margin: 0.3em 0;
+			}
+		}
+
+		.nav-socials ul {
+			justify-content: center;
+			width: 100vw;
+		}
+	}
+
 	.wrapper {
 		flex-direction: column;
 		width: 85%;
-	}
-
-	.nav-links {
-		display: none;
 	}
 
 	.card-wrapper {
@@ -530,16 +623,16 @@ button {
 		display: none;
 	}
 
-	.nav-socials {
-		display: none;
-	}
-
 	.two-margin {
 		display: none;
 	}
 
 	.fa-chevron-right {
 		font-size: 0.9em;
+	}
+
+	.small-text {
+		justify-content: center;
 	}
 
 	footer {
@@ -553,6 +646,7 @@ button {
 		.small-links {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
+			align-items: center;
 
 			width: 70%;
 			margin: 1em;

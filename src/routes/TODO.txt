@@ -8,4 +8,6 @@ Web Design Page
 - My Projects
 
 Tutoring Page
+- New Svg
 - Custom Form + Bookings
+- Availability

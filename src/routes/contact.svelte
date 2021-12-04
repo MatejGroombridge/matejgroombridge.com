@@ -6,7 +6,7 @@
 	<title>Contact Information</title>
 </svelte:head>
 
-<section class="full-height">
+<section class="head">
 	<div class="wrapper contact-wrapper">
 		<div>
 			<h2>Get in Touch!</h2>

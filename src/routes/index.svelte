@@ -11,20 +11,20 @@
 		<div class="content">
 			<h1>Hi, I'm Matej.</h1>
 			<p class="body-text">
-				I'm a Sydney based lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, dolorem.
+				I am a high school student and freelance web designer from Sydney, Australia.
 			</p>
-			<div class="btn-wrapper	btn-head">
+			<div class="btn-wrapper	btn-head" style="width: 40%">
 				<a class="btn" href="/about">About Me</a>
-				<a class="btn" href="/">Services</a>
+				<a class="btn" href="#services">Services</a>
 			</div>
 		</div>
-		<div class="content">
+		<!-- <div class="content">
 			<img src="/mainimage.jpg" alt="Matej Groombridge" width="280px" />
-		</div>
+		</div> -->
 	</div>
 </section>
 
-<section class="grey">
+<section class="grey" id="services">
 	<div class="wrapper">
 		<div class="content">
 			<svg
@@ -1113,7 +1113,7 @@
 
 <section class="inverted">
 	<div class="wrapper contact-wrapper">
-		<div>
+		<div class="contact-text">
 			<h2>Get in Touch!</h2>
 			<p>I'd love to hear from you.</p>
 		</div>
