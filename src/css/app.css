@@ -182,6 +182,14 @@ section {
   white-space: nowrap;
 }
 
+.head-home {
+  height: 70vh;
+}
+
+.head-home h1 {
+  white-space: normal;
+}
+
 .contact-wrapper {
   display: -ms-grid;
   display: grid;
@@ -272,9 +280,6 @@ td:last-child {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
@@ -282,7 +287,7 @@ td:last-child {
 }
 
 .btn-head {
-  width: 70%;
+  width: 40%;
 }
 
 .btn {

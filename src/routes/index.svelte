@@ -6,21 +6,25 @@
 	<title>Matej Groombridge | Tutoring and Web Design</title>
 </svelte:head>
 
-<section>
+<section class="head-home head">
 	<div class="wrapper">
 		<div class="content">
 			<h1>Hi, I'm Matej.</h1>
-			<p class="body-text">
-				I am a high school student and freelance web designer from Sydney, Australia.
-			</p>
-			<div class="btn-wrapper	btn-head" style="width: 40%">
-				<a class="btn" href="/about">About Me</a>
-				<a class="btn" href="#services">Services</a>
-			</div>
 		</div>
 		<!-- <div class="content">
 			<img src="/mainimage.jpg" alt="Matej Groombridge" width="280px" />
 		</div> -->
+	</div>
+	<div class="wrapper">
+		<p class="body-text">
+			I am a high school student and freelance web designer from Sydney, Australia.
+		</p>
+	</div>
+	<div class="wrapper">
+		<div class="btn-wrapper	btn-head">
+			<a class="btn" href="/about">About Me</a>
+			<a class="btn" href="#services">Services</a>
+		</div>
 	</div>
 </section>
 
