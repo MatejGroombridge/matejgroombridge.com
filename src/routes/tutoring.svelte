@@ -1,5 +1,5 @@
 <script>
-	import Contact from '$lib/contact/Contact.svelte';
+	import TutoringContact from '$lib/contact/TutoringContact.svelte';
 	import Timetable from '$lib/timetable/Timetable.svelte';
 </script>
 
@@ -228,11 +228,11 @@
 	</div>
 </section>
 
-<section id="booking" style="height: 80vh;">
+<section id="booking">
 	<div class="wrapper">
 		<h2>Book A Lesson</h2>
 	</div>
 	<div class="wrapper">
-		<Contact />
+		<TutoringContact />
 	</div>
 </section>

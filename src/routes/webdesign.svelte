@@ -1,5 +1,5 @@
 <script>
-	import Contact from '$lib/contact/Contact.svelte';
+	import WebdevContact from '$lib/contact/WebdevContact.svelte';
 </script>
 
 <section class="head">
@@ -364,7 +364,7 @@
 			<p>Get a free quote today.</p>
 		</div>
 		<div>
-			<Contact />
+			<WebdevContact />
 		</div>
 	</div>
 </section>

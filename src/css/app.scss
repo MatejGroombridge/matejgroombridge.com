@@ -268,8 +268,6 @@ img {
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-//alsdfjalsdfjal
-
 .card {
 	display: flex;
 	flex-direction: column;
@@ -315,8 +313,6 @@ img {
 	margin: 0;
 	padding: 0.5em;
 }
-
-// alsdfalsjdfksadfas
 
 footer {
 	height: 256px;
@@ -386,7 +382,28 @@ footer {
 	}
 }
 
+// .space-between {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-between;
+// }
+
 input {
+	border: 1px solid $medium-grey;
+
+	padding: 0 1em;
+	border-radius: 0.25em;
+	height: 2.5em;
+	width: 100%;
+
+	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-size: 16px;
+	color: $text-color;
+}
+
+//asldkfajsdf
+
+select {
 	border: 1px solid $medium-grey;
 
 	padding: 0 1em;
@@ -403,9 +420,9 @@ textarea {
 	border: 1px solid $medium-grey;
 	padding: 0.5em 1em;
 	border-radius: 0.25em;
-	height: 2.5em;
+	// height: 2.5em;
 	width: 100%;
-	height: 100%;
+	height: 200px;
 
 	resize: none;
 
@@ -426,8 +443,20 @@ input:focus {
 	border-bottom: 3px solid $secondary-color;
 }
 
+select:focus {
+	outline: none;
+	border-bottom: 3px solid $secondary-color;
+}
+
 button {
 	border: none;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 350px;
 }
 
 .form-btn {

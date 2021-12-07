@@ -1,8 +1,8 @@
 <script>
 	let contactForm = {
 		name: '',
-		subject: '',
 		company: '',
+		project: '',
 		email: '',
 		message: ''
 	};
@@ -36,12 +36,17 @@
 			<input required type="text" bind:value={contactForm.name} />
 		</div>
 		<div class="input">
-			<h3>Subject</h3>
-			<input type="text" bind:value={contactForm.subject} />
+			<h3>Company</h3>
+			<input type="text" bind:value={contactForm.company} />
 		</div>
 		<div class="input">
-			<h3>Message<small>*</small></h3>
-			<textarea required maxlength="1000" bind:value={contactForm.message} />
+			<h3>Website brief<small>*</small></h3>
+			<textarea
+				placeholder="Tell me about your project..."
+				required
+				maxlength="1000"
+				bind:value={contactForm.project}
+			/>
 		</div>
 		<div class="input">
 			<div>
@@ -50,7 +55,6 @@
 			</div>
 
 			<div class="btn-wrapper">
-				<!-- <input class="form-btn" type="reset" value="Clear" /> -->
 				<input class="form-btn" type="submit" value="Send" />
 			</div>
 		</div>
