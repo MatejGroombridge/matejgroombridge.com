@@ -621,8 +621,8 @@ nav a {
 }
 
 .tutoring-image {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(209, 209, 209, 0.788)), to(rgba(209, 209, 209, 0.788))), url(C:\Users\matej\Desktop\Matej.com\static\tutoring1.jpg);
-  background: linear-gradient(to bottom, rgba(209, 209, 209, 0.788), rgba(209, 209, 209, 0.788)), url(C:\Users\matej\Desktop\Matej.com\static\tutoring1.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(209, 209, 209, 0.788)), to(rgba(209, 209, 209, 0.788))), url(\tutoring1.jpg);
+  background: linear-gradient(to bottom, rgba(209, 209, 209, 0.788), rgba(209, 209, 209, 0.788)), url(\tutoring1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

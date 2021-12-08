@@ -1,8 +1,7 @@
 <script>
 	let contactForm = {
 		name: '',
-		company: '',
-		project: '',
+		subject: '',
 		email: '',
 		message: ''
 	};
@@ -10,7 +9,7 @@
 	function handleOnSubmit(event) {
 		event.preventDefault();
 		emailjs.send(
-			'contact_service_test',
+			'general_contact',
 			'default_form_submission',
 			contactForm,
 			'user_IaGwubLj0SawwSzw2xWGP'
@@ -37,7 +36,7 @@
 		</div>
 		<div class="input">
 			<h3>Company</h3>
-			<input type="text" bind:value={contactForm.company} />
+			<input type="text" bind:value={contactForm.subject} />
 		</div>
 		<div class="input">
 			<h3>Website brief<small>*</small></h3>
@@ -45,7 +44,7 @@
 				placeholder="Tell me about your project..."
 				required
 				maxlength="1000"
-				bind:value={contactForm.project}
+				bind:value={contactForm.message}
 			/>
 		</div>
 		<div class="input">

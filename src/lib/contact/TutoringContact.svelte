@@ -11,8 +11,8 @@
 	function handleOnSubmit(event) {
 		event.preventDefault();
 		emailjs.send(
-			'contact_service_test',
-			'default_form_submission',
+			'general_contact',
+			'tutoring_form_submission',
 			contactForm,
 			'user_IaGwubLj0SawwSzw2xWGP'
 		);
@@ -41,9 +41,6 @@
 			<input required type="text" bind:value={contactForm.studentName} />
 		</div>
 
-		<!-- <div class="input">
-			
-		</div> -->
 		<div class="input">
 			<div>
 				<h3>Email<small>*</small></h3>

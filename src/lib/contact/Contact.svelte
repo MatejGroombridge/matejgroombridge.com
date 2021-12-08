@@ -2,7 +2,6 @@
 	let contactForm = {
 		name: '',
 		subject: '',
-		company: '',
 		email: '',
 		message: ''
 	};
@@ -10,7 +9,7 @@
 	function handleOnSubmit(event) {
 		event.preventDefault();
 		emailjs.send(
-			'contact_service_test',
+			'general_contact',
 			'default_form_submission',
 			contactForm,
 			'user_IaGwubLj0SawwSzw2xWGP'
