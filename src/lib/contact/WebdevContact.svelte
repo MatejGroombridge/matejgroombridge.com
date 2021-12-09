@@ -14,6 +14,8 @@
 			contactForm,
 			'user_IaGwubLj0SawwSzw2xWGP'
 		);
+
+		alert('Success! Keep an eye on your inbox for when I get back to you');
 	}
 </script>
 

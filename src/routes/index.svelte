@@ -29,7 +29,7 @@
 </section>
 
 <section class="grey" id="services">
-	<div class="wrapper">
+	<div class="wrapper service-wrapper">
 		<div class="content">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -818,7 +818,7 @@
 </section>
 
 <section>
-	<div class="wrapper">
+	<div class="wrapper service-wrapper">
 		<div class="content">
 			<a href="/webdesign"><h2>Freelance Web Design <i class="fas fa-chevron-right" /></h2></a>
 			<p class="medium-text">
@@ -1116,14 +1116,14 @@
 </section>
 
 <section class="inverted">
-	<div class="wrapper contact-wrapper">
-		<div class="contact-text">
-			<h2>Get in Touch!</h2>
-			<p>I'd love to hear from you.</p>
-		</div>
-		<div>
-			<Contact />
-		</div>
+	<div class="wrapper">
+		<h2>Get in Touch!</h2>
+	</div>
+	<div class="wrapper">
+		<p>I'd love to hear from you.</p>
+	</div>
+	<div class="wrapper">
+		<Contact />
 	</div>
 </section>
 

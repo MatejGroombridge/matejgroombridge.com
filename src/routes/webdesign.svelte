@@ -12,7 +12,7 @@
 				through a georgeous, bespoke website.
 			</div>
 			<div class="btn-wrapper">
-				<a class="btn" href="#booking">Lets get to work!</a>
+				<a class="btn" href="#quote">Lets get to work!</a>
 			</div>
 		</div>
 
@@ -338,7 +338,7 @@
 	</div>
 </section>
 
-<section>
+<!-- <section>
 	<div class="wrapper">
 		<h2>Past Projects</h2>
 	</div>
@@ -355,26 +355,20 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
-<section id="booking" class="inverted" style="height: 80vh;">
-	<div class="wrapper contact-wrapper">
-		<div class="contact-text">
-			<h2>Let's get to work!</h2>
-			<p>Get a free quote today.</p>
-		</div>
-		<div>
-			<WebdevContact />
-		</div>
+<section id="quote" class="inverted">
+	<div class="wrapper">
+		<h2>Let's get to work!</h2>
+	</div>
+	<div class="wrapper">
+		<p>Get a free quote today.</p>
+	</div>
+	<div class="wrapper">
+		<WebdevContact />
 	</div>
 </section>
 
 <svelte:head>
 	<title>Web Design</title>
 </svelte:head>
-
-<style>
-	img {
-		width: 50%;
-	}
-</style>

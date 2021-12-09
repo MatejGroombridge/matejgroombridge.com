@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap'); //Poppins
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap'); //Montserrat
 
-//alsdjflaksdjflak;sjdfalksdjf;l moved to do
-
 :root {
 	font-family: 'Montserrat', Helvetica, sans-serif;
 }
@@ -80,7 +78,6 @@ h3 {
 }
 
 p {
-	// font-size: 1.1em;
 	font-size: 19px;
 	line-height: 1.6em;
 	margin: 0.5em 0;
@@ -154,22 +151,6 @@ section {
 	}
 }
 
-.contact-wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1.5fr;
-	// grid-template-rows: auto;
-	gap: 3em;
-	margin-bottom: 2em;
-	height: 70vh;
-
-	.contact-text {
-		display: flex;
-		flex-direction: column;
-		justify-content: right;
-		align-items: center;
-	}
-}
-
 th,
 td {
 	text-align: center;
@@ -214,7 +195,7 @@ td:last-child {
 
 .medium-text {
 	font-size: 19px;
-	margin: 0.5em 0 2em 0;
+	margin: 0.5em 1em 2em 1em;
 	line-height: 1.7em;
 	font-family: 'Montserrat', Helvetica, sans-serif;
 }
@@ -373,20 +354,15 @@ footer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
-	gap: 1em;
+	gap: 1.5em;
 
 	.btn-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 1em;
+		padding: 1em 0;
 	}
 }
-
-// .space-between {
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: space-between;
-// }
 
 input {
 	border: 1px solid $medium-grey;
@@ -400,8 +376,6 @@ input {
 	font-size: 16px;
 	color: $text-color;
 }
-
-//asldkfajsdf
 
 select {
 	border: 1px solid $medium-grey;
@@ -420,7 +394,7 @@ textarea {
 	border: 1px solid $medium-grey;
 	padding: 0.5em 1em;
 	border-radius: 0.25em;
-	// height: 2.5em;
+
 	width: 100%;
 	height: 200px;
 
@@ -456,7 +430,7 @@ button {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	max-width: 350px;
+	width: 270px;
 }
 
 .form-btn {
@@ -517,11 +491,6 @@ nav {
 
 .toggle {
 	display: none;
-}
-
-.form-btn:focus {
-	border: none;
-	background-color: $secondary-color;
 }
 
 .tutoring-image {
@@ -588,13 +557,17 @@ nav {
 	}
 
 	svg {
-		display: none;
+		height: 200px;
 	}
 }
 
 @media (max-width: 900px) {
 	.toggle {
 		display: flex;
+	}
+
+	svg {
+		display: none;
 	}
 
 	nav {
@@ -622,10 +595,23 @@ nav {
 		width: 85%;
 	}
 
+	.service-wrapper {
+		width: 65vw;
+
+		p {
+			text-align: left;
+		}
+	}
+
 	.card-wrapper {
 		width: 100%;
 		height: 100%;
 		grid-template-columns: 1fr;
+	}
+
+	.input {
+		max-width: none;
+		min-width: 280px;
 	}
 
 	.btn-wrapper {
@@ -695,5 +681,25 @@ nav {
 				margin: 1em;
 			}
 		}
+	}
+}
+
+@media (max-width: 750px) {
+	.service-wrapper {
+		width: 75vw;
+	}
+}
+
+@media (max-width: 600px) {
+	.input-wrapper {
+		grid-template-columns: 1fr;
+
+		.btn-wrapper {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.service-wrapper {
+		width: 90vw;
 	}
 }

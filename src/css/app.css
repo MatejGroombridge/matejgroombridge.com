@@ -190,32 +190,6 @@ section {
   white-space: normal;
 }
 
-.contact-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.5fr;
-      grid-template-columns: 1fr 1.5fr;
-  gap: 3em;
-  margin-bottom: 2em;
-  height: 70vh;
-}
-
-.contact-wrapper .contact-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 th,
 td {
   text-align: center;
@@ -268,7 +242,7 @@ td:last-child {
 
 .medium-text {
   font-size: 19px;
-  margin: 0.5em 0 2em 0;
+  margin: 0.5em 1em 2em 1em;
   line-height: 1.7em;
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
@@ -466,7 +440,7 @@ footer .footer-icons ul {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .input-wrapper .btn-wrapper {
@@ -475,6 +449,7 @@ footer .footer-icons ul {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 1em;
+  padding: 1em 0;
 }
 
 input {
@@ -542,7 +517,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 350px;
+  width: 270px;
 }
 
 .form-btn {
@@ -615,11 +590,6 @@ nav a {
   display: none;
 }
 
-.form-btn:focus {
-  border: none;
-  background-color: #57ba86;
-}
-
 .tutoring-image {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(209, 209, 209, 0.788)), to(rgba(209, 209, 209, 0.788))), url(\tutoring1.jpg);
   background: linear-gradient(to bottom, rgba(209, 209, 209, 0.788), rgba(209, 209, 209, 0.788)), url(\tutoring1.jpg);
@@ -676,7 +646,7 @@ nav a {
     display: none;
   }
   svg {
-    display: none;
+    height: 200px;
   }
 }
 
@@ -685,6 +655,9 @@ nav a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  svg {
+    display: none;
   }
   nav {
     -ms-flex-wrap: wrap;
@@ -717,11 +690,21 @@ nav a {
             flex-direction: column;
     width: 85%;
   }
+  .service-wrapper {
+    width: 65vw;
+  }
+  .service-wrapper p {
+    text-align: left;
+  }
   .card-wrapper {
     width: 100%;
     height: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .input {
+    max-width: none;
+    min-width: 280px;
   }
   .btn-wrapper {
     -webkit-box-orient: horizontal;
@@ -800,6 +783,26 @@ nav a {
   }
   footer .footer-icons ul li {
     margin: 1em;
+  }
+}
+
+@media (max-width: 750px) {
+  .service-wrapper {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .input-wrapper .btn-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .service-wrapper {
+    width: 90vw;
   }
 }
 /*# sourceMappingURL=app.css.map */

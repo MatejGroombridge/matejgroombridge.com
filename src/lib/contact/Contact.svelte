@@ -14,6 +14,8 @@
 			contactForm,
 			'user_IaGwubLj0SawwSzw2xWGP'
 		);
+
+		alert('Success!');
 	}
 </script>
 
@@ -49,7 +51,6 @@
 			</div>
 
 			<div class="btn-wrapper">
-				<!-- <input class="form-btn" type="reset" value="Clear" /> -->
 				<input class="form-btn" type="submit" value="Send" />
 			</div>
 		</div>

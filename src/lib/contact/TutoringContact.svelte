@@ -16,6 +16,8 @@
 			contactForm,
 			'user_IaGwubLj0SawwSzw2xWGP'
 		);
+
+		alert('Success! Check your inbox for a confirmation email.');
 	}
 </script>
 
