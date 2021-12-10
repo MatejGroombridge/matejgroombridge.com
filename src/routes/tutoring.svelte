@@ -5,6 +5,10 @@
 
 <svelte:head>
 	<title>Private Tutoring</title>
+	<meta
+		name="description"
+		content="I run one-on-one tutoring sessions to help your child build confidence, unlock their potential and achieve academic success. I teach years 5-8 in Winston Hills, Toongabbie, Northmead, Baulkham Hills and surrounds. Prices are affordable and your tutor is experienced."
+	/>
 </svelte:head>
 
 <section class="notice">
@@ -153,7 +157,7 @@
 	</div>
 </section>
 
-<section class="tutoring-image">
+<section class="grey">
 	<div class="wrapper">
 		<h2>Info</h2>
 	</div>

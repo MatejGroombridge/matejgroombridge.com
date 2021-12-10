@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap'); //Poppins
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap'); //Montserrat
 
-//alsdkjfals;kdjfalksdj lkasjd;l fkajs dfasl;kj
-
 :root {
 	font-family: 'Montserrat', Helvetica, sans-serif;
 }
@@ -493,16 +491,6 @@ nav {
 
 .toggle {
 	display: none;
-}
-
-.tutoring-image {
-	background: linear-gradient(to bottom, rgba(209, 209, 209, 0.788), rgba(209, 209, 209, 0.788)),
-		url(\tutoring1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
-	color: $dark-grey;
 }
 
 @media (min-width: 1367px) {
