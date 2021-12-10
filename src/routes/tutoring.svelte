@@ -223,7 +223,7 @@
 			Lessons can be booked for both 1 Hour and 30 Minute periods. &emsp; 🟩 = Available
 		</p>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper timetable" style="overflow-x: auto; padding: 0;">
 		<Timetable />
 	</div>
 </section>

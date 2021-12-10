@@ -1,5 +1,5 @@
-<table cellspacing="0" class="timetable">
-	<tr>
+<table cellspacing="0">
+	<tr class="table-headings">
 		<td />
 		<td>
 			<b>Monday</b>
