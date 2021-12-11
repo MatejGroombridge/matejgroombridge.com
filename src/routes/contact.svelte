@@ -11,8 +11,8 @@
 </svelte:head>
 
 <section class="head">
-	<div class="wrapper contact-wrapper">
-		<div>
+	<div class="wrapper">
+		<div style="margin-right: 3em;">
 			<h2>Get in Touch!</h2>
 			<p>I'd love to hear from you.</p>
 		</div>

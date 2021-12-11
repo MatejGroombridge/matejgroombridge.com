@@ -1,6 +1,7 @@
 <script>
-	let active = true;
-	let outerWidth;
+	$: active = true;
+	$: pressed = false;
+	$: outerWidth = 0;
 
 	function handleResize() {
 		if (outerWidth > 900) {
@@ -9,7 +10,13 @@
 			active = false;
 		}
 	}
+
+	function flip() {
+		pressed = !pressed;
+	}
 </script>
+
+<svelte:body on:mousemove={handleResize} on:scroll={handleResize} />
 
 <svelte:window on:resize={handleResize} bind:outerWidth />
 
@@ -19,11 +26,11 @@
 			<p class="nav-title"><a href="/">Matej Groombridge</a></p>
 		</div>
 		<div class="toggle">
-			<button type="button" style="font-size: 0.7rem;" on:click={() => (active = !active)}>
+			<button type="button" style="font-size: 0.7rem;" on:click={flip}>
 				<i class="fas fa-bars fa-2x" />
 			</button>
 		</div>
-		{#if active}
+		{#if active || pressed}
 			<div class="nav-links">
 				<ul>
 					<li><a href="/webdesign">Web Design</a></li>
