@@ -300,7 +300,7 @@ img {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   gap: 2em;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .grid-column-three {
@@ -590,6 +590,10 @@ nav a {
   display: none;
 }
 
+.contact-text-wrapper {
+  margin-right: 3em;
+}
+
 @media (min-width: 1367px) {
   .wrapper {
     width: 65%;
@@ -762,6 +766,9 @@ nav a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .contact-text-wrapper {
+    margin-right: 0;
   }
   footer {
     -webkit-box-orient: vertical;

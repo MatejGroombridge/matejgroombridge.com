@@ -1,5 +1,5 @@
 <script>
-	$: active = true;
+	$: active = false;
 	$: pressed = false;
 	$: outerWidth = 0;
 

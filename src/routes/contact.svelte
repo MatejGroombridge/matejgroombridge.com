@@ -12,7 +12,7 @@
 
 <section class="head">
 	<div class="wrapper">
-		<div style="margin-right: 3em;">
+		<div class="contact-text-wrapper">
 			<h2>Get in Touch!</h2>
 			<p>I'd love to hear from you.</p>
 		</div>

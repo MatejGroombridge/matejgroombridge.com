@@ -159,9 +159,6 @@
 
 <section class="grey">
 	<div class="wrapper">
-		<h2>Info</h2>
-	</div>
-	<div class="wrapper">
 		<div class="card-wrapper">
 			<div class="center-left">
 				<h3>Location</h3>
@@ -182,6 +179,14 @@
 			</div>
 		</div>
 	</div>
+	<!-- <div class="wrapper">
+		<p>
+			See my experience and qualifications. &nbsp;
+			<a style="font-size: 0.5em;" href="/">
+				<i class="fas fa-external-link-alt fa-2x" />
+			</a>
+		</p>
+	</div> -->
 </section>
 
 <section>
@@ -189,7 +194,7 @@
 		<h2>Subjects and Pricing</h2>
 	</div>
 	<div class="wrapper">
-		<p class="medium-text">Payments can be made via cash or card. Prices are subject to change.</p>
+		<p>Payments can be made via Cash or Bank Transfer. Prices are subject to change.</p>
 	</div>
 	<div class="wrapper">
 		<div class="card-wrapper">
@@ -201,7 +206,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$32</span>/hr</div>
+				<div class="cost"><span class="large">$35</span>/hr</div>
 			</div>
 			<div class="card">
 				<h3>Stage 4 (Year 7 and 8)</h3>
@@ -212,7 +217,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$36</span>/hr</div>
+				<div class="cost"><span class="large">$38</span>/hr</div>
 			</div>
 		</div>
 	</div>
