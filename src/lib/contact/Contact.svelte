@@ -16,6 +16,8 @@
 		);
 
 		alert('Success!');
+
+		window.location.reload();
 	}
 </script>
 

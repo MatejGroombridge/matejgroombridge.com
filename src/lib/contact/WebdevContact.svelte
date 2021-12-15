@@ -16,6 +16,8 @@
 		);
 
 		alert('Success! Keep an eye on your inbox for when I get back to you');
+
+		window.location.reload();
 	}
 </script>
 

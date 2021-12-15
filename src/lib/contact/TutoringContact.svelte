@@ -18,6 +18,8 @@
 		);
 
 		alert('Success! Check your inbox for a confirmation email.');
+
+		window.location.reload();
 	}
 </script>
 
