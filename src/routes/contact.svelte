@@ -21,3 +21,12 @@
 		</div>
 	</div>
 </section>
+
+<section class="grey" id="email">
+	<div class="wrapper">
+		<p>Or send me an email to:</p>
+	</div>
+	<div class="wrapper">
+		<img src="/email.png" alt="My email address" />
+	</div>
+</section>

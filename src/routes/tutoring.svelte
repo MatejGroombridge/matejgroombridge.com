@@ -7,7 +7,7 @@
 	<title>Private Tutoring</title>
 	<meta
 		name="description"
-		content="I run one-on-one tutoring sessions to help your child build confidence, unlock their potential and achieve academic success. I teach years 5-8 in Winston Hills, Toongabbie, Northmead, Baulkham Hills and surrounds. Prices are affordable and your tutor is experienced."
+		content="I run one-on-one tutoring sessions to help your child build confidence, unlock their potential and achieve academic success. I teach years 5-8 in Winston Hills, Toongabbie, Northmead, Baulkham Hills and surrounds. Both high school tutoring and primary school tutoring. Affordable prices and an experienced tutor"
 	/>
 </svelte:head>
 
@@ -30,7 +30,8 @@
 			<h1>Private Tutoring</h1>
 			<div class="body-text">
 				I run one-on-one tutoring sessions to help your child build confidence, unlock their
-				potential and achieve academic success.
+				potential and achieve academic success. Lessons are run in Winston Hills, Baulkham Hills,
+				Northmead, Toongabbie and surrounds.
 			</div>
 			<div class="btn-wrapper">
 				<a class="btn" href="#availability">Availability</a>

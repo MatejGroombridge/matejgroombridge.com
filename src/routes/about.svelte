@@ -11,13 +11,11 @@
 	/>
 </svelte:head>
 
-<Incomplete />
-
 <section>
 	<div class="wrapper">
 		<div class="content">
 			<h1>About</h1>
-			<p><strong>Hi there! </strong>I'm Matej. Thank you for visiting my personal website.</p>
+			<p><strong>Hi there! </strong>I'm Matej. Thank you for visiting my website.</p>
 			<p>
 				I was born in Slovenia, a small European country located between Italy and Croatia. In 2014,
 				my family moved to Australia and have lived here since.
@@ -35,17 +33,18 @@
 	</div>
 </section>
 
-<!-- <section class="notice resume">
-	<div class="wrapper">
-		<div class="content">
+<section class="inverted resume ">
+	<div class="card-wrapper ">
+		<div class="center">
 			<h3>Request my resume</h3>
 		</div>
-		<div class="content">
+		<div class="center">
 			<ResumeContact />
 		</div>
 	</div>
 </section>
 
+<!-- 
 <section id="qualifications">
 	<div class="wrapper">
 		<h2>Tutoring Qualifications</h2>
@@ -75,7 +74,6 @@
 		</div>
 	</div>
 </section> -->
-
 <style>
 	.wrapper {
 		width: 60%;
