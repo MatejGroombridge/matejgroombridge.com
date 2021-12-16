@@ -18,6 +18,10 @@ body {
   background: #f9f8f4;
 }
 
+main {
+  min-height: 80vh;
+}
+
 a {
   color: #242525;
   text-decoration: none;
@@ -592,6 +596,28 @@ nav a {
 
 .contact-text-wrapper {
   margin-right: 3em;
+}
+
+.resume {
+  padding: 1em;
+}
+
+.resume .wrapper {
+  width: 100%;
+}
+
+.resume .input {
+  width: 200px;
+}
+
+.resume textarea {
+  width: 200px;
+  height: 100px;
+}
+
+.resume .input-wrapper {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media (min-width: 1367px) {

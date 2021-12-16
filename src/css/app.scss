@@ -20,6 +20,10 @@ body {
 	background: $background-white;
 }
 
+main {
+	min-height: 80vh;
+}
+
 a {
 	color: $text-color;
 	text-decoration: none;
@@ -490,12 +494,37 @@ nav {
 	padding: 1em 0;
 }
 
+// lsajkdf
+
 .toggle {
 	display: none;
 }
 
 .contact-text-wrapper {
 	margin-right: 3em;
+}
+
+// lashdfl;k
+
+.resume {
+	padding: 1em;
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.input {
+		width: 200px;
+	}
+
+	textarea {
+		width: 200px;
+		height: 100px;
+	}
+
+	.input-wrapper {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
 
 @media (min-width: 1367px) {
