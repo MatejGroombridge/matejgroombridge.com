@@ -39,7 +39,7 @@
 				>
 			</li>
 			<li>
-				<a href="mailto:matejdpg@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x" /></a>
+				<a href="/contact#email" target="_blank"><i class="fas fa-envelope fa-2x" /></a>
 			</li>
 		</ul>
 	</div>
