@@ -1,5 +1,17 @@
 <script>
 	import WebdevContact from '$lib/contact/WebdevContact.svelte';
+	import Carousel from '$lib/carousel/Carousel.svelte';
+	import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
+
+	const images = [
+		{ path: 'project-images/Order Summary.png', id: 'image1' },
+		{ path: 'project-images/Pokedex.png', id: 'image2' },
+		{ path: 'project-images/Tip Calculator .png', id: 'image3' },
+		{ path: 'project-images/Freeman Consulting.png', id: 'image4' },
+		{ path: 'project-images/Starbucks.jpg', id: 'image5' },
+		{ path: 'project-images/Habit Tracker.jpg', id: 'image6' },
+		{ path: 'project-images/Jenna Laurence.jpg', id: 'image7' }
+	];
 </script>
 
 <section class="head">
@@ -335,6 +347,25 @@
 				</p>
 			</div>
 		</div>
+	</div>
+</section>
+
+<section>
+	<div class="wrapper">
+		<h2>Featured Projects</h2>
+	</div>
+
+	<div class="wrapper">
+		<Carousel
+			{images}
+			imageWidth={600}
+			imageSpacing={20}
+			controlColor={'#444242'}
+			controlScale={0.6}
+			displayControls={true}
+			autoplay={true}
+			autoplaySpeed={3000}
+		/>
 	</div>
 </section>
 

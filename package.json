@@ -24,6 +24,7 @@
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
     "emailjs-com": "^3.2.0",
-    "stream-json": "^1.7.3"
+    "stream-json": "^1.7.3",
+    "svelte-feather-icons": "^3.5.0"
   }
 }
