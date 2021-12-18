@@ -812,7 +812,7 @@
 			>
 		</div>
 		<div class="content">
-			<a href="/tutoring"><h2>Tutoring Services <i class="fas fa-chevron-right" /></h2></a>
+			<a href="/tutoring"><h2>Private Tutoring <i class="fas fa-chevron-right" /></h2></a>
 			<p class="medium-text">
 				Do you want your child to excel at school? Get expert tutoring from the 2 year Top of the
 				Grade of Baulkham Hills High School.
@@ -824,7 +824,7 @@
 <section>
 	<div class="wrapper service-wrapper">
 		<div class="content">
-			<a href="/webdesign"><h2>Freelance Web Design <i class="fas fa-chevron-right" /></h2></a>
+			<a href="/webdesign"><h2>Web Design and Development<i class="fas fa-chevron-right" /></h2></a>
 			<p class="medium-text">
 				Build your online presence and boost sales. I will make you a bespoke website that your
 				customers will love.
