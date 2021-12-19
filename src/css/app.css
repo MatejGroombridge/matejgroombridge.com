@@ -431,6 +431,29 @@ footer .footer-icons ul {
           flex-direction: column;
 }
 
+.tech ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 50px;
+}
+
+.tech ul li {
+  padding: 0.5em;
+  color: #242525;
+}
+
+.img-desc {
+  display: none;
+}
+
 .small-text {
   font-size: 14px;
   color: #ababab;

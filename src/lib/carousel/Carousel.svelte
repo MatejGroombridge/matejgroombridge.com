@@ -50,15 +50,20 @@
 <div id="carousel-container">
 	<div id="carousel-images">
 		{#each images as image (image.id)}
-			<img
-				src={image.path}
-				alt={image.id}
-				id={image.id}
-				style={`width:${imageWidth}px; margin: ${imageSpacing}px;`}
+			<a
+				href={image.link}
+				target="_blank"
 				on:mouseenter={stopAutoPlay}
 				on:mouseleave={startAutoPlay}
 				animate:flip={{ duration: speed }}
-			/>
+			>
+				<img
+					src={image.path}
+					alt={image.id}
+					id={image.id}
+					style={`width:${imageWidth}px; margin: ${imageSpacing}px;`}
+				/>
+			</a>
 		{/each}
 	</div>
 

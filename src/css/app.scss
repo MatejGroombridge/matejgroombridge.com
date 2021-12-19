@@ -349,6 +349,52 @@ footer {
 	}
 }
 
+.tech ul {
+	list-style-type: none;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	font-size: 50px;
+
+	li {
+		padding: 0.5em;
+		color: $text-color;
+	}
+}
+
+// .img-wrap {
+// 	position: relative;
+// 	height: 100%;
+// 	width: 100px;
+// }
+
+// .img-desc {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// 	position: absolute;
+// 	bottom: 0;
+// 	color: $text-color;
+// 	background: $background-white;
+// 	border-radius: 5px;
+// 	font-weight: bold;
+// 	padding: 2px;
+// 	visibility: hidden;
+// 	opacity: 0;
+// }
+
+.img-desc {
+	display: none;
+}
+
+// .img-wrap:hover .img-desc {
+// 	visibility: visible;
+// 	opacity: 1;
+// }
+
 .small-text {
 	font-size: 14px;
 	color: $medium-grey;

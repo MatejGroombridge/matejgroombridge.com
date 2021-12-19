@@ -4,13 +4,33 @@
 	import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
 
 	const images = [
-		{ path: 'project-images/Order Summary.png', id: 'image1' },
+		{
+			link: 'https://matejgroombridge.github.io/Order-Summary-Component/',
+			path: 'project-images/Order Summary.png',
+			id: 'image1'
+		},
 		{ path: 'project-images/Pokedex.png', id: 'image2' },
-		{ path: 'project-images/Tip Calculator .png', id: 'image3' },
-		{ path: 'project-images/Freeman Consulting.png', id: 'image4' },
-		{ path: 'project-images/Starbucks.jpg', id: 'image5' },
+		{
+			link: 'https://matejgroombridge.github.io/Tip-Calculator-App/',
+			path: 'project-images/Tip Calculator .png',
+			id: 'image3'
+		},
+		{
+			link: 'https://matejgroombridge.github.io/Consulting-Site/',
+			path: 'project-images/Freeman Consulting.png',
+			id: 'image4'
+		},
+		{
+			link: 'https://matejgroombridge.github.io/Starbucks-Landing-Page/#',
+			path: 'project-images/Starbucks.jpg',
+			id: 'image5'
+		},
 		{ path: 'project-images/Habit Tracker.jpg', id: 'image6' },
-		{ path: 'project-images/Jenna Laurence.jpg', id: 'image7' }
+		{
+			link: 'https://matejgroombridge.github.io/Web-Designer-Landing-Page/',
+			path: 'project-images/Jenna Laurence.jpg',
+			id: 'image7'
+		}
 	];
 </script>
 
@@ -369,24 +389,54 @@
 	</div>
 </section>
 
-<!-- <section>
+<section class="grey">
 	<div class="wrapper">
-		<h2>Past Projects</h2>
+		<h2>Tech For Nerds</h2>
 	</div>
 	<div class="wrapper">
-		<div class="card-wrapper grid-column-three">
-			<div class="card">
-				<a href="/"><img class="portfolio-img" src="/profilephoto.png" alt="" /></a>
-			</div>
-			<div class="card">
-				<a href="/"><img class="portfolio-img" src="/profilephoto.png" alt="" /></a>
-			</div>
-			<div class="card">
-				<a href="/"><img class="portfolio-img" src="/profilephoto.png" alt="" /></a>
-			</div>
-		</div>
+		<p>These are the tools I use to build sleek websites:</p>
 	</div>
-</section> -->
+	<div class="wrapper tech">
+		<ul>
+			<li class="img-wrap">
+				<p class=" img-desc">HTML5</p>
+				<i class="fab fa-html5" />
+			</li>
+			<li class="img-wrap">
+				<p class=" img-desc">CSS3</p>
+				<i class="fab fa-css3-alt" />
+			</li>
+			<li class="img-wrap">
+				<p class=" img-desc">Javascript</p>
+				<i class="fab fa-js-square" />
+			</li>
+			<li class="img-wrap">
+				<p class=" img-desc">Wordpress</p>
+				<i class="fab fa-wordpress" />
+			</li>
+			<li class="img-wrap">
+				<p class=" img-desc">Svelte</p>
+				<img src="/svelte-logo.svg" alt="Svelte Logo" style="height: 45px;" />
+			</li>
+			<li class="img-wrap">
+				<p class=" img-desc">Stack Overflow</p>
+				<i class="fab fa-stack-overflow" />
+			</li>
+			<li class="img-wrap">
+				<p class=" img-desc">Google Analytics</p>
+				<i class="fas fa-chart-line" />
+			</li>
+			<li class="img-wrap">
+				<p class=" img-desc">SASS</p>
+				<i class="fab fa-sass" />
+			</li>
+			<li class="img-wrap">
+				<p class=" img-desc">FontAwesome</p>
+				<i class="fab fa-font-awesome-flag" />
+			</li>
+		</ul>
+	</div>
+</section>
 
 <section id="quote" class="inverted">
 	<div class="wrapper">
