@@ -24,7 +24,8 @@ main {
 
 a {
   color: #242525;
-  text-decoration: none;
+  -webkit-text-decoration: underline #00ab44;
+          text-decoration: underline #00ab44;
   font-family: 'Poppins', Helvetica, sans-serif;
 }
 
@@ -35,6 +36,11 @@ footer {
 
 footer a {
   color: #f9f8f4;
+  text-decoration: none;
+}
+
+header a {
+  text-decoration: none;
 }
 
 h1 {
@@ -51,17 +57,10 @@ h2 {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
-  padding: 0 1em 0.5em 1em;
+  padding: 0 1em;
   font-family: 'Poppins', Helvetica, sans-serif;
-}
-
-h2:after {
-  content: '';
-  float: left;
-  background: #00ab44;
-  width: 100%;
-  height: 4px;
-  border-radius: 3px;
+  -webkit-text-decoration: underline #00ab44;
+          text-decoration: underline #00ab44;
 }
 
 h3 {
@@ -237,6 +236,10 @@ td:last-child {
   padding: 1em;
 }
 
+.content p {
+  padding: 0 0.5em;
+}
+
 .body-text {
   font-size: 22px;
   margin: 0.5em 0;
@@ -333,6 +336,13 @@ img {
   padding: 2em;
   -webkit-box-shadow: 0 0 10px #00000020;
           box-shadow: 0 0 10px #00000020;
+}
+
+.transparent {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0 1em;
 }
 
 .grey {
@@ -696,6 +706,68 @@ nav a {
       grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+#carousel-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+}
+
+#carousel-container img {
+  width: 600px;
+}
+
+#carousel-container button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  border: none;
+}
+
+#carousel-container button:focus {
+  outline: none;
+}
+
+#carousel-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-mask: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(25%, black), color-stop(75%, black), to(transparent));
+  -webkit-mask: linear-gradient(to right, transparent, black 25%, black 75%, transparent);
+  mask: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(25%, black), color-stop(75%, black), to(transparent));
+  mask: linear-gradient(to right, transparent, black 25%, black 75%, transparent);
+}
+
+#left {
+  left: 40px;
+}
+
+#right {
+  right: 40px;
+}
+
 @media (min-width: 1367px) {
   .wrapper {
     width: 65%;
@@ -749,6 +821,9 @@ nav a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  #carousel-container img {
+    width: 60vw;
   }
   .head h1 {
     white-space: normal;

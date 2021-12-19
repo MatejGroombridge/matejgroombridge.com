@@ -26,7 +26,7 @@ main {
 
 a {
 	color: $text-color;
-	text-decoration: none;
+	text-decoration: underline $primary-color;
 	font-family: 'Poppins', Helvetica, sans-serif;
 }
 
@@ -36,7 +36,12 @@ footer {
 
 	a {
 		color: $background-white;
+		text-decoration: none;
 	}
+}
+
+header a {
+	text-decoration: none;
 }
 
 h1 {
@@ -52,18 +57,20 @@ h2 {
 	font-size: 1.8em;
 	width: fit-content;
 	font-weight: 700;
-	padding: 0 1em 0.5em 1em;
+	padding: 0 1em;
 	font-family: 'Poppins', Helvetica, sans-serif;
+
+	text-decoration: underline $primary-color;
 }
 
-h2:after {
-	content: '';
-	float: left;
-	background: $primary-color;
-	width: 100%;
-	height: 4px;
-	border-radius: 3px;
-}
+// h2:after {
+// 	content: '';
+// 	float: left;
+// 	background: $primary-color;
+// 	width: 100%;
+// 	height: 4px;
+// 	border-radius: 3px;
+// }
 
 h3 {
 	font-size: 1.3em;
@@ -188,6 +195,10 @@ td:last-child {
 	flex-direction: column;
 	justify-content: center;
 	padding: 1em;
+
+	p {
+		padding: 0 0.5em;
+	}
 }
 
 .body-text {
@@ -268,6 +279,12 @@ img {
 	padding: 2em;
 
 	box-shadow: 0 0 10px #00000020;
+}
+
+.transparent {
+	background: none;
+	box-shadow: none;
+	padding: 0 1em;
 }
 
 .grey {
@@ -585,6 +602,49 @@ nav {
 	}
 }
 
+#carousel-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+
+	img {
+		width: 600px;
+	}
+
+	button {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: transparent;
+		border: none;
+	}
+
+	button:focus {
+		outline: none;
+	}
+}
+
+#carousel-images {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	-webkit-mask: linear-gradient(to right, transparent, black 25%, black 75%, transparent);
+	mask: linear-gradient(to right, transparent, black 25%, black 75%, transparent);
+}
+
+#left {
+	left: 40px;
+}
+
+#right {
+	right: 40px;
+}
+
 @media (min-width: 1367px) {
 	.wrapper {
 		width: 65%;
@@ -642,6 +702,10 @@ nav {
 @media (max-width: 900px) {
 	.toggle {
 		display: flex;
+	}
+
+	#carousel-container img {
+		width: 60vw;
 	}
 
 	.head {

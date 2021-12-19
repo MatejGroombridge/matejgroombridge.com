@@ -3,7 +3,6 @@
 	import { onDestroy } from 'svelte';
 
 	export let images;
-	export let imageWidth = 300;
 	export let imageSpacing = 20;
 	export let speed = 1000;
 	export let controlColor = '#36c421';
@@ -57,12 +56,7 @@
 				on:mouseleave={startAutoPlay}
 				animate:flip={{ duration: speed }}
 			>
-				<img
-					src={image.path}
-					alt={image.id}
-					id={image.id}
-					style={`width:${imageWidth}px; margin: ${imageSpacing}px;`}
-				/>
+				<img src={image.path} alt={image.id} id={image.id} style={`margin: ${imageSpacing}px;`} />
 			</a>
 		{/each}
 	</div>
@@ -106,44 +100,3 @@
 		</button>
 	{/if}
 </div>
-
-<style>
-	#carousel-container {
-		width: 100%;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		overflow-x: hidden;
-	}
-
-	#carousel-images {
-		display: flex;
-		justify-content: center;
-		flex-wrap: nowrap;
-		-webkit-mask: linear-gradient(to right, transparent, black 25%, black 75%, transparent);
-		mask: linear-gradient(to right, transparent, black 25%, black 75%, transparent);
-	}
-
-	button {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: transparent;
-		border: none;
-	}
-
-	button:focus {
-		outline: none;
-	}
-
-	#left {
-		left: 40px;
-	}
-
-	#right {
-		right: 40px;
-	}
-</style>

@@ -383,7 +383,6 @@
 	<div class="wrapper">
 		<Carousel
 			{images}
-			imageWidth={600}
 			imageSpacing={20}
 			controlColor={'#444242'}
 			controlScale={0.6}

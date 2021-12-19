@@ -29,9 +29,8 @@
 		<div class="content">
 			<h1>Private Tutoring</h1>
 			<div class="body-text">
-				I run one-on-one tutoring sessions to help your child build confidence, unlock their
-				potential and achieve academic success. Lessons are run in Winston Hills, Baulkham Hills,
-				Northmead, Toongabbie and surrounds.
+				I run one-on-one lessons to help your child build confidence, unlock their potential and
+				achieve academic success.
 			</div>
 			<div class="btn-wrapper">
 				<a class="btn" href="#availability">Availability</a>
@@ -161,20 +160,23 @@
 <section class="grey">
 	<div class="wrapper">
 		<div class="card-wrapper">
-			<div class="center-left">
+			<div class="card transparent">
 				<h3>Location</h3>
 				<p>
-					Winston Hills, Toongabbie, Northmead, Baulkham Hills and surrounds. Lessons can be held at
-					your residence.
+					I run lessons in Winston Hills, Toongabbie, Northmead, Baulkham Hills and surrounds. There
+					is no need to drive your child to my place as I can organise transport to and from your
+					residence.
 				</p>
 			</div>
-			<div>
+			<div class="card transparent">
 				<h3>About Me</h3>
 				<div class="row">
 					<p>
-						Hi, I'm Matej. I am in Grade 10 at Baulkham Hills High School, where I have achieved the
-						Top of the Grade for the past two years. I am an enthusiastic learner and would love to
-						help your child be one too.
+						Hi, I'm Matej. I'm a Year 10 student at Baulkham Hills High School. You can learn more <a
+							href="/about"><p style="display: inline;">about me</p></a
+						>
+						and see my <a href="/qualifications"><p style="display: inline;">qualifications</p></a>
+						on the about page.
 					</p>
 				</div>
 			</div>

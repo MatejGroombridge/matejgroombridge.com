@@ -824,7 +824,8 @@
 <section>
 	<div class="wrapper service-wrapper">
 		<div class="content">
-			<a href="/webdesign"><h2>Web Design and Development<i class="fas fa-chevron-right" /></h2></a>
+			<a href="/webdesign"><h2>Web Design and Development <i class="fas fa-chevron-right" /></h2></a
+			>
 			<p class="medium-text">
 				Build your online presence and boost sales. I will make you a bespoke website that your
 				customers will love.
