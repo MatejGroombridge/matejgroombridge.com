@@ -368,6 +368,11 @@
 			</div>
 		</div>
 	</div>
+	<div class="wrapper">
+		<div class="btn-wrapper">
+			<a class="btn" href="#quote">How can I help you?</a>
+		</div>
+	</div>
 </section>
 
 <section>
@@ -419,16 +424,16 @@
 				<img src="/svelte-logo.svg" alt="Svelte Logo" style="height: 45px;" />
 			</li>
 			<li class="img-wrap">
+				<p class=" img-desc">SASS</p>
+				<i class="fab fa-sass" />
+			</li>
+			<li class="img-wrap">
 				<p class=" img-desc">Stack Overflow</p>
 				<i class="fab fa-stack-overflow" />
 			</li>
 			<li class="img-wrap">
 				<p class=" img-desc">Google Analytics</p>
 				<i class="fas fa-chart-line" />
-			</li>
-			<li class="img-wrap">
-				<p class=" img-desc">SASS</p>
-				<i class="fab fa-sass" />
 			</li>
 			<li class="img-wrap">
 				<p class=" img-desc">FontAwesome</p>
