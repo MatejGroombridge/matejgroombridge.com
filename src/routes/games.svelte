@@ -33,7 +33,7 @@
 
 <section>
 	<div class="wrapper">
-		<h1>Super Secret Games</h1>
+		<h1>Baulko Game Page 🍊</h1>
 	</div>
 	<div class="wrapper">
 		<p>Guaranteed to work on school wifi.</p>
@@ -42,8 +42,8 @@
 		<div class="wrapper">
 			<p class="small-text" style="text-align: justify;">
 				Games are legally embedded from various game websites (Not pirating). DM me any game
-				requests you have, my Instagram linked above. This website only stays unblocked if the DOE
-				doesn't know about it, so please don't tell on the teacher on me :)
+				requests you have through Instagram. This website only stays unblocked if the DOE doesn't
+				know about it so please don't tell on the teacher on me :)
 			</p>
 		</div>
 	</div>
