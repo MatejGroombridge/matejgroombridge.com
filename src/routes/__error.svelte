@@ -1,5 +1,5 @@
 <section style="height: 80vh;">
-	<div class="wrapper">
+	<div class="wrapper shown">
 		<div class="content">
 			<h1>Hmm... It looks like this page doesn't exist.</h1>
 		</div>
@@ -137,7 +137,7 @@
 			>
 		</div>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper shown">
 		<p style="padding: 1em;">
 			Check that you typed the address correctly or go back to your previous page.
 		</p>

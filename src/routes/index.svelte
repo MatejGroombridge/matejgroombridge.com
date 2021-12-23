@@ -52,7 +52,7 @@
 
 <section class="grey" id="services">
 	<div class="wrapper service-wrapper" use:actionWhenInViewport>
-		<div class="content">
+		<div class="content svg-wrapper">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -850,7 +850,7 @@
 			</p>
 		</div>
 
-		<div class="content">
+		<div class="content svg-wrapper">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				data-name="Layer 1"

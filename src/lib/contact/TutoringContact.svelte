@@ -93,7 +93,7 @@
 				bind:value={contactForm.comment}
 			/>
 			<div class="btn-wrapper">
-				<input class="form-btn" type="submit" value="Send" />
+				<input class="form-btn btn" type="submit" value="Send" />
 			</div>
 		</div>
 	</div>

@@ -46,7 +46,7 @@
 
 		<div class="input">
 			<div class="btn-wrapper">
-				<input class="form-btn" type="submit" value="Request" />
+				<input class="form-btn btn" type="submit" value="Request" />
 			</div>
 		</div>
 	</div>

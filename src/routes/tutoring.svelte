@@ -193,7 +193,7 @@
 						Hi, I'm Matej. I'm a Year 10 student at Baulkham Hills High School. You can learn more <a
 							href="/about"><p style="display: inline;">about me</p></a
 						>
-						and see my <a href="/qualifications"><p style="display: inline;">qualifications</p></a>
+						and see my <a href="/about"><p style="display: inline;">qualifications</p></a>
 						on the about page.
 					</p>
 				</div>

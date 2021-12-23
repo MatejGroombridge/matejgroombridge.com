@@ -51,7 +51,7 @@
 </section>
 
 <section class="inverted resume ">
-	<div class="wrapper" use:actionWhenInViewport>
+	<div class="wrapper shown">
 		<div class="card-wrapper ">
 			<div class="center">
 				<h3>Request my resume</h3>
