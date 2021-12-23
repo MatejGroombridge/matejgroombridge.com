@@ -34,10 +34,6 @@
 
 <form on:submit={handleOnSubmit} class="contact-form">
 	<div class="input-wrapper">
-		<!-- <div class="input">
-			<h3>Name</h3>
-			<input required type="text" bind:value={contactForm.name} />
-		</div> -->
 		<div class="input">
 			<h3>Email</h3>
 			<input required type="email" bind:value={contactForm.email} />

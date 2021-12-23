@@ -1,7 +1,24 @@
 <script>
 	import WebdevContact from '$lib/contact/WebdevContact.svelte';
 	import Carousel from '$lib/carousel/Carousel.svelte';
-	import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons';
+
+	function actionWhenInViewport(e) {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(
+				(entry) => {
+					entry.target.classList.toggle('show', entry.isIntersecting);
+					if (entry.isIntersecting) {
+						observer.unobserve(entry.target);
+					}
+				},
+				{
+					threshold: 1
+				}
+			);
+		});
+
+		observer.observe(e);
+	}
 
 	const images = [
 		{
@@ -36,7 +53,7 @@
 
 <section class="head">
 	<div class="two-margin" />
-	<div class="wrapper">
+	<div class="wrapper shown">
 		<div class="content">
 			<h1>Freelance Web Design</h1>
 			<div class="body-text">
@@ -332,10 +349,10 @@
 </section> -->
 
 <section class="grey">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Services</h2>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
 			<div class="card services-card">
 				<h3>Bespoke Design</h3>
@@ -368,7 +385,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="btn-wrapper">
 			<a class="btn" href="#quote">How can I help you?</a>
 		</div>
@@ -376,11 +393,11 @@
 </section>
 
 <section>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Featured Projects</h2>
 	</div>
 
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<Carousel
 			{images}
 			imageSpacing={20}
@@ -394,13 +411,13 @@
 </section>
 
 <section class="grey">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Tech For Nerds</h2>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<p>These are the tools I use to build sleek websites:</p>
 	</div>
-	<div class="wrapper tech">
+	<div class="wrapper tech" use:actionWhenInViewport>
 		<ul>
 			<li class="img-wrap">
 				<p class=" img-desc">HTML5</p>
@@ -443,13 +460,13 @@
 </section>
 
 <section id="quote" class="inverted">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Let's get to work!</h2>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<p>Get a free quote today.</p>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<WebdevContact />
 	</div>
 </section>

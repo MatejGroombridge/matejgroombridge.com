@@ -1,6 +1,24 @@
 <script>
 	import TutoringContact from '$lib/contact/TutoringContact.svelte';
 	import Timetable from '$lib/timetable/Timetable.svelte';
+
+	function actionWhenInViewport(e) {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(
+				(entry) => {
+					entry.target.classList.toggle('show', entry.isIntersecting);
+					if (entry.isIntersecting) {
+						observer.unobserve(entry.target);
+					}
+				},
+				{
+					threshold: 1
+				}
+			);
+		});
+
+		observer.observe(e);
+	}
 </script>
 
 <svelte:head>
@@ -158,7 +176,7 @@
 </section>
 
 <section class="grey">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
 			<div class="card transparent">
 				<h3>Location</h3>
@@ -182,7 +200,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="wrapper">
+	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<p>
 			See my experience and qualifications. &nbsp;
 			<a style="font-size: 0.5em;" href="/">
@@ -193,13 +211,13 @@
 </section>
 
 <section>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Subjects and Pricing</h2>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<p>Payments can be made via Cash or Bank Transfer. Prices are subject to change.</p>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
 			<div class="card">
 				<h3>Stage 3 (Year 5 and 6)</h3>
@@ -227,24 +245,24 @@
 </section>
 
 <section class="grey" id="availability">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Availability</h2>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<p class="medium-text">
 			Lessons can be booked for both 1 Hour and 30 Minute periods. &emsp; 🟩 = Available
 		</p>
 	</div>
-	<div class="wrapper timetable" style="overflow-x: auto; padding: 0;">
+	<div class="wrapper timetable" style="overflow-x: auto; padding: 0;" use:actionWhenInViewport>
 		<Timetable />
 	</div>
 </section>
 
 <section id="booking">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Book A Lesson</h2>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
 	</div>
 </section>

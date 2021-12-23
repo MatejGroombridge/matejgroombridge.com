@@ -1,5 +1,23 @@
 <script>
 	import Contact from '$lib/contact/Contact.svelte';
+
+	function actionWhenInViewport(e) {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(
+				(entry) => {
+					entry.target.classList.toggle('show', entry.isIntersecting);
+					if (entry.isIntersecting) {
+						observer.unobserve(entry.target);
+					}
+				},
+				{
+					threshold: 1
+				}
+			);
+		});
+
+		observer.observe(e);
+	}
 </script>
 
 <svelte:head>
@@ -11,7 +29,7 @@
 </svelte:head>
 
 <section class="head-home head">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="content">
 			<h1>Hi, I'm Matej.</h1>
 		</div>
@@ -19,12 +37,12 @@
 			<img src="/mainimage.jpg" alt="Matej Groombridge" width="280px" />
 		</div> -->
 	</div>
-	<div class="wrapper">
+	<div class="wrapper " use:actionWhenInViewport>
 		<p class="body-text">
 			I am a high school student and freelance web designer from Sydney, Australia.
 		</p>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="btn-wrapper	btn-head">
 			<a class="btn" href="/about">About Me</a>
 			<a class="btn" href="#services">Services</a>
@@ -33,7 +51,7 @@
 </section>
 
 <section class="grey" id="services">
-	<div class="wrapper service-wrapper">
+	<div class="wrapper service-wrapper" use:actionWhenInViewport>
 		<div class="content">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -822,7 +840,7 @@
 </section>
 
 <section>
-	<div class="wrapper service-wrapper">
+	<div class="wrapper service-wrapper" use:actionWhenInViewport>
 		<div class="content">
 			<a href="/webdesign"><h2>Web Design and Development <i class="fas fa-chevron-right" /></h2></a
 			>
@@ -1121,13 +1139,13 @@
 </section>
 
 <section class="inverted">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Get in Touch!</h2>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<p>I'd love to hear from you.</p>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<Contact />
 	</div>
 </section>

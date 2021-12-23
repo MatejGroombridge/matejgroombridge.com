@@ -1,6 +1,23 @@
 <script>
-	import Incomplete from '$lib/incomplete/Incomplete.svelte';
 	import ResumeContact from '$lib/contact/ResumeContact.svelte';
+
+	function actionWhenInViewport(e) {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(
+				(entry) => {
+					entry.target.classList.toggle('show', entry.isIntersecting);
+					if (entry.isIntersecting) {
+						observer.unobserve(entry.target);
+					}
+				},
+				{
+					threshold: 1
+				}
+			);
+		});
+
+		observer.observe(e);
+	}
 </script>
 
 <svelte:head>
@@ -12,7 +29,7 @@
 </svelte:head>
 
 <section>
-	<div class="wrapper">
+	<div class="wrapper shown">
 		<div class="content">
 			<h1>About</h1>
 			<p><strong>Hi there! </strong>I'm Matej. Thank you for visiting my website.</p>
@@ -34,22 +51,24 @@
 </section>
 
 <section class="inverted resume ">
-	<div class="card-wrapper ">
-		<div class="center">
-			<h3>Request my resume</h3>
-		</div>
-		<div class="center">
-			<ResumeContact />
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="card-wrapper ">
+			<div class="center">
+				<h3>Request my resume</h3>
+			</div>
+			<div class="center">
+				<ResumeContact />
+			</div>
 		</div>
 	</div>
 </section>
 
 <!-- 
 <section id="qualifications">
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Tutoring Qualifications</h2>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="content">
 			<h3>Academic</h3>
 			<ul>
@@ -74,8 +93,3 @@
 		</div>
 	</div>
 </section> -->
-<style>
-	.wrapper {
-		width: 60%;
-	}
-</style>

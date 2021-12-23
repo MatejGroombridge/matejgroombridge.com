@@ -29,17 +29,35 @@
 	function reload() {
 		window.location.reload();
 	}
+
+	function actionWhenInViewport(e) {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(
+				(entry) => {
+					entry.target.classList.toggle('show', entry.isIntersecting);
+					if (entry.isIntersecting) {
+						observer.unobserve(entry.target);
+					}
+				},
+				{
+					threshold: 1
+				}
+			);
+		});
+
+		observer.observe(e);
+	}
 </script>
 
 <section>
-	<div class="wrapper">
+	<div class="wrapper shown">
 		<h1>Baulko Game Page 🍊</h1>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper shown">
 		<p>Guaranteed to work on school wifi.</p>
 	</div>
-	<div class="wrapper">
-		<div class="wrapper">
+	<div class="wrapper shown">
+		<div class="wrapper shown">
 			<p class="small-text" style="text-align: justify;">
 				Games are legally embedded from various game websites (Not pirating). DM me any game
 				requests you have through Instagram. This website only stays unblocked if the DOE doesn't
@@ -55,7 +73,7 @@
 <section id="videogame" />
 
 <section>
-	<div class="wrapper">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div id="games-wrapper">
 			{#each games as game}
 				<div class="game" on:click={() => openGame(game.html)}>
