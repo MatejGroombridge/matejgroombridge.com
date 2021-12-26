@@ -1,4 +1,4 @@
-<script lang="ts" context="module">
+<!-- <script lang="ts" context="module">
 	import type { Load } from '@sveltejs/kit';
 
 	export const load: Load = async ({ fetch }) => {
@@ -11,7 +11,7 @@
 
 <script lang="ts">
 	export let posts: any;
-</script>
+</script> -->
 
 <section>
 	<div class="wrapper shown">
