@@ -31,7 +31,8 @@
 <section>
 	<div class="wrapper shown">
 		<div class="content">
-			<h1>About</h1>
+			<h1 style="padding: 0.25em;">About</h1>
+			<!-- change -->
 			<p><strong>Hi there! </strong>I'm Matej. Thank you for visiting my website.</p>
 			<p>
 				I was born in Slovenia, a small European country located between Italy and Croatia. In 2014,
@@ -44,7 +45,7 @@
 			<p>
 				On this website you can find some recent projects I'm working on, as well as my tutoring and
 				web design services. If you need to contact me, fill out the form on my contact page or send
-				me a DM on one of my social media accounts.
+				me a message on one of my social media accounts.
 			</p>
 		</div>
 	</div>
