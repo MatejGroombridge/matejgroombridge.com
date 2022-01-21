@@ -39,7 +39,7 @@
 				my family moved to Australia and have lived here since.
 			</p>
 			<p>
-				I'm currenlty in grade 10 at a selective school in Sydney. My hobbies include playing
+				I'm currently in grade 10 at a selective school in Sydney. My hobbies include playing
 				instruments, reading, making websites and going on long distance runs.
 			</p>
 			<p>
