@@ -68,6 +68,10 @@ h2 {
 	text-decoration: underline $primary-color;
 }
 
+.no-underline {
+	text-decoration: underline #00000000;
+}
+
 // h2:after {
 // 	content: '';
 // 	float: left;
@@ -83,6 +87,15 @@ h3 {
 	font-family: 'Poppins', Helvetica, sans-serif;
 	color: $text-color;
 	margin: 0.75em 0;
+	text-transform: uppercase;
+}
+
+.abovetitle {
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: 'Poppins', Helvetica, sans-serif;
+	color: $primary-color;
+	margin: 0.25em 0;
 	text-transform: uppercase;
 }
 
@@ -223,6 +236,10 @@ td:last-child {
 	p {
 		padding: 0 0.5em;
 	}
+
+	h2 {
+		padding: 0;
+	}
 }
 
 .body-text {
@@ -285,6 +302,7 @@ td:last-child {
 
 img {
 	border-radius: 0.75em;
+	box-shadow: 0 0 10px #00000020;
 }
 
 .card-wrapper {

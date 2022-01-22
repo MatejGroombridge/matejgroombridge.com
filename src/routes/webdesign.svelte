@@ -1,6 +1,6 @@
 <script>
 	import WebdevContact from '$lib/contact/WebdevContact.svelte';
-	import Carousel from '$lib/carousel/Carousel.svelte';
+	// import Carousel from '$lib/carousel/Carousel.svelte';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -20,35 +20,35 @@
 		observer.observe(e);
 	}
 
-	const images = [
-		{
-			link: 'https://matejgroombridge.github.io/Order-Summary-Component/',
-			path: 'project-images/Order Summary.png',
-			id: 'image1'
-		},
-		{ path: 'project-images/Pokedex.png', id: 'image2' },
-		{
-			link: 'https://matejgroombridge.github.io/Tip-Calculator-App/',
-			path: 'project-images/Tip Calculator .png',
-			id: 'image3'
-		},
-		{
-			link: 'https://matejgroombridge.github.io/Consulting-Site/',
-			path: 'project-images/Freeman Consulting.png',
-			id: 'image4'
-		},
-		{
-			link: 'https://matejgroombridge.github.io/Starbucks-Landing-Page/#',
-			path: 'project-images/Starbucks.jpg',
-			id: 'image5'
-		},
-		{ path: 'project-images/Habit Tracker.jpg', id: 'image6' },
-		{
-			link: 'https://matejgroombridge.github.io/Web-Designer-Landing-Page/',
-			path: 'project-images/Jenna Laurence.jpg',
-			id: 'image7'
-		}
-	];
+	// const images = [
+	// 	{
+	// 		link: 'https://matejgroombridge.github.io/Order-Summary-Component/',
+	// 		path: 'project-images/Order Summary.png',
+	// 		id: 'image1'
+	// 	},
+	// 	{ path: 'project-images/Pokedex.png', id: 'image2' },
+	// 	{
+	// 		link: 'https://matejgroombridge.github.io/Tip-Calculator-App/',
+	// 		path: 'project-images/Tip Calculator .png',
+	// 		id: 'image3'
+	// 	},
+	// 	{
+	// 		link: 'https://matejgroombridge.github.io/Consulting-Site/',
+	// 		path: 'project-images/Freeman Consulting.png',
+	// 		id: 'image4'
+	// 	},
+	// 	{
+	// 		link: 'https://matejgroombridge.github.io/Starbucks-Landing-Page/#',
+	// 		path: 'project-images/Starbucks.jpg',
+	// 		id: 'image5'
+	// 	},
+	// 	{ path: 'project-images/Habit Tracker.jpg', id: 'image6' },
+	// 	{
+	// 		link: 'https://matejgroombridge.github.io/Web-Designer-Landing-Page/',
+	// 		path: 'project-images/Jenna Laurence.jpg',
+	// 		id: 'image7'
+	// 	}
+	// ];
 </script>
 
 <section class="head">
@@ -392,7 +392,7 @@
 	</div>
 </section>
 
-<section>
+<!-- <section>
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Featured Projects</h2>
 	</div>
@@ -408,8 +408,26 @@
 			autoplaySpeed={3000}
 		/>
 	</div>
-</section>
+</section> -->
 
+<section>
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<a href="https://markospizzeria.wordpress.com/" target="_blank">
+				<img width="500" src="/markos.jpg" alt="Marko's Pizzeria website screenshot" />
+			</a>
+		</div>
+		<div class="content">
+			<div class="abovetitle">Featured Project</div>
+			<h2 class="no-underline">Marko's Pizzeria</h2>
+			<p style="font-style: italic; font-size: 1em; padding: 0;">
+				"We don’t just make food. We make people’s experience. Marko’s was built on the belief that
+				food should be special, and we carry that belief into everything we do."
+			</p>
+		</div>
+	</div>
+</section>
+<!-- 
 <section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Tech For Nerds</h2>
@@ -457,7 +475,7 @@
 			</li>
 		</ul>
 	</div>
-</section>
+</section> -->
 
 <section id="quote" class="inverted">
 	<div class="wrapper" use:actionWhenInViewport>

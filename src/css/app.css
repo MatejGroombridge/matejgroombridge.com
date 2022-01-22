@@ -66,12 +66,26 @@ h2 {
           text-decoration: underline #00ab44;
 }
 
+.no-underline {
+  -webkit-text-decoration: underline #00000000;
+          text-decoration: underline #00000000;
+}
+
 h3 {
   font-size: 1.3em;
   font-weight: 600;
   font-family: 'Poppins', Helvetica, sans-serif;
   color: #242525;
   margin: 0.75em 0;
+  text-transform: uppercase;
+}
+
+.abovetitle {
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  color: #00ab44;
+  margin: 0.25em 0;
   text-transform: uppercase;
 }
 
@@ -265,6 +279,10 @@ td:last-child {
   padding: 0 0.5em;
 }
 
+.content h2 {
+  padding: 0;
+}
+
 .body-text {
   font-size: 22px;
   margin: 0.5em 0;
@@ -333,6 +351,8 @@ td:last-child {
 
 img {
   border-radius: 0.75em;
+  -webkit-box-shadow: 0 0 10px #00000020;
+          box-shadow: 0 0 10px #00000020;
 }
 
 .card-wrapper {
