@@ -14,7 +14,7 @@
 		</p>
 	</section>
 	<section class="small-links">
-		<a class="small-text" href="/webdesign">Web Design</a>
+		<a class="small-text" href="/">Web Design</a>
 		<a class="small-text" href="/tutoring">Tutoring</a>
 		<a class="small-text" href="/about">About Me</a>
 		<a class="small-text" href="/contact">Contact</a>

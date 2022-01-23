@@ -289,7 +289,8 @@ td:last-child {
 .content h2,
 .content h3,
 .content p,
-.content .abovetitle {
+.content .abovetitle,
+.content .body-text {
   width: 100%;
 }
 
