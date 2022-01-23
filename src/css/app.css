@@ -112,6 +112,16 @@ p {
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
+a img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 hr {
   border: 0.1px solid #edf1ed;
   margin: 1em 0;
@@ -273,6 +283,14 @@ td:last-child {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 1em;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content p,
+.content .abovetitle {
+  width: 100%;
 }
 
 .content p {
@@ -874,6 +892,21 @@ nav a {
   display: none;
 }
 
+.img-500 {
+  width: 500px;
+  max-width: 90vw;
+}
+
+.hide-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.show-mobile {
+  display: none;
+}
+
 @media (min-width: 1367px) {
   .wrapper {
     width: 65%;
@@ -901,6 +934,12 @@ nav a {
   }
   * {
     text-align: center;
+  }
+  .abovetitle {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .resume .input-wrapper {
     -ms-grid-columns: 1fr;
@@ -1010,6 +1049,14 @@ nav a {
     height: -moz-max-content;
     height: max-content;
     max-height: none;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .timetable {
     display: -webkit-box;

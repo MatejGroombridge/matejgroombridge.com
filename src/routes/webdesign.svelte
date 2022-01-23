@@ -1,6 +1,6 @@
 <script>
 	import WebdevContact from '$lib/contact/WebdevContact.svelte';
-	// import Carousel from '$lib/carousel/Carousel.svelte';
+	import Carousel from '$lib/carousel/Carousel.svelte';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -20,41 +20,42 @@
 		observer.observe(e);
 	}
 
-	// const images = [
-	// 	{
-	// 		link: 'https://matejgroombridge.github.io/Order-Summary-Component/',
-	// 		path: 'project-images/Order Summary.png',
-	// 		id: 'image1'
-	// 	},
-	// 	{ path: 'project-images/Pokedex.png', id: 'image2' },
-	// 	{
-	// 		link: 'https://matejgroombridge.github.io/Tip-Calculator-App/',
-	// 		path: 'project-images/Tip Calculator .png',
-	// 		id: 'image3'
-	// 	},
-	// 	{
-	// 		link: 'https://matejgroombridge.github.io/Consulting-Site/',
-	// 		path: 'project-images/Freeman Consulting.png',
-	// 		id: 'image4'
-	// 	},
-	// 	{
-	// 		link: 'https://matejgroombridge.github.io/Starbucks-Landing-Page/#',
-	// 		path: 'project-images/Starbucks.jpg',
-	// 		id: 'image5'
-	// 	},
-	// 	{ path: 'project-images/Habit Tracker.jpg', id: 'image6' },
-	// 	{
-	// 		link: 'https://matejgroombridge.github.io/Web-Designer-Landing-Page/',
-	// 		path: 'project-images/Jenna Laurence.jpg',
-	// 		id: 'image7'
-	// 	}
-	// ];
+	const images = [
+		// {
+		// 	link: 'https://matejgroombridge.github.io/Order-Summary-Component/',
+		// 	path: 'project-images/Order Summary.png',
+		// 	id: 'image1'
+		// },
+		// { path: 'project-images/Pokedex.png', id: 'image2' },
+		{
+			link: 'https://github.com/MatejGroombridge/Consulting-Site',
+			path: 'project-images/Freeman Consulting.png',
+			id: 'image2'
+		},
+		{
+			link: 'https://matejgroombridge.github.io/Tip-Calculator-App/',
+			path: 'project-images/Tip Calculator .png',
+			id: 'image3'
+		},
+		{
+			link: 'https://matejgroombridge.github.io/Starbucks-Landing-Page/#',
+			path: 'project-images/Starbucks.jpg',
+			id: 'image4'
+		},
+		{ path: 'project-images/Habit Tracker.jpg', id: 'image5' },
+		{
+			link: 'https://github.com/MatejGroombridge/Web-Designer-Landing-Page',
+			path: 'project-images/Jenna Laurence.jpg',
+			id: 'image6'
+		}
+	];
 </script>
 
 <section class="head">
 	<div class="two-margin" />
 	<div class="wrapper shown">
 		<div class="content">
+			<!-- <div class="abovetitle">Freelance Web Design</div> -->
 			<h1>Freelance Web Design</h1>
 			<div class="body-text">
 				I help businesses generate traffic, bring in customers and stand out from the competition
@@ -357,22 +358,34 @@
 		</div>
 		<div class="content">
 			<a href="https://dev-my-hao.pantheonsite.io/" target="_blank">
-				<img width="500" src="/project-images/myhao.jpg" alt="My Hao Cuisine website screenshot" />
+				<img
+					class="img-500"
+					src="/project-images/myhao.jpg"
+					alt="My Hao Cuisine website screenshot"
+				/>
 			</a>
 		</div>
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content show-mobile">
+			<div class="abovetitle">Featured Project</div>
+			<h2 class="no-underline">Marko's Pizzeria</h2>
+			<p style="font-style: italic; font-size: 1em; padding: 0;">
+				"We don’t just make food. We make people’s experience. Marko’s was built on the belief that
+				food should be special, and we carry that belief into everything we do."
+			</p>
+		</div>
 		<div class="content">
 			<a href="https://markospizzeria.wordpress.com/" target="_blank">
 				<img
-					width="500"
+					class="img-500"
 					src="/project-images/markos.jpg"
 					alt="Marko's Pizzeria website screenshot"
 				/>
 			</a>
 		</div>
-		<div class="content">
+		<div class="content hide-mobile">
 			<div class="abovetitle">Featured Project</div>
 			<h2 class="no-underline">Marko's Pizzeria</h2>
 			<p style="font-style: italic; font-size: 1em; padding: 0;">
@@ -431,9 +444,9 @@
 	</div>
 </section>
 
-<!-- <section>
+<section>
 	<div class="wrapper" use:actionWhenInViewport>
-		<h2>Featured Projects</h2>
+		<h2>More Projects</h2>
 	</div>
 
 	<div class="wrapper" use:actionWhenInViewport>
@@ -447,7 +460,7 @@
 			autoplaySpeed={3000}
 		/>
 	</div>
-</section> -->
+</section>
 
 <!-- 
 <section class="grey">
