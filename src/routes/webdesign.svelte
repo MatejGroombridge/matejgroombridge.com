@@ -344,6 +344,45 @@
 	</div>
 </section>
 
+<section>
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="abovetitle">Featured Project</div>
+			<h2 class="no-underline">My Hao Cuisine</h2>
+			<p style="font-style: italic; font-size: 1em; padding: 0;">
+				"Welcome to My Hao Vietnamese Cuisine! We specialise in crafting vibrant and authentic
+				Vietnamese dishes for the residents of Winston Hills. Our lovely staff and mouth-watering
+				menu promise an amazing experience."
+			</p>
+		</div>
+		<div class="content">
+			<a href="https://dev-my-hao.pantheonsite.io/" target="_blank">
+				<img width="500" src="/project-images/myhao.jpg" alt="My Hao Cuisine website screenshot" />
+			</a>
+		</div>
+	</div>
+	<div class="two-margin" />
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<a href="https://markospizzeria.wordpress.com/" target="_blank">
+				<img
+					width="500"
+					src="/project-images/markos.jpg"
+					alt="Marko's Pizzeria website screenshot"
+				/>
+			</a>
+		</div>
+		<div class="content">
+			<div class="abovetitle">Featured Project</div>
+			<h2 class="no-underline">Marko's Pizzeria</h2>
+			<p style="font-style: italic; font-size: 1em; padding: 0;">
+				"We don’t just make food. We make people’s experience. Marko’s was built on the belief that
+				food should be special, and we carry that belief into everything we do."
+			</p>
+		</div>
+	</div>
+</section>
+
 <!-- <section>
     Primary Testimony, only about 1/3 the size of a normal section
 </section> -->
@@ -410,23 +449,6 @@
 	</div>
 </section> -->
 
-<section>
-	<div class="wrapper" use:actionWhenInViewport>
-		<div class="content">
-			<a href="https://markospizzeria.wordpress.com/" target="_blank">
-				<img width="500" src="/markos.jpg" alt="Marko's Pizzeria website screenshot" />
-			</a>
-		</div>
-		<div class="content">
-			<div class="abovetitle">Featured Project</div>
-			<h2 class="no-underline">Marko's Pizzeria</h2>
-			<p style="font-style: italic; font-size: 1em; padding: 0;">
-				"We don’t just make food. We make people’s experience. Marko’s was built on the belief that
-				food should be special, and we carry that belief into everything we do."
-			</p>
-		</div>
-	</div>
-</section>
 <!-- 
 <section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>
