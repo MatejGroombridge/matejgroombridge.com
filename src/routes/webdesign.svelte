@@ -54,12 +54,12 @@
 <section class="head">
 	<div class="two-margin" />
 	<div class="wrapper shown">
-		<div class="content">
-			<!-- <div class="abovetitle">Freelance Web Design</div> -->
-			<h1>Freelance Web Design</h1>
+		<div class="content head-home">
+			<div class="abovetitle">Freelance Web Design</div>
+			<h1>Affordable Website for Small Businesses</h1>
 			<div class="body-text">
-				I help businesses generate traffic, bring in customers and stand out from the competition
-				through a georgeous, bespoke website.
+				⭐ Generate traffic <br />⭐ Bring in customers <br />⭐ Stand out from the competition
+				<br />
 			</div>
 			<div class="btn-wrapper">
 				<a class="btn" href="#quote">Lets get to work!</a>
@@ -394,11 +394,13 @@
 			</p>
 		</div>
 	</div>
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="btn-wrapper" style="width: 60%;">
+			<a href="#more-projects" class="btn">More Past Projects</a>
+			<a href="#quote" class="btn">Let's Get to Work!</a>
+		</div>
+	</div>
 </section>
-
-<!-- <section>
-    Primary Testimony, only about 1/3 the size of a normal section
-</section> -->
 
 <section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>
@@ -444,7 +446,7 @@
 	</div>
 </section>
 
-<section>
+<section id="more-projects">
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>More Projects</h2>
 	</div>
