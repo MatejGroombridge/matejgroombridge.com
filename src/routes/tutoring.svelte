@@ -190,11 +190,10 @@
 				<h3>About Me</h3>
 				<div class="row">
 					<p>
-						Hi, I'm Matej. I'm a Year 10 student at Baulkham Hills High School. You can learn more <a
-							href="/about"><p style="display: inline;">about me</p></a
-						>
-						and see my <a href="/about"><p style="display: inline;">qualifications</p></a>
-						on the about page.
+						Hi, I'm Matej. I'm a Year 10 student at Baulkham Hills High School, where I have
+						achieved Top of the Grade for the past two years. You can learn more about me <a
+							href="/about"><p style="display: inline;">here</p></a
+						>.
 					</p>
 				</div>
 			</div>
@@ -220,7 +219,7 @@
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
 			<div class="card">
-				<h3>Stage 3 (Year 5 and 6)</h3>
+				<h3>Stage 2 & 3 (Years 3-6)</h3>
 				<p>
 					Homework Help, Test Preparation, Mathematics, English and Science. Lessons are tailored to
 					the needs of your child.

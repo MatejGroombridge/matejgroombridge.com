@@ -51,12 +51,14 @@
 				<input required type="email" bind:value={contactForm.email} />
 			</div>
 			<div>
-				<h3>Grade<small>*</small></h3>
-				<select name="grade" id="grade" bind:value={contactForm.grade}>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
+				<h3>Year<small>*</small></h3>
+				<select required name="grade" id="grade" bind:value={contactForm.grade}>
+					<option value="3">Year 3</option>
+					<option value="4">Year 4</option>
+					<option value="5">Year 5</option>
+					<option value="6">Year 6</option>
+					<option value="7">Year 7</option>
+					<option value="8">Year 8</option>
 				</select>
 			</div>
 			<div>
@@ -87,7 +89,7 @@
 		<div class="input">
 			<h3>How can I help your child?</h3>
 			<textarea
-				placeholder="Include subjects, skill level etc."
+				placeholder="Include subjects & skill level, as well as any questions or concerns"
 				required
 				maxlength="1000"
 				bind:value={contactForm.comment}
