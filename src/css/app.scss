@@ -824,8 +824,13 @@ nav {
 		display: flex;
 	}
 
-	#carousel-container img {
-		width: 80vw;
+	#carousel-container {
+		img {
+			width: 80vw;
+		}
+		button {
+			display: none;
+		}
 	}
 
 	.head {

@@ -972,6 +972,9 @@ nav a {
   #carousel-container img {
     width: 80vw;
   }
+  #carousel-container button {
+    display: none;
+  }
   .head h1 {
     white-space: normal;
   }

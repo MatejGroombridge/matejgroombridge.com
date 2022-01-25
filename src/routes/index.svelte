@@ -66,7 +66,7 @@
 			</div>
 		</div>
 
-		<div class="content">
+		<div class="content hide-mobile">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				data-name="Layer 1"
@@ -395,7 +395,7 @@
 		</div>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
-		<div class="btn-wrapper" style="width: 60%;">
+		<div class="btn-wrapper">
 			<a href="#more-projects" class="btn">More Past Projects</a>
 			<a href="#quote" class="btn">Let's Get to Work!</a>
 		</div>
