@@ -1,4 +1,6 @@
 <script>
+	import Incomplete from '$lib/incomplete/Incomplete.svelte';
+
 	let games = [
 		{
 			name: 'Rise Up',
@@ -58,12 +60,14 @@
 	}
 </script>
 
+<Incomplete />
+
 <section>
 	<div class="wrapper shown">
 		<h1>Baulko Game Page 🍊</h1>
 	</div>
 	<div class="wrapper shown">
-		<p>Guaranteed To Work On School Wifi</p>
+		<p><strike>Guaranteed To Work On School Wifi</strike></p>
 	</div>
 	<div class="wrapper shown">
 		<div class="wrapper shown">
