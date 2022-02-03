@@ -33,7 +33,7 @@
 	<div class="wrapper">
 		<div>
 			<p>
-				Bookings for 2022 have now opened. <a style="font-size: 0.5em;" href="#booking"
+				Spots are available for Term 1 2022 <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p>

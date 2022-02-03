@@ -36,8 +36,8 @@
 					<li><a href="/">Web Design</a></li>
 					<li><a href="/tutoring">Tutoring</a></li>
 					<!-- <li><a href="/">Resources<i class="fas fa-angle-down" style="margin: 5px;" /></a></li> -->
-					<li><a href="/about">About Me</a></li>
 					<li><a href="/contact">Contact</a></li>
+					<li><a href="/about">About</a></li>
 					<!-- <li><a href="/booknotes">Book Notes</a></li> -->
 				</ul>
 			</div>
@@ -46,6 +46,11 @@
 					<li>
 						<a href="https://www.instagram.com/___matej/" target="_blank"
 							><i class="fab fa-instagram fa-2x" /></a
+						>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/profile.php?id=100076210122441" target="_blank"
+							><i class="fab fa-facebook fa-2x" /></a
 						>
 					</li>
 					<li>

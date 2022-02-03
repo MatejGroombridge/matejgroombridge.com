@@ -52,17 +52,13 @@
 </script>
 
 <section class="head">
-	<div class="two-margin" />
 	<div class="wrapper shown">
 		<div class="content head-home">
 			<div class="abovetitle">Freelance Web Design</div>
 			<h1>Affordable Websites for Small Businesses</h1>
 			<div class="body-text">
-				⭐ Generate traffic <br />⭐ Bring in customers <br />⭐ Stand out from the competition
+				✅ Generate traffic <br />✅ Bring in customers <br />✅ Stand out from the competition
 				<br />
-			</div>
-			<div class="btn-wrapper">
-				<a class="btn" href="#quote">Lets get to work!</a>
 			</div>
 		</div>
 
@@ -70,7 +66,7 @@
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				data-name="Layer 1"
-				width="320"
+				width="360"
 				viewBox="0 0 690.06055 622.3536"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
 				><path
@@ -341,6 +337,11 @@
 					fill="#cacaca"
 				/></svg
 			>
+		</div>
+	</div>
+	<div class="wrapper shown">
+		<div class="btn-wrapper">
+			<a class="btn" href="#quote">Lets get to work!</a>
 		</div>
 	</div>
 </section>

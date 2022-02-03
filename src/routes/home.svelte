@@ -55,7 +55,7 @@
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
 				data-name="Layer 1"
-				height="250"
+				height="270"
 				viewBox="0 0 1022.84 813.16"
 				><defs
 					><linearGradient
@@ -828,8 +828,8 @@
 			>
 		</div>
 		<div class="content">
-			<a href="/tutoring"><h2>Private Tutoring <i class="fas fa-chevron-right" /></h2></a>
-			<p class="medium-text">
+			<h2><a href="/tutoring">Private Tutoring <i class="fas fa-chevron-right" /></a></h2>
+			<p>
 				Do you want your child to excel at school? Get expert tutoring from the 2 year Top of the
 				Grade of Baulkham Hills High School.
 			</p>
@@ -840,9 +840,10 @@
 <section>
 	<div class="wrapper service-wrapper" use:actionWhenInViewport>
 		<div class="content">
-			<a href="/webdesign"><h2>Web Design and Development <i class="fas fa-chevron-right" /></h2></a
-			>
-			<p class="medium-text">
+			<h2>
+				<a href="/webdesign">Web Design and Development <i class="fas fa-chevron-right" /></a>
+			</h2>
+			<p>
 				Build your online presence and boost sales. I will make you a bespoke website that your
 				customers will love.
 			</p>
@@ -852,7 +853,7 @@
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				data-name="Layer 1"
-				height="250"
+				height="270"
 				viewBox="0 0 860.13137 551.74119"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
 				><path

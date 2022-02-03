@@ -16,7 +16,7 @@
 	<section class="small-links">
 		<a class="small-text" href="/">Web Design</a>
 		<a class="small-text" href="/tutoring">Tutoring</a>
-		<a class="small-text" href="/about">About Me</a>
+		<a class="small-text" href="/about">About</a>
 		<a class="small-text" href="/contact">Contact</a>
 	</section>
 	<div class="footer-icons">
@@ -24,6 +24,11 @@
 			<li>
 				<a href="https://www.instagram.com/___matej/" target="_blank"
 					><i class="fab fa-instagram fa-2x" /></a
+				>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/profile.php?id=100076210122441" target="_blank"
+					><i class="fab fa-facebook fa-2x" /></a
 				>
 			</li>
 			<li>
@@ -41,7 +46,7 @@
 			<li>
 				<a href="/contact#email" target="_blank"><i class="fas fa-envelope fa-2x" /></a>
 			</li>
-			<li><a href="/games"><i class="fas fa-gamepad fa-2x" /></a></li>
+			<!-- <li><a href="/games"><i class="fas fa-gamepad fa-2x" /></a></li> -->
 		</ul>
 	</div>
 </footer>

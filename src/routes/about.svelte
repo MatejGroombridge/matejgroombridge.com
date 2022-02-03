@@ -21,10 +21,10 @@
 </script>
 
 <svelte:head>
-	<title>About Me</title>
+	<title>About</title>
 	<meta
 		name="description"
-		content="Hi, my name is Matej Groombridge. I am a high school student and web designer from Sydney, Australia. I offer private tutoring lessons as well as freelance web design services for small businesses. Thanks for stopping by!"
+		content="Hi, my name is Matej Groombridge. I am a high school student and web designer from Sydney, Australia. I offer private tutoring lessons as well as affordable freelance web design services for small businesses. Thanks for stopping by!"
 	/>
 </svelte:head>
 
@@ -32,26 +32,29 @@
 	<div class="wrapper shown">
 		<div class="content">
 			<h1 style="padding: 0.25em;">About</h1>
-			<!-- change -->
-			<p><strong>Hi there! </strong>I'm Matej. Thank you for visiting my website.</p>
 			<p>
-				I was born in Slovenia, a small European country located between Italy and Croatia. In 2014,
-				my family moved to Australia and have lived here since.
+				<strong>Hi there! </strong>I'm Matej. Thank you for visiting my website. I'm a Year 10
+				student from Australia, currently studying at Baulkham Hills High School. This website hosts
+				my tutoring and web design services, as well as some recent projects that I have been
+				working on.
 			</p>
 			<p>
-				I'm currently in grade 10 at a selective school in Sydney. My hobbies include playing
-				instruments, reading, making websites and going on long distance runs.
-			</p>
-			<p>
-				On this website you can find some recent projects I'm working on, as well as my tutoring and
-				web design services. If you need to contact me, fill out the form on my contact page or send
-				me a message on one of my social media accounts.
+				This site was programmed from scratch using <a
+					href="https://kit.svelte.dev/"
+					target="_blank">SvelteKit</a
+				>, a relatively new Javascript framework. For the site's styling I used
+				<a href="https://sass-lang.com/" target="_blank">SASS</a>
+				and all forms are handled by
+				<a href="https://www.emailjs.com/" target="_blank">Email.js</a>. The code for my site is
+				stored on a private <a href="https://github.com/" target="_blank">GitHub</a> repository that
+				is automatically passed on to my hosting provider,
+				<a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 			</p>
 		</div>
 	</div>
 </section>
 
-<section class="inverted resume ">
+<!-- <section class="inverted resume ">
 	<div class="wrapper shown">
 		<div class="card-wrapper ">
 			<div class="center">
@@ -62,7 +65,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <!-- 
 <section id="qualifications">
