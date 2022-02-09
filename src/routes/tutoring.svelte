@@ -191,8 +191,8 @@
 				<div class="row">
 					<p>
 						Hi, I'm Matej. I'm a Year 10 student at Baulkham Hills High School, where I have
-						achieved Top of the Grade for the past two years. You can learn more about me <a
-							href="/about"><p style="display: inline;">here</p></a
+						achieved Top of the Grade for two years. You can learn more about me <a href="/about"
+							><p style="display: inline;">here</p></a
 						>.
 					</p>
 				</div>
