@@ -92,7 +92,7 @@
 		<td />
 		<td />
 		<td />
-		<td />
+		<td class="available" />
 		<td class="available" />
 	</tr>
 	<tr>
@@ -116,7 +116,10 @@
 		<td />
 		<td />
 		<td />
-		<td class="available" />
+		<td>
+			<div class="half available" />
+			<div class="half" />
+		</td>
 		<td>
 			<div class="half available" />
 			<div class="half" />
@@ -142,8 +145,8 @@
 			<div class="half " />
 			<div class="half " />
 		</td>
-		<td class="available" />
-		<td class="available" />
+		<td />
+		<td />
 		<td />
 	</tr>
 	<tr>
@@ -153,9 +156,12 @@
 		<td />
 		<td />
 		<td class="available" />
-		<td class="available" />
-		<td class="available" />
-		<td class="available" />
+		<td>
+			<div class="half available" />
+			<div class="half available" />
+		</td>
+		<td />
+		<td />
 		<td>
 			<div class="half" />
 			<div class="half" />
@@ -165,12 +171,15 @@
 		<td>
 			<b>6pm</b>
 		</td>
-		<td />
+		<td>
+			<div class="half" />
+			<div class="half available" />
+		</td>
 		<td />
 		<td class="available" />
 		<td class="available" />
 		<td />
-		<td class="available" />
+		<td />
 		<td>
 			<div class="half" />
 			<div class="half" />
@@ -183,8 +192,9 @@
 		<td class="available" />
 		<td />
 		<td class="available" />
-		<td class="available" /><td />
 		<td class="available" />
+		<td />
+		<td />
 		<td />
 	</tr>
 </table>
