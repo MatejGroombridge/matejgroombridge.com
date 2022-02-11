@@ -32,10 +32,13 @@
 <section class="notice">
 	<div class="wrapper">
 		<div>
-			<p>
+			<!-- <p>
 				Spots are available for Term 1 2022 <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
+			</p> -->
+			<p>
+				All spots for term 1 have been filled. Check back every few weeks to see if I'm available.
 			</p>
 		</div>
 	</div>
@@ -258,10 +261,13 @@
 </section>
 
 <section id="booking">
-	<div class="wrapper" use:actionWhenInViewport>
+	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>Book A Lesson</h2>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
+	</div> -->
+	<div class="wrapper" use:actionWhenInViewport>
+		<p>All spots for Term 1 have been filled. Check back every few weeks for new openings.</p>
 	</div>
 </section>
