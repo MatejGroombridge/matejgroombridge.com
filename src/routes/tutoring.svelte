@@ -1,5 +1,6 @@
 <script>
 	import TutoringContact from '$lib/contact/TutoringContact.svelte';
+	import WaitingListContact from '$lib/contact/WaitingListContact.svelte';
 	import Timetable from '$lib/timetable/Timetable.svelte';
 
 	function actionWhenInViewport(e) {
@@ -38,7 +39,10 @@
 				>
 			</p> -->
 			<p>
-				All spots for term 1 have been filled. Check back every few weeks to see if I'm available.
+				All spots for term 1 have been filled. Submit your email to get notified when new spots
+				open. <a style="font-size: 0.5em;" href="#booking"
+					><i class="fas fa-external-link-alt fa-2x" /></a
+				>
 			</p>
 		</div>
 	</div>
@@ -264,10 +268,16 @@
 	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>Book A Lesson</h2>
 	</div>
+	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
 	</div> -->
 	<div class="wrapper" use:actionWhenInViewport>
-		<p>All spots for Term 1 have been filled. Check back every few weeks for new openings.</p>
+		<h2>Get Notified When New Spots Open</h2>
 	</div>
+	<div class="two-margin" />
+	<div class="wrapper" use:actionWhenInViewport>
+		<WaitingListContact />
+	</div>
+	<div class="two-margin" />
 </section>
