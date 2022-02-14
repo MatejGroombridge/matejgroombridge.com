@@ -244,7 +244,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$38</span>/hr</div>
+				<div class="cost"><span class="large">$40</span>/hr</div>
 			</div>
 		</div>
 	</div>
