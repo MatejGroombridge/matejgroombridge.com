@@ -5,7 +5,8 @@
 		grade: '',
 		email: '',
 		lessonTime: '',
-		comment: ''
+		comment: '',
+		address: ''
 	};
 
 	function handleOnSubmit(event) {
@@ -40,16 +41,23 @@
 			<h3>Parent Name<small>*</small></h3>
 			<input required type="text" bind:value={contactForm.name} />
 		</div>
+
 		<div class="input">
 			<h3>Student Name<small>*</small></h3>
 			<input required type="text" bind:value={contactForm.studentName} />
 		</div>
 
 		<div class="input">
-			<div>
-				<h3>Email<small>*</small></h3>
-				<input required type="email" bind:value={contactForm.email} />
-			</div>
+			<h3>Email<small>*</small></h3>
+			<input required type="text" bind:value={contactForm.email} />
+		</div>
+
+		<div class="input">
+			<h3>Address<small>*</small></h3>
+			<input required type="text" bind:value={contactForm.address} />
+		</div>
+
+		<div class="input">
 			<div>
 				<h3>Year<small>*</small></h3>
 				<select required name="grade" id="grade" bind:value={contactForm.grade}>
@@ -70,33 +78,20 @@
 					bind:value={contactForm.lessonTime}
 				/>
 			</div>
-
-			<!-- <h3>Subject</h3>
-			<select name="subject" id="subject" bind:value={contactForm.subject}>
-				{#if contactForm.grade <= 6}
-					<option value="Maths">Maths</option>
-					<option value="English">English</option>
-					<option value="Science">Science</option>
-					<option value="Homework Help">Homework Help</option>
-					<option value="Test Preparation">Test Preparation</option>
-				{:else if contactForm.grade >= 7}
-					<option selected value="Mathematics">Mathematics</option>
-				{:else}
-					<option selected value="5">Please select a grade.</option>
-				{/if}
-			</select> -->
+			<div>
+				<div class="btn-wrapper">
+					<input class="form-btn btn" type="submit" value="Send" />
+				</div>
+			</div>
 		</div>
 		<div class="input">
 			<h3>How can I help your child?</h3>
 			<textarea
-				placeholder="Include subjects & skill level, as well as any questions or concerns"
+				placeholder="Include subjects & skill level, as well as any questions or concerns:"
 				required
 				maxlength="1000"
 				bind:value={contactForm.comment}
 			/>
-			<div class="btn-wrapper">
-				<input class="form-btn btn" type="submit" value="Send" />
-			</div>
 		</div>
 	</div>
 </form>
