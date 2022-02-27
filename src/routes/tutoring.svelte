@@ -38,9 +38,14 @@
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p> -->
-			<p>
+			<!-- <p>
 				All spots for term 1 have been filled. Submit your email to get notified when new spots
 				open. <a style="font-size: 0.5em;" href="#booking"
+					><i class="fas fa-external-link-alt fa-2x" /></a
+				>
+			</p> -->
+			<p>
+				Limited availability. Secure a spot ASAP <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p>
@@ -265,19 +270,19 @@
 </section>
 
 <section id="booking">
-	<!-- <div class="wrapper" use:actionWhenInViewport>
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Book A Lesson</h2>
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
-	</div> -->
-	<div class="wrapper" use:actionWhenInViewport>
+	</div>
+	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>Get Notified When New Spots Open</h2>
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<WaitingListContact />
-	</div>
+	</div> -->
 	<div class="two-margin" />
 </section>

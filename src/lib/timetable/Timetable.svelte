@@ -179,7 +179,7 @@
 		<td />
 		<td />
 		<td />
-		<td class="available" />
+		<td />
 		<td>
 			<div class="half" />
 			<div class="half" />
@@ -194,7 +194,7 @@
 		<td />
 		<td />
 		<td />
-		<td class="available" />
+		<td />
 		<td />
 	</tr>
 </table>

@@ -18,7 +18,7 @@
 		<a class="small-text" href="/tutoring">Tutoring</a>
 		<a class="small-text" href="/about">About</a>
 		<a class="small-text" href="/contact">Contact</a>
-		<a class="small-text" href="/booknotes">Book Notes</a>
+		<!-- <a class="small-text" href="/booknotes">Book Notes</a> -->
 	</section>
 	<div class="footer-icons">
 		<ul style="font-size: 0.6rem;">
