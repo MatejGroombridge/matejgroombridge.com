@@ -219,7 +219,7 @@ section {
 }
 
 .head {
-  min-height: 76vh;
+  min-height: 50vh;
 }
 
 .head .wrapper {
@@ -997,6 +997,9 @@ nav a {
   }
   #carousel-container button {
     display: none;
+  }
+  .head {
+    min-height: 70vh;
   }
   .head h1 {
     white-space: normal;

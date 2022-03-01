@@ -187,7 +187,7 @@ section {
 }
 
 .head {
-	min-height: 76vh;
+	min-height: 50vh;
 
 	.wrapper {
 		opacity: 1;
@@ -856,6 +856,8 @@ nav {
 		h1 {
 			white-space: normal;
 		}
+
+		min-height: 70vh;
 	}
 
 	.svg-wrapper {

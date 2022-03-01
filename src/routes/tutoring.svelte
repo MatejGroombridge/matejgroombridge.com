@@ -53,7 +53,7 @@
 	</div>
 </section>
 
-<section class="head" style="height: 72vh;">
+<section class="head">
 	<div class="two-margin" />
 	<div class="wrapper">
 		<div class="content">
