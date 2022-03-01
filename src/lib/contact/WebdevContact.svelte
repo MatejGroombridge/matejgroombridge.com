@@ -15,7 +15,7 @@
 			'user_IaGwubLj0SawwSzw2xWGP'
 		);
 
-		alert('Success! Keep an eye on your inbox for when I get back to you');
+		alert("Success! I'll get back to you within the coming days so keep an eye on your inbox.");
 
 		window.location.reload();
 	}
@@ -39,7 +39,7 @@
 			<input required type="text" bind:value={contactForm.name} />
 		</div>
 		<div class="input">
-			<h3>Company</h3>
+			<h3>Company <small>(Optional)</small></h3>
 			<input type="text" bind:value={contactForm.subject} />
 		</div>
 		<div class="input">
