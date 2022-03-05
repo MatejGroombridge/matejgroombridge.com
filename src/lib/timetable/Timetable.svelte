@@ -157,8 +157,8 @@
 		<td />
 		<td />
 		<td>
-			<div class="half " />
-			<div class="half " />
+			<div class="half available" />
+			<div class="half available" />
 		</td>
 		<td />
 		<td class="available" />
@@ -177,7 +177,7 @@
 		</td>
 		<td />
 		<td />
-		<td />
+		<td class="available" />
 		<td />
 		<td />
 		<td>
@@ -192,7 +192,7 @@
 		<td class="available" />
 		<td />
 		<td />
-		<td />
+		<td class="available" />
 		<td />
 		<td />
 		<td />

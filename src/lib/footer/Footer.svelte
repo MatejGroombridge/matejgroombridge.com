@@ -2,8 +2,8 @@
 	<section>
 		<p class="footer-title">About</p>
 		<p>
-			Thanks for stopping by👋 <br /> My name is <strong>Matej Groombridge</strong>. I am a high
-			school student and web designer.
+			Thanks for stopping by👋 <br /> My name is <strong>Matej Groombridge</strong>. I am a student,
+			tutor and freelance web designer.
 		</p>
 	</section>
 	<section>
