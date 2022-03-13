@@ -58,6 +58,15 @@
 		</div>
 
 		<div class="input">
+			<h3>How can I help your child?</h3>
+			<textarea
+				placeholder="Include subjects & skill level, as well as any questions or concerns:"
+				required
+				maxlength="1000"
+				bind:value={contactForm.comment}
+			/>
+		</div>
+		<div class="input">
 			<div>
 				<h3>Year<small>*</small></h3>
 				<select required name="grade" id="grade" bind:value={contactForm.grade}>
@@ -83,15 +92,6 @@
 					<input class="form-btn btn" type="submit" value="Send" />
 				</div>
 			</div>
-		</div>
-		<div class="input">
-			<h3>How can I help your child?</h3>
-			<textarea
-				placeholder="Include subjects & skill level, as well as any questions or concerns:"
-				required
-				maxlength="1000"
-				bind:value={contactForm.comment}
-			/>
 		</div>
 	</div>
 </form>
