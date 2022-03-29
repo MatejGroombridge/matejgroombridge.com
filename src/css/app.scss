@@ -349,6 +349,49 @@ img {
 	background: $background-grey;
 }
 
+.book-card {
+	min-height: 270px;
+	flex-direction: row;
+
+	img {
+		height: 100%;
+		max-width: 150px;
+		object-fit: cover;
+	}
+
+	.book-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		width: 100%;
+		height: 100%;
+		padding: 0 1em;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	p {
+		font-size: 1em;
+		justify-self: flex-end;
+		margin: 0;
+	}
+}
+
+// TODO: Make grey on grey cards white. Fix buttons
+
+.mini-title {
+	font-weight: 600;
+	font-size: 1.05em;
+}
+
+.book-name {
+	color: $primary-color;
+}
+
 .transparent {
 	background: none;
 	box-shadow: none;
