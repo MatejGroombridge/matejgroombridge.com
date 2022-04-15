@@ -42,9 +42,9 @@
 
 <section class="grey" id="email">
 	<div class="wrapper shown">
-		<p>Or send me an email to:</p>
+		<p>Or send me an email at:</p>
 	</div>
 	<div class="wrapper shown">
-		<img src="/email.png" alt="My email address" />
+		<img src="/email.png" alt="My email address" style="box-shadow: none;" />
 	</div>
 </section>
