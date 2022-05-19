@@ -28,16 +28,15 @@
 				>
 			</li>
 			<li>
-				<a href="https://www.facebook.com/profile.php?id=100076210122441" target="_blank"
-					><i class="fab fa-facebook fa-2x" /></a
-				>
-			</li>
-			<li>
 				<a href="https://github.com/MatejGroombridge" target="_blank"
 					><i class="fab fa-github fa-2x" /></a
 				>
 			</li>
-			<!-- <li><a href="/" target="_blank"><i class="fab fa-linkedin fa-2x" /></a></li> -->
+			<li>
+				<a href="https://www.linkedin.com/in/matej-groombridge-06157517b/" target="_blank"
+					><i class="fab fa-linkedin fa-2x" /></a
+				>
+			</li>
 			<li>
 				<a
 					href="https://open.spotify.com/user/odau8v74sintc5j50a9lsgkh9?si=54a1ab54c714459c"
