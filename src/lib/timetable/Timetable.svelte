@@ -111,7 +111,10 @@
 		<td>
 			<b>3pm</b>
 		</td>
-		<td />
+		<td>
+			<div class="half" />
+			<div class="half available" />
+		</td>
 		<td />
 		<td />
 		<td />
@@ -130,7 +133,7 @@
 			<b>4pm</b>
 		</td>
 		<td>
-			<div class="half" />
+			<div class="half available" />
 			<div class="half " />
 		</td>
 		<td>
@@ -157,8 +160,8 @@
 		<td />
 		<td />
 		<td>
-			<div class="half " />
-			<div class="half " />
+			<div class="half available" />
+			<div class="half available" />
 		</td>
 		<td />
 		<td />
@@ -172,8 +175,8 @@
 			<b>6pm</b>
 		</td>
 		<td>
-			<div class="half " />
-			<div class="half " />
+			<div class="half available" />
+			<div class="half available" />
 		</td>
 		<td />
 		<td />
@@ -189,7 +192,7 @@
 		<td>
 			<b>7pm</b>
 		</td>
-		<td />
+		<td class="available" />
 		<td />
 		<td />
 		<td />

@@ -38,17 +38,17 @@
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p> -->
-			<p>
+			<!-- <p>
 				All spots for Term 2 have been filled. Submit your email to get notified when new spots
 				open. <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
-			</p>
-			<!-- <p>
+			</p> -->
+			<p>
 				Limited availability. Secure a spot ASAP <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
-			</p> -->
+			</p>
 		</div>
 	</div>
 </section>
@@ -261,7 +261,7 @@
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<p class="medium-text">
-			Lessons can be booked for both 1 Hour and 30 Minute periods. &emsp; 🟩 = Available
+			Lessons can be booked for both 1 hour and 1.5 hour periods. &emsp; 🟩 = Available
 		</p>
 	</div>
 	<div class="wrapper timetable" style="overflow-x: auto; padding: 0;" use:actionWhenInViewport>
@@ -270,19 +270,19 @@
 </section>
 
 <section id="booking">
-	<!-- <div class="wrapper" use:actionWhenInViewport>
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Book A Lesson</h2>
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
-	</div> -->
-	<div class="wrapper" use:actionWhenInViewport>
+	</div>
+	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>Get Notified When New Spots Open</h2>
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<WaitingListContact />
-	</div>
+	</div> -->
 	<div class="two-margin" />
 </section>
