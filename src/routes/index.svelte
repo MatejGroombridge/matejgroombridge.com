@@ -346,6 +346,18 @@
 	</div>
 </section>
 
+<section class="grey">
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="testimonial-text">
+				"I loved the way Matej explains everything in such a simple and easy way. 10/10 would
+				recommend."
+			</div>
+			<div class="abovetitle center">Vinh P</div>
+		</div>
+	</div>
+</section>
+
 <section>
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="content">
