@@ -189,6 +189,19 @@
 
 <section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="testimonial-text">
+				"Matej is a delight. He is prompt, courteous and very patient and calm. He has helped my
+				daughter gain more of an understanding for maths. I would recommend him highly to anyone who
+				is in need of a tutor."
+			</div>
+			<div class="abovetitle center">Yvonne O</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
 			<div class="card transparent">
 				<h3>Location</h3>
@@ -221,7 +234,7 @@
 	</div> -->
 </section>
 
-<section>
+<section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Subjects and Pricing</h2>
 	</div>
@@ -251,6 +264,18 @@
 			<div class="center">
 				<div class="cost"><span class="large">$40</span>/hr</div>
 			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="testimonial-text">
+				"I loved the way Matej explains everything in such a simple and easy way. 10/10 would
+				recommend."
+			</div>
+			<div class="abovetitle center">Vinh P</div>
 		</div>
 	</div>
 </section>

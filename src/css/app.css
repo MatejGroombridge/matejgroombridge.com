@@ -482,6 +482,10 @@ img {
   background: #edf1ed;
 }
 
+.grey .card {
+  background: #f9f8f4;
+}
+
 .inverted {
   background: #444242;
 }

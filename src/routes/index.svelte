@@ -477,6 +477,17 @@
 	</div>
 </section>
 
+<section class="grey">
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="testimonial-text">
+				"Matej is a delight. He is prompt, courteous and very patient and calm."
+			</div>
+			<div class="abovetitle center">Yvonne O</div>
+		</div>
+	</div>
+</section>
+
 <!-- 
 <section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>

@@ -409,6 +409,9 @@ img {
 
 .grey {
 	background: $background-grey;
+	.card {
+		background: $background-white;
+	}
 }
 
 .inverted {
