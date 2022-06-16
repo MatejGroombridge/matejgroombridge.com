@@ -72,10 +72,10 @@
 	</div>
 </section>
 
-<!-- <svelte:head>
-	<title>About</title>
+<svelte:head>
+	<title>Book Summary, Notes & Quotes | Matej Groombridge</title>
 	<meta
 		name="description"
-		content="Hi, my name is Matej Groombridge. I am a high school student and web designer from Sydney, Australia. I offer private tutoring lessons as well as affordable freelance web design services for small businesses. Thanks for stopping by!"
+		content="Book Summaries, Impressions, Notes & Quotes. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
 	/>
-</svelte:head> -->
+</svelte:head>

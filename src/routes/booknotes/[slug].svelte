@@ -54,6 +54,22 @@
 	}
 </script>
 
+<svelte:head>
+	{#await getBook()}
+		<title>Book Summary, Notes & Quotes | Matej Groombridge</title>
+		<meta
+			name="description"
+			content="Book Summary, Impressions, Notes & Quotes. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
+		/>
+	{:then book}
+		<title>{book.title} | Summary, Notes & Quotes</title>
+		<meta
+			name="description"
+			content="{book.title} by {book.author} | Summary, Impressions, Notes & Quotes. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
+		/>
+	{/await}
+</svelte:head>
+
 {#await getBook()}
 	<section>
 		<div class="wrapper">Loading...</div>
