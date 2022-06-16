@@ -38,7 +38,9 @@
 		</div> -->
 	</div>
 	<div class="wrapper " use:actionWhenInViewport>
-		<p class="body-text">I am a student and freelance web designer from Sydney, Australia.</p>
+		<p class="body-text">
+			I am a student, tutor and freelance web designer from Sydney, Australia.
+		</p>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="btn-wrapper	btn-head">

@@ -37,7 +37,7 @@
 					<li><a href="/tutoring">Tutoring</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/about">About</a></li>
-					<!-- <li><a href="/booknotes">Book Notes</a></li> -->
+					<li><a href="/booknotes">Book Notes</a></li>
 				</ul>
 			</div>
 			<div class="nav-socials">

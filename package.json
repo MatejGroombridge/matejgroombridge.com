@@ -31,6 +31,7 @@
     "cookie": "^0.4.1",
     "emailjs-com": "^3.2.0",
     "stream-json": "^1.7.3",
-    "svelte-feather-icons": "^3.5.0"
+    "svelte-feather-icons": "^3.5.0",
+    "svelte-markdown": "^0.2.2"
   }
 }
