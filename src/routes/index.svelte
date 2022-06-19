@@ -57,7 +57,7 @@
 			<div class="abovetitle">Freelance Web Design</div>
 			<h1>Affordable Websites for Small Businesses</h1>
 			<div class="body-text">
-				✅ Generate traffic <br />✅ Bring in customers <br />✅ Stand out from the competition
+				✔ Generate traffic <br />✔ Bring in customers <br />✔ Stand out from the competition
 				<br />
 			</div>
 		</div>
