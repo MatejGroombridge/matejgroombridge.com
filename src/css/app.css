@@ -704,7 +704,8 @@ footer .footer-icons ul {
 .small-text {
   font-size: 14px;
   color: #ababab;
-  margin: 0.1em;
+  margin: 0.05em;
+  padding: 0.3em;
 }
 
 .input-wrapper {
