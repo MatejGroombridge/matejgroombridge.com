@@ -704,6 +704,7 @@ footer .footer-icons ul {
 .small-text {
   font-size: 14px;
   color: #ababab;
+  margin: 0.1em;
 }
 
 .input-wrapper {
@@ -1055,6 +1056,11 @@ nav a {
 
 .show-mobile {
   display: none;
+}
+
+blockquote p {
+  font-weight: 600;
+  font-style: italic;
 }
 
 @media (min-width: 1367px) {
