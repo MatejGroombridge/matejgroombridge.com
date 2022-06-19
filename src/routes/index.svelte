@@ -42,7 +42,11 @@
 			path: 'project-images/Starbucks.jpg',
 			id: 'image4'
 		},
-		{ path: 'project-images/Habit Tracker.jpg', id: 'image5' },
+		{
+			link: 'https://github.com/MatejGroombridge/Habit-Tracker',
+			path: 'project-images/Habit Tracker.jpg',
+			id: 'image5' //link should be changed
+		},
 		{
 			link: 'https://github.com/MatejGroombridge/Web-Designer-Landing-Page',
 			path: 'project-images/Jenna Laurence.jpg',
@@ -479,22 +483,10 @@
 
 <section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>
-		<div class="content">
-			<div class="testimonial-text">
-				"Matej is a delight. He is prompt, courteous and very patient and calm."
-			</div>
-			<div class="abovetitle center">Yvonne O</div>
-		</div>
-	</div>
-</section>
-
-<!-- 
-<section class="grey">
-	<div class="wrapper" use:actionWhenInViewport>
-		<h2>Tech For Nerds</h2>
+		<h2>Tech For Geeks</h2>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
-		<p>These are the tools I use to build sleek websites:</p>
+		<p>The tools I use to build responsive and SEO optimised websites:</p>
 	</div>
 	<div class="wrapper tech" use:actionWhenInViewport>
 		<ul>
@@ -536,7 +528,18 @@
 			</li>
 		</ul>
 	</div>
-</section> -->
+</section>
+
+<section>
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="testimonial-text">
+				"Matej is a delight. He is prompt, courteous and very patient and calm."
+			</div>
+			<div class="abovetitle center">Yvonne O</div>
+		</div>
+	</div>
+</section>
 
 <section id="quote" class="inverted">
 	<div class="wrapper" use:actionWhenInViewport>
