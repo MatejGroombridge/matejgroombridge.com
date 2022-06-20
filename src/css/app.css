@@ -238,9 +238,15 @@ section {
 .article h1,
 .article h2,
 .article h3,
-.article p,
 .article .abovetitle,
 .article .body-text {
+  width: 100%;
+  padding-top: 1.5em;
+  margin: 0;
+  line-height: 0.5em;
+}
+
+.article p {
   width: 100%;
 }
 
@@ -1059,9 +1065,16 @@ nav a {
   display: none;
 }
 
+blockquote {
+  background-color: #edf1ed;
+  border-left: 3px solid #00ab44;
+  width: 100%;
+  margin: 0.5em 0;
+}
+
 blockquote p {
-  font-weight: 600;
   font-style: italic;
+  margin: 0.3em;
 }
 
 @media (min-width: 1367px) {
