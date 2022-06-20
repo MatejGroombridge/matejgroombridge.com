@@ -241,9 +241,8 @@ section {
 .article .abovetitle,
 .article .body-text {
   width: 100%;
-  padding-top: 1.5em;
+  padding-top: 0.5em;
   margin: 0;
-  line-height: 0.5em;
 }
 
 .article p {
