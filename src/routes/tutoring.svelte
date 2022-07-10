@@ -34,7 +34,7 @@
 	<div class="wrapper">
 		<div>
 			<p>
-				New spots are available for Term 2 2022 <a style="font-size: 0.5em;" href="#booking"
+				New spots are available for Term 3 <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p>

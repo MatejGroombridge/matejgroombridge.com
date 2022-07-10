@@ -39,10 +39,11 @@
 				working on.
 			</p>
 			<p>
-				This site was programmed from scratch using <a
+				This site was programmed from scratch using a Javascript framework called <a
 					href="https://kit.svelte.dev/"
 					target="_blank">SvelteKit</a
-				>, a relatively new Javascript framework. For the site's styling I used
+				>
+				For the site's styling I used
 				<a href="https://sass-lang.com/" target="_blank">SASS</a>
 				and all forms are handled by
 				<a href="https://www.emailjs.com/" target="_blank">Email.js</a>. The code for my site is

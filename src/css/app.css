@@ -1074,6 +1074,7 @@ blockquote {
 blockquote p {
   font-style: italic;
   margin: 0.3em;
+  width: 100%;
 }
 
 @media (min-width: 1367px) {
