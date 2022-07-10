@@ -73,7 +73,7 @@
 <section class="notice">
 	<div class="wrapper">
 		<div>
-			<p>Not loading? Refresh the page</p>
+			<p>Trouble loading? Refresh the page</p>
 		</div>
 	</div>
 </section>
