@@ -70,6 +70,14 @@
 	{/await}
 </svelte:head>
 
+<section class="notice">
+	<div class="wrapper">
+		<div>
+			<p>Not loading? Refresh the page</p>
+		</div>
+	</div>
+</section>
+
 {#await getBook()}
 	<section>
 		<div class="wrapper">Loading...</div>
