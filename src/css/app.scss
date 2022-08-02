@@ -336,8 +336,14 @@ td:last-child {
 	padding: 1em 1.5em;
 	border-radius: 1em;
 	color: $primary-color;
-	background: $background-white;
-	outline: 2px solid $primary-color;
+	background: $background-grey;
+	overflow: hidden;
+	// box-shadow: 0 0 10px #003c0c20;
+	// outline: 2px solid $primary-color;
+
+	background: $primary-color;
+		color: $background-white;
+
 	cursor: pointer;
 
 	text-decoration: none;
@@ -352,6 +358,9 @@ td:last-child {
 	transform: scale(1.1);
 	background: $primary-color;
 	color: $background-white;
+
+	color: $primary-color;
+	background: $background-grey;
 }
 
 .sml-btn {

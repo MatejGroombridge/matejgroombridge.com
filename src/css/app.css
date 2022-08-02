@@ -392,8 +392,10 @@ td:last-child {
   padding: 1em 1.5em;
   border-radius: 1em;
   color: #00ab44;
-  background: #f9f8f4;
-  outline: 2px solid #00ab44;
+  background: #edf1ed;
+  overflow: hidden;
+  background: #00ab44;
+  color: #f9f8f4;
   cursor: pointer;
   text-decoration: none;
   font-size: 18px;
@@ -407,6 +409,8 @@ td:last-child {
           transform: scale(1.1);
   background: #00ab44;
   color: #f9f8f4;
+  color: #00ab44;
+  background: #edf1ed;
 }
 
 .sml-btn {
