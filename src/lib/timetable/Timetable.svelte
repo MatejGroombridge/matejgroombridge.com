@@ -25,7 +25,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>9am</b>
+			<b>9-10am</b>
 		</td>
 		<td>
 			<div class="half" />
@@ -40,7 +40,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>10am</b>
+			<b>10-11am</b>
 		</td>
 		<td />
 		<td />
@@ -52,7 +52,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>11am</b>
+			<b>11-12am</b>
 		</td>
 		<td />
 		<td />
@@ -67,7 +67,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>12pm</b>
+			<b>12-1pm</b>
 		</td>
 		<td />
 		<td />
@@ -85,7 +85,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>1pm</b>
+			<b>1-2pm</b>
 		</td>
 		<td />
 		<td />
@@ -97,7 +97,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>2pm</b>
+			<b>2-3pm</b>
 		</td>
 		<td />
 		<td />
@@ -109,7 +109,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>3pm</b>
+			<b>3-4pm</b>
 		</td>
 		<td>
 			<div class="half" />
@@ -139,7 +139,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>4pm</b>
+			<b>4-5pm</b>
 		</td>
 		<td>
 			<div class="half " />
@@ -163,7 +163,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>5pm</b>
+			<b>5-6pm</b>
 		</td>
 		<td />
 		<td />
@@ -181,7 +181,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>6pm</b>
+			<b>6-7pm</b>
 		</td>
 		<td>
 			<div class="half " />
@@ -205,7 +205,7 @@
 	</tr>
 	<tr>
 		<td>
-			<b>7pm</b>
+			<b>7-8pm</b>
 		</td>
 		<td />
 		<td />
