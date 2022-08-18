@@ -38,23 +38,30 @@
 <form on:submit={handleOnSubmit} class="contact-form">
 	<div class="input-wrapper">
 		<div class="input">
-			<h3>Parent Name<small>*</small></h3>
+			<h3>Parent Name</h3>
 			<input required type="text" bind:value={contactForm.name} />
 		</div>
 
 		<div class="input">
-			<h3>Student Name<small>*</small></h3>
+			<h3>Student Name</h3>
 			<input required type="text" bind:value={contactForm.studentName} />
 		</div>
 
 		<div class="input">
-			<h3>Email<small>*</small></h3>
+			<h3>Email</h3>
 			<input required type="text" bind:value={contactForm.email} />
 		</div>
 
-		<div class="input">
-			<h3>Address<small>*</small></h3>
-			<input required type="text" bind:value={contactForm.address} />
+		<div>
+			<h3>Year</h3>
+			<select required name="grade" id="grade" bind:value={contactForm.grade}>
+				<option value="3">Year 3</option>
+				<option value="4">Year 4</option>
+				<option value="5">Year 5</option>
+				<option value="6">Year 6</option>
+				<option value="7">Year 7</option>
+				<option value="8">Year 8</option>
+			</select>
 		</div>
 
 		<div class="input">
@@ -67,19 +74,12 @@
 			/>
 		</div>
 		<div class="input">
-			<div>
-				<h3>Year<small>*</small></h3>
-				<select required name="grade" id="grade" bind:value={contactForm.grade}>
-					<option value="3">Year 3</option>
-					<option value="4">Year 4</option>
-					<option value="5">Year 5</option>
-					<option value="6">Year 6</option>
-					<option value="7">Year 7</option>
-					<option value="8">Year 8</option>
-				</select>
+			<div class="input">
+				<h3>Address</h3>
+				<input required type="text" bind:value={contactForm.address} />
 			</div>
 			<div>
-				<h3>Lesson Time<small>*</small></h3>
+				<h3>Lesson Time</h3>
 				<input
 					placeholder="Eg. Saturday 5-6pm"
 					required

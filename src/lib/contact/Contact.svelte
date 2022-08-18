@@ -35,7 +35,7 @@
 <form on:submit={handleOnSubmit} class="contact-form">
 	<div class="input-wrapper">
 		<div class="input">
-			<h3>Name<small>*</small></h3>
+			<h3>Name</h3>
 			<input required type="text" bind:value={contactForm.name} />
 		</div>
 		<div class="input">
@@ -43,12 +43,12 @@
 			<input type="text" bind:value={contactForm.subject} />
 		</div>
 		<div class="input">
-			<h3>Message<small>*</small></h3>
+			<h3>Message</h3>
 			<textarea required maxlength="1000" bind:value={contactForm.message} />
 		</div>
 		<div class="input">
 			<div>
-				<h3>Email<small>*</small></h3>
+				<h3>Email</h3>
 				<input required type="email" bind:value={contactForm.email} />
 			</div>
 
