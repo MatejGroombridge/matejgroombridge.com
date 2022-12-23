@@ -33,22 +33,22 @@
 <section class="notice">
 	<div class="wrapper">
 		<div>
-			<p>
+			<!-- <p>
 				New spots are available for Term 3 <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
-			</p>
+			</p> -->
 			<!-- <p>
 				All spots for Term 2 have been filled. Submit your email to get notified when new spots
 				open. <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p> -->
-			<!-- <p>
-				Limited availability. Secure a spot ASAP <a style="font-size: 0.5em;" href="#booking"
+			<p>
+				New bookings open January 2023 <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
-			</p> -->
+			</p>
 		</div>
 	</div>
 </section>
@@ -244,17 +244,17 @@
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
 			<div class="card">
-				<h3>Stage 2 & 3 (Years 3-6)</h3>
+				<h3>Primary (Years 3-6)</h3>
 				<p>
 					Homework Help, Test Preparation, Mathematics, English and Science. Lessons are tailored to
 					the needs of your child.
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$35</span>/hr</div>
+				<div class="cost"><span class="large">$40</span>/hr</div>
 			</div>
 			<div class="card">
-				<h3>Stage 4 (Year 7 and 8)</h3>
+				<h3>Early High (Years 7-9)</h3>
 				<p>
 					Mathematics for all skill levels. This includes homework help and test preparation. I can
 					give your child the necessary help to keep up, or challenge them with advanced topics that
@@ -262,7 +262,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$40</span>/hr</div>
+				<div class="cost"><span class="large">$45</span>/hr</div>
 			</div>
 		</div>
 	</div>
@@ -280,7 +280,7 @@
 	</div>
 </section>
 
-<section class="grey" id="availability">
+<!-- <section class="grey" id="availability">
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Availability</h2>
 	</div>
@@ -292,16 +292,16 @@
 	<div class="wrapper timetable" style="overflow-x: auto; padding: 0;" use:actionWhenInViewport>
 		<Timetable />
 	</div>
-</section>
+</section> -->
 
-<section id="booking">
-	<div class="wrapper" use:actionWhenInViewport>
+<section id="booking" class="grey">
+	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>Book A Lesson</h2>
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
-	</div>
+	</div> -->
 	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>Get Notified When New Spots Open</h2>
 	</div>
@@ -309,5 +309,27 @@
 	<div class="wrapper" use:actionWhenInViewport>
 		<WaitingListContact />
 	</div> -->
+	<div class="wrapper" use:actionWhenInViewport>
+		<h2>New Bookings Open January 2023</h2>
+	</div>
+	<div class="wrapper" use:actionWhenInViewport>
+		<p>Get notified when spots open:</p>
+	</div>
 	<div class="two-margin" />
+	<div class="wrapper" use:actionWhenInViewport>
+		<WaitingListContact />
+	</div>
+	<div class="two-margin" />
+</section>
+
+<section>
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="testimonial-text">
+				"Thank you for tutoring my son this this year. You are patient and have a lovely manner with
+				him. His marks and confidence have improved. Thank you."
+			</div>
+			<div class="abovetitle center">Vicki D</div>
+		</div>
+	</div>
 </section>

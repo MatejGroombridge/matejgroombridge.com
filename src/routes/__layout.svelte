@@ -11,6 +11,7 @@
 	import Footer from '$lib/footer/Footer.svelte';
 	import '../css/app.css';
 	import PageTransitions from '$lib/pagetransitions/PageTransitions.svelte';
+	import BackToTop from '$lib/backtotop/BackToTop.svelte';
 
 	export let key;
 </script>
@@ -36,5 +37,7 @@
 		<slot />
 	</main>
 </PageTransitions>
+
+<BackToTop />
 
 <Footer />

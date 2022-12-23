@@ -32,7 +32,7 @@
 	</script>
 </svelte:head>
 
-<form on:submit={handleOnSubmit} class="contact-form" name="contact" netlify>
+<form on:submit={handleOnSubmit} class="contact-form">
 	<div class="input-wrapper">
 		<div class="input">
 			<h3>Name</h3>

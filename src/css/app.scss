@@ -904,6 +904,41 @@ nav {
 	display: none;
 }
 
+.back-to-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 0.3s, visibility 0.3s;
+	position: fixed;
+	z-index: 5;
+	right: 20px;
+	user-select: none;
+	bottom: 20px;
+	color: $background-white;
+	background-color: $primary-color;
+	padding: 3px;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	box-shadow: 0 0 10px #00000040;
+	cursor: pointer;
+	transition: 200ms;
+
+	i {
+		transform: translateY(-1px);
+	}
+}
+
+.back-to-top:hover {
+	transform: scale(1.1);
+}
+
+.back-to-top.hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
 blockquote {
 	background-color: $background-grey;
 	border-left: 3px solid $primary-color;
