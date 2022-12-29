@@ -1,6 +1,7 @@
 <script>
 	import WebdevContact from '$lib/contact/WebdevContact.svelte';
 	import Carousel from '$lib/carousel/Carousel.svelte';
+	import tilt from '../tilt.js';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -65,6 +66,16 @@
 				<br />
 			</div>
 		</div>
+
+		<!-- Small business? We've got you. 
+		
+			Cheap Sites. X X.
+		
+			The numbers speak for themselves.
+
+			But don't take our word for it!
+			Success stories
+		-->
 
 		<div class="content hide-mobile">
 			<svg
@@ -425,28 +436,28 @@
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
-			<div class="card services-card">
+			<div class="card " use:tilt={{ scale: 1 }}>
 				<h3>Bespoke Design</h3>
 				<p>
 					Every website I create is made to fit your brand's needs. I build fully responsive
 					cross-platform websites that put your customers at the forefront.
 				</p>
 			</div>
-			<div class="card services-card">
+			<div class="card " use:tilt={{ scale: 1 }}>
 				<h3>SEO Optimisation</h3>
 				<p>
 					It doesn't stop at your website, through Search Engine Optimisation I can help you build a
 					bigger audience and get more eyes in front of your business.
 				</p>
 			</div>
-			<div class="card services-card">
+			<div class="card " use:tilt={{ scale: 1 }}>
 				<h3>Feedback Driven Development</h3>
 				<p>
 					When you work with me your feedback drives the development. I give constant updates and
 					take feedback throughout the entire process, to ensure you get the website you need.
 				</p>
 			</div>
-			<div class="card services-card">
+			<div class="card " use:tilt={{ scale: 1 }}>
 				<h3>Website Review</h3>
 				<p>
 					Not sure if you need a new website? Not sure what benefits you could gain? I can review
@@ -508,7 +519,7 @@
 			</li>
 			<li class="img-wrap">
 				<p class=" img-desc">Svelte</p>
-				<img src="/svelte-logo.svg" alt="Svelte Logo" style="height: 45px;" />
+				<img src="/svelte-logo.svg" alt="Svelte Logo" style="height: 45px; box-shadow: none;" />
 			</li>
 			<li class="img-wrap">
 				<p class=" img-desc">SASS</p>

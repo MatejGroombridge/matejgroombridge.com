@@ -1,5 +1,6 @@
 <script>
 	import supabase from '$lib/db';
+	import tilt from '../tilt.js';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -55,7 +56,7 @@
 					{#await getCovers(book.id)}
 						<p>Loading...</p>
 					{:then cover}
-						<div class="card book-card" use:actionWhenInViewport>
+						<div class="card book-card" use:actionWhenInViewport use:tilt={{ scale: 1 }}>
 							<img src={URL.createObjectURL(cover)} alt={book.id} />
 							<div class="book-info">
 								<a href="/booknotes/{book.slug}" style="margin: 0;">

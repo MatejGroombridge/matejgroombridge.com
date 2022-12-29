@@ -2,6 +2,7 @@
 	import TutoringContact from '$lib/contact/TutoringContact.svelte';
 	import WaitingListContact from '$lib/contact/WaitingListContact.svelte';
 	import Timetable from '$lib/timetable/Timetable.svelte';
+	import tilt from '../tilt.js';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -243,7 +244,7 @@
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
-			<div class="card">
+			<div class="card" use:tilt={{ scale: 1 }}>
 				<h3>Primary (Years 3-6)</h3>
 				<p>
 					Homework Help, Test Preparation, Mathematics, English and Science. Lessons are tailored to
@@ -253,7 +254,7 @@
 			<div class="center">
 				<div class="cost"><span class="large">$40</span>/hr</div>
 			</div>
-			<div class="card">
+			<div class="card" use:tilt={{ scale: 1 }}>
 				<h3>Early High (Years 7-9)</h3>
 				<p>
 					Mathematics for all skill levels. This includes homework help and test preparation. I can
