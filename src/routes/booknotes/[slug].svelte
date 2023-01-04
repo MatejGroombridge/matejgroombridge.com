@@ -117,7 +117,7 @@
 				<div class="content">
 					<p>
 						<strong>Buy the Book</strong> <br />
-						<a href={book.amazonlink} target="_blank"> Amazon</a>
+						<a href={book.amazonlink} target="_blank" rel="noreferrer"> Amazon</a>
 					</p>
 				</div>
 			</div>

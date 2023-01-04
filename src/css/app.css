@@ -1146,6 +1146,16 @@ blockquote p {
   overflow: hidden;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width: 1367px) {
   .wrapper {
     width: 65%;

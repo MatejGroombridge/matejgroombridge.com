@@ -973,6 +973,14 @@ blockquote {
 	overflow: hidden;
 }
 
+.hide {
+	display: none;
+}
+
+.show {
+	display: flex;
+}
+
 @media (min-width: 1367px) {
 	.wrapper {
 		width: 65%;

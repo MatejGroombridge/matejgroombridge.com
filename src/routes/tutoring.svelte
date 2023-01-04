@@ -255,7 +255,7 @@
 				<div class="cost"><span class="large">$40</span>/hr</div>
 			</div>
 			<div class="card" use:tilt={{ scale: 1 }}>
-				<h3>Early High (Years 7-9)</h3>
+				<h3>Junior High (Years 7-9)</h3>
 				<p>
 					Mathematics for all skill levels. This includes homework help and test preparation. I can
 					give your child the necessary help to keep up, or challenge them with advanced topics that
