@@ -252,7 +252,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$40</span>/hr</div>
+				<div class="cost"><span class="large">$35</span>/hr</div>
 			</div>
 			<div class="card" use:tilt={{ scale: 1 }}>
 				<h3>Junior High (Years 7-9)</h3>
@@ -263,7 +263,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$45</span>/hr</div>
+				<div class="cost"><span class="large">$40</span>/hr</div>
 			</div>
 		</div>
 	</div>
