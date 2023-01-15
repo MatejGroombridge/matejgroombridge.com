@@ -2,6 +2,7 @@
 	import WebdevContact from '$lib/contact/WebdevContact.svelte';
 	import Carousel from '$lib/carousel/Carousel.svelte';
 	import tilt from '../tilt.js';
+	import { fly } from 'svelte/transition';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -415,7 +416,7 @@
 				"Welcome to Uralla Anglican Church! As the family of God our mission is to constantly meet
 				together under God’s word, to grow in our knowledge of God, to live our lives in obedience
 				to the word of God and to bring others into the family of God by introducing them to the
-				saving work of Jesus. "
+				saving work of Jesus."
 			</p>
 		</div>
 		<div class="content">
@@ -458,6 +459,37 @@
 			</a>
 		</div>
 	</div>
+	<div class="two-margin hide" class:show={show1 === 'true'} />
+	<div class="wrapper hide" class:show={show1 === 'true'} use:actionWhenInViewport>
+		<div class="content show-mobile">
+			<div class="abovetitle">Featured Project</div>
+			<h2 class="no-underline">Serving @ Northmead Anglican Church</h2>
+			<p style="font-style: italic; font-size: 1em; padding: 0;">
+				"There are many opportunities to serve as part of our church community, so whether you’re
+				good at something already, or willing to learn how to do something new, we’d love you to be
+				involved and join the team and sign up for serving at Northmead!"
+			</p>
+		</div>
+		<div class="content">
+			<a href="https://nac.asn.au/" target="_blank" rel="noreferrer">
+				<img
+					class="img-500"
+					src="/project-images/nac.jpg"
+					alt="Uralla Anglican Church website screenshot"
+				/>
+			</a>
+		</div>
+		<div class="content hide-mobile">
+			<div class="abovetitle">Featured Project</div>
+			<h2 class="no-underline">Serving @ Northmead Anglican Church</h2>
+			<p style="font-style: italic; font-size: 1em; padding: 0;">
+				"There are many opportunities to serve as part of our church community, so whether you’re
+				good at something already, or willing to learn how to do something new, we’d love you to be
+				involved and join the team and sign up for serving at Northmead!"
+			</p>
+		</div>
+	</div>
+
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="btn-wrapper">
 			<button class="btn" class:hide={show1 === 'true'} on:click={() => (show1 = 'true')}
@@ -470,6 +502,8 @@
 </section>
 
 <section class="grey">
+	<div class="custom-blob" id="left-blob" />
+	<div class="custom-blob" id="right-blob" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Services</h2>
 	</div>
@@ -513,7 +547,7 @@
 	</div>
 </section>
 
-<section id="more-projects">
+<!-- <section id="more-projects">
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>More Projects</h2>
 	</div>
@@ -529,9 +563,9 @@
 			autoplaySpeed={3000}
 		/>
 	</div>
-</section>
+</section> -->
 
-<section class="grey">
+<!-- <section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Tech For Geeks</h2>
 	</div>
@@ -578,7 +612,7 @@
 			</li>
 		</ul>
 	</div>
-</section>
+</section> -->
 
 <section>
 	<div class="wrapper" use:actionWhenInViewport>
@@ -610,3 +644,12 @@
 		content="Get a bespoke, fully responsive cross-platform websites that puts your customers at the forefront. I help businesses generate traffic, bring in customers and stand out from the competition through a georgeous, custom website. Affordable prices. Based in Sydney, Australia. Get a free quote today!"
 	/>
 </svelte:head>
+
+<style>
+	#left-blob {
+		clip-path: circle(10% at 15% 80%);
+	}
+	#right-blob {
+		clip-path: circle(6% at 82% 12%);
+	}
+</style>

@@ -12,7 +12,6 @@
 	import '../css/app.css';
 	import PageTransitions from '$lib/pagetransitions/PageTransitions.svelte';
 	import BackToTop from '$lib/backtotop/BackToTop.svelte';
-	import tilt from '../tilt.js';
 
 	export let key;
 

@@ -973,6 +973,13 @@ blockquote {
 	overflow: hidden;
 }
 
+.custom-blob {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: $primary-color;
+}
+
 .hide {
 	display: none;
 }
