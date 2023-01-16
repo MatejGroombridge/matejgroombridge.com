@@ -216,7 +216,7 @@
 				<h3>About Me</h3>
 				<div class="row">
 					<p>
-						Hi, I'm Matej. I'm a Year 10 student at Baulkham Hills High School, where I have
+						Hi, I'm Matej. I'm a Year 11 student at Baulkham Hills High School, where I have
 						achieved Top of the Grade for two years. You can learn more about me <a href="/about"
 							><p style="display: inline;">here</p></a
 						>.
@@ -236,6 +236,8 @@
 </section>
 
 <section class="grey">
+	<div class="custom-blob" id="left-blob" />
+	<div class="custom-blob" id="right-blob" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Subjects and Pricing</h2>
 	</div>
@@ -334,3 +336,12 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	#left-blob {
+		clip-path: circle(10% at 15% 80%);
+	}
+	#right-blob {
+		clip-path: circle(6% at 78% 12%);
+	}
+</style>

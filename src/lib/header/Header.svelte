@@ -23,7 +23,7 @@
 <header>
 	<nav>
 		<div>
-			<p class="nav-title"><a href="/home">Matej Groombridge</a></p>
+			<p class="nav-title"><a href="/">Matej Groombridge</a></p>
 		</div>
 		<div class="toggle">
 			<button type="button" style="font-size: 0.7rem;" on:click={flip}>
@@ -33,7 +33,7 @@
 		{#if active || pressed}
 			<div class="nav-links">
 				<ul>
-					<li><a href="/">Web Design</a></li>
+					<li><a href="/webdesign">Web Design</a></li>
 					<li><a href="/tutoring">Tutoring</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/about">About</a></li>

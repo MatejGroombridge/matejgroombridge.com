@@ -237,10 +237,31 @@ section {
 }
 
 .head-home {
-	h1 {
-		white-space: normal;
+	// h1 {
+	// 	white-space: normal;
+	// }
+
+	.yo {
+		width: 50%;
 	}
 }
+
+.yo {
+	justify-content: center;
+	// border: 2px solid red;
+
+	.content {
+		// border: 2px solid green;
+		// flex-wrap: wrap;
+
+		h1 {
+			// border: 2px solid red;
+			width: 100%;
+		}
+	}
+}
+
+
 
 th,
 td {
@@ -615,6 +636,10 @@ footer {
 	color: $medium-grey;
 	margin: 0.05em;
 	padding: 0.3em;
+
+	a {
+		color: $medium-grey;
+	}
 }
 
 .input-wrapper {
@@ -988,6 +1013,14 @@ blockquote {
 	display: flex;
 }
 
+.bottom-disclaimer {
+	margin-top: 10vh;
+
+	.content {
+		width: 50%;
+	}
+}
+
 @media (min-width: 1367px) {
 	.wrapper {
 		width: 65%;
@@ -1224,6 +1257,14 @@ blockquote {
 			li {
 				margin: 1em;
 			}
+		}
+	}
+
+	.bottom-disclaimer {
+		margin-top: 0;
+
+		.content {
+			width: 100%;
 		}
 	}
 }

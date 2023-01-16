@@ -275,8 +275,18 @@ section {
   white-space: nowrap;
 }
 
-.head-home h1 {
-  white-space: normal;
+.head-home .yo {
+  width: 50%;
+}
+
+.yo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.yo .content h1 {
+  width: 100%;
 }
 
 th,
@@ -715,6 +725,10 @@ footer .footer-icons ul {
   color: #ababab;
   margin: 0.05em;
   padding: 0.3em;
+}
+
+.small-text a {
+  color: #ababab;
 }
 
 .input-wrapper {
@@ -1163,6 +1177,14 @@ blockquote p {
   display: flex;
 }
 
+.bottom-disclaimer {
+  margin-top: 10vh;
+}
+
+.bottom-disclaimer .content {
+  width: 50%;
+}
+
 @media (min-width: 1367px) {
   .wrapper {
     width: 65%;
@@ -1397,6 +1419,12 @@ blockquote p {
   }
   footer .footer-icons ul li {
     margin: 1em;
+  }
+  .bottom-disclaimer {
+    margin-top: 0;
+  }
+  .bottom-disclaimer .content {
+    width: 100%;
   }
 }
 

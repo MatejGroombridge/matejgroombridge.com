@@ -33,23 +33,31 @@
 		<div class="content">
 			<h1 style="padding: 0.25em;">About</h1>
 			<p>
-				<strong>Hi there! </strong>I'm Matej. Thank you for visiting my website. I'm a Year 10
-				student from Australia, currently studying at Baulkham Hills High School. This website hosts
-				my tutoring and web design services, as well as some recent projects that I have been
-				working on.
+				<strong>Hi there! </strong>I'm Matej Groombridge. Thank you for visiting my website. I'm a
+				Year 11 student from Australia, currently studying at Baulkham Hills High School. This
+				website hosts my tutoring and web design services, as well as some recent projects that I
+				have been working on.
 			</p>
-			<p>
-				This site was programmed from scratch using a Javascript framework called <a
+		</div>
+		<div class="content">
+			<img src="/face2.png" alt="Matej Groombridge" width="280px" />
+		</div>
+	</div>
+	<div class="wrapper shown bottom-disclaimer">
+		<div class="content">
+			<p class="small-text">
+				This site was programmed from scratch using the Javascript framework <a
 					href="https://kit.svelte.dev/"
-					target="_blank">SvelteKit</a
-				>
-				For the site's styling I used
-				<a href="https://sass-lang.com/" target="_blank">SASS</a>
+					target="_blank"
+					rel="noreferrer">SvelteKit</a
+				>. For the site's styling I used
+				<a href="https://sass-lang.com/" target="_blank" rel="noreferrer noreferrer">SASS</a>
 				and all forms are handled by
-				<a href="https://www.emailjs.com/" target="_blank">Email.js</a>. The code for my site is
-				stored on a private <a href="https://github.com/" target="_blank">GitHub</a> repository that
-				is automatically passed on to my hosting provider,
-				<a href="https://www.netlify.com/" target="_blank">Netlify</a>.
+				<a href="https://www.emailjs.com/" target="_blank" rel="noreferrer">Email.js</a>. The code
+				for my site is stored on a private
+				<a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+				repository that is automatically passed on to
+				<a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>.
 			</p>
 		</div>
 	</div>
