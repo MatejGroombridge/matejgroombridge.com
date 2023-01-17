@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>Matej Groombridge | Tutoring & Web Design</title>
+	<title>Matej Groombridge</title>
 	<meta
 		name="description"
 		content="Hi, my name is Matej Groombridge. I am a student and freelance web designer/website developer from Sydney, Australia. I offer private tutoring lessons as well as affordable freelance web design services for small businesses. Thanks for stopping by!"

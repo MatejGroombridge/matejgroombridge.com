@@ -21,10 +21,10 @@
 </script>
 
 <svelte:head>
-	<title>Contact Information</title>
+	<title>Contact</title>
 	<meta
 		name="description"
-		content="Get in touch with me! The contact information for Matej Groombridge, a high school student and web designer from Sydney, Australia. I offer private tutoring lessons as well as freelance web design services for small businesses. Thanks for stopping by!"
+		content="Get in touch with me! The contact information for Matej Groombridge, a high school student and web designer from Sydney, Australia. I offer private tutoring lessons as well as freelance web design services for small businesses in Sydney. Thanks for stopping by!"
 	/>
 </svelte:head>
 

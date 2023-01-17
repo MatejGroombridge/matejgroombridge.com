@@ -929,7 +929,7 @@
 </section>
 
 <svelte:head>
-	<title>Matej Groombridge | Web Design Sydney & Website Develoment</title>
+	<title>Web Design & Website Develoment Sydney</title>
 	<meta
 		name="description"
 		content="Get a bespoke, fully responsive cross-platform websites that puts your customers at the forefront. I help businesses generate traffic, bring in customers and stand out from the competition through a georgeous, custom website. Affordable prices. Based in Sydney, Australia. Get a free quote today!"

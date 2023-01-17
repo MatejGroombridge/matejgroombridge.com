@@ -74,9 +74,9 @@
 </section>
 
 <svelte:head>
-	<title>Book Summaries, Notes & Quotes | Matej Groombridge</title>
+	<title>Book Notes</title>
 	<meta
 		name="description"
-		content="Book Summaries, Impressions, Notes & Quotes. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
+		content="Book Summaries, impressions, notes & quotes. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
 	/>
 </svelte:head>
