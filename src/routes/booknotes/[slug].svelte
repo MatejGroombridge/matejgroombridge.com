@@ -70,13 +70,13 @@
 	{/await}
 </svelte:head>
 
-<section class="notice">
+<!-- <section class="notice">
 	<div class="wrapper">
 		<div>
 			<p>Trouble loading? Refresh the page</p>
 		</div>
 	</div>
-</section>
+</section> -->
 
 {#await getBook()}
 	<section>
@@ -101,7 +101,7 @@
 			</div>
 		</section>
 		<section class="grey book-bar hide-mobile">
-			<div class="wrapper " use:actionWhenInViewport>
+			<div class="wrapper shown">
 				<div class="content">
 					<p><strong>Author</strong> <br /> {book.author}</p>
 				</div>
@@ -123,7 +123,7 @@
 			</div>
 		</section>
 		<section>
-			<div class="wrapper" use:actionWhenInViewport>
+			<div class="wrapper shown">
 				<div class="article">
 					<SvelteMarkdown source={book.markdown} />
 				</div>
@@ -131,3 +131,13 @@
 		</section>
 	{/await}
 {/await}
+<section>
+	<div class="wrapper shown bottom-disclaimer">
+		<div class="content">
+			<p class="small-text">
+				This is a book summary and thus may not reflect my attitudes or beliefs on certain topics.
+				If something bothers you, I'd love to have a chat.
+			</p>
+		</div>
+	</div>
+</section>
