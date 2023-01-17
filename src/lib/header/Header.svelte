@@ -26,7 +26,7 @@
 			<p class="nav-title"><a href="/">Matej Groombridge</a></p>
 		</div>
 		<div class="toggle">
-			<button type="button" style="font-size: 0.7rem;" on:click={flip}>
+			<button type="button" aria-label="open menu" style="font-size: 0.7rem;" on:click={flip}>
 				<i class="fas fa-bars fa-2x" />
 			</button>
 		</div>
@@ -43,24 +43,27 @@
 			<div class="nav-socials">
 				<ul style="font-size: 0.75rem;">
 					<li>
-						<a href="https://www.instagram.com/___matej/" target="_blank"
+						<a href="https://www.instagram.com/___matej/" target="_blank" rel="noreferrer"
 							><i class="fab fa-instagram fa-2x" /></a
 						>
 					</li>
 					<li>
-						<a href="https://github.com/MatejGroombridge" target="_blank"
+						<a href="https://github.com/MatejGroombridge" target="_blank" rel="noreferrer"
 							><i class="fab fa-github fa-2x" /></a
 						>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/in/matej-groombridge-06157517b/" target="_blank"
-							><i class="fab fa-linkedin fa-2x" /></a
+						<a
+							href="https://www.linkedin.com/in/matej-groombridge-06157517b/"
+							target="_blank"
+							rel="noreferrer"><i class="fab fa-linkedin fa-2x" /></a
 						>
 					</li>
 					<li>
 						<a
 							href="https://open.spotify.com/user/odau8v74sintc5j50a9lsgkh9?si=54a1ab54c714459c"
-							target="_blank"><i class="fab fa-spotify fa-2x" /></a
+							target="_blank"
+							rel="noreferrer"><i class="fab fa-spotify fa-2x" /></a
 						>
 					</li>
 					<li>
