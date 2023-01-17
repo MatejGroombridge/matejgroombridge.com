@@ -35,13 +35,13 @@
 <form on:submit={handleOnSubmit} class="contact-form">
 	<div class="input-wrapper">
 		<div class="input">
-			<h3>Name</h3>
-			<input required type="text" bind:value={contactForm.name} />
+			<h3 id="name">Name</h3>
+			<input aria-labelledby="name" required type="text" bind:value={contactForm.name} />
 		</div>
 		<div class="input">
 			<div>
-				<h3>Email</h3>
-				<input required type="email" bind:value={contactForm.email} />
+				<h3 id="email">Email</h3>
+				<input aria-labelledby="email" required type="email" bind:value={contactForm.email} />
 			</div>
 		</div>
 		<!-- <div class="input">
@@ -50,8 +50,14 @@
 		</div> -->
 
 		<div class="input">
-			<h3>Child's Year</h3>
-			<select required name="grade" id="grade" bind:value={contactForm.message}>
+			<h3 id="year">Child's Year</h3>
+			<select
+				aria-labelledby="year"
+				required
+				name="grade"
+				id="grade"
+				bind:value={contactForm.message}
+			>
 				<option value="3">Year 3</option>
 				<option value="4">Year 4</option>
 				<option value="5">Year 5</option>

@@ -43,18 +43,25 @@
 			<div class="nav-socials">
 				<ul style="font-size: 0.75rem;">
 					<li>
-						<a href="https://www.instagram.com/___matej/" target="_blank" rel="noreferrer"
-							><i class="fab fa-instagram fa-2x" /></a
+						<a
+							href="https://www.instagram.com/___matej/"
+							aria-label="instagram"
+							target="_blank"
+							rel="noreferrer"><i class="fab fa-instagram fa-2x" /></a
 						>
 					</li>
 					<li>
-						<a href="https://github.com/MatejGroombridge" target="_blank" rel="noreferrer"
-							><i class="fab fa-github fa-2x" /></a
+						<a
+							href="https://github.com/MatejGroombridge"
+							aria-label="github"
+							target="_blank"
+							rel="noreferrer"><i class="fab fa-github fa-2x" /></a
 						>
 					</li>
 					<li>
 						<a
 							href="https://www.linkedin.com/in/matej-groombridge-06157517b/"
+							aria-label="linkedin"
 							target="_blank"
 							rel="noreferrer"><i class="fab fa-linkedin fa-2x" /></a
 						>
@@ -62,12 +69,15 @@
 					<li>
 						<a
 							href="https://open.spotify.com/user/odau8v74sintc5j50a9lsgkh9?si=54a1ab54c714459c"
+							aria-label="spotify"
 							target="_blank"
 							rel="noreferrer"><i class="fab fa-spotify fa-2x" /></a
 						>
 					</li>
 					<li>
-						<a href="/contact#email" target="_blank"><i class="fas fa-envelope fa-2x" /></a>
+						<a href="/contact#email" aria-label="email" target="_blank"
+							><i class="fas fa-envelope fa-2x" /></a
+						>
 					</li>
 				</ul>
 			</div>

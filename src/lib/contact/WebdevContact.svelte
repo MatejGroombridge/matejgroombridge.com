@@ -35,16 +35,17 @@
 <form on:submit={handleOnSubmit} class="contact-form">
 	<div class="input-wrapper">
 		<div class="input">
-			<h3>Name</h3>
-			<input required type="text" bind:value={contactForm.name} />
+			<h3 id="name">Name</h3>
+			<input aria-labelledby="name" required type="text" bind:value={contactForm.name} />
 		</div>
 		<div class="input">
-			<h3>Company <small>(Optional)</small></h3>
-			<input type="text" bind:value={contactForm.subject} />
+			<h3 id="company">Company <small>(Optional)</small></h3>
+			<input aria-labelledby="company" type="text" bind:value={contactForm.subject} />
 		</div>
 		<div class="input">
-			<h3>Website brief</h3>
+			<h3 id="brief">Website brief</h3>
 			<textarea
+				aria-labelledby="brief"
 				placeholder="Tell me about your project..."
 				required
 				maxlength="1000"
@@ -53,8 +54,8 @@
 		</div>
 		<div class="input">
 			<div>
-				<h3>Email</h3>
-				<input required type="email" bind:value={contactForm.email} />
+				<h3 id="email">Email</h3>
+				<input aria-labelledby="email" required type="email" bind:value={contactForm.email} />
 			</div>
 
 			<div class="btn-wrapper">
