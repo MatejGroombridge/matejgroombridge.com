@@ -55,7 +55,9 @@
 				>
 			</li>
 			<li>
-				<a href="/contact#email" target="_blank"><i class="fas fa-envelope fa-2x" /></a>
+				<a href="/contact#email" aria-label="email" target="_blank"
+					><i class="fas fa-envelope fa-2x" /></a
+				>
 			</li>
 			<!-- <li><a href="/games"><i class="fas fa-gamepad fa-2x" /></a></li> -->
 		</ul>

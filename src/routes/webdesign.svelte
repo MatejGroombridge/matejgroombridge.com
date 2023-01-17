@@ -694,11 +694,7 @@
 		</div>
 		<div class="content">
 			<a href="https://dev-my-hao.pantheonsite.io/" target="_blank" rel="noreferrer">
-				<img
-					class="img-500"
-					src="/project-images/hoian.jpg"
-					alt="My Hao Cuisine website screenshot"
-				/>
+				<img class="img-500" src="/past-sites/hoian.webp" alt="My Hao Cuisine website screenshot" />
 			</a>
 		</div>
 	</div>
@@ -718,7 +714,7 @@
 			<a href="https://urallaanglican.com/" target="_blank" rel="noreferrer">
 				<img
 					class="img-500"
-					src="/project-images/uralla.jpg"
+					src="/past-sites/uralla.webp"
 					alt="Uralla Anglican Church website screenshot"
 				/>
 			</a>
@@ -748,7 +744,7 @@
 			<a href="https://markospizzeria.wordpress.com/" target="_blank" rel="noreferrer">
 				<img
 					class="img-500"
-					src="/project-images/markos.jpg"
+					src="/past-sites/markos.webp"
 					alt="Marko's Pizzeria website screenshot"
 				/>
 			</a>
@@ -769,7 +765,7 @@
 			<a href="https://nac.asn.au/" target="_blank" rel="noreferrer">
 				<img
 					class="img-500"
-					src="/project-images/nac.jpg"
+					src="/past-sites/nac.webp"
 					alt="Uralla Anglican Church website screenshot"
 				/>
 			</a>
