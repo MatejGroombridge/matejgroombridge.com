@@ -793,8 +793,8 @@
 </section>
 
 <section class="grey">
-	<div class="custom-blob" id="left-blob" />
-	<div class="custom-blob" id="right-blob" />
+	<div class="custom-blob hide-mobile" id="left-blob" />
+	<div class="custom-blob hide-mobile" id="right-blob" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Services</h2>
 	</div>
