@@ -39,17 +39,17 @@
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p> -->
-			<!-- <p>
-				All spots for Term 2 have been filled. Submit your email to get notified when new spots
-				open. <a style="font-size: 0.5em;" href="#booking"
-					><i class="fas fa-external-link-alt fa-2x" /></a
-				>
-			</p> -->
 			<p>
+				All spots for 2023 have been filled. Submit your email to get notified when new spots open. <a
+					style="font-size: 0.5em;"
+					href="#booking"><i class="fas fa-external-link-alt fa-2x" /></a
+				>
+			</p>
+			<!-- <p>
 				New bookings open January 2023 <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
-			</p>
+			</p> -->
 		</div>
 	</div>
 </section>
@@ -305,15 +305,8 @@
 	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
 	</div> -->
-	<!-- <div class="wrapper" use:actionWhenInViewport>
-		<h2>Get Notified When New Spots Open</h2>
-	</div>
-	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
-		<WaitingListContact />
-	</div> -->
-	<div class="wrapper" use:actionWhenInViewport>
-		<h2>New Bookings Open January 2023</h2>
+		<h2>All Term 1 Places Filled!</h2>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<p>Get notified when spots open:</p>
@@ -323,6 +316,17 @@
 		<WaitingListContact />
 	</div>
 	<div class="two-margin" />
+	<!-- <div class="wrapper" use:actionWhenInViewport>
+		<h2>New Bookings Open January 2023</h2>
+	</div>
+	<div class="wrapper" use:actionWhenInViewport>
+		<p>Get notified when spots open:</p>
+	</div>
+	<div class="two-margin" />
+	<div class="wrapper" use:actionWhenInViewport>
+		<WaitingListContact />
+	</div>
+	<div class="two-margin" /> -->
 </section>
 
 <section>
