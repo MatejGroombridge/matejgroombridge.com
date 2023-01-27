@@ -29,7 +29,7 @@
 </svelte:head>
 
 <section class="head-home head">
-	<div class="wrapper yo" use:actionWhenInViewport>
+	<div class="wrapper head-wrapper-one" use:actionWhenInViewport>
 		<div class="content">
 			<h1>Hi, I'm <br /> Matej.</h1>
 		</div>

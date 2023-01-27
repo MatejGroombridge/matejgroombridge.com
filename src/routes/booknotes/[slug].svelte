@@ -128,16 +128,29 @@
 					<SvelteMarkdown source={book.markdown} />
 				</div>
 			</div>
+			<div class="two-margin" />
+			<div class="wrapper shown">
+				<div class="article">
+					<h1>You Might Also Like...</h1>
+				</div>
+			</div>
+			<div class="wrapper shown">
+				<div class="article">
+					<a href="https://www.matejgroombridge.com/booknotes/atomichabits">Atomic Habits</a>
+					<a href="http://localhost:3000/booknotes/fhww">The 4-Hour Workweek</a>
+					<a href="http://localhost:3000/booknotes/thinkgrowrich">Think and Grow Rich</a>
+					<a href="http://localhost:3000/booknotes/now">The Power of Now</a>
+					<a href="http://localhost:3000/booknotes/dohardthings">Do Hard Things</a>
+				</div>
+			</div>
+			<div class="wrapper shown bottom-disclaimer">
+				<div class="content">
+					<p class="small-text">
+						This is a book summary and may not reflect my attitudes or beliefs on certain topics.
+						I'd love to hear <a href="https://www.matejgroombridge.com/contact">your thoughts</a>.
+					</p>
+				</div>
+			</div>
 		</section>
 	{/await}
 {/await}
-<section>
-	<div class="wrapper shown bottom-disclaimer">
-		<div class="content">
-			<p class="small-text">
-				This is a book summary and thus may not reflect my attitudes or beliefs on certain topics.
-				If something bothers you, I'd love to have a chat.
-			</p>
-		</div>
-	</div>
-</section>

@@ -256,6 +256,11 @@ section {
   font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
+.article a {
+  font-size: 17px;
+  font-style: italic;
+}
+
 .article * {
   padding: 0.25em 0;
   width: 100%;
@@ -275,17 +280,17 @@ section {
   white-space: nowrap;
 }
 
-.head-home .yo {
+.head-home .head-wrapper-one {
   width: 50%;
 }
 
-.yo {
+.head-wrapper-one {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.yo .content h1 {
+.head-wrapper-one .content h1 {
   width: 100%;
 }
 
@@ -1176,7 +1181,7 @@ blockquote p {
 }
 
 .bottom-disclaimer {
-  margin-top: 10vh;
+  margin-top: 4em;
 }
 
 .bottom-disclaimer .content {
