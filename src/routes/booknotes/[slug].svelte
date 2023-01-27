@@ -137,10 +137,10 @@
 			<div class="wrapper shown">
 				<div class="article">
 					<a href="https://www.matejgroombridge.com/booknotes/atomichabits">Atomic Habits</a>
-					<a href="http://localhost:3000/booknotes/fhww">The 4-Hour Workweek</a>
-					<a href="http://localhost:3000/booknotes/thinkgrowrich">Think and Grow Rich</a>
-					<a href="http://localhost:3000/booknotes/now">The Power of Now</a>
-					<a href="http://localhost:3000/booknotes/dohardthings">Do Hard Things</a>
+					<a href="https://www.matejgroombridge.com/booknotes/fhww">The 4-Hour Workweek</a>
+					<a href="https://www.matejgroombridge.com/booknotes/thinkgrowrich">Think and Grow Rich</a>
+					<a href="https://www.matejgroombridge.com/booknotes/now">The Power of Now</a>
+					<a href="https://www.matejgroombridge.com/booknotes/dohardthings">Do Hard Things</a>
 				</div>
 			</div>
 			<div class="wrapper shown bottom-disclaimer">
