@@ -64,7 +64,7 @@
 				<option value="6">Year 6</option>
 				<option value="7">Year 7</option>
 				<option value="8">Year 8</option>
-				<option value="8">Year 9</option>
+				<option value="9">Year 9</option>
 			</select>
 		</div>
 
