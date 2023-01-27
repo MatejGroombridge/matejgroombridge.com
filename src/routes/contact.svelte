@@ -48,3 +48,22 @@
 		<img src="/email.webp" alt="My email address" style="box-shadow: none;" />
 	</div>
 </section>
+
+<section>
+	<div class="wrapper shown">
+		<h1>Testing</h1>
+	</div>
+	<div class="wrapper shown">
+		<form name="contact1" method="POST" data-netlify="true">
+			<p>
+				<label>Your Name: <input type="text" name="name" /></label>
+			</p>
+			<p>
+				<label>Message: <textarea name="message" /></label>
+			</p>
+			<p>
+				<button type="submit" class="btn">Send</button>
+			</p>
+		</form>
+	</div>
+</section>
