@@ -49,9 +49,9 @@
 	</div>
 </section>
 
-<section>
+<!-- <section>
 	<div class="wrapper shown">
-		<h1>Testing 2</h1>
+		<h1>Netlify Form Testing</h1>
 	</div>
 	<div class="wrapper shown">
 		<form name="contact1" method="POST" data-netlify="true">
@@ -66,4 +66,4 @@
 			</p>
 		</form>
 	</div>
-</section>
+</section> -->
