@@ -34,7 +34,7 @@
 			<h1>Hi, I'm <br /> Matej.</h1>
 		</div>
 		<div class="content">
-			<img src="/face2.png" alt="Matej Groombridge" width="280px" />
+			<img src="/face2.webp" alt="Matej Groombridge" width="280px" height="352px" />
 		</div>
 	</div>
 	<div class="wrapper " use:actionWhenInViewport>

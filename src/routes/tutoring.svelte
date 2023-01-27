@@ -42,7 +42,8 @@
 			<p>
 				All spots for 2023 have been filled. Submit your email to get notified when new spots open. <a
 					style="font-size: 0.5em;"
-					href="#booking"><i class="fas fa-external-link-alt fa-2x" /></a
+					href="#booking"
+					aria-label="bookings"><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p>
 			<!-- <p>
@@ -217,8 +218,8 @@
 				<div class="row">
 					<p>
 						Hi, I'm Matej. I'm a Year 11 student at Baulkham Hills High School, where I have
-						achieved Top of the Grade for two years. You can learn more about me <a href="/about"
-							><p style="display: inline;">here</p></a
+						achieved Top of the Grade for two years. You can learn more about me on my <a
+							href="/about"><p style="display: inline;">about page</p></a
 						>.
 					</p>
 				</div>

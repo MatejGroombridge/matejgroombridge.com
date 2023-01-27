@@ -45,6 +45,6 @@
 		<p>Or send me an email at:</p>
 	</div>
 	<div class="wrapper shown">
-		<img src="/email.png" alt="My email address" style="box-shadow: none;" />
+		<img src="/email.webp" alt="My email address" style="box-shadow: none;" />
 	</div>
 </section>

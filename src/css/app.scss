@@ -356,14 +356,21 @@ td:last-child {
 	align-items: center;
 	padding: 1em 1.5em;
 	border-radius: 1em;
-	color: $primary-color;
-	background: $background-grey;
+	// color: $primary-color;
+	// background: $background-grey;
 	overflow: hidden;
 	// box-shadow: 0 0 10px #003c0c20;
 	// outline: 2px solid $primary-color;
 
 	background: $primary-color;
-		color: $background-white;
+	color: $background-white;
+
+	// background: $dark-grey;
+	// color: $background-grey;
+	// border: 3px solid $primary-color;
+	// border: 3px solid $dark-grey;
+
+	// background: $tertiary-color;
 
 	cursor: pointer;
 
