@@ -39,9 +39,9 @@
 				have been working on.
 			</p>
 		</div>
-		<div class="content">
+		<!-- <div class="content">
 			<img src="/face2.webp" alt="Matej Groombridge" width="280px" height="350px" />
-		</div>
+		</div> -->
 	</div>
 	<div class="wrapper shown bottom-disclaimer">
 		<div class="content">
@@ -50,13 +50,13 @@
 					href="https://kit.svelte.dev/"
 					target="_blank"
 					rel="noreferrer">SvelteKit</a
-				>. For the site's styling I used
+				>.
 				<a href="https://sass-lang.com/" target="_blank" rel="noreferrer noreferrer">SASS</a>
-				and all forms are handled by
+				was used for the site's styling and all forms are handled by
 				<a href="https://www.emailjs.com/" target="_blank" rel="noreferrer">Email.js</a>. The code
-				for my site is stored on a private
+				is stored on a private
 				<a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-				repository that is automatically passed on to
+				repository and hosted on
 				<a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>.
 			</p>
 		</div>
