@@ -93,9 +93,9 @@
 			</div>
 			<div class="content">
 				{#await getCover()}
-					<section>
-						<div class="wrapper shown"><p class="small-text">Initialising...</p></div>
-					</section>
+					<div class="temp-bookcover">
+						<p class="small-text">Loading Cover...</p>
+					</div>
 				{:then cover}
 					<img src={URL.createObjectURL(cover)} alt={book.id} width="270" />
 				{/await}
