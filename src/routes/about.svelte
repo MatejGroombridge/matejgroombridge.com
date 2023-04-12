@@ -31,7 +31,7 @@
 <section>
 	<div class="wrapper shown">
 		<div class="content">
-			<h1 style="padding: 0.25em;">About</h1>
+			<h1>About</h1>
 			<p>
 				<strong>Hi there! </strong>I'm Matej Groombridge. Thank you for visiting my website. I'm a
 				Year 11 student from Australia, currently studying at Baulkham Hills High School. This

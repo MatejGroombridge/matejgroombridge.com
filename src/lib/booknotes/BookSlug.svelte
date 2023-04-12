@@ -57,12 +57,12 @@
 
 {#await getBook()}
 	<section>
-		<div class="wrapper">Loading...</div>
+		<div class="wrapper shown">Loading...</div>
 	</section>
 {:then book}
 	{#await getCover()}
 		<section>
-			<div class="wrapper">Loading...</div>
+			<div class="wrapper shown">Loading...</div>
 		</section>
 	{:then cover}
 		<section>

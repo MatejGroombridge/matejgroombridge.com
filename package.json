@@ -30,6 +30,8 @@
     "@supabase/supabase-js": "^1.30.3",
     "cookie": "^0.4.1",
     "emailjs-com": "^3.2.0",
+    "luxon": "^3.3.0",
+    "moment": "^2.29.4",
     "netlify": "^13.1.0",
     "stream-json": "^1.7.3",
     "svelte-feather-icons": "^3.5.0",
