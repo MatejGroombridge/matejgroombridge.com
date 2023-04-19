@@ -58,9 +58,9 @@
 </script>
 
 <svelte:head>
-	{#if !isLoaded}
+	<!-- {#if !isLoaded}
 		<meta name="robots" content="noindex" />
-	{/if}
+	{/if} -->
 
 	{#await getBook()}
 		<title>Book Summary, Notes & Quotes | Matej Groombridge</title>
