@@ -1493,6 +1493,11 @@ blockquote p {
   }
   .dropdown {
     margin: 0;
+    padding: 0;
+  }
+  .dropdown a {
+    margin: 0;
+    padding: 0;
   }
   .dropdown-content {
     position: static;
