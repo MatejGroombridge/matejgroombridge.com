@@ -391,6 +391,12 @@ td:last-child {
 img {
 	border-radius: 0.75em;
 	box-shadow: 0 0 10px #00000020;
+	transition: all 0.2s;
+}
+
+img:hover {
+	opacity: 1;
+	transform: scale(1.04);
 }
 
 .card-wrapper {
@@ -1029,6 +1035,41 @@ blockquote {
 	justify-content: center;
 }
 
+.dropdown {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.dropdown-content {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: $background-grey;
+	padding: 10px;
+	margin-top: 5px;
+	z-index: 5;
+	display: none;
+	border-radius: 0.5em;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content li {
+	margin: 7px;
+}
+
+.dropdown-content li a {
+	color: $text-color;
+	text-decoration: none;
+}
+
+.disabled-link {
+	pointer-events: none;
+}
+
 @media (min-width: 1367px) {
 	.wrapper {
 		width: 65%;
@@ -1118,6 +1159,7 @@ blockquote {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		height: auto;
+		overflow: hidden;
 
 		.nav-links ul {
 			display: flex;
@@ -1135,6 +1177,7 @@ blockquote {
 		.nav-socials ul {
 			justify-content: center;
 			width: 100vw;
+			padding: 0;
 		}
 
 		// li {
@@ -1274,6 +1317,24 @@ blockquote {
 		.content {
 			width: 100%;
 		}
+	}
+
+	.dropdown {
+		margin: 0;
+	}
+
+	.dropdown-content {
+		position: static;
+		display: block;
+		margin: 0;
+		padding: 0;
+		border: none;
+		text-align: center;
+		background: $background-white;
+	}
+
+	.dropdown .disabled-link {
+		display: none;
 	}
 }
 

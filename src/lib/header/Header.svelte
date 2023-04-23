@@ -14,6 +14,8 @@
 	function flip() {
 		pressed = !pressed;
 	}
+
+	import { fade } from 'svelte/transition';
 </script>
 
 <svelte:body on:mousemove={handleResize} on:scroll={handleResize} />
@@ -37,7 +39,15 @@
 					<li><a href="/tutoring">Tutoring</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/about">About</a></li>
-					<li><a href="/booknotes">Book Notes</a></li>
+					<li class="dropdown">
+						<a href="/" class="disabled-link"
+							>More <i class="fas fa-chevron-down" style="margin: 5px; font-size: 0.75rem;" /></a
+						>
+						<ul class="dropdown-content">
+							<li><a href="/booknotes">Book Notes</a></li>
+							<li><a href="/photography">Photography</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<div class="nav-socials">

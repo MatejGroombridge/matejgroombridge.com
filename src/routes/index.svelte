@@ -843,7 +843,7 @@
 	<div class="wrapper service-wrapper" use:actionWhenInViewport>
 		<div class="content">
 			<h2>
-				<a href="/">Web Design and Development <i class="fas fa-chevron-right" /></a>
+				<a href="/webdesign">Web Design and Development <i class="fas fa-chevron-right" /></a>
 			</h2>
 			<p>
 				Build your online presence and boost sales. I will make you a bespoke website that your

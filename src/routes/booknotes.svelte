@@ -37,7 +37,7 @@
 
 <section>
 	<div class="wrapper shown">
-		<div class="abovetitle">Summaries, Reviews, and Notes</div>
+		<div class="abovetitle">Summaries, Reviews & Notes</div>
 	</div>
 	<div class="wrapper shown">
 		<div class="content">
@@ -56,7 +56,8 @@
 					{#await getCovers(book.id)}
 						<p>Loading...</p>
 					{:then cover}
-						<div class="card book-card" use:actionWhenInViewport use:tilt={{ scale: 1 }}>
+						<!-- <div class="card book-card" use:actionWhenInViewport use:tilt={{ scale: 1 }}> -->
+						<div class="card book-card" use:actionWhenInViewport>
 							<img src={URL.createObjectURL(cover)} alt={book.id} />
 							<div class="book-info">
 								<a href="/booknotes/{book.slug}" style="margin: 0;">
