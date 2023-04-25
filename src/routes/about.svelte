@@ -39,9 +39,9 @@
 				have been working on.
 			</p>
 		</div>
-		<!-- <div class="content">
+		<div class="content">
 			<img src="/face2.webp" alt="Matej Groombridge" width="280px" height="350px" />
-		</div> -->
+		</div>
 	</div>
 	<div class="wrapper shown bottom-disclaimer">
 		<div class="content">

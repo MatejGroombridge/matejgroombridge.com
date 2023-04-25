@@ -294,6 +294,11 @@ section {
   width: 100%;
 }
 
+.head-wrapper-one img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 th,
 td {
   text-align: center;
