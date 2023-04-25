@@ -307,7 +307,7 @@
 		<TutoringContact />
 	</div> -->
 	<div class="wrapper" use:actionWhenInViewport>
-		<h2>All Term 1 Places Filled!</h2>
+		<h2>All Term 2 Places Filled!</h2>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<p>Get notified when spots open:</p>
