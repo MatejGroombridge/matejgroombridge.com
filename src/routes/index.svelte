@@ -28,6 +28,21 @@
 	/>
 </svelte:head>
 
+<section class="show-mobile notice" style="margin: 0;">
+	<div class="wrapper" style="flex-direction: row;">
+		<div class="content">
+			<p style="padding: 0; margin: 0;">📚 20+ Free Book Notes</p>
+		</div>
+		<div class="content">
+			<p style="padding: 0; margin: 0;">
+				<a href="/booknotes" aria-label="booknotes"
+					><i class="fa-solid fa-arrow-right fa-beat fa-xl" /></a
+				>
+			</p>
+		</div>
+	</div>
+</section>
+
 <section class="head-home head">
 	<div class="wrapper head-wrapper-one" use:actionWhenInViewport>
 		<div class="content">

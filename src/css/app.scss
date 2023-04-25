@@ -1070,6 +1070,12 @@ blockquote {
 	pointer-events: none;
 }
 
+.center-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @media (min-width: 1367px) {
 	.wrapper {
 		width: 65%;
