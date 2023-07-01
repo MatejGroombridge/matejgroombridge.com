@@ -52,10 +52,10 @@
 		<p>Coming Soon...</p>
 	</div>
 </section>
-
+<!-- 
 <style>
 	img {
 		opacity: 0.9;
 		transition: all 0.2s;
 	}
-</style>
+</style> -->

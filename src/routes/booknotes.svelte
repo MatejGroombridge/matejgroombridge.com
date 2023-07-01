@@ -21,12 +21,17 @@
 	}
 
 	function getBooks() {
-		return supabase.from('book').select(`
+		return supabase
+			.from('book')
+			.select(
+				`
 		id,
 	    title,
 	    author,
 		slug
-	    `);
+	    `
+			)
+			.order('id');
 	}
 
 	async function getCovers(bookID) {

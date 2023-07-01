@@ -835,6 +835,7 @@ nav {
 
 .book-bar {
 	padding: 0.5em;
+	min-height: 128px;
 
 	.wrapper {
 		width: 70vw;
@@ -1033,6 +1034,7 @@ blockquote {
 
 .temp-bookcover {
 	height: 200px;
+	width: 270px;
 
 	display: flex;
 	align-items: center;
@@ -1053,12 +1055,8 @@ blockquote {
 	padding: 10px;
 	margin-top: 5px;
 	z-index: 5;
-	display: none;
-	border-radius: 0.5em;
-}
-
-.dropdown:hover .dropdown-content {
 	display: block;
+	border-radius: 0.5em;
 }
 
 .dropdown-content li {
@@ -1070,8 +1068,8 @@ blockquote {
 	text-decoration: none;
 }
 
-.disabled-link {
-	pointer-events: none;
+.disabled-link:hover {
+	cursor: default;
 }
 
 .center-icon {

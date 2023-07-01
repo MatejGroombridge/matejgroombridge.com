@@ -1,4 +1,6 @@
 <script>
+	import { time_ranges_to_array } from 'svelte/internal';
+
 	$: active = false;
 	$: pressed = false;
 	$: outerWidth = 0;
@@ -15,7 +17,22 @@
 		pressed = !pressed;
 	}
 
-	import { fade } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
+
+	let isHovered = false;
+
+	function sleep(seconds) {
+		return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
+	}
+
+	function triggerHover() {
+		isHovered = true;
+	}
+
+	async function leaveHover() {
+		await sleep(1);
+		isHovered = false;
+	}
 </script>
 
 <svelte:body on:mousemove={handleResize} on:scroll={handleResize} />
@@ -33,20 +50,22 @@
 			</button>
 		</div>
 		{#if active || pressed}
-			<div class="nav-links">
+			<div class="nav-links" on:mouseleave={leaveHover}>
 				<ul>
 					<li><a href="/webdesign">Web Design</a></li>
 					<li><a href="/tutoring">Tutoring</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/about">About</a></li>
 					<li class="dropdown">
-						<a href="/" class="disabled-link"
+						<a href="/" on:mouseenter={triggerHover} class="disabled-link"
 							>More <i class="fas fa-chevron-down" style="margin: 5px; font-size: 0.75rem;" /></a
 						>
-						<ul class="dropdown-content">
-							<li><a href="/booknotes">Book Notes</a></li>
-							<li><a href="/photography">Photography</a></li>
-						</ul>
+						{#if isHovered}
+							<ul transition:fly class="dropdown-content" on:mouseleave={leaveHover}>
+								<li><a href="/booknotes">Book Notes</a></li>
+								<li><a href="/photography">Photography</a></li>
+							</ul>
+						{/if}
 					</li>
 				</ul>
 			</div>

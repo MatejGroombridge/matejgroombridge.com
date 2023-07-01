@@ -23,32 +23,20 @@
 
 	const ID = $page.params.slug;
 	let id = 0;
-	let bookData = [];
-	let isLoaded = false;
 
-	async function getBook() {
-		const { data, error } = await supabase.from('book').select(`
-		id,
-	    title,
-	    author,
-		markdown,
-		slug,
-		published,
-		readingtime,
-		rating,
-		amazonlink
-	    `);
+	async function fetchData() {
+		const response = await fetch(`/booknotes/book-data/${ID}.json`);
+		const jsonData = await response.text();
+		const parsedData = JSON.parse(jsonData);
+		id = parsedData.id;
+		return parsedData;
+	}
 
-		data.forEach((book) => {
-			if (book.slug == ID) {
-				id = book.id;
-				bookData = book;
-			}
-		});
+	async function fetchMarkdown() {
+		const response = await fetch(`/booknotes/book-markdown/${ID}.md`);
+		const text = await response.text();
 
-		isLoaded = true;
-
-		return bookData;
+		return text;
 	}
 
 	async function getCover() {
@@ -58,34 +46,15 @@
 </script>
 
 <svelte:head>
-	<!-- {#if !isLoaded}
-		<meta name="robots" content="noindex" />
-	{/if} -->
-
-	{#await getBook()}
-		<title>Book Summary, Notes & Quotes | Matej Groombridge</title>
-		<meta
-			name="description"
-			content="Book Summary, Impressions, Notes & Quotes. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
-		/>
-	{:then book}
+	{#await fetchData() then book}
 		<title>{book.title} | Summary, Notes & Quotes</title>
-		<meta
-			name="description"
-			content="{book.title} by {book.author} | Summary, Impressions, Notes & Quotes. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
-		/>
+		<meta name="description" content="The Book in 3 Sentences ● {book.description}" />
 	{/await}
 </svelte:head>
 
-{#await getBook()}
-	<section>
-		<div class="wrapper shown">
-			<p class="small-text">Initialising...</p>
-		</div>
-	</section>
-{:then book}
-	<section>
-		<div class="wrapper shown spacebetween">
+<section class="head">
+	<div class="wrapper shown spacebetween" style="min-height: 50vh;">
+		{#await fetchData() then book}
 			<div class="content">
 				<div class="abovetitle">Book Review, Summary and Notes</div>
 				<h1>{book.title}</h1>
@@ -100,10 +69,12 @@
 					<img src={URL.createObjectURL(cover)} alt={book.id} width="270" />
 				{/await}
 			</div>
-		</div>
-	</section>
-	<section class="grey book-bar hide-mobile">
-		<div class="wrapper shown">
+		{/await}
+	</div>
+</section>
+<section class="grey book-bar hide-mobile">
+	<div class="wrapper shown">
+		{#await fetchData() then book}
 			<div class="content">
 				<p><strong>Author</strong> <br /> {book.author}</p>
 			</div>
@@ -119,39 +90,41 @@
 			<div class="content">
 				<p>
 					<strong>Buy the Book</strong> <br />
-					<a href={book.amazonlink} target="_blank" rel="noreferrer"> Amazon</a>
+					<a href={book.link} target="_blank" rel="noreferrer">{book.bookstore}</a>
 				</p>
 			</div>
+		{/await}
+	</div>
+</section>
+<section>
+	<div class="wrapper shown">
+		<div class="article" style="min-height: 100vh;">
+			{#await fetchMarkdown() then bookMarkdown}
+				<SvelteMarkdown source={bookMarkdown} />
+			{/await}
 		</div>
-	</section>
-	<section>
-		<div class="wrapper shown">
-			<div class="article">
-				<SvelteMarkdown source={book.markdown} />
-			</div>
+	</div>
+	<div class="two-margin" />
+	<div class="wrapper shown">
+		<div class="article">
+			<h1>You Might Also Like...</h1>
 		</div>
-		<div class="two-margin" />
-		<div class="wrapper shown">
-			<div class="article">
-				<h1>You Might Also Like...</h1>
-			</div>
+	</div>
+	<div class="wrapper shown">
+		<div class="article">
+			<a href="https://www.matejgroombridge.com/booknotes/atomichabits">Atomic Habits</a>
+			<a href="https://www.matejgroombridge.com/booknotes/fhww">The 4-Hour Workweek</a>
+			<a href="https://www.matejgroombridge.com/booknotes/thinkgrowrich">Think and Grow Rich</a>
+			<a href="https://www.matejgroombridge.com/booknotes/now">The Power of Now</a>
+			<a href="https://www.matejgroombridge.com/booknotes/dohardthings">Do Hard Things</a>
 		</div>
-		<div class="wrapper shown">
-			<div class="article">
-				<a href="https://www.matejgroombridge.com/booknotes/atomichabits">Atomic Habits</a>
-				<a href="https://www.matejgroombridge.com/booknotes/fhww">The 4-Hour Workweek</a>
-				<a href="https://www.matejgroombridge.com/booknotes/thinkgrowrich">Think and Grow Rich</a>
-				<a href="https://www.matejgroombridge.com/booknotes/now">The Power of Now</a>
-				<a href="https://www.matejgroombridge.com/booknotes/dohardthings">Do Hard Things</a>
-			</div>
+	</div>
+	<div class="wrapper shown bottom-disclaimer">
+		<div class="content">
+			<p class="small-text">
+				This is a book summary and may not reflect my attitudes or beliefs on certain topics. I'd
+				love to hear <a href="https://www.matejgroombridge.com/contact">your thoughts</a>.
+			</p>
 		</div>
-		<div class="wrapper shown bottom-disclaimer">
-			<div class="content">
-				<p class="small-text">
-					This is a book summary and may not reflect my attitudes or beliefs on certain topics. I'd
-					love to hear <a href="https://www.matejgroombridge.com/contact">your thoughts</a>.
-				</p>
-			</div>
-		</div>
-	</section>
-{/await}
+	</div>
+</section>
