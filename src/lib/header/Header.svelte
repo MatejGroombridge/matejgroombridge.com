@@ -56,7 +56,9 @@
 					<li><a href="/tutoring">Tutoring</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/about">About</a></li>
-					<li class="dropdown">
+					<li class="show-mobile"><a href="/booknotes">Book Notes</a></li>
+					<li class="show-mobile"><a href="/photography">Photography</a></li>
+					<li class="dropdown hide-mobile">
 						<a href="/" on:mouseenter={triggerHover} class="disabled-link"
 							>More <i class="fas fa-chevron-down" style="margin: 5px; font-size: 0.75rem;" /></a
 						>
