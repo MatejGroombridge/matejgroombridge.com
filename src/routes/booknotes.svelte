@@ -31,7 +31,7 @@
 		slug
 	    `
 			)
-			.order('id');
+			.order('title');
 	}
 
 	async function getCovers(bookID) {
