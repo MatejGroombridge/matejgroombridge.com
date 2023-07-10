@@ -1,12 +1,12 @@
-# The Book in 3 Sentences
+## The Book in 3 Sentences
 1.  Essentialism means doing less, better.
 2.  So many people suffer from overcommitment and saying yes to everything.
 3.  By only doing what is essential you gain time, clarity and fulfilment.
 
-# Impressions
+## Impressions
 Good book with a really interesting theme. It did feel very dragged out though and didn’t warrant 300 pages. I would highly recommend it to anyone who wants to boost their productivity and/or live a more fulfilled life.
 
-# Top Quotes
+## Top Quotes
 
 > Essentialism is not about how to get more things done; it’s about how to get the right things done. It doesn’t mean just doing less for the sake of less either. It is about making the wisest possible investment of your time and energy in order to operate at our highest point of contribution by doing only what is essential.
 

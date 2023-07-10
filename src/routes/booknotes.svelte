@@ -1,6 +1,6 @@
 <script>
-	import supabase from '$lib/db';
-	import tilt from '../tilt.js';
+	import { slugs } from '../../static/booknotes/book-slugs.js';
+	// console.log(slugs);
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -20,23 +20,16 @@
 		observer.observe(e);
 	}
 
-	function getBooks() {
-		return supabase
-			.from('book')
-			.select(
-				`
-		id,
-	    title,
-	    author,
-		slug
-	    `
-			)
-			.order('slug');
+	async function fetchBook(bookID) {
+		const response = await fetch(`/booknotes/book-data/${bookID}.json`);
+		const jsonData = await response.text();
+		const parsedData = JSON.parse(jsonData);
+		return parsedData;
 	}
 
-	async function getCovers(bookID) {
-		const { data, error } = await supabase.storage.from('public').download(`covers/${bookID}.jpeg`);
-		return data;
+	async function fetchCover(bookID) {
+		const response = await fetch(`/booknotes/book-cover/${bookID}.webp`);
+		return response.blob();
 	}
 </script>
 
@@ -51,31 +44,28 @@
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" style="width: 75vw;" use:actionWhenInViewport>
-		{#await getBooks()}
-			<section>
-				<div class="wrapper">Loading...</div>
-			</section>
-		{:then bookData}
-			<div class="card-wrapper">
-				{#each bookData.data as book}
-					{#await getCovers(book.id)}
-						<p>Loading...</p>
-					{:then cover}
-						<!-- <div class="card book-card" use:actionWhenInViewport use:tilt={{ scale: 1 }}> -->
-						<div class="card book-card" use:actionWhenInViewport>
-							<img src={URL.createObjectURL(cover)} alt={book.id} />
+		<div class="card-wrapper">
+			{#each slugs as slug}
+				{#await fetchBook(slug) then book}
+					<div class="card book-card" use:actionWhenInViewport>
+						{#await fetchCover(book.slug) then cover}
+							<a
+								href="/booknotes/{book.slug}"
+								style="margin: 0; padding: 0; text-decoration: none;"
+							>
+								<img src={URL.createObjectURL(cover)} alt={book.id} />
+							</a>
+						{/await}
+						<a href="/booknotes/{book.slug}" style="margin: 0; padding: 0; text-decoration: none;">
 							<div class="book-info">
-								<a href="/booknotes/{book.slug}" style="margin: 0;">
-									<div class="mini-title book-name">{book.title} by {book.author}</div>
-									<div class="mini-title book-status">Summary, Review and Notes</div>
-								</a>
-								<!-- <p>{book.blurb}</p> -->
+								<div class="mini-title book-name">{book.title} by {book.author}</div>
+								<div class="mini-title book-status">Summary, Review and Notes</div>
 							</div>
-						</div>
-					{/await}
-				{/each}
-			</div>
-		{/await}
+						</a>
+					</div>
+				{/await}
+			{/each}
+		</div>
 	</div>
 </section>
 

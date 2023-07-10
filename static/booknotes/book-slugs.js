@@ -1,0 +1,21 @@
+export const slugs = [
+	'atomichabits',
+	'dohardthings',
+	'dopaminedetox',
+	'essentialism',
+	'excellentadvice',
+	'fhww',
+	'fiveam',
+	'flawesome',
+	'grades',
+	'life',
+	'loveyourself',
+	'navalmanack',
+	'now',
+	'strategic',
+	'subtleart',
+	'superiorman',
+	'taoteching',
+	'thinkgrowrich',
+	'unlimitedmemory'
+].sort();

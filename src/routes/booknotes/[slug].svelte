@@ -1,5 +1,4 @@
 <script>
-	import supabase from '$lib/db';
 	import { page } from '$app/stores';
 	import SvelteMarkdown from 'svelte-markdown';
 
@@ -39,9 +38,9 @@
 		return text;
 	}
 
-	async function getCover() {
-		const { data, error } = await supabase.storage.from('public').download(`covers/${id}.jpeg`);
-		return data;
+	async function fetchCover(bookID) {
+		const response = await fetch(`/booknotes/book-cover/${bookID}.webp`);
+		return response.blob();
 	}
 </script>
 
@@ -61,7 +60,7 @@
 				<h2>By {book.author}</h2>
 			</div>
 			<div class="content">
-				{#await getCover()}
+				{#await fetchCover(book.slug)}
 					<div class="temp-bookcover">
 						<p class="small-text">Loading Cover...</p>
 					</div>
