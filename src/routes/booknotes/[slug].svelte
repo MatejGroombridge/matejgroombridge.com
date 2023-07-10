@@ -47,7 +47,7 @@
 <svelte:head>
 	{#await fetchData() then book}
 		<title>{book.title} | Summary, Notes & Quotes</title>
-		<meta name="description" content="The Book in 3 Sentences ● {book.description}" />
+		<meta name="description" content="The Book in 3 Sentences • {book.description}" />
 	{/await}
 </svelte:head>
 
