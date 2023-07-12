@@ -8,7 +8,7 @@
 
 *The Surrender Experiment* is an autobiography that delves into the life of author, speaker and former tech CEO Michael Singer in order to illustrate the extraordinary things that can happen when we stop pushing for the things we think we want. It was certainly a very different read compared to a lot of the other books I’ve read recently but I found it quite interesting. Whilst it is a non-fiction book, the text is written as a story so it was a very engaging read. Obviously this is a very spiritual book so I take everything with a grain of salt - but even if you don’t agree with the ideas that *The Surrender Experiment* perpetuates, this book provides a very unique and refreshing perspective on life that you can adapt to fit your needs. A great introduction to spirituality.
 
-## Summary, Quotes & Notes
+# Summary, Quotes & Notes
 
 The practice of surrender is done in two steps: first, you let go of the personal reactions of like and dislike that form inside your mind and heart; and second, with the resultant sense of clarity, you simply look to see what is being asked of you by the situation unfolding in front of you.
 
