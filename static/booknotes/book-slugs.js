@@ -19,5 +19,6 @@ export const slugs = [
 	'thinkgrowrich',
 	'unlimitedmemory',
 	'vagabonding',
-	'anythingyouwant'
+	'anythingyouwant',
+	'surrender'
 ].sort();
