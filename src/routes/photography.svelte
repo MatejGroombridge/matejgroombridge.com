@@ -1,7 +1,8 @@
 <script>
 	import Gallery from '$lib/photography/Gallery.svelte';
 	import supabase from '$lib/db';
-	import { each } from 'svelte/internal';
+	import { tripSlugs } from '../../static/photography/trip-slugs.js';
+	import AutosizeText from '$lib/photography/AutosizeText.svelte';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -21,11 +22,9 @@
 		observer.observe(e);
 	}
 
-	async function getPhotos(photoID) {
-		const { data, error } = await supabase.storage
-			.from('public')
-			.download(`photography/${photoID}.jpg`);
-		return data;
+	async function getPhotos(tripName) {
+		const response = await fetch(`/photography/trip-photos/${tripName}.webp`);
+		return response.blob();
 	}
 </script>
 
@@ -40,22 +39,12 @@
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper shown">
-		<!-- <Gallery gap="20" maxColumnWidth="300">
-			{#each { length: 100 } as _, photo}
-				{#await getPhotos(100 - photo)}
-					<p>Loading...</p>
-				{:then cover}
-					<img src={URL.createObjectURL(cover)} alt="" />
+		<Gallery gap="15" maxColumnWidth="250" type="tripView">
+			{#each tripSlugs as trip}
+				{#await getPhotos(trip.slug) then tripImage}
+					<img src={URL.createObjectURL(tripImage)} alt={trip.slug} />
 				{/await}
 			{/each}
-		</Gallery> -->
-		<p>Coming Soon...</p>
+		</Gallery>
 	</div>
 </section>
-<!-- 
-<style>
-	img {
-		opacity: 0.9;
-		transition: all 0.2s;
-	}
-</style> -->

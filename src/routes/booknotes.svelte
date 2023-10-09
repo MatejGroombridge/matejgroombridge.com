@@ -1,6 +1,5 @@
 <script>
 	import { slugs } from '../../static/booknotes/book-slugs.js';
-	// console.log(slugs);
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {

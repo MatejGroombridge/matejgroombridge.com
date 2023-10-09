@@ -39,6 +39,18 @@
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p> -->
+			<!-- <p>
+				All spots for 2023 have been filled. Submit your email to get notified when new spots open. <a
+					style="font-size: 0.5em;"
+					href="#booking"
+					aria-label="bookings"><i class="fas fa-external-link-alt fa-2x" /></a
+				>
+			</p> -->
+			<!-- <p>
+				New bookings open January 2023 <a style="font-size: 0.5em;" href="#booking"
+					><i class="fas fa-external-link-alt fa-2x" /></a
+				>
+			</p> -->
 			<p>
 				All spots for 2023 have been filled. Submit your email to get notified when new spots open. <a
 					style="font-size: 0.5em;"
@@ -46,11 +58,6 @@
 					aria-label="bookings"><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p>
-			<!-- <p>
-				New bookings open January 2023 <a style="font-size: 0.5em;" href="#booking"
-					><i class="fas fa-external-link-alt fa-2x" /></a
-				>
-			</p> -->
 		</div>
 	</div>
 </section>
@@ -65,12 +72,13 @@
 				achieve academic success.
 			</div>
 			<div class="btn-wrapper">
-				<a class="btn" href="#availability">Availability</a>
-				<a class="btn" href="#booking">Book A Lesson</a>
+				<a class="btn" href="#booking"><i class="fa-solid fa-clock" /> &ensp; Check Availability</a>
+				<!-- remember to revert #booking when taking on new students -->
+				<!-- <a class="btn" href="#booking">Book A Lesson</a> -->
 			</div>
 		</div>
 
-		<div class="content">
+		<div class="content hide-tablet">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				data-name="Layer 1"
@@ -255,7 +263,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$35</span>/hr</div>
+				<div class="cost"><span class="large">$40</span>/hr</div>
 			</div>
 			<div class="card" use:tilt={{ scale: 1 }}>
 				<h3>Junior High (Years 7-9)</h3>
@@ -266,7 +274,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$40</span>/hr</div>
+				<div class="cost"><span class="large">$45</span>/hr</div>
 			</div>
 		</div>
 	</div>

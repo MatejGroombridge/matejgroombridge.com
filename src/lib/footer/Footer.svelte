@@ -25,33 +25,34 @@
 			<li>
 				<a
 					href="https://www.instagram.com/___matej/"
-					aria-label="instagram"
+					aria-label="instagram logo"
+					style="font-size: 1.6em;"
 					target="_blank"
 					rel="noreferrer"><i class="fab fa-instagram fa-2x" /></a
 				>
 			</li>
 			<li>
 				<a
-					href="https://github.com/MatejGroombridge"
-					aria-label="github"
-					target="_blank"
-					rel="noreferrer"><i class="fab fa-github fa-2x" /></a
-				>
-			</li>
-			<li>
-				<a
 					href="https://www.linkedin.com/in/matej-groombridge-06157517b/"
-					aria-label="linkedin"
+					aria-label="linkedin logo"
 					target="_blank"
 					rel="noreferrer"><i class="fab fa-linkedin fa-2x" /></a
 				>
 			</li>
 			<li>
 				<a
-					href="https://open.spotify.com/user/odau8v74sintc5j50a9lsgkh9?si=54a1ab54c714459c"
-					aria-label="spotify"
+					href="https://github.com/MatejGroombridge"
+					aria-label="github logo"
 					target="_blank"
-					rel="noreferrer"><i class="fab fa-spotify fa-2x" /></a
+					rel="noreferrer"><i class="fab fa-github fa-2x" /></a
+				>
+			</li>
+			<li>
+				<a
+					href="https://www.instagram.com/matejsphotography/"
+					aria-label="camera logo"
+					target="_blank"
+					rel="noreferrer"><i class="fa fa-camera-retro fa-2x" /></a
 				>
 			</li>
 			<li>

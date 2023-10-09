@@ -60,28 +60,17 @@
 </script>
 
 <section class="head">
-	<div class="wrapper shown">
-		<div class="content head-home">
+	<div class="wrapper">
+		<div class="content">
 			<div class="abovetitle">Freelance Web Design</div>
 			<h1>Small business? <br /> I've got you.</h1>
-			<!-- <div class="body-text">
-				✔ Generate traffic <br />✔ Bring in customers <br />✔ Stand out from the competition
-				<br />
-			</div> -->
 			<div class="body-text">Cheap sites. High conversions. No fuss.</div>
+			<div class="btn-wrapper">
+				<a class="btn" href="#quote">Lets get to work!</a>
+			</div>
 		</div>
 
-		<!-- Small business? We've got you. 
-		
-			Cheap Sites. X X.
-		
-			The numbers speak for themselves.
-
-			But don't take our word for it!
-			Success stories
-		-->
-
-		<div class="content hide-mobile">
+		<div class="content hide-tablet">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				data-name="Layer 1"
@@ -365,11 +354,6 @@
 					fill="#cacaca"
 				/></svg
 			>
-		</div>
-	</div>
-	<div class="wrapper shown">
-		<div class="btn-wrapper">
-			<a class="btn" href="#quote">Lets get to work!</a>
 		</div>
 	</div>
 </section>
