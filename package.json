@@ -28,6 +28,7 @@
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
     "@supabase/supabase-js": "^1.30.3",
+    "blob-polyfill": "^7.0.20220408",
     "cookie": "^0.4.1",
     "emailjs-com": "^3.2.0",
     "fontawesome": "^5.6.3",
