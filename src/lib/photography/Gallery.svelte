@@ -10,9 +10,9 @@
 	let tripData;
 	let imgIndex;
 
+	$: maxHeight = '';
 	$: imageWidth = 0;
 	$: imageHeight = 0;
-	$: maxHeight = '';
 
 	export let gap = 10;
 	export let maxColumnWidth = 250;
