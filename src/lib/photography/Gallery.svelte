@@ -3,6 +3,7 @@
 	import { tick } from 'svelte';
 	import Modal from '$lib/modal/Modal.svelte';
 	import { tripSlugs } from '../../../static/photography/trip-slugs.js';
+	import { Blob } from 'blob-polyfill';
 
 	let showModal = false;
 	let targetBlob = new Blob();

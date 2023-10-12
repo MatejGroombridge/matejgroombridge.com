@@ -30,6 +30,8 @@
 		const response = await fetch(`/photography/all-photos/${ID + '_' + photoID}.webp`);
 		if (response.status == 200) {
 			return response.blob();
+		} else {
+			console.log('issue is here');
 		}
 	}
 
