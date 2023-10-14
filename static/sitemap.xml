@@ -8,32 +8,37 @@
 
 <url>
   <loc>https://www.matejgroombridge.com/</loc>
-  <lastmod>2023-01-17T03:11:59+00:00</lastmod>
+  <lastmod>2023-10-14T03:11:59+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.matejgroombridge.com/webdesign</loc>
-  <lastmod>2023-01-17T03:11:59+00:00</lastmod>
+  <lastmod>2023-10-14T03:11:59+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.matejgroombridge.com/tutoring</loc>
-  <lastmod>2023-01-17T03:11:59+00:00</lastmod>
+  <lastmod>2023-10-14T03:11:59+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.matejgroombridge.com/booknotes</loc>
-  <lastmod>2023-01-17T03:11:59+00:00</lastmod>
+  <lastmod>2023-10-14T03:11:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.matejgroombridge.com/about</loc>
-  <lastmod>2023-01-17T03:11:59+00:00</lastmod>
+  <lastmod>2023-10-14T03:11:59+00:00</lastmod>
   <priority>0.70</priority>
 </url>
 <url>
   <loc>https://www.matejgroombridge.com/contact</loc>
-  <lastmod>2023-01-17T03:11:59+00:00</lastmod>
+  <lastmod>2023-10-14T03:11:59+00:00</lastmod>
   <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.matejgroombridge.com/photography</loc>
+  <lastmod>2023-10-14T03:11:59+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 </urlset>
