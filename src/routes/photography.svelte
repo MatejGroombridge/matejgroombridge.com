@@ -28,13 +28,22 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Photography</title>
+	<meta
+		name="description"
+		content="A collection of my travel photography. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
+	/>
+</svelte:head>
+
 <section>
 	<div class="wrapper shown">
 		<div class="abovetitle">Travel, Adventure & Landscapes</div>
 	</div>
 	<div class="wrapper shown">
 		<div class="content">
-			<h1>📸 My Photography 📸</h1>
+			<h1 class="hide-mobile">📸 My Photography 📸</h1>
+			<h1 class="show-mobile">My Photography</h1>
 		</div>
 	</div>
 	<div class="two-margin" />

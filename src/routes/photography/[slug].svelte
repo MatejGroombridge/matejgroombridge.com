@@ -30,8 +30,6 @@
 		const response = await fetch(`/photography/all-photos/${ID + '_' + photoID}.webp`);
 		if (response.status == 200) {
 			return response.blob();
-		} else {
-			console.log('issue is here');
 		}
 	}
 
@@ -56,6 +54,14 @@
 
 	getLength();
 </script>
+
+<svelte:head>
+	<title>{fetchTripData(ID).title} // Photography</title>
+	<meta
+		name="description"
+		content="A collection of my travel photography. Hi, my name is Matej Groombridge. I am a student, tutor and freelance web designer/website developer from Sydney, Australia. I love to read books and share what I've learned through my website's free book notes."
+	/>
+</svelte:head>
 
 <!-- <svelte:head>
 	{#await fetchData() then book}
@@ -84,7 +90,6 @@
 	<div class="wrapper shown">
 		<Gallery gap="20" maxColumnWidth="300" hasModal={true} type="tripImages">
 			{#each { length: length + 1 } as _, photoNum}
-				<!-- TODO: make length the number of photos -->
 				{#await getPhotos(photoNum) then photo}
 					<img src={URL.createObjectURL(photo)} alt={photo + '-' + photoNum} />
 				{/await}

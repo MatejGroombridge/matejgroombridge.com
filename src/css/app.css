@@ -1348,6 +1348,12 @@ blockquote p {
   .toggle {
     display: flex;
   }
+  .img-hover-scale:hover {
+    transform: none;
+  }
+  .img-hover-scale:hover .trip-subtitle {
+    display: none;
+  }
   img:hover {
     transform: scale(1);
   }

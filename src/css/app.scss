@@ -1538,6 +1538,14 @@ blockquote {
 		display: flex;
 	}
 
+	.img-hover-scale:hover {
+		transform: none;
+
+		.trip-subtitle {
+			display: none;
+		}
+	}
+
 	img:hover {
 		transform: scale(1);
 	}

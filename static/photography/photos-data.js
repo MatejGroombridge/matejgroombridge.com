@@ -43,7 +43,7 @@ export const photosData = [
 	},
 	{
 		slug: 'salzburg23',
-		length: 15,
+		length: 19,
 		imgData: {
 			0: ['Salzburg, Austria', '04/23', 'Canon EOS 400D']
 		}
