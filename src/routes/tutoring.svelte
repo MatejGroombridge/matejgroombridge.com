@@ -52,10 +52,9 @@
 				>
 			</p> -->
 			<p>
-				All spots for 2023 have been filled. Submit your email to get notified when new spots open. <a
-					style="font-size: 0.5em;"
-					href="#booking"
-					aria-label="bookings"><i class="fas fa-external-link-alt fa-2x" /></a
+				There are no spots available right now. Submit your email to get notified when
+				availabilities open. <a style="font-size: 0.5em;" href="#booking" aria-label="bookings"
+					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p>
 		</div>
@@ -315,7 +314,7 @@
 		<TutoringContact />
 	</div> -->
 	<div class="wrapper" use:actionWhenInViewport>
-		<h2>All Term 2 Places Filled!</h2>
+		<h2>All Places Filled!</h2>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<p>Get notified when spots open:</p>
