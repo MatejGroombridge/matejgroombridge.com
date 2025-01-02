@@ -1,7 +1,7 @@
 <script>
-	import Gallery from '$lib/photography/Gallery.svelte';
+	// import Gallery from '$lib/photography/Gallery.svelte';
 	import supabase from '$lib/db';
-	import { tripSlugs } from '../../static/photography/trip-slugs.js';
+	import { tripSlugs } from '$lib/photography/trip-slugs.js';
 	import AutosizeText from '$lib/photography/AutosizeText.svelte';
 
 	function actionWhenInViewport(e) {
@@ -48,12 +48,22 @@
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper shown">
-		<Gallery gap="15" maxColumnWidth="250" type="tripView">
+		<div class="content">
+			<p>
+				I'm currently updating this page to ensure compatibility with modern browsers. In the
+				meantime, you can check out my photography on <a
+					target="_blank"
+					rel="noreferrer"
+					href="https://www.instagram.com/matejsphotography/">instagram</a
+				>.
+			</p>
+		</div>
+		<!-- <Gallery gap="15" maxColumnWidth="250" type="tripView">
 			{#each tripSlugs as trip}
 				{#await getPhotos(trip.slug) then tripImage}
 					<img src={URL.createObjectURL(tripImage)} alt={trip.slug} />
 				{/await}
 			{/each}
-		</Gallery>
+		</Gallery> -->
 	</div>
 </section>

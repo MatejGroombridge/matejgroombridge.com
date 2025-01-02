@@ -2,8 +2,8 @@
 	import { page } from '$app/stores';
 	import Gallery from '$lib/photography/Gallery.svelte';
 	import supabase from '$lib/db';
-	import { tripSlugs } from '../../../static/photography/trip-slugs.js';
-	import { photosData } from '../../../static/photography/photos-data.js';
+	import { tripSlugs } from '$lib/photography/trip-slugs.js';
+	import { photosData } from '$lib/photography/photos-data.js';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {

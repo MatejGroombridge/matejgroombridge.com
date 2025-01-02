@@ -6,7 +6,7 @@ export const slugs = [
 	'excellentadvice',
 	'fhww',
 	'fiveam',
-	'flawesome',
+	// 'flawesome',
 	'grades',
 	'life',
 	'loveyourself',

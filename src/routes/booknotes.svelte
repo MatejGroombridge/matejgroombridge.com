@@ -66,6 +66,11 @@
 			{/each}
 		</div>
 	</div>
+	<!-- <div class="wrapper shown">
+		<div class="content">
+			<p>Stayed tuned for more book notes on the way.</p>
+		</div>
+	</div> -->
 </section>
 
 <svelte:head>

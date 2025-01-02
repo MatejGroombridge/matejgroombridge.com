@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores';
-	import { photosData } from '../../../static/photography/photos-data.js';
+	import { photosData } from '$lib/photography/photos-data.js';
 
 	export let showModal;
 	export let maxHeight;

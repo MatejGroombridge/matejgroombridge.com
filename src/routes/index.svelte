@@ -27,7 +27,7 @@
 		content="Hi, my name is Matej Groombridge. I am a student and freelance web designer/website developer from Sydney, Australia. I offer private tutoring lessons as well as affordable freelance web design services for small businesses. Thanks for stopping by!"
 	/>
 </svelte:head>
-
+<!-- 
 <section class="show-mobile notice" style="margin: 0;">
 	<div class="wrapper" style="flex-direction: row;">
 		<div class="content">
@@ -41,7 +41,7 @@
 			</p>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section class="head-home head">
 	<div class="wrapper head-wrapper-one" use:actionWhenInViewport>
