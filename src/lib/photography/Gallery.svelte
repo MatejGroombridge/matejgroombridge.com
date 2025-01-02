@@ -2,7 +2,7 @@
 	import { onMount, createEventDispatcher, getAllContexts } from 'svelte';
 	import { tick } from 'svelte';
 	import Modal from '$lib/modal/Modal.svelte';
-	import { tripSlugs } from '$lib/trip-slugs.js';
+	import { tripSlugs } from '$lib/photography/trip-slugs.js';
 	import { Blob } from 'blob-polyfill';
 	// error I can no longer remember with Blob in the development environment
 
