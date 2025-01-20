@@ -34,11 +34,11 @@
 <section class="notice">
 	<div class="wrapper">
 		<div>
-			<!-- <p>
-				New spots are available for Term 3 <a style="font-size: 0.5em;" href="#booking"
+			<p>
+				New spots are available for Term 1 2025 <a style="font-size: 0.5em;" href="#booking"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
-			</p> -->
+			</p>
 			<!-- <p>
 				All spots for 2023 have been filled. Submit your email to get notified when new spots open. <a
 					style="font-size: 0.5em;"
@@ -51,12 +51,12 @@
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p> -->
-			<p>
+			<!-- <p>
 				There are no spots available right now. Submit your email to get notified when
 				availabilities open. <a style="font-size: 0.5em;" href="#booking" aria-label="bookings"
 					><i class="fas fa-external-link-alt fa-2x" /></a
 				>
-			</p>
+			</p> -->
 		</div>
 	</div>
 </section>
@@ -71,7 +71,8 @@
 				achieve academic success.
 			</div>
 			<div class="btn-wrapper">
-				<a class="btn" href="#booking"><i class="fa-solid fa-clock" /> &ensp; Check Availability</a>
+				<!-- <a class="btn" href="#booking"><i class="fa-solid fa-clock" /> &ensp; Check Availability</a> -->
+				<a class="btn" href="#booking"><i class="fa-solid fa-plus" /> &ensp; Book A Lesson</a>
 				<!-- remember to revert #booking when taking on new students -->
 				<!-- <a class="btn" href="#booking">Book A Lesson</a> -->
 			</div>
@@ -199,19 +200,24 @@
 <section class="grey">
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="content">
-			<div class="testimonial-text">
-				"Matej is a delight. He is prompt, courteous and very patient and calm. He has helped my
-				daughter gain more of an understanding for maths. I would recommend him highly to anyone who
-				is in need of a tutor."
-			</div>
-			<div class="abovetitle center">Yvonne O</div>
+			<h2>About Me</h2>
+			<p>
+				Hi, I'm Matej. I'm a recent Baulkham Hills High School graduate, currently studying a
+				Bachelor of Software Engineering under the UNSW Co-op scholar program. I have a passion for
+				teaching and helping students achieve their academic goals and with 3+ years of experience
+				in tutoring I have helped many students improve their grades and build confidence in their
+				abilities. You can learn more about me on my <a href="/about"
+					><p style="display: inline;">about page</p></a
+				>.
+			</p>
+			<p style="font-size: 1em">
+				<strong>99.40 ATAR</strong> |
+				<strong>Straight Band 6s</strong>
+				| <strong>School Captain</strong> | <strong>3+ Years' Experience</strong> |
+				<strong>UNSW Co-op Scholar</strong>
+			</p>
 		</div>
-	</div>
-</section>
-
-<section>
-	<div class="wrapper" use:actionWhenInViewport>
-		<div class="card-wrapper">
+		<!-- <div class="card-wrapper">
 			<div class="card transparent">
 				<h3>Location</h3>
 				<p>
@@ -231,7 +237,7 @@
 					</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<p>
@@ -243,50 +249,60 @@
 	</div> -->
 </section>
 
-<section class="grey">
-	<div class="custom-blob hide-mobile" id="left-blob" />
+<section>
+	<!-- <div class="custom-blob hide-mobile" id="left-blob" /> -->
 	<div class="custom-blob hide-mobile" id="right-blob" />
+	<div class="two-margin hide-mobile" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<h2>Subjects and Pricing</h2>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<p>Payments can be made via Cash or Bank Transfer. Prices are subject to change.</p>
 	</div>
+	<!-- <div class="two-margin hide-mobile" /> -->
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="card-wrapper">
 			<div class="card" use:tilt={{ scale: 1 }}>
-				<h3>Junior High (Years 7-9)</h3>
+				<h3>HSC Specialist Tutoring (Y11-12)</h3>
+				<p>
+					I'm offering tailored HSC tutoring for the following subjects at both a Preliminary and
+					HSC level:
+				</p>
+				<p>
+					<i class="fa-solid fa-circle-dot" /> Mathematics (Standard, Adv, Ex1, Ex2) <br />
+					<i class="fa-solid fa-circle-dot" />
+					Physics <br /> <i class="fa-solid fa-circle-dot" /> Economics <br />
+				</p>
+				<p>
+					I personally achieved a 99.40 ATAR with a 95 in Maths Ex1, 91 in Maths Ex2, 93 external in
+					Physics and 95 in Economics
+				</p>
+			</div>
+			<div class="center">
+				<div class="cost"><span class="large">$75</span>/hr</div>
+			</div>
+			<div class="center">
+				<div class="cost"><span class="large">$55</span>/hr</div>
+			</div>
+			<div class="card" use:tilt={{ scale: 1 }}>
+				<h3>Junior High (Y7-10)</h3>
 				<p>
 					Mathematics for all skill levels. This includes homework help and test preparation. I can
 					give your child the necessary help to keep up, or challenge them with advanced topics that
 					will allow them get ahead in their studies.
 				</p>
 			</div>
-			<div class="center">
-				<div class="cost"><span class="large">$45</span>/hr</div>
-			</div>
+
 			<div class="card" use:tilt={{ scale: 1 }}>
 				<h3>Primary (Years 3-6)</h3>
 				<p>
-					Homework Help, Test Preparation, Mathematics, English and Science. Lessons are tailored to
-					the needs of your child.
+					I offer Mathematics and English for all skill levels as well as general homework help and
+					skill building. Lessons are tailored to the needs of your child.
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$40</span>/hr</div>
+				<div class="cost"><span class="large">$45</span>/hr</div>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="wrapper" use:actionWhenInViewport>
-		<div class="content">
-			<div class="testimonial-text">
-				"I loved the way Matej explains everything in such a simple and easy way. 10/10 would
-				recommend."
-			</div>
-			<div class="abovetitle center">Vinh P</div>
 		</div>
 	</div>
 </section>
@@ -306,24 +322,26 @@
 </section> -->
 
 <section id="booking" class="grey">
-	<!-- <div class="wrapper" use:actionWhenInViewport>
-		<h2>Book A Lesson</h2>
+	<div class="wrapper" use:actionWhenInViewport>
+		<h2>Book A Lesson Today</h2>
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
-	</div> -->
-	<div class="wrapper" use:actionWhenInViewport>
+	</div>
+
+	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>All Places Filled!</h2>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<p>Get notified when spots open:</p>
-	</div>
-	<div class="two-margin" />
+	</div> -->
+	<!-- <div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<WaitingListContact />
 	</div>
-	<div class="two-margin" />
+	<div class="two-margin" /> -->
+
 	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>New Bookings Open January 2023</h2>
 	</div>
@@ -341,6 +359,31 @@
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="content">
 			<div class="testimonial-text">
+				"Matej is a delight. He is prompt, courteous and very patient and calm. He has helped my
+				daughter gain more of an understanding for maths. I would recommend him highly to anyone who
+				is in need of a tutor."
+			</div>
+			<div class="abovetitle center">Yvonne O</div>
+		</div>
+	</div>
+</section>
+
+<section class="grey">
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="testimonial-text">
+				"I loved the way Matej explains everything in such a simple and easy way. 10/10 would
+				recommend."
+			</div>
+			<div class="abovetitle center">Vinh P</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="testimonial-text">
 				"Thank you for tutoring my son this this year. You are patient and have a lovely manner with
 				him. His marks and confidence have improved. Thank you."
 			</div>
@@ -351,9 +394,9 @@
 
 <style>
 	#left-blob {
-		clip-path: circle(10% at 15% 80%);
+		clip-path: circle(10% at 55% 80%);
 	}
 	#right-blob {
-		clip-path: circle(6% at 78% 12%);
+		clip-path: circle(6% at 17% 19%);
 	}
 </style>

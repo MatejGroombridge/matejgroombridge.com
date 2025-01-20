@@ -61,13 +61,16 @@
 				id="grade"
 				bind:value={contactForm.grade}
 			>
-				<option value="3">Year 3</option>
-				<option value="4">Year 4</option>
-				<option value="5">Year 5</option>
-				<option value="6">Year 6</option>
-				<option value="7">Year 7</option>
-				<option value="8">Year 8</option>
+				<option value="12">Year 12</option>
+				<option value="11">Year 11</option>
+				<option value="10">Year 10</option>
 				<option value="9">Year 9</option>
+				<option value="8">Year 8</option>
+				<option value="7">Year 7</option>
+				<option value="6">Year 6</option>
+				<option value="5">Year 5</option>
+				<option value="4">Year 4</option>
+				<option value="3">Year 3</option>
 			</select>
 		</div>
 
@@ -75,7 +78,7 @@
 			<h3 id="help">How can I help your child?</h3>
 			<textarea
 				aria-labelledby="help"
-				placeholder="Include subjects & skill level, as well as any questions or concerns:"
+				placeholder="Include subjects & skill level, as well as any questions or comments:"
 				required
 				maxlength="1000"
 				bind:value={contactForm.comment}
@@ -90,7 +93,7 @@
 				<h3 id="time">Lesson Time</h3>
 				<input
 					aria-labelledby="time"
-					placeholder="Eg. Saturday 5-6pm"
+					placeholder="What times suit you best?"
 					required
 					type="text"
 					bind:value={contactForm.lessonTime}
