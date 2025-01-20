@@ -281,7 +281,7 @@
 			<div class="center">
 				<div class="cost"><span class="large">$75</span>/hr</div>
 			</div>
-			<div class="center">
+			<div class="center hide-mobile">
 				<div class="cost"><span class="large">$55</span>/hr</div>
 			</div>
 			<div class="card" use:tilt={{ scale: 1 }}>
@@ -291,6 +291,9 @@
 					give your child the necessary help to keep up, or challenge them with advanced topics that
 					will allow them get ahead in their studies.
 				</p>
+			</div>
+			<div class="center show-mobile">
+				<div class="cost"><span class="large">$55</span>/hr</div>
 			</div>
 
 			<div class="card" use:tilt={{ scale: 1 }}>
