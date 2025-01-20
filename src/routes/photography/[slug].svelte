@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import Gallery from '$lib/photography/Gallery.svelte';
+	import Gallery from '$lib/photography/Gallery.txt';
 	import supabase from '$lib/db';
 	import { tripSlugs } from '$lib/photography/trip-slugs.js';
 	import { photosData } from '$lib/photography/photos-data.js';
