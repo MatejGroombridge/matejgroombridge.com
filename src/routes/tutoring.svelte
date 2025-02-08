@@ -213,7 +213,8 @@
 			<p style="font-size: 1em">
 				<strong>99.40 ATAR</strong> |
 				<strong>Straight Band 6s</strong>
-				| <strong>School Captain</strong> | <strong>3+ Years' Experience</strong> |
+				| <strong>School Captain</strong> |
+				<strong>2x Top of Grade</strong> | <strong>3+ Years' Experience</strong> |
 				<strong>UNSW Co-op Scholar</strong>
 			</p>
 		</div>
@@ -250,7 +251,7 @@
 </section>
 
 <section>
-	<!-- <div class="custom-blob hide-mobile" id="left-blob" /> -->
+	<div class="custom-blob hide-mobile" id="left-blob" />
 	<div class="custom-blob hide-mobile" id="right-blob" />
 	<div class="two-margin hide-mobile" />
 	<div class="wrapper" use:actionWhenInViewport>
