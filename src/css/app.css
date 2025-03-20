@@ -23,8 +23,8 @@ main {
 
 a {
   color: #242525;
-  -webkit-text-decoration: underline #00ab44;
-          text-decoration: underline #00ab44;
+  -webkit-text-decoration: underline #ed3494;
+          text-decoration: underline #ed3494;
   font-family: "Poppins", Helvetica, sans-serif;
   transition: 200ms;
 }
@@ -79,7 +79,7 @@ h3 {
   font-size: 1.2em;
   font-weight: 600;
   font-family: "Poppins", Helvetica, sans-serif;
-  color: #00ab44;
+  color: #ed3494;
   margin: 0.25em 0;
   text-transform: uppercase;
 }
@@ -114,7 +114,7 @@ hr {
 .large {
   font-size: 2em;
   font-weight: 700;
-  color: #00ab44;
+  color: #ed3494;
   font-family: "Poppins", Helvetica, sans-serif;
 }
 
@@ -244,7 +244,7 @@ td:last-child {
 }
 
 .available {
-  background: #00ab44;
+  background: #ed3494;
 }
 
 .half {
@@ -320,7 +320,7 @@ td:last-child {
   padding: 1em 1.5em;
   border-radius: 1em;
   overflow: hidden;
-  background: #00ab44;
+  background: #ed3494;
   color: #f9f8f4;
   cursor: pointer;
   text-decoration: none;
@@ -331,9 +331,9 @@ td:last-child {
 
 .btn:hover {
   transform: scale(1.1);
-  background: #00ab44;
+  background: #ed3494;
   color: #f9f8f4;
-  color: #00ab44;
+  color: #ed3494;
   background: #edf1ed;
 }
 
@@ -348,7 +348,7 @@ td:last-child {
   width: 30px;
   height: 30px;
   background: #edf1ed;
-  color: #00ab44;
+  color: #ed3494;
 }
 
 .link-btn {
@@ -358,7 +358,7 @@ td:last-child {
   padding: 1em 1.5em;
   border-radius: 1em;
   overflow: hidden;
-  background: #00ab44;
+  background: #ed3494;
   color: #f9f8f4;
   cursor: pointer;
   text-decoration: none;
@@ -368,7 +368,7 @@ td:last-child {
   padding: 0.5em 0.5em 0.5em 1.5em;
   border-radius: 2em;
   background: #edf1ed;
-  color: #00ab44;
+  color: #ed3494;
   display: flex;
   justify-content: space-between;
 }
@@ -381,9 +381,9 @@ td:last-child {
 
 .link-btn:hover {
   transform: scale(1.1);
-  background: #00ab44;
+  background: #ed3494;
   color: #f9f8f4;
-  color: #00ab44;
+  color: #ed3494;
   background: #edf1ed;
 }
 
@@ -731,7 +731,7 @@ dialog .dialog-wrapper .content .slotImg img:hover {
 .book-name {
   font-size: 1.5em;
   font-weight: 600;
-  color: #00ab44;
+  color: #ed3494;
 }
 
 .transparent {
@@ -756,7 +756,7 @@ dialog .dialog-wrapper .content .slotImg img:hover {
 }
 
 .notice {
-  background: #00ab44;
+  background: #ed3494;
   margin: 0;
   padding: 0.5em;
 }
@@ -925,17 +925,17 @@ textarea {
 
 textarea:focus {
   outline: none;
-  border-bottom: 3px solid #57ba86;
+  border-bottom: 3px solid #ba57b3;
 }
 
 input:focus {
   outline: none;
-  border-bottom: 3px solid #57ba86;
+  border-bottom: 3px solid #ba57b3;
 }
 
 select:focus {
   outline: none;
-  border-bottom: 3px solid #57ba86;
+  border-bottom: 3px solid #ba57b3;
 }
 
 button {
@@ -998,7 +998,7 @@ nav a {
 .nav-links a:hover::after {
   width: 100%;
   height: 3px;
-  background-color: #00ab44;
+  background-color: #ed3494;
 }
 
 .nav-socials {
@@ -1154,7 +1154,7 @@ nav a {
           user-select: none;
   bottom: 20px;
   color: #f9f8f4;
-  background-color: #00ab44;
+  background-color: #ed3494;
   padding: 3px;
   border-radius: 50%;
   width: 45px;
@@ -1178,7 +1178,7 @@ nav a {
 
 blockquote {
   background-color: #edf1ed;
-  border-left: 3px solid #00ab44;
+  border-left: 3px solid #ed3494;
   width: 100%;
   margin: 0.5em 0;
 }
@@ -1197,7 +1197,7 @@ blockquote p {
   top: 0;
   left: 0;
   width: 100%;
-  background: #00ab44;
+  background: #ed3494;
   z-index: -5;
   will-change: transform;
   overflow: hidden;
@@ -1207,7 +1207,7 @@ blockquote p {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #00ab44;
+  background: #ed3494;
 }
 
 .hide {
