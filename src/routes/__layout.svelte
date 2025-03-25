@@ -66,4 +66,4 @@
 
 <BackToTop />
 
-<!-- <Footer /> -->
+<Footer />
