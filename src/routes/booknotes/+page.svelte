@@ -1,6 +1,13 @@
 <script>
+<<<<<<< HEAD
 	// import { slugs } from '../../static/booknotes/book-slugs.js';
 
+=======
+	// data provided by +page.ts
+	let { data } = $props();
+
+	/** @param {Element} e */
+>>>>>>> 8cab53b (booknotes fetching fix)
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach(
@@ -19,6 +26,7 @@
 		observer.observe(e);
 	}
 
+<<<<<<< HEAD
 	let slugs = [];
 
 	async function fetchSlugs() {
@@ -43,6 +51,10 @@
 		const response = await fetch(`/booknotes/book-cover/${bookID}.webp`);
 		return response.blob();
 	}
+=======
+	// filter out any missing books defensively
+	const books = $derived(data.books?.filter((b) => !b?.missing) ?? []);
+>>>>>>> 8cab53b (booknotes fetching fix)
 </script>
 
 <section>
@@ -54,6 +66,7 @@
 			<h1>📚 Books I've Read 📚</h1>
 		</div>
 	</div>
+<<<<<<< HEAD
 	<div class="two-margin" />
 	<div class="wrapper" style="width: 75vw;" use:actionWhenInViewport>
 		<div class="card-wrapper">
@@ -76,6 +89,23 @@
 						</a>
 					</div>
 				{/await}
+=======
+	<div class="two-margin"></div>
+	<div class="wrapper" style="width: 75vw;" use:actionWhenInViewport>
+		<div class="card-wrapper">
+			{#each books as book}
+				<div class="card book-card" use:actionWhenInViewport>
+					<a href={`/booknotes/${book.slug}`} style="margin: 0; padding: 0; text-decoration: none;">
+						<img src={`/booknotes/book-cover/${book.slug}.webp`} alt={book.title} />
+					</a>
+					<a href={`/booknotes/${book.slug}`} style="margin: 0; padding: 0; text-decoration: none;">
+						<div class="book-info">
+							<div class="mini-title book-name">{book.title} by {book.author}</div>
+							<div class="mini-title book-status">Summary, Review and Notes</div>
+						</div>
+					</a>
+				</div>
+>>>>>>> 8cab53b (booknotes fetching fix)
 			{/each}
 		</div>
 	</div>
