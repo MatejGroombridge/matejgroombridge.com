@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import Gallery from '$lib/photography/Gallery.txt';
-	import supabase from '$lib/db';
+	import Gallery from '$lib/photography/Gallery.svelte';
 	import { tripSlugs } from '$lib/photography/trip-slugs.js';
 	import { photosData } from '$lib/photography/photos-data.js';
 
@@ -26,12 +25,7 @@
 	const ID = $page.params.slug;
 	let length = 0;
 
-	async function getPhotos(photoID) {
-		const response = await fetch(`/photography/all-photos/${ID + '_' + photoID}.webp`);
-		if (response.status == 200) {
-			return response.blob();
-		}
-	}
+	// Images are served from the static directory; construct URLs directly.
 
 	function fetchTripData(slug) {
 		const trip = tripSlugs.find((trip) => trip.slug === slug);
@@ -86,13 +80,16 @@
 			{/if}
 		</div>
 	</div>
-	<div class="two-margin mobile-two-margin" />
+	<div class="two-margin mobile-two-margin"></div>
 	<div class="wrapper shown">
-		<Gallery gap="20" maxColumnWidth="300" hasModal={true} type="tripImages">
-			{#each { length: length + 1 } as _, photoNum}
-				{#await getPhotos(photoNum) then photo}
-					<img src={URL.createObjectURL(photo)} alt={photo + '-' + photoNum} />
-				{/await}
+		<Gallery gap={20} maxColumnWidth={300} hasModal={true} type="tripImages">
+			{#each Array.from({ length }).keys() as photoNum}
+				<img
+					src={`/photography/all-photos/${ID + '_' + photoNum}.webp`}
+					alt={`${ID}-${photoNum}`}
+					loading="lazy"
+					on:error={(e) => e.currentTarget.remove()}
+				/>
 			{/each}
 		</Gallery>
 	</div>

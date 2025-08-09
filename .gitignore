@@ -1,8 +1,8 @@
+﻿node_modules/
+.svelte-kit/
+build/
+.netlify/
+.vercel/
 .DS_Store
-node_modules
-/build
-/.svelte-kit
-/package
-/old projects
-/old/in-progress
-/progress
+.env
+.env.*

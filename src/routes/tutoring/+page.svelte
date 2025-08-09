@@ -2,7 +2,48 @@
 	import TutoringContact from '$lib/contact/TutoringContact.svelte';
 	import WaitingListContact from '$lib/contact/WaitingListContact.svelte';
 	import Timetable from '$lib/timetable/Timetable.svelte';
-	import tilt from '../tilt.js';
+	import tilt from '$lib/tilt/tilt.js';
+
+	function getCurrentSchoolTerm() {
+		const now = new Date();
+		const year = now.getFullYear();
+		const month = now.getMonth() + 1; // getMonth() returns 0-11
+		const day = now.getDate();
+
+		// Australian school term dates (approximate)
+		// Term 1: Late January/Early February - Early April
+		// Term 2: Late April - Early July
+		// Term 3: Mid/Late July - Mid/Late September
+		// Term 4: Mid October - Mid December
+
+		if ((month === 1 && day >= 15) || month === 2 || month === 3 || (month === 4 && day <= 15)) {
+			return { term: 1, year };
+		} else if (
+			(month === 4 && day > 15) ||
+			month === 5 ||
+			month === 6 ||
+			(month === 7 && day <= 15)
+		) {
+			return { term: 2, year };
+		} else if (
+			(month === 7 && day > 15) ||
+			month === 8 ||
+			month === 9 ||
+			(month === 10 && day <= 15)
+		) {
+			return { term: 3, year };
+		} else {
+			// For Term 4 (mid Oct - mid Dec) and early January, show next year's Term 1
+			if (month >= 10) {
+				return { term: 1, year: year + 1 };
+			} else {
+				// Early January
+				return { term: 1, year };
+			}
+		}
+	}
+
+	const currentTerm = getCurrentSchoolTerm();
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -35,8 +76,9 @@
 	<div class="wrapper">
 		<div>
 			<p>
-				New spots are available for Term 1 2025 <a style="font-size: 0.5em;" href="#booking"
-					><i class="fas fa-external-link-alt fa-2x" /></a
+				New spots are available for Term {currentTerm.term}
+				{currentTerm.year}
+				<a style="font-size: 0.5em;" href="#booking"><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p>
 			<!-- <p>
@@ -206,15 +248,12 @@
 				Bachelor of Software Engineering under the UNSW Co-op scholar program. I have a passion for
 				teaching and helping students achieve their academic goals and with 3+ years of experience
 				in tutoring I have helped many students improve their grades and build confidence in their
-				abilities. You can learn more about me on my <a href="/about"
-					><p style="display: inline;">about page</p></a
-				>.
+				abilities. You can learn more about me on my <a href="/about">about page.</a>.
 			</p>
 			<p style="font-size: 1em">
 				<strong>99.40 ATAR</strong> |
 				<strong>Straight Band 6s</strong>
-				| <strong>School Captain</strong> |
-				<strong>2x Top of Grade</strong> | <strong>3+ Years' Experience</strong> |
+				| <strong>School Captain</strong> | <strong>3+ Years' Experience</strong> |
 				<strong>UNSW Co-op Scholar</strong>
 			</p>
 		</div>
@@ -251,7 +290,7 @@
 </section>
 
 <section>
-	<div class="custom-blob hide-mobile" id="left-blob" />
+	<!-- <div class="custom-blob hide-mobile" id="left-blob" /> -->
 	<div class="custom-blob hide-mobile" id="right-blob" />
 	<div class="two-margin hide-mobile" />
 	<div class="wrapper" use:actionWhenInViewport>

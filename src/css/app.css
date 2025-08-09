@@ -1249,15 +1249,45 @@ blockquote p {
   z-index: 5;
   display: block;
   border-radius: 0.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .dropdown-content li {
   margin: 7px;
+  transition: background-color 0.15s ease;
+  border-radius: 4px;
+}
+
+.dropdown-content li:hover {
+  background-color: rgba(0, 171, 68, 0.08);
 }
 
 .dropdown-content li a {
   color: #242525;
-  text-decoration: none;
+  text-decoration: none !important;
+  display: block;
+  padding: 8px 12px;
+  transition: color 0.15s ease;
+}
+
+.dropdown-content li a:after {
+  display: none !important;
+}
+
+.dropdown-content li a:hover::after {
+  display: none !important;
+  width: 0 !important;
+  background-color: transparent !important;
+}
+
+.dropdown-content li a:hover {
+  color: #00ab44;
+  text-decoration: none !important;
 }
 
 .disabled-link:hover {

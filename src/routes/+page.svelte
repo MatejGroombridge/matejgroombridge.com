@@ -55,16 +55,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="wrapper " use:actionWhenInViewport>
+	<div class="wrapper" use:actionWhenInViewport>
 		<p class="body-text">
-			<!-- I am a student, tutor and freelance web designer from Sydney, Australia, studying Software
-			Engineering at UNSW. -->
-			I'm a student, tutor and freelance web designer, studying a Bachelor of Software Engineering at
-			UNSW, Sydney.
+			I am a student, tutor and freelance web designer from Sydney, Australia.
 		</p>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
-		<div class="btn-wrapper	btn-head">
+		<div class="btn-wrapper btn-head">
 			<a class="btn" href="/about">About Me</a>
 			<a class="btn" href="#services">Services</a>
 		</div>
@@ -853,15 +850,8 @@
 		<div class="content">
 			<h2><a href="/tutoring">Private Tutoring <i class="fas fa-chevron-right" /></a></h2>
 			<p>
-				Do you want your child to excel at school? I run one-on-one lessons to help your child build
-				confidence, unlock their potential and achieve academic success.
-			</p>
-			<p style="font-size: 1em">
-				<strong>99.40 ATAR</strong> |
-				<strong>Straight Band 6s</strong>
-				| <strong>Baulkham Hills School Captain</strong> |
-				<strong>2x Top of Grade</strong> | <strong>3+ Years' Experience</strong> |
-				<strong>UNSW Co-op Scholar</strong>
+				Do you want your child to excel at school? Get expert tutoring from the 2 year Top of the
+				Grade of Baulkham Hills High School.
 			</p>
 		</div>
 	</div>

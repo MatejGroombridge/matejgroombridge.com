@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 
-	$: active = false;
+	$: active = true;
 	$: pressed = false;
 	$: outerWidth = 0;
 
@@ -18,18 +18,28 @@
 	}
 
 	let isHovered = false;
-
-	function sleep(seconds) {
-		return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
-	}
+	let hoverTimeout;
 
 	function triggerHover() {
+		if (hoverTimeout) {
+			clearTimeout(hoverTimeout);
+			hoverTimeout = null;
+		}
 		isHovered = true;
 	}
 
-	async function leaveHover() {
-		await sleep(1);
-		isHovered = false;
+	function leaveHover() {
+		// Add a small delay to prevent flickering when moving between elements
+		hoverTimeout = setTimeout(() => {
+			isHovered = false;
+		}, 150);
+	}
+
+	function cancelLeave() {
+		if (hoverTimeout) {
+			clearTimeout(hoverTimeout);
+			hoverTimeout = null;
+		}
 	}
 </script>
 
@@ -44,10 +54,12 @@
 		</div>
 		<div class="toggle">
 			<button type="button" aria-label="open menu" style="font-size: 0.7rem;" on:click={flip}>
+				<!-- svelte-ignore element_invalid_self_closing_tag -->
 				<i class="fas fa-bars fa-2x" />
 			</button>
 		</div>
 		{#if active || pressed}
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
 			<div class="nav-links" on:mouseleave={leaveHover}>
 				<ul>
 					<li><a href="/webdesign">Web Design</a></li>
@@ -56,12 +68,12 @@
 					<li><a href="/about">About</a></li>
 					<li class="show-mobile"><a href="/booknotes">Book Notes</a></li>
 					<li class="show-mobile"><a href="/photography">Photography</a></li>
-					<li class="dropdown hide-mobile">
-						<a href="/" on:mouseenter={triggerHover} class="disabled-link"
-							>More <i class="fas fa-chevron-down" style="margin: 5px; font-size: 0.75rem;" /></a
+					<li class="dropdown hide-mobile" on:mouseenter={triggerHover} on:mouseleave={leaveHover}>
+						<a href="/" class="disabled-link"
+							>More <i class="fas fa-chevron-down" style="margin: 5px; font-size: 0.75rem;"></i></a
 						>
 						{#if isHovered}
-							<ul transition:fly class="dropdown-content" on:mouseleave={leaveHover}>
+							<ul class="dropdown-content" on:mouseenter={cancelLeave} on:mouseleave={leaveHover}>
 								<li><a href="/booknotes">Book Notes</a></li>
 								<li><a href="/photography">Photography</a></li>
 							</ul>

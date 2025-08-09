@@ -15,7 +15,7 @@
 			'user_IaGwubLj0SawwSzw2xWGP'
 		);
 
-		alert('Success!');
+		alert("Thanks for getting in touch! I'll get back to you shortly");
 
 		window.location.reload();
 	}
@@ -24,7 +24,8 @@
 <svelte:head>
 	<script
 		type="text/javascript"
-		src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+		src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+	></script>
 	<script type="text/javascript">
 		(function () {
 			emailjs.init('user_IaGwubLj0SawwSzw2xWGP');

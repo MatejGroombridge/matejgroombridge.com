@@ -1,3 +1,5 @@
+<!-- TODO: This code became depracated upon updating the website to Svelte 5 -->
+
 <script>
 	import { fly } from 'svelte/transition';
 	export let refresh = '';

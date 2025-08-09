@@ -1,18 +1,17 @@
 import adapter from '@sveltejs/adapter-netlify';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: adapter(),
-		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
+	// Consult https://svelte.dev/docs/kit/integrations
+	// for more information about preprocessors
+	preprocess: vitePreprocess(),
 
-		vite: {
-			// ... other vite options ...
-			optimizeDeps: {
-				exclude: ['blob-polyfill']
-			}
-		}
+	kit: {
+		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
+		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
+		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
+		adapter: adapter()
 	}
 };
 

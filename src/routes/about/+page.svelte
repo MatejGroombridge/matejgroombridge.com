@@ -33,10 +33,10 @@
 		<div class="content" style="margin: 2em;">
 			<h1 style="font-size: 2.3em;">About</h1>
 			<p style="font-size: 1.1em;">
-				<strong>Hi there! </strong>I'm Matej. Thank you for visiting my website. I'm a first year
-				university student studying a Bachelor of Software Engineering under the UNSW Co-op
-				Scholarship program. This website hosts my tutoring and web design services, as well as some
-				recent projects that I have been working on.
+				<strong>Hi there! </strong> I'm Matej. Thank you for visiting my website. I'm a first year university
+				student studying a Bachelor of Software Engineering under the UNSW Co-op Scholarship program.
+				This website hosts my tutoring and web design services, as well as some recent projects that
+				I have been working on.
 			</p>
 			<div class="link-tiles">
 				<a

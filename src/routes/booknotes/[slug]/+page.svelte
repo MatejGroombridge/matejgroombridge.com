@@ -103,7 +103,7 @@
 			{/await}
 		</div>
 	</div>
-	<div class="two-margin" />
+	<div class="two-margin"></div>
 	<div class="wrapper shown">
 		<div class="article">
 			<h1>You Might Also Like...</h1>
