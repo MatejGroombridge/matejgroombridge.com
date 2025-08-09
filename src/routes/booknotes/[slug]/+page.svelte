@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import SvelteMarkdown from 'svelte-markdown';
+	import SvelteMarkdown from '@humanspeak/svelte-markdown';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {

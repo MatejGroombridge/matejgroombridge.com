@@ -1,13 +1,8 @@
 <script>
-<<<<<<< HEAD
-	// import { slugs } from '../../static/booknotes/book-slugs.js';
-
-=======
 	// data provided by +page.ts
 	let { data } = $props();
 
 	/** @param {Element} e */
->>>>>>> 8cab53b (booknotes fetching fix)
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach(
@@ -26,35 +21,8 @@
 		observer.observe(e);
 	}
 
-<<<<<<< HEAD
-	let slugs = [];
-
-	async function fetchSlugs() {
-		const response = await fetch('/booknotes/book-slugs.json');
-		if (response.ok) {
-			slugs = await response.json();
-		} else {
-			console.error('Failed to fetch slugs');
-		}
-	}
-
-	fetchSlugs();
-
-	async function fetchBook(bookID) {
-		const response = await fetch(`/booknotes/book-data/${bookID}.json`);
-		const jsonData = await response.text();
-		const parsedData = JSON.parse(jsonData);
-		return parsedData;
-	}
-
-	async function fetchCover(bookID) {
-		const response = await fetch(`/booknotes/book-cover/${bookID}.webp`);
-		return response.blob();
-	}
-=======
 	// filter out any missing books defensively
 	const books = $derived(data.books?.filter((b) => !b?.missing) ?? []);
->>>>>>> 8cab53b (booknotes fetching fix)
 </script>
 
 <section>
@@ -66,30 +34,6 @@
 			<h1>📚 Books I've Read 📚</h1>
 		</div>
 	</div>
-<<<<<<< HEAD
-	<div class="two-margin" />
-	<div class="wrapper" style="width: 75vw;" use:actionWhenInViewport>
-		<div class="card-wrapper">
-			{#each slugs as slug}
-				{#await fetchBook(slug) then book}
-					<div class="card book-card" use:actionWhenInViewport>
-						{#await fetchCover(book.slug) then cover}
-							<a
-								href="/booknotes/{book.slug}"
-								style="margin: 0; padding: 0; text-decoration: none;"
-							>
-								<img src={URL.createObjectURL(cover)} alt={book.id} />
-							</a>
-						{/await}
-						<a href="/booknotes/{book.slug}" style="margin: 0; padding: 0; text-decoration: none;">
-							<div class="book-info">
-								<div class="mini-title book-name">{book.title} by {book.author}</div>
-								<div class="mini-title book-status">Summary, Review and Notes</div>
-							</div>
-						</a>
-					</div>
-				{/await}
-=======
 	<div class="two-margin"></div>
 	<div class="wrapper" style="width: 75vw;" use:actionWhenInViewport>
 		<div class="card-wrapper">
@@ -105,7 +49,6 @@
 						</div>
 					</a>
 				</div>
->>>>>>> 8cab53b (booknotes fetching fix)
 			{/each}
 		</div>
 	</div>
