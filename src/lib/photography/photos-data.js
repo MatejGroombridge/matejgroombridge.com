@@ -1,5 +1,12 @@
 export const photosData = [
 	{
+		slug: 'mayfield24',
+		length: 12,
+		imgData: {
+			0: ['Mayfield Gardens, Australia', 'Late 2024', 'Sony α6700']
+		}
+	},
+	{
 		slug: 'piran23',
 		length: 19,
 		imgData: {
