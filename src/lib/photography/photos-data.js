@@ -1,5 +1,13 @@
 export const photosData = [
 	{
+		slug: 'sydney25',
+		length: 37,
+		imgData: {
+			0: ['Vaucluse, Sydney', '03/25', 'Sony α6700'],
+			5: ['La Perouse, Sydney', '05/25', 'Sony α6700']
+		}
+	},
+	{
 		slug: 'mayfield24',
 		length: 12,
 		imgData: {
