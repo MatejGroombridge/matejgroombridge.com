@@ -25,7 +25,7 @@
 
 	const dispatch = createEventDispatcher();
 
-	let slotHolder: HTMLDivElement | null = null;
+	let slotHolder: HTMLDivElement | null = null; // container to hide raw slotted nodes
 	let columns: Array<Array<{ src: string; alt: string; class: string }>> = [];
 	let galleryWidth: number = 0;
 	let columnCount: number = 0;
@@ -35,7 +35,14 @@
 	$: galleryStyle = `grid-template-columns: repeat(${columnCount}, 1fr); --gap: ${gap}px`;
 
 	onMount(() => {
-		Draw();
+		// Try multiple times across microtask and next frame to ensure slotted images are present
+		const attemptDraw = () => Draw();
+		Draw(); // immediate (often enough)
+		queueMicrotask(attemptDraw); // after current microtask
+		requestAnimationFrame(attemptDraw); // next frame (after DOM paint)
+		setTimeout(attemptDraw, 0); // final fallback
+
+		// Observe changes to the hidden slot container to reflow when content arrives
 		if (slotHolder) {
 			const mo = new MutationObserver(() => Draw());
 			mo.observe(slotHolder, { childList: true, subtree: true });
@@ -48,6 +55,12 @@
 	});
 
 	function HandleClick(e: MouseEvent) {
+		if (!hasModal) {
+			// prevent any default navigation/behaviour
+			e.preventDefault?.();
+			e.stopPropagation?.();
+			return;
+		}
 		const target = e.target as HTMLImageElement | null;
 		if (!target) return;
 		dispatch('click', {
@@ -107,8 +120,12 @@
 		if (!slotHolder) {
 			return;
 		}
-
-		const images = Array.from(slotHolder.querySelectorAll('img'));
+		const images: HTMLImageElement[] = Array.from(slotHolder.querySelectorAll('img'));
+		// If slot content isn't ready yet, try again shortly
+		if (images.length === 0) {
+			setTimeout(() => Draw(), 0);
+			return;
+		}
 		// Initialize columns and heights
 		columns = Array.from(
 			{ length: columnCount },
@@ -157,16 +174,27 @@
 			<div class="column">
 				{#each column as img}
 					{#if type != 'tripView'}
-						<img
-							src={img.src}
-							alt={img.alt}
-							on:click={HandleClick}
-							on:click={() => getImgData(img.src)}
-							on:click={() => getIndex(img.alt)}
-							class="{hover === true ? 'img-hover' : ''} {img.class}"
-							{loading}
-							on:error={(e) => (e.currentTarget as HTMLImageElement).remove()}
-						/>
+						{#if hasModal}
+							<img
+								src={img.src}
+								alt={img.alt}
+								on:click={HandleClick}
+								on:click={() => getImgData(img.src)}
+								on:click={() => getIndex(img.alt)}
+								class="{hover === true ? 'img-hover' : ''} {img.class}"
+								{loading}
+								on:error={(e) => (e.currentTarget as HTMLImageElement).remove()}
+							/>
+						{:else}
+							<img
+								src={img.src}
+								alt={img.alt}
+								class="{hover === true ? 'img-hover' : ''} {img.class}"
+								style="cursor: default"
+								{loading}
+								on:error={(e) => (e.currentTarget as HTMLImageElement).remove()}
+							/>
+						{/if}
 					{/if}
 
 					{#if type == 'tripView'}

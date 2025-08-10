@@ -1,5 +1,6 @@
 <script>
 	import { fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	import { photosData } from '$lib/photography/photos-data.js';
 
@@ -10,18 +11,42 @@
 	export let imgIndex;
 
 	let dialog;
+	let isMobile = false;
 	let infoShown = false;
 	let photoIndex;
 	let photoInfo = [];
 
 	const ID = $page.params.slug;
 
-	$: if (dialog && showModal) dialog.showModal();
+	onMount(() => {
+		const updateIsMobile = () => {
+			try {
+				isMobile = window.matchMedia('(max-width: 900px)').matches;
+			} catch (e) {
+				// Non-browser or matchMedia unsupported; default to non-mobile
+				isMobile = false;
+			}
+		};
+		updateIsMobile();
+		window.addEventListener('resize', updateIsMobile);
+		return () => window.removeEventListener('resize', updateIsMobile);
+	});
+
+	// Only open a blocking modal on non-mobile; on mobile the dialog is hidden by CSS (hide-mobile),
+	// and opening it would still create a backdrop that blocks interaction.
+	$: if (dialog && showModal && !isMobile) dialog.showModal();
+	$: if (dialog && showModal && isMobile) {
+		// Mobile fallback: open the image directly for trip images, then reset modal state
+		if (type === 'tripImages' && targetBlob) {
+			try {
+				window.open(targetBlob);
+			} catch {}
+		}
+		showModal = false;
+	}
 
 	function closeModal() {
-		if ((showModal = false)) {
-			showModal = true;
-		}
+		showModal = false;
 	}
 
 	function typeOptions() {

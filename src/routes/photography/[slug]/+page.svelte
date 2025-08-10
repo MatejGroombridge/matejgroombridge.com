@@ -82,7 +82,7 @@
 	</div>
 	<div class="two-margin mobile-two-margin"></div>
 	<div class="wrapper shown">
-		<Gallery gap={20} maxColumnWidth={300} hasModal={true} type="tripImages">
+		<Gallery gap={20} maxColumnWidth={300} hasModal={false} type="tripImages">
 			{#each Array.from({ length }).keys() as photoNum}
 				<img
 					src={`/photography/all-photos/${ID + '_' + photoNum}.webp`}
