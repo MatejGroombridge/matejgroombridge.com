@@ -202,8 +202,6 @@
 							class="trip-container img-hover-scale {img.class}"
 							role="button"
 							tabindex="0"
-							on:click={HandleClick}
-							on:click={() => getImgData(img.src)}
 							on:click={() => tripLink(img.alt)}
 						>
 							<img

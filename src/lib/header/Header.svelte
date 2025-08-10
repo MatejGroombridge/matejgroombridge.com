@@ -1,16 +1,15 @@
 <script>
 	import { fly } from 'svelte/transition';
 
-	$: active = true;
-	$: pressed = false;
-	$: outerWidth = 0;
+	let outerWidth = 0;
+	// Menu is active (always visible) on desktop widths
+	$: active = outerWidth > 900;
+	// Mobile hamburger toggle
+	let pressed = false;
 
 	function handleResize() {
-		if (outerWidth > 900) {
-			active = true;
-		} else {
-			active = false;
-		}
+		// When moving to desktop, ensure hamburger state is reset
+		if (outerWidth > 900) pressed = false;
 	}
 
 	function flip() {
@@ -18,7 +17,8 @@
 	}
 
 	let isHovered = false;
-	let hoverTimeout;
+	/** @type {ReturnType<typeof setTimeout> | null} */
+	let hoverTimeout = null;
 
 	function triggerHover() {
 		if (hoverTimeout) {
@@ -60,14 +60,56 @@
 		</div>
 		{#if active || pressed}
 			<!-- svelte-ignore a11y_no_static_element_interactions -->
-			<div class="nav-links" on:mouseleave={leaveHover}>
+			<div class="nav-links" on:mouseleave={active ? leaveHover : null}>
 				<ul>
-					<li><a href="/webdesign">Web Design</a></li>
-					<li><a href="/tutoring">Tutoring</a></li>
-					<li><a href="/contact">Contact</a></li>
-					<li><a href="/about">About</a></li>
-					<li class="show-mobile"><a href="/booknotes">Book Notes</a></li>
-					<li class="show-mobile"><a href="/photography">Photography</a></li>
+					<li>
+						<a
+							href="/webdesign"
+							on:click={() => {
+								if (!active) pressed = false;
+							}}>Web Design</a
+						>
+					</li>
+					<li>
+						<a
+							href="/tutoring"
+							on:click={() => {
+								if (!active) pressed = false;
+							}}>Tutoring</a
+						>
+					</li>
+					<li>
+						<a
+							href="/contact"
+							on:click={() => {
+								if (!active) pressed = false;
+							}}>Contact</a
+						>
+					</li>
+					<li>
+						<a
+							href="/about"
+							on:click={() => {
+								if (!active) pressed = false;
+							}}>About</a
+						>
+					</li>
+					<li class="show-mobile">
+						<a
+							href="/booknotes"
+							on:click={() => {
+								if (!active) pressed = false;
+							}}>Book Notes</a
+						>
+					</li>
+					<li class="show-mobile">
+						<a
+							href="/photography"
+							on:click={() => {
+								if (!active) pressed = false;
+							}}>Photography</a
+						>
+					</li>
 					<li class="dropdown hide-mobile" on:mouseenter={triggerHover} on:mouseleave={leaveHover}>
 						<a href="/" class="disabled-link"
 							>More <i class="fas fa-chevron-down" style="margin: 5px; font-size: 0.75rem;"></i></a
@@ -89,7 +131,7 @@
 							aria-label="instagram logo"
 							target="_blank"
 							rel="noreferrer"
-							style="font-size: 1.1em;"><i class="fab fa-instagram fa-2x" /></a
+							style="font-size: 1.1em;"><i class="fab fa-instagram fa-2x"></i></a
 						>
 					</li>
 					<li>
@@ -97,7 +139,7 @@
 							href="https://www.linkedin.com/in/matej-groombridge-06157517b/"
 							aria-label="linkedin logo"
 							target="_blank"
-							rel="noreferrer"><i class="fab fa-linkedin fa-2x" /></a
+							rel="noreferrer"><i class="fab fa-linkedin fa-2x"></i></a
 						>
 					</li>
 					<li>
@@ -105,7 +147,7 @@
 							href="https://github.com/MatejGroombridge"
 							aria-label="github logo"
 							target="_blank"
-							rel="noreferrer"><i class="fab fa-github fa-2x" /></a
+							rel="noreferrer"><i class="fab fa-github fa-2x"></i></a
 						>
 					</li>
 					<li>
@@ -113,12 +155,12 @@
 							href="https://www.instagram.com/matejsphotography/"
 							aria-label="camera logo"
 							target="_blank"
-							rel="noreferrer"><i class="fa fa-camera-retro fa-2x" /></a
+							rel="noreferrer"><i class="fa fa-camera-retro fa-2x"></i></a
 						>
 					</li>
 					<li>
 						<a href="/contact#email" aria-label="email logo" target="_blank"
-							><i class="fas fa-envelope fa-2x" /></a
+							><i class="fas fa-envelope fa-2x"></i></a
 						>
 					</li>
 				</ul>
