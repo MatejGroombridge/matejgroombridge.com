@@ -1,6 +1,6 @@
 export const tripSlugs = [
 	{ title: 'Sydney', subtitle: 'Australia', year: 2025, slug: 'sydney25' },
-	{ title: 'Central West', subtitle: 'Australia', year: 2024, slug: 'mayfield24' },
+	{ title: 'Central West', subtitle: 'Australia', year: 2024, slug: 'centralwest24' },
 	{ title: 'Slovenia', subtitle: '', year: 2023, slug: 'slovenia23' },
 	{ title: 'Prague', subtitle: 'Czech Republic', year: 2023, slug: 'prague23' },
 	{ title: 'Vienna', subtitle: 'Austria', year: 2023, slug: 'vienna23' },
