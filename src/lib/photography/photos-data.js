@@ -1,7 +1,7 @@
 export const photosData = [
 	{
 		slug: 'sydney25',
-		length: 42,
+		length: 43,
 		imgData: {
 			0: ['Vaucluse, Sydney', '03/25', 'Sony α6700'],
 			7: ['La Perouse, Sydney', '05/25', 'Sony α6700'],
@@ -10,11 +10,33 @@ export const photosData = [
 		}
 	},
 	{
+		slug: 'goldcoast24',
+		length: 31,
+		imgData: {
+			0: ['Gold Coast, Australia', '12/24', 'Sony α6700']
+		}
+	},
+	{
 		slug: 'centralwest24',
-		length: 18,
+		length: 36,
 		imgData: {
 			0: ['Mayfield Gardens, Central West', 'Late 2024', 'Sony α6700'],
-			12: ['Lost City, Central West', '01/25', 'Sony α6700']
+			12: ['Lost City, Central West', '01/25', 'Sony α6700'],
+			18: ['Bathurst, Central West', 'Late 2024', 'Sony α6700']
+		}
+	},
+	{
+		slug: 'southcoast24',
+		length: 8,
+		imgData: {
+			0: ['Wollongong, Australia', '12/24', 'Sony α6700']
+		}
+	},
+	{
+		slug: 'space24',
+		length: 7,
+		imgData: {
+			0: ['Glen Davis, Central West', '10/24', 'Sony α6700']
 		}
 	},
 	{

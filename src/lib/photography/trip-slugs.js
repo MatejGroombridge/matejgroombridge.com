@@ -1,6 +1,9 @@
 export const tripSlugs = [
 	{ title: 'Sydney', subtitle: 'Australia', year: 2025, slug: 'sydney25' },
+	{ title: 'Gold Coast', subtitle: 'Australia', year: 2024, slug: 'goldcoast24' },
 	{ title: 'Central West', subtitle: 'Australia', year: 2024, slug: 'centralwest24' },
+	{ title: 'South Coast', subtitle: 'Australia', year: 2024, slug: 'southcoast24' },
+	{ title: 'Space', subtitle: '', year: 2024, slug: 'space24' },
 	{ title: 'Slovenia', subtitle: '', year: 2023, slug: 'slovenia23' },
 	{ title: 'Prague', subtitle: 'Czech Republic', year: 2023, slug: 'prague23' },
 	{ title: 'Vienna', subtitle: 'Austria', year: 2023, slug: 'vienna23' },
@@ -10,8 +13,3 @@ export const tripSlugs = [
 	{ title: 'Snowy Mtns.', subtitle: 'Australia', year: 2022, slug: 'snowies22' },
 	{ title: 'Lake Tabourie', subtitle: 'Australia', year: 2022, slug: 'tabourie22' }
 ];
-
-// TODO: Glen Davis + Bathurst Train, South Coast, Gold Coast
-
-// https://www.freeconvert.com/jpg-to-webp/download
-// https://imagekit.io/tools/compress-webp/
