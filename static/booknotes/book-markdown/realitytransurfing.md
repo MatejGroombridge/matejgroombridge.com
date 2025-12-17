@@ -10,7 +10,7 @@
 
 Reality Transurfing is a comprehensive metaphysical framework that challenges the conventional idea that we must fight to achieve our goals. The book is packed with fascinating concepts that map a helpful model for reality, suggesting that life is an infinite "space of alternatives" where we simply choose our destiny rather than struggle for it. The ideas around "pendulums" (energy traps) and "excess potential" are super practical for anyone trying to work hard without burning out. That said, it is a very long book and definitely could be more concise. It tends to ramble and there are parts that feel a bit wishy-washy or repetitive. But if you have the patience to sift through the fluff the framework it gives you for navigating life is actually pretty game-changing.
 
-## My Top 3 Quotes
+## Top Quotes
 
 > Do not try to overcome obstacles; reduce the amount of importance you project onto them.
 
