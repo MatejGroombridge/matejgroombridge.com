@@ -53,7 +53,7 @@
 		</div>
 		<div class="content">
 			<div class="content">
-				<img src="/face2.webp" alt="Matej Groombridge" width="280px" height="350px" />
+				<img src="/frontpage2.webp" alt="Matej Groombridge" width="280px" height="350px" />
 			</div>
 		</div>
 	</div>
@@ -91,7 +91,7 @@
 			<h2><a href="/photography">Photography</a></h2>
 			<p>
 				I love taking cool photos. From natural landscapes to bustling cities, check out my
-				collection of favorite pics from over the years.
+				collection of favourite pics from over the years.
 			</p>
 			<div class="btn-wrapper btn-left" style="margin-top: 1em;">
 				<a class="btn" href="/photography">See Photos</a>

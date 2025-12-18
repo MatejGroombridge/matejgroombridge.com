@@ -38,17 +38,18 @@
 	<div class="wrapper" style="width: 75vw;" use:actionWhenInViewport>
 		<div class="card-wrapper">
 			{#each books as book}
-				<div class="card book-card" use:actionWhenInViewport>
-					<a href={`/booknotes/${book.slug}`} style="margin: 0; padding: 0; text-decoration: none;">
-						<img src={`/booknotes/book-cover/${book.slug}.webp`} alt={book.title} />
-					</a>
-					<a href={`/booknotes/${book.slug}`} style="margin: 0; padding: 0; text-decoration: none;">
-						<div class="book-info">
-							<div class="mini-title book-name">{book.title} by {book.author}</div>
-							<div class="mini-title book-status">Summary, Review and Notes</div>
-						</div>
-					</a>
-				</div>
+				<a
+					href={`/booknotes/${book.slug}`}
+					class="card book-card"
+					use:actionWhenInViewport
+					style="text-decoration: none; color: inherit;"
+				>
+					<img src={`/booknotes/book-cover/${book.slug}.webp`} alt={book.title} />
+					<div class="book-info">
+						<div class="mini-title book-name">{book.title}</div>
+						<div class="mini-title book-status">by {book.author}</div>
+					</div>
+				</a>
 			{/each}
 		</div>
 	</div>

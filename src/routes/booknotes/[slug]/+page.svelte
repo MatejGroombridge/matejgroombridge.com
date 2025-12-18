@@ -42,6 +42,22 @@
 		const response = await fetch(`/booknotes/book-cover/${bookID}.webp`);
 		return response.blob();
 	}
+
+	async function fetchRandomBooks() {
+		const response = await fetch('/booknotes/book-slugs.json');
+		let slugs = await response.json();
+		slugs = slugs.filter((s) => s !== ID);
+		const shuffled = slugs.sort(() => 0.5 - Math.random());
+		const selected = shuffled.slice(0, 5);
+
+		const books = await Promise.all(
+			selected.map(async (slug) => {
+				const res = await fetch(`/booknotes/book-data/${slug}.json`);
+				return res.json();
+			})
+		);
+		return books;
+	}
 </script>
 
 <svelte:head>
@@ -111,11 +127,11 @@
 	</div>
 	<div class="wrapper shown">
 		<div class="article">
-			<a href="https://www.matejgroombridge.com/booknotes/atomichabits">Atomic Habits</a>
-			<a href="https://www.matejgroombridge.com/booknotes/fhww">The 4-Hour Workweek</a>
-			<a href="https://www.matejgroombridge.com/booknotes/thinkgrowrich">Think and Grow Rich</a>
-			<a href="https://www.matejgroombridge.com/booknotes/now">The Power of Now</a>
-			<a href="https://www.matejgroombridge.com/booknotes/dohardthings">Do Hard Things</a>
+			{#await fetchRandomBooks() then books}
+				{#each books as book}
+					<a href={`/booknotes/${book.slug}`}>{book.title}</a>
+				{/each}
+			{/await}
 		</div>
 	</div>
 	<div class="wrapper shown bottom-disclaimer">

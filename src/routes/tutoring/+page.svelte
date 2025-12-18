@@ -75,9 +75,15 @@
 <section class="notice">
 	<div class="wrapper">
 		<div>
-			<p>
+			<!-- <p>
 				New spots are available for Term {currentTerm.term}
 				{currentTerm.year}
+				<a style="font-size: 0.5em;" href="#booking"><i class="fas fa-external-link-alt fa-2x" /></a
+				>
+			</p> -->
+			<p>
+				No longer taking students for Term {currentTerm.term}
+				{currentTerm.year}. Send me a message to enquire availability.
 				<a style="font-size: 0.5em;" href="#booking"><i class="fas fa-external-link-alt fa-2x" /></a
 				>
 			</p>
@@ -248,7 +254,7 @@
 				Bachelor of Software Engineering under the UNSW Co-op scholar program. I have a passion for
 				teaching and helping students achieve their academic goals and with 3+ years of experience
 				in tutoring I have helped many students improve their grades and build confidence in their
-				abilities. You can learn more about me on my <a href="/about">about page.</a>.
+				abilities. You can learn more about me on my <a href="/about">about page</a>.
 			</p>
 			<p style="font-size: 1em">
 				<strong>99.40 ATAR</strong> |
@@ -321,10 +327,11 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$75</span>/hr</div>
+				<div class="cost"><span class="large">$80</span>/hr</div>
 			</div>
+
 			<div class="center hide-mobile">
-				<div class="cost"><span class="large">$50</span>/hr</div>
+				<div class="cost"><span class="large">$60</span>/hr</div>
 			</div>
 			<div class="card" use:tilt={{ scale: 1 }}>
 				<h3>Junior High (Y7-10)</h3>
@@ -335,7 +342,7 @@
 				</p>
 			</div>
 			<div class="center show-mobile">
-				<div class="cost"><span class="large">$50</span>/hr</div>
+				<div class="cost"><span class="large">$60</span>/hr</div>
 			</div>
 
 			<div class="card" use:tilt={{ scale: 1 }}>
@@ -346,7 +353,7 @@
 				</p>
 			</div>
 			<div class="center">
-				<div class="cost"><span class="large">$45</span>/hr</div>
+				<div class="cost"><span class="large">$50</span>/hr</div>
 			</div>
 		</div>
 	</div>
@@ -367,25 +374,25 @@
 </section> -->
 
 <section id="booking" class="grey">
-	<div class="wrapper" use:actionWhenInViewport>
+	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>Book A Lesson Today</h2>
 	</div>
 	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<TutoringContact />
-	</div>
+	</div> -->
 
-	<!-- <div class="wrapper" use:actionWhenInViewport>
+	<div class="wrapper" use:actionWhenInViewport>
 		<h2>All Places Filled!</h2>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<p>Get notified when spots open:</p>
-	</div> -->
-	<!-- <div class="two-margin" />
+	</div>
+	<div class="two-margin" />
 	<div class="wrapper" use:actionWhenInViewport>
 		<WaitingListContact />
 	</div>
-	<div class="two-margin" /> -->
+	<div class="two-margin" />
 
 	<!-- <div class="wrapper" use:actionWhenInViewport>
 		<h2>New Bookings Open January 2023</h2>

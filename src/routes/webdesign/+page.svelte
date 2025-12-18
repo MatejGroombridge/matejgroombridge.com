@@ -374,16 +374,19 @@
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="content">
 			<div class="abovetitle">Featured Project</div>
-			<h2 class="no-underline">Hoi An Cuisine</h2>
+			<h2 class="no-underline">Hills Paediatrics</h2>
 			<p style="font-style: italic; font-size: 1em; padding: 0;">
-				"Welcome to Hoi An Vietnamese Cuisine! We specialise in crafting vibrant and authentic
-				Vietnamese dishes for the residents of Sydney. Our lovely staff and mouth-watering menu
-				promise an amazing experience."
+				"Empowering Children, Young People And Their Families To Approach Health From A Holistic
+				Perspective"
 			</p>
 		</div>
 		<div class="content">
-			<a href="https://dev-my-hao.pantheonsite.io/" target="_blank" rel="noreferrer">
-				<img class="img-500" src="/past-sites/hoian.webp" alt="My Hao Cuisine website screenshot" />
+			<a href="https://hillspaediatrics.com.au/" target="_blank" rel="noreferrer">
+				<img
+					class="img-500"
+					src="/past-sites/hillspaed.webp"
+					alt="My Hao Cuisine website screenshot"
+				/>
 			</a>
 		</div>
 	</div>
@@ -469,6 +472,24 @@
 			</p>
 		</div>
 	</div>
+	<div class="two-margin hide" class:show={show1 === 'true'} />
+	<div class="wrapper hide" class:show={show1 === 'true'} use:actionWhenInViewport>
+		<div class="content">
+			<div class="abovetitle">Featured Project</div>
+			<h2 class="no-underline">Hoi An Cuisine</h2>
+			<p style="font-style: italic; font-size: 1em; padding: 0;">
+				"Welcome to Hoi An Vietnamese Cuisine! We specialise in crafting vibrant and authentic
+				Vietnamese dishes for the residents of Sydney. Our lovely staff and mouth-watering menu
+				promise an amazing experience."
+			</p>
+		</div>
+		<div class="content">
+			<a href="https://dev-my-hao.pantheonsite.io/" target="_blank" rel="noreferrer">
+				<img class="img-500" src="/past-sites/hoian.webp" alt="My Hao Cuisine website screenshot" />
+			</a>
+		</div>
+	</div>
+	<div class="two-margin" />
 
 	<div class="wrapper" use:actionWhenInViewport>
 		<div class="btn-wrapper">

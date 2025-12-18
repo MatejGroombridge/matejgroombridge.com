@@ -712,16 +712,12 @@ dialog .dialog-wrapper .content .slotImg img:hover {
 .book-card .book-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 0 1em;
-}
-.book-card .book-info p {
-  height: 100%;
-  padding-top: 1em;
+  padding: 0 1.5em;
 }
 .book-card a {
   text-decoration: none;
@@ -739,7 +735,7 @@ dialog .dialog-wrapper .content .slotImg img:hover {
 }
 
 .book-name {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 600;
   color: #00ab44;
 }
@@ -1662,9 +1658,6 @@ blockquote p {
   }
   .book-card img {
     margin: 1em 0;
-  }
-  .book-status {
-    display: none;
   }
 }
 @media (max-width: 600px) {
