@@ -86,12 +86,12 @@
 			<div class="content">
 				<p><strong>When I read it</strong> <br /> {book.readingtime}</p>
 			</div>
-			<div class="content">
+			<!-- <div class="content">
 				<p>
 					<strong>Buy the Book</strong> <br />
 					<a href={book.link} target="_blank" rel="noreferrer">{book.bookstore}</a>
 				</p>
-			</div>
+			</div> -->
 		{/await}
 	</div>
 </section>

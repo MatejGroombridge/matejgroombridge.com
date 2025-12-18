@@ -1,5 +1,7 @@
 <script>
+	export let data;
 	import Contact from '$lib/contact/Contact.svelte';
+	import { tripSlugs } from '$lib/photography/trip-slugs.js';
 
 	function actionWhenInViewport(e) {
 		const observer = new IntersectionObserver((entries) => {
@@ -24,7 +26,7 @@
 	<title>Matej Groombridge</title>
 	<meta
 		name="description"
-		content="Hi, my name is Matej Groombridge. I am a student and freelance web designer/website developer from Sydney, Australia. I offer private tutoring lessons as well as affordable freelance web design services for small businesses. Thanks for stopping by!"
+		content="Hi, my name is Matej Groombridge. I'm a second year undergraduate student, UNSW Co-op Scholar and Sydney-based Software Engineer, currently interning at Atlassian. Thanks for stopping by!"
 	/>
 </svelte:head>
 <!-- 
@@ -57,20 +59,86 @@
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
 		<p class="body-text">
-			I'm a student, tutor and freelance web designer, studying a Bachelor of Software Engineering
-			at UNSW, Sydney.
+			I'm a second year undergraduate student, UNSW Co-op Scholar and Sydney-based Software
+			Engineer, currently interning at Atlassian.
 		</p>
 	</div>
 	<div class="wrapper" use:actionWhenInViewport>
-		<div class="btn-wrapper btn-head">
-			<a class="btn" href="/about">About Me</a>
-			<a class="btn" href="#services">Services</a>
+		<div class="btn-wrapper" style="justify-content: center;">
+			<a href="#home-body" aria-label="Scroll down" style="text-decoration: none; color: inherit;">
+				<i class="fas fa-chevron-down fa-beat fa-3x" />
+			</a>
 		</div>
 	</div>
 </section>
 
-<section class="grey" id="services">
-	<div class="wrapper service-wrapper" use:actionWhenInViewport>
+<section class="grey" id="home-body">
+	<div class="wrapper service-wrapper photography-wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<div class="photo-grid">
+				{#each tripSlugs.slice(0, 4) as trip}
+					<div class="photo-item">
+						<img
+							src={`/photography/trip-photos/${trip.slug}.webp`}
+							alt={trip.title}
+							loading="lazy"
+						/>
+					</div>
+				{/each}
+			</div>
+		</div>
+		<div class="content">
+			<h2><a href="/photography">Photography</a></h2>
+			<p>
+				I love taking cool photos. From natural landscapes to bustling cities, check out my
+				collection of favorite pics from over the years.
+			</p>
+			<div class="btn-wrapper btn-left" style="margin-top: 1em;">
+				<a class="btn" href="/photography">See Photos</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="white">
+	<div class="wrapper booknotes-wrapper" use:actionWhenInViewport>
+		<div class="content">
+			<h2><a href="/booknotes">Book Notes</a></h2>
+			<p>
+				I document key takeaways from books on lifestyle, philosophy and tech. Check out my
+				summaries and reviews.
+			</p>
+			<div class="btn-wrapper btn-left hide-mobile" style="margin-top: 1em;">
+				<a class="btn" href="/booknotes">Read Notes</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="book-grid">
+				{#each data.bookNotes.slice(0, 3) as book}
+					<div class="book-item">
+						<a href={`/booknotes/${book.slug}`}>
+							<img
+								src={`/booknotes/book-cover/${book.slug}.webp`}
+								alt={book.title}
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</div>
+	<div class="wrapper show-mobile" use:actionWhenInViewport>
+		<div class="content">
+			<div class="btn-wrapper btn-left" style="margin-top: 1em;">
+				<a class="btn" href="/booknotes">Read Notes</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="grey">
+	<div class="wrapper" use:actionWhenInViewport>
 		<div class="content svg-wrapper">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

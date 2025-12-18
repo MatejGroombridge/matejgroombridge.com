@@ -6,13 +6,7 @@
 			tutor and freelance web designer.
 		</p>
 	</section>
-	<section>
-		<p class="footer-title">Disclosure</p>
-		<p>
-			This website contains affiliate links. It costs you nothing and allows this website to
-			continue running.
-		</p>
-	</section>
+	<section></section>
 	<section class="small-links">
 		<a class="small-text" href="/">Home</a>
 		<a class="small-text" href="/webdesign">Web Design</a>

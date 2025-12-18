@@ -24,7 +24,7 @@
 	<title>About Me</title>
 	<meta
 		name="description"
-		content="Hi, my name is Matej Groombridge. I am a high school student and web designer from Sydney, Australia. I offer one-on-one private tutoring lessons as well as affordable freelance web design services for small businesses. Thanks for stopping by!"
+		content="Hi, my name is Matej Groombridge. I'm a second year undergraduate student, UNSW Co-op Scholar and Sydney-based Software Engineer, currently interning at Atlassian. Thanks for stopping by!"
 	/>
 </svelte:head>
 
@@ -33,10 +33,10 @@
 		<div class="content" style="margin: 2em;">
 			<h1 style="font-size: 2.3em;">About</h1>
 			<p style="font-size: 1.1em;">
-				<strong>Hi there! </strong> I'm Matej. Thank you for visiting my website. I'm a first year university
-				student studying a Bachelor of Software Engineering under the UNSW Co-op Scholarship program.
-				This website hosts my tutoring and web design services, as well as some recent projects that
-				I have been working on.
+				<strong>Hi there! </strong> I'm Matej. Thank you for visiting my website. I'm a second year undergraduate
+				student (B. Software Engineering Hons), UNSW Co-op Scholar and Sydney-based Software Engineer,
+				currently interning at Atlassian. This website hosts my tutoring and web design services, as
+				well as some recent projects that I've been working on.
 			</p>
 			<div class="link-tiles">
 				<a

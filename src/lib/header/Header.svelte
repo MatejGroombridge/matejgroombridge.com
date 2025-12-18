@@ -64,26 +64,18 @@
 				<ul>
 					<li>
 						<a
-							href="/webdesign"
+							href="/photography"
 							on:click={() => {
 								if (!active) pressed = false;
-							}}>Web Design</a
+							}}>Photography</a
 						>
 					</li>
 					<li>
 						<a
-							href="/tutoring"
+							href="/booknotes"
 							on:click={() => {
 								if (!active) pressed = false;
-							}}>Tutoring</a
-						>
-					</li>
-					<li>
-						<a
-							href="/contact"
-							on:click={() => {
-								if (!active) pressed = false;
-							}}>Contact</a
+							}}>Book Notes</a
 						>
 					</li>
 					<li>
@@ -94,20 +86,28 @@
 							}}>About</a
 						>
 					</li>
-					<li class="show-mobile">
+					<li>
 						<a
-							href="/booknotes"
+							href="/contact"
 							on:click={() => {
 								if (!active) pressed = false;
-							}}>Book Notes</a
+							}}>Contact</a
 						>
 					</li>
 					<li class="show-mobile">
 						<a
-							href="/photography"
+							href="/webdesign"
 							on:click={() => {
 								if (!active) pressed = false;
-							}}>Photography</a
+							}}>Web Design</a
+						>
+					</li>
+					<li class="show-mobile">
+						<a
+							href="/tutoring"
+							on:click={() => {
+								if (!active) pressed = false;
+							}}>Tutoring</a
 						>
 					</li>
 					<li class="dropdown hide-mobile" on:mouseenter={triggerHover} on:mouseleave={leaveHover}>
@@ -116,8 +116,8 @@
 						>
 						{#if isHovered}
 							<ul class="dropdown-content" on:mouseenter={cancelLeave} on:mouseleave={leaveHover}>
-								<li><a href="/booknotes">Book Notes</a></li>
-								<li><a href="/photography">Photography</a></li>
+								<li><a href="/webdesign">Web Design</a></li>
+								<li><a href="/tutoring">Tutoring</a></li>
 							</ul>
 						{/if}
 					</li>
