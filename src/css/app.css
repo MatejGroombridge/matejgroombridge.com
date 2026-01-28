@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   font-family: "Montserrat", Helvetica, sans-serif;
 }
@@ -56,7 +57,7 @@ h1 {
 
 h2 {
   font-size: 1.7em;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0 1em;
   font-family: "Poppins", Helvetica, sans-serif;
 }
@@ -186,8 +187,18 @@ section {
   padding-top: 0.5em;
   margin: 0;
 }
+.article h2,
+.article h3,
+.article p,
+.article li,
+.article #text,
+.article ol,
+.article a {
+  font-family: "Courier Prime", "Montserrat", Helvetica, sans-serif;
+}
 .article p {
   width: 100%;
+  margin: 0;
 }
 .article li {
   margin: 0 1em;
@@ -202,6 +213,89 @@ section {
 .article * {
   padding: 0.25em 0;
   width: 100%;
+}
+
+.writing-page {
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.writing-page h1,
+.writing-page a,
+.writing-page .abovetitle,
+.writing-page .article-id,
+.writing-page .article-title {
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-column-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0;
+}
+
+.article-ids-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 60px;
+}
+
+.article-titles-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.article-id-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #00ab44;
+  padding: 1.25em 0;
+  text-decoration: none;
+}
+
+.article-title-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 1.25em 0;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
+}
+
+.article-title-item:hover {
+  text-decoration: underline;
+}
+
+.article-divider {
+  width: 2px;
+  background: #ddd;
+  margin: 0 1.5em;
+}
+
+.subtitle {
+  font-size: 1.3em;
+  color: #444242;
+  margin-top: 0.1em;
+}
+
+.article-section .more-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  margin-top: 1em;
+}
+.article-section .more-articles a {
+  font-size: 1.1em;
 }
 
 .head {
@@ -812,6 +906,10 @@ footer .small-links {
   width: 10vw;
   margin-top: 1em;
 }
+footer .small-links .small-text {
+  margin: 0.4em 0;
+  padding: 0.3em 0;
+}
 footer .footer-icons ul {
   display: flex;
   flex-direction: column;
@@ -865,8 +963,6 @@ footer .footer-icons ul {
 .small-text {
   font-size: 14px;
   color: #ababab;
-  margin: 0.4em;
-  padding: 0.3em;
 }
 .small-text a {
   color: #ababab;
@@ -1144,6 +1240,11 @@ nav a {
 
 .show-mobile {
   display: none;
+}
+
+.no-margin {
+  margin: 0;
+  padding: 0;
 }
 
 .back-to-top {
@@ -1669,5 +1770,19 @@ blockquote p {
   }
   .service-wrapper {
     width: 90vw;
+  }
+}
+@media (max-width: 768px) {
+  .article-ids-column {
+    min-width: 50px;
+  }
+  .article-id-item {
+    font-size: 1em;
+  }
+  .article-divider {
+    margin: 0 1em;
+  }
+  .article-title-item {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=app.css.map */

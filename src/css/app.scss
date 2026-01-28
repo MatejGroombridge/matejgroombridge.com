@@ -1,6 +1,7 @@
 @import '_variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap'); //Poppins
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap'); //Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap'); // Poppins
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap'); // Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap'); // Courier Prime
 
 :root {
 	font-family: 'Montserrat', Helvetica, sans-serif;
@@ -61,7 +62,7 @@ h1 {
 
 h2 {
 	font-size: 1.7em;
-	font-weight: 700;
+	font-weight: 600;
 	padding: 0 1em;
 	font-family: 'Poppins', Helvetica, sans-serif;
 
@@ -202,8 +203,20 @@ section {
 		margin: 0;
 	}
 
+	h2,
+	h3,
+	p,
+	li,
+	#text,
+	ol,
+	a {
+		font-family: 'Courier Prime', 'Montserrat', Helvetica, sans-serif;
+	}
+
 	p {
 		width: 100%;
+		margin: 0;
+		// line-height: 1.5em;
 	}
 
 	width: 80%;
@@ -225,6 +238,108 @@ section {
 	* {
 		padding: 0.25em 0;
 		width: 100%;
+	}
+}
+
+.writing-page {
+	font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+	h1,
+	a,
+	.abovetitle,
+	.article-id,
+	.article-title {
+		font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'Courier New', monospace;
+	}
+}
+
+.article-list {
+	display: flex;
+	flex-direction: column;
+	// width: 100%;
+}
+
+.article-column-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	gap: 0;
+}
+
+.article-ids-column {
+	display: flex;
+	flex-direction: column;
+	min-width: 60px;
+}
+
+.article-titles-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.article-id-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 1.1em;
+	color: $primary-color;
+	padding: 1.25em 0;
+	text-decoration: none;
+}
+
+.article-title-item {
+	display: flex;
+	align-items: center;
+	font-size: 1.2em;
+	font-weight: 500;
+	padding: 1.25em 0;
+	text-decoration: none;
+	color: inherit;
+	transition: background 0.2s ease;
+}
+
+.article-title-item:hover {
+	text-decoration: underline;
+}
+
+.article-divider {
+	width: 2px;
+	background: #ddd;
+	margin: 0 1.5em;
+}
+
+.subtitle {
+	font-size: 1.3em;
+	color: $dark-grey;
+	margin-top: 0.1em;
+	// font-style: italic;
+}
+
+// Writing article page styles
+.article-section {
+	// font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+	// h1,
+	// h2,
+	// h3,
+	// p,
+	// a,
+	// li,
+	// .abovetitle {
+	// 	font-family: 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', 'Courier New', monospace;
+	// }
+
+	.more-articles {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75em;
+		margin-top: 1em;
+
+		a {
+			font-size: 1.1em;
+		}
 	}
 }
 
@@ -924,6 +1039,11 @@ footer {
 	.small-links {
 		width: 10vw;
 		margin-top: 1em;
+
+		.small-text {
+			margin: 0.4em 0;
+			padding: 0.3em 0;
+		}
 	}
 
 	.footer-icons ul {
@@ -991,8 +1111,6 @@ footer {
 .small-text {
 	font-size: 14px;
 	color: $medium-grey;
-	margin: 0.4em;
-	padding: 0.3em;
 
 	a {
 		color: $medium-grey;
@@ -1307,6 +1425,11 @@ nav {
 	display: none;
 }
 
+.no-margin {
+	margin: 0;
+	padding: 0;
+}
+
 .back-to-top {
 	display: flex;
 	align-items: center;
@@ -1557,5 +1680,5 @@ blockquote {
 	}
 }
 
-// Import media queries at the end to ensure proper cascade
+// Import media queries
 @import '_media.scss';

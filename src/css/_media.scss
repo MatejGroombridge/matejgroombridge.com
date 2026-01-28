@@ -398,3 +398,21 @@
 		width: 90vw;
 	}
 }
+
+@media (max-width: 768px) {
+	.article-ids-column {
+		min-width: 50px;
+	}
+
+	.article-id-item {
+		font-size: 1em;
+	}
+
+	.article-divider {
+		margin: 0 1em;
+	}
+
+	.article-title-item {
+		font-size: 1em;
+	}
+}

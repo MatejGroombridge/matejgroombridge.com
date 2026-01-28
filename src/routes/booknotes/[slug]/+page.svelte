@@ -87,6 +87,7 @@
 		{/await}
 	</div>
 </section>
+
 <section class="grey book-bar hide-mobile">
 	<div class="wrapper shown">
 		{#await fetchData() then book}
@@ -111,6 +112,7 @@
 		{/await}
 	</div>
 </section>
+
 <section>
 	<div class="wrapper shown">
 		<div class="article" style="min-height: 100vh;">
