@@ -18,11 +18,12 @@ export const photosData = [
 	},
 	{
 		slug: 'centralwest24',
-		length: 36,
+		length: 44,
 		imgData: {
 			0: ['Mayfield Gardens, Central West', 'Late 2024', 'Sony α6700'],
 			12: ['Lost City, Central West', '01/25', 'Sony α6700'],
-			18: ['Bathurst, Central West', 'Late 2024', 'Sony α6700']
+			18: ['Bathurst, Central West', 'Late 2024', 'Sony α6700'],
+			36: ['Lithgow, Central West', '03/24', 'Sony α6700']
 		}
 	},
 	{
