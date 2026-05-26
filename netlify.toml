@@ -1,0 +1,3 @@
+[build]
+base = "legacy"
+command = "pnpm build"

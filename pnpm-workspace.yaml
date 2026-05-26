@@ -1,0 +1,5 @@
+packages:
+  - legacy
+  - new-site
+onlyBuiltDependencies:
+  - esbuild

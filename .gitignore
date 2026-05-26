@@ -1,22 +1,20 @@
-<<<<<<< HEAD
-﻿node_modules/
-.svelte-kit/
-build/
-.netlify/
-.vercel/
-.DS_Store
-.env
-.env.*
-=======
-node_modules
+# Dependencies
+node_modules/
+**/node_modules/
 
 # Output
-.output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
-/build
+.output/
+**/.output/
+.svelte-kit/
+**/.svelte-kit/
+build/
+**/build/
+.netlify/
+**/.netlify/
+.vercel/
+**/.vercel/
+.wrangler/
+**/.wrangler/
 
 # OS
 .DS_Store
@@ -33,5 +31,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 # Other
-.vscode
->>>>>>> 8cab53b (booknotes fetching fix)
+.vscode/
