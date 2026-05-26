@@ -1,0 +1,18 @@
+{
+	"name": "matejgroombridge.com",
+	"private": true,
+	"version": "0.0.1",
+	"packageManager": "pnpm@10.28.2",
+	"scripts": {
+		"dev": "pnpm --filter @matejgroombridge/new-site dev",
+		"dev:new": "pnpm --filter @matejgroombridge/new-site dev",
+		"dev:legacy": "pnpm --filter @matejgroombridge/legacy-site dev",
+		"build": "pnpm --filter @matejgroombridge/legacy-site build",
+		"build:legacy": "pnpm --filter @matejgroombridge/legacy-site build",
+		"build:new": "pnpm --filter @matejgroombridge/new-site build",
+		"build:all": "pnpm -r build",
+		"check": "pnpm -r check",
+		"lint": "pnpm -r lint",
+		"format": "pnpm -r format"
+	}
+}

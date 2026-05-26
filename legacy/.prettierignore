@@ -1,0 +1,14 @@
+node_modules
+
+# Output
+.output
+.svelte-kit
+build
+.netlify
+.vercel
+.wrangler
+
+# Package managers
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

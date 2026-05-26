@@ -1,7 +1,8 @@
 {
-	"name": "matejgroombridge.com",
+	"name": "@matejgroombridge/legacy-site",
 	"private": true,
 	"version": "0.0.1",
+	"packageManager": "pnpm@10.28.2",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
