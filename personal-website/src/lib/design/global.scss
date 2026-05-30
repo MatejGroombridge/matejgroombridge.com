@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&display=swap');
+
+$cream: #f9f8f4;
+$muted: #edf1ed;
+$muted-strong: #dbe2db;
+$green: #00ab44;
+$green-soft: #57ba86;
+$ink: #1f2421;
+$heading: #0c100e;
+$line: #d6d6d6;
+$subtle: #5a615d;
+
+:root {
+	color-scheme: light;
+	--color-cream: #{$cream};
+	--color-muted: #{$muted};
+	--color-muted-strong: #{$muted-strong};
+	--color-green: #{$green};
+	--color-green-soft: #{$green-soft};
+	--color-ink: #{$ink};
+	--color-heading: #{$heading};
+	--color-line: #{$line};
+	--color-subtle: #{$subtle};
+	--color-surface: #fffdf8;
+	--color-border: rgb(36 37 37 / 0.08);
+	--color-header-border: rgb(36 37 37 / 0.06);
+	--font-body: 'Montserrat', Helvetica, sans-serif;
+	--font-heading: 'Poppins', Helvetica, sans-serif;
+	--size-page: min(880px, calc(100vw - clamp(2.5rem, 6vw, 3rem)));
+	--size-prose: 64ch;
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 0.75rem;
+	--space-4: 1rem;
+	--space-5: 1.5rem;
+	--space-6: 2rem;
+	--space-7: 3rem;
+	--space-8: 4rem;
+	--radius-sm: 0.25rem;
+	--radius-md: 0.5rem;
+	--radius-lg: 0.75rem;
+	--shadow-soft: 0 8px 22px rgb(36 37 37 / 0.055);
+	--shadow-subtle: 0 1px 2px rgb(36 37 37 / 0.08);
+	--duration-fast: 160ms;
+	--duration-base: 240ms;
+	--header-height: 96px;
+}
+
+@media (max-width: 820px) {
+	:root {
+		--header-height: 64px;
+	}
+}
+
+:root[data-theme='dark'] {
+	color-scheme: dark;
+	--color-cream: #171817;
+	--color-muted: #202420;
+	--color-muted-strong: #2d352e;
+	--color-green: #2bbf63;
+	--color-green-soft: #57ba86;
+	--color-ink: #e3e6df;
+	--color-heading: #f6f7f1;
+	--color-line: #3d423d;
+	--color-subtle: #9ba39d;
+	--color-surface: #1c1e1c;
+	--color-border: rgb(236 238 233 / 0.1);
+	--color-header-border: rgb(236 238 233 / 0.08);
+	--shadow-soft: 0 8px 22px rgb(0 0 0 / 0.18);
+	--shadow-subtle: 0 1px 2px rgb(0 0 0 / 0.28);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: var(--font-body);
+	color: var(--color-ink);
+	background: var(--color-cream);
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	background: var(--color-cream);
+}
+
+body,
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+img,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration-color: var(--color-green);
+	text-decoration-thickness: 0.1em;
+	text-underline-offset: 0.18em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-heading);
+	color: var(--color-heading);
+	line-height: 1.15;
+	margin: 0;
+}
+
+h1 {
+	font-size: clamp(1.8rem, 4.1vw, 3.15rem);
+	letter-spacing: -0.05em;
+}
+
+h2 {
+	font-size: clamp(1.3rem, 2.15vw, 1.85rem);
+	letter-spacing: -0.035em;
+}
+
+h3 {
+	font-size: clamp(0.95rem, 1.3vw, 1.08rem);
+}
+
+p {
+	font-size: clamp(0.9rem, 0.92vw, 0.95rem);
+	line-height: 1.68;
+	margin: 0;
+	color: var(--color-ink);
+}
+
+:focus-visible {
+	outline: 2px solid var(--color-green-soft);
+	outline-offset: 3px;
+}
+
+main {
+	min-height: 80vh;
+}
+
+// Lowercase mode: applied to body so it inherits everywhere. Elements that
+// explicitly opt into a different `text-transform` (e.g. uppercase eyebrows /
+// section labels) naturally win via the cascade and keep their casing.
+:root[data-case='lower'] body {
+	text-transform: lowercase;
+}
+
+// Explicit opt-outs for proper nouns, code, icons, etc. — these are stronger
+// than the inherited body rule and stronger than any component-scoped
+// `text-transform: lowercase` should it ever be added.
+:root[data-case='lower'] [data-preserve-case],
+:root[data-case='lower'] [data-preserve-case] * {
+	text-transform: none !important;
+}
+
+::selection {
+	background: var(--color-muted-strong);
+	color: var(--color-ink);
+}
+
+.material-symbols-rounded {
+	display: inline-block;
+	font-family: 'Material Symbols Rounded';
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 1;
+	text-transform: none;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}
+
+[data-reveal] {
+	--reveal-distance: 50px;
+	--reveal-delay: 0ms;
+	opacity: 0;
+	transform: translate3d(0, var(--reveal-distance), 0);
+	transition:
+		opacity 350ms ease var(--reveal-delay),
+		transform 350ms ease var(--reveal-delay);
+	will-change: opacity, transform;
+}
+
+[data-reveal][data-revealed='true'] {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	[data-reveal] {
+		opacity: 1 !important;
+		transform: none !important;
+		transition: none !important;
+	}
+}
+
+@media (max-width: 640px) {
+	body {
+		text-align: center;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}

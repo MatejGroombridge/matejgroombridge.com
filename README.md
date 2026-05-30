@@ -5,7 +5,7 @@ My personal website, managed as a pnpm monorepo.
 ## Workspaces
 
 - `legacy` - the current production SvelteKit site, using `@sveltejs/adapter-netlify`
-- `new-site` - the new SvelteKit site scaffold
+- `personal-website` - the new SvelteKit site scaffold
 
 ## Commands
 
@@ -28,7 +28,7 @@ pnpm dev:legacy
 pnpm build:legacy
 ```
 
-`pnpm build` intentionally builds the legacy site so the existing Netlify deploy target stays on the current production site. Use `pnpm build:new` or `pnpm build:all` for the new site.
+`pnpm build` intentionally builds the legacy site so the existing Netlify deploy target stays on the current production site. Use `pnpm build:personal` or `pnpm build:all` for the new site.
 
 ## Netlify
 
