@@ -1,5 +1,5 @@
 packages:
   - legacy
-  - new-site
+  - personal-website
 onlyBuiltDependencies:
   - esbuild
