@@ -6,6 +6,7 @@
 	import Seo from '$lib/components/site/Seo.svelte';
 	import Section from '$lib/components/ui/Section.svelte';
 	import SortMenu, { type SortOption } from '$lib/components/site/SortMenu.svelte';
+	import { bookNotesPage } from '$lib/content';
 
 	let { data }: { data: PageData } = $props();
 
@@ -38,16 +39,8 @@
 	});
 </script>
 
-<Seo
-	title="Book Notes"
-	description="Book summaries, notes, and quotes by Matej Groombridge."
-	canonical="/booknotes"
-/>
-<PageTitle
-	eyebrow="Book Notes"
-	title="Notes from books I have read."
-	body="A structured archive of summaries, quotes, and ideas that have shaped how I think."
-/>
+<Seo {...bookNotesPage.seo} canonical="/booknotes" />
+<PageTitle {...bookNotesPage.hero} />
 
 <Section>
 	<BlockHead title="Library">

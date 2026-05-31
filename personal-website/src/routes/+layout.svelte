@@ -40,7 +40,8 @@
 <Footer />
 
 <style>
-	.page-transition > :global(:not(.page-title):not(.hero-section)) {
+	.page-transition > :global(:not(.page-title):not(.hero-section):not(.writing-scope)),
+	.page-transition > :global(.writing-scope) > :global(:not(.page-title):not(.hero-section)) {
 		animation: page-rise 250ms ease backwards;
 	}
 

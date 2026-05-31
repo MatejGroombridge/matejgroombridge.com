@@ -53,6 +53,14 @@
 		gap: 1rem;
 	}
 
+	.hero-copy h1 {
+		font-family: var(--font-display);
+		font-optical-sizing: auto;
+		font-variation-settings: 'SOFT' 50;
+		font-weight: 500;
+		letter-spacing: -0.025em;
+	}
+
 	.hero-copy p {
 		max-width: 660px;
 		font-size: clamp(1.03rem, 1.35vw, 1.16rem);

@@ -13,14 +13,16 @@
 </script>
 
 <Section animate={false} class="page-title">
-	<div class="title-block">
-		{#if eyebrow}
-			<Tag label={eyebrow} />
-		{/if}
-		<h1>{title}</h1>
-		{#if body}
-			<p class="subtitle">{body}</p>
-		{/if}
+	<div class="hero-row">
+		<div class="title-block">
+			{#if eyebrow}
+				<Tag label={eyebrow} />
+			{/if}
+			<h1>{title}</h1>
+			{#if body}
+				<p class="subtitle">{body}</p>
+			{/if}
+		</div>
 		{#if helper}
 			<p class="helper">{helper}</p>
 		{/if}
@@ -33,14 +35,27 @@
 		padding-bottom: clamp(1rem, 2vw, 1.5rem);
 	}
 
+	.hero-row {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: start;
+		gap: 1.25rem;
+	}
+
 	.title-block {
 		display: grid;
 		gap: 0.85rem;
 		max-width: 640px;
+		min-width: 0;
 	}
 
 	.title-block h1 {
 		font-size: clamp(2.4rem, 5vw, 3.4rem);
+		font-family: var(--font-display);
+		font-optical-sizing: auto;
+		font-variation-settings: 'SOFT' 50;
+		font-weight: 500;
+		letter-spacing: -0.025em;
 	}
 
 	.subtitle {
@@ -51,20 +66,37 @@
 	}
 
 	.helper {
-		font-size: 0.82rem;
+		justify-self: end;
+		margin: 0;
+		padding-top: 0.4rem;
+		font-size: 0.72rem;
+		font-weight: 400;
+		letter-spacing: 0.02em;
 		color: var(--color-subtle);
-		margin-top: 0.25rem;
+		opacity: 0.65;
+		text-align: right;
+		white-space: nowrap;
 	}
 
 	@media (max-width: 640px) {
+		.hero-row {
+			grid-template-columns: 1fr;
+			justify-items: center;
+		}
+
 		.title-block {
 			justify-items: center;
 			text-align: center;
 		}
 
-		.subtitle,
-		.helper {
+		.subtitle {
 			margin-inline: auto;
+		}
+
+		.helper {
+			justify-self: center;
+			text-align: center;
+			padding-top: 0;
 		}
 	}
 </style>

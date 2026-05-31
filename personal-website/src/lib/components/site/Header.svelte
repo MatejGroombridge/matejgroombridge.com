@@ -195,5 +195,9 @@
 		.menu-toggle {
 			display: none;
 		}
+
+		.actions {
+			margin-right: -0.625rem;
+		}
 	}
 </style>

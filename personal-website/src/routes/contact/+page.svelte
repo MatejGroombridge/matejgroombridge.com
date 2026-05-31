@@ -16,7 +16,7 @@
 	<BlockHead title="Send a message" />
 	<div class="contact-grid">
 		<div class="details">
-			<p>Email is still the simplest fallback if the form is not available.</p>
+			<p>feel free to reach out through email or direct messages too</p>
 			<a class="email" href={`mailto:${siteSettings.email}`}>{siteSettings.email}</a>
 		</div>
 		<ContactForm definition={contactForm} />

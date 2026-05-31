@@ -11,6 +11,9 @@
  *   over "Coast" and "Snowy Mountains" wins over "Snowy".
  */
 export const properNouns: string[] = [
+	// Pronoun
+	'I',
+
 	// Personal / identity
 	'Matej Groombridge',
 	'Matej',

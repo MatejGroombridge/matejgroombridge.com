@@ -24,6 +24,16 @@ main {
 	min-height: 80vh;
 }
 
+// Utility to hide unfinished work-in-progress components in production.
+// Apply with class="wip" (or [data-wip]) to any element that should be
+// fully removed from layout and inaccessible to users / assistive tech.
+.wip,
+[data-wip] {
+	display: none !important;
+	visibility: hidden !important;
+	pointer-events: none !important;
+}
+
 a {
 	color: $text-color;
 	text-decoration: underline $primary-color;

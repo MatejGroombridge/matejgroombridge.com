@@ -30,12 +30,19 @@ export type SocialLink = {
 	icon: 'instagram' | 'linkedin' | 'github' | 'camera' | 'mail';
 };
 
+export type EmailJsConfig = {
+	publicKey: string;
+	serviceId: string;
+	templateId: string;
+};
+
 export type SiteSettings = {
 	name: string;
 	tagline: string;
 	baseUrl: string;
 	email: string;
 	analyticsId: string;
+	emailjs: EmailJsConfig;
 	seo: Seo;
 	nav: Omit<NavLink, 'group'>[];
 	socials: SocialLink[];

@@ -7,6 +7,7 @@
 		variant?: 'primary' | 'secondary' | 'ghost';
 		type?: 'button' | 'submit' | 'reset';
 		class?: string;
+		disabled?: boolean;
 	};
 
 	let {
@@ -14,7 +15,8 @@
 		href,
 		variant = 'primary',
 		type = 'button',
-		class: className = ''
+		class: className = '',
+		disabled = false
 	}: Props = $props();
 </script>
 
@@ -23,7 +25,7 @@
 		{@render children?.()}
 	</a>
 {:else}
-	<button class="button {variant} {className}" {type}>
+	<button class="button {variant} {className}" {type} {disabled}>
 		{@render children?.()}
 	</button>
 {/if}
@@ -58,5 +60,10 @@
 	.ghost {
 		background: transparent;
 		border-color: var(--color-line);
+	}
+
+	.button:disabled {
+		opacity: 0.6;
+		cursor: not-allowed;
 	}
 </style>

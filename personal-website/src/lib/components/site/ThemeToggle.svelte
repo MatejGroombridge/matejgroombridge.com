@@ -123,8 +123,8 @@
 
 	.celestial svg {
 		display: block;
-		width: 30px;
-		height: 30px;
+		width: 24px;
+		height: 24px;
 		overflow: visible;
 		filter: drop-shadow(0 1px 0 rgb(0 0 0 / 0.08));
 	}

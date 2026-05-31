@@ -6,6 +6,7 @@
 	import Section from '$lib/components/ui/Section.svelte';
 	import SortMenu, { type SortOption } from '$lib/components/site/SortMenu.svelte';
 	import TripGallery from '$lib/components/site/TripGallery.svelte';
+	import { photographyPage } from '$lib/content';
 
 	let { data }: { data: PageData } = $props();
 
@@ -25,16 +26,8 @@
 	});
 </script>
 
-<Seo
-	title="Photography"
-	description="Travel and everyday photography by Matej Groombridge."
-	canonical="/photography"
-/>
-<PageTitle
-	eyebrow="Photography"
-	title="Travel photography"
-	body="an archive — cool places I've photographed over the years"
-/>
+<Seo {...photographyPage.seo} canonical="/photography" />
+<PageTitle {...photographyPage.hero} />
 
 <Section>
 	<BlockHead title="Trips">

@@ -1,26 +1,56 @@
 <script lang="ts">
+	import emailjs from '@emailjs/browser';
 	import type { FormDefinition } from '$lib/content/types';
 	import Button from '$lib/components/ui/Button.svelte';
+	import { siteSettings } from '$lib/content';
 
 	type Props = {
 		definition: FormDefinition;
 	};
 
 	let { definition }: Props = $props();
+
+	type FieldValues = Record<string, string>;
+
+	const initialValues: FieldValues = Object.fromEntries(
+		definition.fields.map((field) => [field.name, ''])
+	);
+
+	let values = $state<FieldValues>({ ...initialValues });
+	let status = $state<'idle' | 'sending' | 'success' | 'error'>('idle');
+	let errorMessage = $state('');
+
+	async function handleSubmit(event: SubmitEvent) {
+		event.preventDefault();
+		if (status === 'sending') return;
+
+		status = 'sending';
+		errorMessage = '';
+
+		try {
+			await emailjs.send(
+				siteSettings.emailjs.serviceId,
+				siteSettings.emailjs.templateId,
+				{
+					form_name: definition.name,
+					default_subject: definition.subject,
+					...values
+				},
+				{ publicKey: siteSettings.emailjs.publicKey }
+			);
+			values = { ...initialValues };
+			status = 'success';
+		} catch (err) {
+			status = 'error';
+			errorMessage =
+				err instanceof Error
+					? err.message
+					: 'Something went wrong sending your message. Please try again.';
+		}
+	}
 </script>
 
-<form
-	class="form"
-	name={definition.name}
-	method="POST"
-	data-netlify="true"
-	data-netlify-honeypot="bot-field"
->
-	<input type="hidden" name="form-name" value={definition.name} />
-	<input type="hidden" name="subject" value={definition.subject} />
-	<p class="hidden">
-		<label>Do not fill this out <input name="bot-field" /></label>
-	</p>
+<form class="form" name={definition.name} onsubmit={handleSubmit} novalidate>
 	{#each definition.fields as field}
 		<label>
 			<span>{field.label}</span>
@@ -30,9 +60,16 @@
 					required={field.required}
 					placeholder={field.placeholder}
 					rows="6"
+					bind:value={values[field.name]}
+					disabled={status === 'sending'}
 				></textarea>
 			{:else if field.type === 'select'}
-				<select name={field.name} required={field.required}>
+				<select
+					name={field.name}
+					required={field.required}
+					bind:value={values[field.name]}
+					disabled={status === 'sending'}
+				>
 					{#each field.options ?? [] as option}
 						<option value={option}>{option}</option>
 					{/each}
@@ -43,11 +80,21 @@
 					type={field.type}
 					required={field.required}
 					placeholder={field.placeholder}
+					bind:value={values[field.name]}
+					disabled={status === 'sending'}
 				/>
 			{/if}
 		</label>
 	{/each}
-	<Button type="submit">Send</Button>
+	<Button type="submit" disabled={status === 'sending'}>
+		{status === 'sending' ? 'Sending…' : 'Send'}
+	</Button>
+
+	{#if status === 'success'}
+		<p class="status success" role="status">{definition.successMessage}</p>
+	{:else if status === 'error'}
+		<p class="status error" role="alert">{errorMessage}</p>
+	{/if}
 </form>
 
 <style lang="scss">
@@ -104,7 +151,17 @@
 		resize: vertical;
 	}
 
-	.hidden {
-		display: none;
+	.status {
+		font-family: var(--font-body);
+		font-size: 0.92rem;
+		margin: 0;
+	}
+
+	.status.success {
+		color: var(--color-green);
+	}
+
+	.status.error {
+		color: var(--color-warn, #c0392b);
 	}
 </style>

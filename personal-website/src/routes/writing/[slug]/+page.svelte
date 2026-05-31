@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import SvelteMarkdown from '@humanspeak/svelte-markdown';
-	import PageHero from '$lib/components/site/PageHero.svelte';
+	import PageTitle from '$lib/components/site/PageTitle.svelte';
 	import Seo from '$lib/components/site/Seo.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
 	import Section from '$lib/components/ui/Section.svelte';
@@ -10,13 +10,13 @@
 </script>
 
 <Seo {...data.article.seo} canonical={`/writing/${data.article.slug}`} />
-<PageHero
+<PageTitle
 	eyebrow={`Writing · #${data.number}`}
 	title={data.article.title}
 	body={data.article.description}
 />
 
-<Section tone="muted">
+<Section tone="muted" class="meta-section">
 	<dl class="article-meta">
 		<div>
 			<dt>Published</dt>
@@ -48,10 +48,14 @@
 </Section>
 
 <style lang="scss">
+	:global(.section.meta-section) {
+		padding: clamp(1rem, 2vw, 1.5rem) 0;
+	}
+
 	.article-meta {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-		gap: 0.875rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.875rem 2.5rem;
 		margin: 0;
 	}
 
