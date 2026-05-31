@@ -6,9 +6,21 @@
 	import Button from '$lib/components/ui/Button.svelte';
 	import Card from '$lib/components/ui/Card.svelte';
 	import Section from '$lib/components/ui/Section.svelte';
-	import { articles, bookNotes, homeCurrently, homeIntro, homePage, photoTrips } from '$lib/content';
+	import {
+		articles,
+		bookNotes,
+		homeCurrently,
+		homeIntro,
+		homeMoreCards,
+		homePage,
+		homeSections,
+		photoTrips
+	} from '$lib/content';
 
-	const featuredArticles = articles.slice(0, 3);
+	const featuredArticles = articles.slice(0, 3).map((article, index) => ({
+		...article,
+		number: articles.length - index
+	}));
 	const featuredBooks = bookNotes.slice(0, 5);
 	const bookPool = bookNotes;
 	const tripOrder = ['centralwest24', 'goldcoast24', 'sydney25', 'southcoast24', 'space24'];
@@ -32,7 +44,7 @@
 	<div class="hero-inner">
 		<div class="hero-grid">
 			<div class="hero-copy">
-				<h1 id="home-hero-title">Hi, I'm<br />Matej.</h1>
+				<h1 id="home-hero-title">{homePage.hero.title}</h1>
 				<p class="hero-body">{homePage.hero.body}</p>
 				<div class="hero-ctas">
 					{#each homePage.hero.ctas as cta}
@@ -56,7 +68,7 @@
 </section>
 
 <Section id="home-body" tone="muted">
-	<BlockHead title="Right now" />
+	<BlockHead title={homeSections.currently.title} />
 	<div class="currently">
 		{#each homeCurrently as item}
 			<div class="currently-item">
@@ -71,9 +83,12 @@
 </Section>
 
 <Section>
-	<BlockHead title="About">
+	<BlockHead title={homeSections.about.title}>
 		{#snippet aside()}
-			<a href="/2026">See the 2026 page →</a>
+			<a class="aside-link" href={homeSections.about.asideHref}>
+				<span class="label">{homeSections.about.asideLabel}</span>
+				<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+			</a>
 		{/snippet}
 	</BlockHead>
 	<div class="about">
@@ -82,39 +97,43 @@
 	</div>
 </Section>
 
-{#if featuredArticles.length}
+{#if false && featuredArticles.length}
 	<Section tone="muted">
-		<BlockHead title="Writing">
+		<BlockHead title={homeSections.writing.title}>
 			{#snippet aside()}
-				<a href="/writing">Read all →</a>
+				<a class="aside-link" href={homeSections.writing.asideHref}>
+					<span class="label">{homeSections.writing.asideLabel}</span>
+					<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+				</a>
 			{/snippet}
 		</BlockHead>
-		<p class="intro">
-			Short essays on software, learning, and the things I keep thinking about.
-		</p>
-		<div class="writing-grid">
-			{#each featuredArticles as article}
-				<Card href={`/writing/${article.slug}`} class="writing-card">
-					<span class="card-meta">{article.published}{article.readingTime ? ` · ${article.readingTime}` : ''}</span>
-					<h3>{article.title}</h3>
-					<p>{article.description}</p>
-					<span class="card-cta">Read →</span>
-				</Card>
+		<p class="intro">{homeSections.writing.intro}</p>
+		<ul class="articles">
+			{#each featuredArticles as article (article.slug)}
+				<li>
+					<a class="row" href={`/writing/${article.slug}`}>
+						<span class="number">#{article.number}</span>
+						<span class="title">{article.title}</span>
+						<span class="meta"
+							>{article.published}{article.readingTime ? ` · ${article.readingTime}` : ''}</span
+						>
+					</a>
+				</li>
 			{/each}
-		</div>
+		</ul>
 	</Section>
 {/if}
 
 <Section>
-	<BlockHead title="Photography">
+	<BlockHead title={homeSections.photography.title}>
 		{#snippet aside()}
-			<a href="/photography">See all →</a>
+			<a class="aside-link" href={homeSections.photography.asideHref}>
+				<span class="label">{homeSections.photography.asideLabel}</span>
+				<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+			</a>
 		{/snippet}
 	</BlockHead>
-	<p class="intro">
-		I love taking cool photos. From natural landscapes to bustling cities, here are a few of
-		my favourite recent collections.
-	</p>
+	<p class="intro">{homeSections.photography.intro}</p>
 	<div class="polaroid-grid">
 		{#each featuredTrips as trip, i}
 			<div
@@ -138,33 +157,32 @@
 </Section>
 
 <Section tone="muted">
-	<BlockHead title="Book Notes">
+	<BlockHead title={homeSections.booknotes.title}>
 		{#snippet aside()}
-			<a href="/booknotes">Read all →</a>
+			<a class="aside-link" href={homeSections.booknotes.asideHref}>
+				<span class="label">{homeSections.booknotes.asideLabel}</span>
+				<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+			</a>
 		{/snippet}
 	</BlockHead>
-	<p class="intro">
-		I document key takeaways from books on lifestyle, philosophy and tech. Check out my
-		summaries and reviews.
-	</p>
+	<p class="intro">{homeSections.booknotes.intro}</p>
 	<BookStack books={featuredBooks} pool={bookPool} count={5} />
 </Section>
 
 <Section>
-	<BlockHead title="More" />
+	<BlockHead title={homeSections.more.title} />
 	<div class="more-grid">
-		<Card href="/2026" class="more-card">
-			<span class="card-meta">Living page</span>
-			<h3>2026</h3>
-			<p>A running timeline of what I'm building, reading, and thinking about this year.</p>
-			<span class="card-cta">Open the page →</span>
-		</Card>
-		<Card href="/contact" class="more-card">
-			<span class="card-meta">Say hi</span>
-			<h3>Get in touch</h3>
-			<p>Have a question, a project, or just want to chat? Send me a note.</p>
-			<span class="card-cta">Contact me →</span>
-		</Card>
+		{#each homeMoreCards as card}
+			<Card href={card.href} class="more-card">
+				<span class="card-meta">{card.meta}</span>
+				<h3>{card.title}</h3>
+				<p>{card.body}</p>
+				<span class="card-cta">
+					{card.cta}
+					<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+				</span>
+			</Card>
+		{/each}
 	</div>
 </Section>
 
@@ -198,6 +216,7 @@
 		line-height: 1.02;
 		letter-spacing: -0.045em;
 		margin: 0;
+		white-space: pre-line;
 	}
 
 	.hero-body {
@@ -294,14 +313,12 @@
 		line-height: 1.6;
 	}
 
-	.writing-grid,
 	.more-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
 		gap: 1rem;
 	}
 
-	.writing-grid :global(.writing-card),
 	.more-grid :global(.more-card) {
 		display: grid;
 		gap: 0.55rem;
@@ -309,19 +326,16 @@
 		transition: transform var(--duration-base) ease, box-shadow var(--duration-base) ease;
 	}
 
-	.writing-grid :global(.writing-card:hover),
 	.more-grid :global(.more-card:hover) {
 		transform: translateY(-3px);
 		box-shadow: var(--shadow-soft);
 	}
 
-	.writing-grid :global(h3),
 	.more-grid :global(h3) {
 		font-size: 1.1rem;
 		margin: 0;
 	}
 
-	.writing-grid :global(p),
 	.more-grid :global(p) {
 		color: var(--color-subtle);
 		font-size: 0.94rem;
@@ -329,7 +343,6 @@
 		margin: 0;
 	}
 
-	.writing-grid :global(.card-meta),
 	.more-grid :global(.card-meta) {
 		font-family: var(--font-heading);
 		font-size: 0.7rem;
@@ -339,13 +352,117 @@
 		color: var(--color-green);
 	}
 
-	.writing-grid :global(.card-cta),
 	.more-grid :global(.card-cta) {
 		font-family: var(--font-heading);
 		font-size: 0.85rem;
 		font-weight: 600;
 		color: var(--color-green);
 		margin-top: 0.15rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+	}
+
+	.more-grid :global(.card-cta .material-symbols-rounded) {
+		font-size: 1rem;
+		transition: transform var(--duration-fast) ease;
+	}
+
+	.more-grid :global(.more-card:hover .card-cta .material-symbols-rounded) {
+		transform: translateX(3px);
+	}
+
+	.articles {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.articles li {
+		border-bottom: 1px dashed var(--color-border);
+	}
+
+	.articles li:last-child {
+		border-bottom: none;
+	}
+
+	.row {
+		--row-gap: 1rem;
+		display: grid;
+		grid-template-columns: 4.25rem 1fr auto;
+		gap: var(--row-gap);
+		align-items: baseline;
+		padding: 0.95rem 0.25rem;
+		text-decoration: none;
+		color: inherit;
+		transition: background-color 0.15s ease;
+	}
+
+	.row:hover,
+	.row:focus-visible {
+		background: var(--color-muted);
+		outline: none;
+	}
+
+	.number {
+		position: relative;
+		font-family: var(--font-heading);
+		font-variant-numeric: tabular-nums;
+		font-size: 0.72rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: lowercase;
+		color: var(--color-subtle);
+	}
+
+	.number::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: calc(var(--row-gap) / -2);
+		width: 1px;
+		background: var(--color-border);
+	}
+
+	.title {
+		color: var(--color-heading);
+		font-size: clamp(1rem, 1.3vw, 1.1rem);
+		font-weight: 500;
+	}
+
+	.row .meta {
+		font-family: var(--font-heading);
+		font-size: 0.7rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--color-subtle);
+		white-space: nowrap;
+	}
+
+	.aside-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		text-decoration: none;
+	}
+
+	.aside-link:hover {
+		text-decoration: none;
+	}
+
+	.aside-link:hover .label {
+		text-decoration: underline;
+	}
+
+	.aside-link .material-symbols-rounded {
+		font-size: 1rem;
+		transition: transform var(--duration-fast) ease;
+	}
+
+	.aside-link:hover .material-symbols-rounded {
+		transform: translateX(3px);
 	}
 
 	.polaroid-grid {
@@ -421,6 +538,15 @@
 		.slot {
 			width: clamp(120px, 32vw, 160px);
 			margin: 0 -1rem;
+		}
+
+		.row {
+			--row-gap: 0.75rem;
+			grid-template-columns: 3rem 1fr;
+		}
+
+		.row .meta {
+			display: none;
 		}
 	}
 

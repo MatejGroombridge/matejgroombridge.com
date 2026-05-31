@@ -4,8 +4,13 @@ export const siteSettings = {
 	name: 'Matej Groombridge',
 	tagline: 'thanks for stopping by',
 	baseUrl: 'https://www.matejgroombridge.com',
-	email: 'hello@matejgroombridge.com',
+	email: 'matejdpg@gmail.com',
 	analyticsId: 'G-LK1M7GLR61',
+	emailjs: {
+		publicKey: 'user_IaGwubLj0SawwSzw2xWGP',
+		serviceId: 'general_contact',
+		templateId: 'default_form_submission'
+	},
 	seo: {
 		title: 'Matej Groombridge',
 		description:
@@ -15,7 +20,8 @@ export const siteSettings = {
 		{ label: '2026', href: '/2026', icon: 'calendar_today' },
 		{ label: 'Photos', href: '/photography', icon: 'photo_camera' },
 		{ label: 'Book Notes', href: '/booknotes', icon: 'menu_book' },
-		{ label: 'Writing', href: '/writing', icon: 'edit_note' },
+		// Temporarily disabled
+		// { label: 'Writing', href: '/writing', icon: 'edit_note' },
 		{ label: 'Contact', href: '/contact', icon: 'mail' }
 	],
 	socials: [

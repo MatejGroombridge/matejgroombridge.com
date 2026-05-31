@@ -4,6 +4,8 @@ import { articles, getArticle, getArticleNumber } from '$lib/content/writing';
 export const entries = () => articles.map((article) => ({ slug: article.slug }));
 
 export const load = async ({ fetch, params }) => {
+	error(404, 'Not found');
+
 	const article = getArticle(params.slug);
 
 	if (!article) {
