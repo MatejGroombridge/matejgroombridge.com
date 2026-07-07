@@ -67,6 +67,16 @@
 
 	let glow = $state<Record<TreeKey, number>>({ pine: 0, main: 0, cherry: 0 });
 
+	let treeClicks = $state(0);
+	let canRevealed = $state(false);
+
+	function onTreeClick(key: TreeKey) {
+		glow[key] = 1;
+		if (canRevealed) return;
+		treeClicks += 1;
+		if (treeClicks >= 3) canRevealed = true;
+	}
+
 	let rafId = 0;
 	let lastTickTime = 0;
 	let gardenW = $state(0);
@@ -346,9 +356,19 @@
 			class="tree pine"
 			viewBox="0 0 22 22"
 			shape-rendering="crispEdges"
+			role="button"
+			tabindex="0"
+			aria-label="Pine bonsai"
 			style:filter={glow.pine > 0
 				? `drop-shadow(0 0 ${4 + glow.pine * 5}px rgba(120,220,130,${0.55 * glow.pine})) saturate(${1 + glow.pine * 0.45})`
 				: ''}
+			onclick={() => onTreeClick('pine')}
+			onkeydown={(e) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					onTreeClick('pine');
+				}
+			}}
 		>
 			<g class="crown">
 				<rect x="10" y="11" width="1" height="6" fill="#5a3a22" />
@@ -382,9 +402,19 @@
 			class="tree main"
 			viewBox="0 0 32 27"
 			shape-rendering="crispEdges"
+			role="button"
+			tabindex="0"
+			aria-label="Bonsai tree"
 			style:filter={glow.main > 0
 				? `drop-shadow(0 0 ${4 + glow.main * 5}px rgba(120,220,130,${0.55 * glow.main})) saturate(${1 + glow.main * 0.45})`
 				: ''}
+			onclick={() => onTreeClick('main')}
+			onkeydown={(e) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					onTreeClick('main');
+				}
+			}}
 		>
 			<g class="crown">
 				<rect x="15" y="18" width="3" height="1" fill="#5a3a22" />
@@ -445,9 +475,19 @@
 			class="tree cherry"
 			viewBox="0 0 22 22"
 			shape-rendering="crispEdges"
+			role="button"
+			tabindex="0"
+			aria-label="Cherry bonsai"
 			style:filter={glow.cherry > 0
 				? `drop-shadow(0 0 ${4 + glow.cherry * 5}px rgba(120,220,130,${0.55 * glow.cherry})) saturate(${1 + glow.cherry * 0.45})`
 				: ''}
+			onclick={() => onTreeClick('cherry')}
+			onkeydown={(e) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					onTreeClick('cherry');
+				}
+			}}
 		>
 			<g class="crown">
 				<rect x="10" y="18" width="3" height="1" fill="#5a3a22" />
@@ -508,28 +548,29 @@
 		</svg>
 	{/each}
 
-	{#each drops as d (d.id)}
-		<span
-			class="drop"
-			style:transform="translate3d({d.x - 1}px, {d.y - 2}px, 0)"
-			aria-hidden="true"
-		></span>
-	{/each}
+	{#if canRevealed}
+		{#each drops as d (d.id)}
+			<span
+				class="drop"
+				style:transform="translate3d({d.x - 1}px, {d.y - 2}px, 0)"
+				aria-hidden="true"
+			></span>
+		{/each}
 
-	<button
-		type="button"
-		class="watering-can"
-		class:dragging={canDragging}
-		class:hovered={canHovered}
-		aria-label="Watering can"
-		style:transform="translate3d({can.x}px, {can.y}px, 0) rotate({can.rot}deg)"
-		onpointerdown={onCanDown}
-		onpointermove={onCanMove}
-		onpointerup={onCanUp}
-		onpointercancel={onCanUp}
-		onpointerenter={() => (canHovered = true)}
-		onpointerleave={() => (canHovered = false)}
-	>
+		<button
+			type="button"
+			class="watering-can"
+			class:dragging={canDragging}
+			class:hovered={canHovered}
+			aria-label="Watering can"
+			style:transform="translate3d({can.x}px, {can.y}px, 0) rotate({can.rot}deg)"
+			onpointerdown={onCanDown}
+			onpointermove={onCanMove}
+			onpointerup={onCanUp}
+			onpointercancel={onCanUp}
+			onpointerenter={() => (canHovered = true)}
+			onpointerleave={() => (canHovered = false)}
+		>
 		<svg viewBox="0 0 21 15" shape-rendering="crispEdges" preserveAspectRatio="xMidYMid meet">
 			<!-- Back loop handle (big oval on the left) -->
 			<rect x="0" y="5" width="2" height="1" fill="#2a2a2a" />
@@ -590,6 +631,7 @@
 		<rect x="20" y="5" width="1" height="1" fill="#2a2a2a" />
 		</svg>
 	</button>
+	{/if}
 </div>
 
 <style lang="scss">
@@ -621,6 +663,15 @@
 		overflow: visible;
 		filter: drop-shadow(0 1px 0 rgb(0 0 0 / 0.08));
 		transition: filter 240ms ease;
+		pointer-events: auto;
+		cursor: pointer;
+		outline: none;
+	}
+
+	.tree:focus-visible {
+		outline: 2px solid var(--color-green-soft);
+		outline-offset: 4px;
+		border-radius: 4px;
 	}
 
 	.main {
