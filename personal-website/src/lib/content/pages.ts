@@ -109,7 +109,7 @@ export const homeMoreCards: HomeMoreCard[] = [
 		title: '2026',
 		meta: 'Living page',
 		body: 'A running timeline of what I\'m building, reading, and thinking about this year.',
-		cta: 'Open the page',
+		cta: 'See what I\'m up to',
 		href: '/2026'
 	},
 	{

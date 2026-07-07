@@ -664,7 +664,7 @@
 		filter: drop-shadow(0 1px 0 rgb(0 0 0 / 0.08));
 		transition: filter 240ms ease;
 		pointer-events: auto;
-		cursor: pointer;
+		cursor: default;
 		outline: none;
 	}
 

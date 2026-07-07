@@ -29,11 +29,11 @@
 
 	.block-head h2 {
 		font-family: var(--font-heading);
-		font-size: 0.78rem;
-		font-weight: 700;
-		letter-spacing: 0.18em;
+		font-size: 1.2rem;
+		font-weight: 600;
+		letter-spacing: 0.04em;
 		text-transform: uppercase;
-		color: var(--color-subtle);
+		color: var(--color-heading);
 		margin: 0;
 	}
 
@@ -61,8 +61,8 @@
 		}
 
 		.block-head h2 {
-			font-size: 0.72rem;
-			letter-spacing: 0.16em;
+			font-size: 1rem;
+			letter-spacing: 0.03em;
 		}
 	}
 </style>
