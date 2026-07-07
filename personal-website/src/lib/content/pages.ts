@@ -43,11 +43,10 @@ export const homeCurrently: HomeCurrentlyItem[] = [
 
 export const homeIntro = {
 	eyebrow: 'About this site',
-	title: 'A small, quiet corner of the internet.',
+	title: 'what this actually is',
 	body:
-		'This is where I keep the parts of my life I want to think about more carefully — the ' +
-		'software I\'m building, the books I\'m reading, the photos I\'m taking, and the ideas ' +
-		'I\'m turning over. It\'s a slower place than the feeds, and that\'s the point.'
+		'some software I\'m building, books I\'m reading, photos I\'m taking, and ideas I can\'t ' +
+		'stop turning over. no schedule, no algorithm — just the stuff I actually care about.'
 };
 
 type HomeBlockMeta = {
@@ -81,17 +80,13 @@ export const homeSections: {
 		title: 'Photography',
 		asideLabel: 'See all',
 		asideHref: '/photography',
-		intro:
-			'I love taking cool photos. From natural landscapes to bustling cities, here are a few ' +
-			'of my favourite recent collections.'
+		intro: 'an archive of cool places I\'ve photographed over the years — a few recent favourites below.'
 	},
 	booknotes: {
 		title: 'Book Notes',
 		asideLabel: 'Read all',
 		asideHref: '/booknotes',
-		intro:
-			'I document key takeaways from books on lifestyle, philosophy and tech. Check out my ' +
-			'summaries and reviews.'
+		intro: 'key takeaways etc. from books I\'ve read — lifestyle, philosophy, tech, whatever\'s interesting.'
 	},
 	more: { title: 'More' }
 };
@@ -108,14 +103,14 @@ export const homeMoreCards: HomeMoreCard[] = [
 	{
 		title: '2026',
 		meta: 'Living page',
-		body: 'A running timeline of what I\'m building, reading, and thinking about this year.',
+		body: 'a running log of what I\'m building, reading, and thinking about this year.',
 		cta: 'See what I\'m up to',
 		href: '/2026'
 	},
 	{
 		title: 'Get in touch',
 		meta: 'Say hi',
-		body: 'Have a question, a project, or just want to chat? Send me a note.',
+		body: 'got a question, a project, or just want to chat? send me a note.',
 		cta: 'Contact me',
 		href: '/contact'
 	}

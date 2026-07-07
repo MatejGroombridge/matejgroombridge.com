@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import type { BookNote } from '$lib/content/types';
 
 	type Props = {
@@ -23,8 +24,15 @@
 		return next;
 	}
 
+	// Deterministic on first render so SSR output matches the client's initial
+	// hydration pass — randomizing here would shuffle differently on the server
+	// vs. the client and scramble the keyed list during hydration.
 	// svelte-ignore state_referenced_locally
-	const displayed = shuffled(sourcePool).slice(0, size);
+	let displayed = $state(sourcePool.slice(0, size));
+
+	onMount(() => {
+		displayed = shuffled(sourcePool).slice(0, size);
+	});
 </script>
 
 <div class="bookstack">

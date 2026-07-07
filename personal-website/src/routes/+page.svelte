@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import BlockHead from '$lib/components/site/BlockHead.svelte';
 	import BookStack from '$lib/components/site/BookStack.svelte';
 	import Seo from '$lib/components/site/Seo.svelte';
@@ -23,17 +24,25 @@
 	}));
 	const featuredBooks = bookNotes.slice(0, 5);
 	const bookPool = bookNotes;
-	const tripOrder = [
-		'centralwest24',
-		'goldcoast24',
-		'sydney25',
-		'southcoast24',
-		'space24',
-		'slovenia23'
-	];
-	const featuredTrips = tripOrder
-		.map((slug) => photoTrips.find((t) => t.slug === slug))
-		.filter((t): t is (typeof photoTrips)[number] => Boolean(t));
+
+	function shuffled<T>(arr: readonly T[]): T[] {
+		const next = [...arr];
+		for (let i = next.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[next[i], next[j]] = [next[j], next[i]];
+		}
+		return next;
+	}
+
+	// Deterministic on first render so SSR output matches the client's initial
+	// hydration pass — randomizing here would shuffle differently on the server
+	// vs. the client and scramble the keyed masonry layout during hydration.
+	// svelte-ignore state_referenced_locally
+	let featuredTrips = $state(photoTrips.slice(0, 8));
+
+	onMount(() => {
+		featuredTrips = shuffled(photoTrips).slice(0, 8);
+	});
 </script>
 
 <Seo {...homePage.seo} canonical="/" />
@@ -193,9 +202,6 @@
 	}
 
 	.hero-copy h1 {
-		font-family: var(--font-display);
-		font-optical-sizing: auto;
-		font-variation-settings: 'SOFT' 50;
 		font-size: clamp(2.75rem, 7.2vw, 5.25rem);
 		font-weight: 700;
 		line-height: 1.02;

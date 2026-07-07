@@ -4,11 +4,22 @@
 	type Theme = 'light' | 'dark';
 
 	let theme = $state<Theme>('light');
+	let zzz = $state(false);
+	let rays = $state(false);
 
 	function applyTheme(nextTheme: Theme) {
 		theme = nextTheme;
 		document.documentElement.dataset.theme = nextTheme;
 		localStorage.setItem('theme', nextTheme);
+		if (nextTheme === 'dark') {
+			zzz = false;
+			setTimeout(() => (zzz = true), 10);
+			setTimeout(() => (zzz = false), 1400);
+		} else {
+			rays = false;
+			setTimeout(() => (rays = true), 10);
+			setTimeout(() => (rays = false), 700);
+		}
 	}
 
 	onMount(() => {
@@ -38,6 +49,14 @@
 	<svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 		<path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
 	</svg>
+	{#if rays}
+		<span class="ray-burst" aria-hidden="true"></span>
+	{/if}
+	{#if zzz}
+		<span class="zzz z1" aria-hidden="true">z</span>
+		<span class="zzz z2" aria-hidden="true">z</span>
+		<span class="zzz z3" aria-hidden="true">z</span>
+	{/if}
 </button>
 
 <style lang="scss">
@@ -97,9 +116,76 @@
 		transform: scale(1) rotate(0deg);
 	}
 
+	.ray-burst {
+		position: absolute;
+		inset: 0;
+		border-radius: 50%;
+		border: 2px solid currentColor;
+		pointer-events: none;
+		opacity: 0;
+		animation: ray-burst 700ms ease-out forwards;
+	}
+
+	@keyframes ray-burst {
+		0% {
+			opacity: 0.7;
+			transform: scale(0.5);
+		}
+		100% {
+			opacity: 0;
+			transform: scale(1.8);
+		}
+	}
+
+	.zzz {
+		position: absolute;
+		top: 2px;
+		left: 55%;
+		font-family: var(--font-heading);
+		font-size: 0.65rem;
+		font-weight: 700;
+		line-height: 1;
+		color: currentColor;
+		opacity: 0;
+		pointer-events: none;
+		animation: zzz-drift 1.4s ease-out forwards;
+	}
+
+	.zzz.z1 {
+		animation-delay: 0ms;
+	}
+	.zzz.z2 {
+		animation-delay: 250ms;
+		font-size: 0.55rem;
+	}
+	.zzz.z3 {
+		animation-delay: 500ms;
+		font-size: 0.45rem;
+	}
+
+	@keyframes zzz-drift {
+		0% {
+			opacity: 0;
+			transform: translate(-50%, 0) rotate(-8deg);
+		}
+		20% {
+			opacity: 0.85;
+		}
+		100% {
+			opacity: 0;
+			transform: translate(calc(-50% + 14px), -22px) rotate(8deg);
+		}
+	}
+
 	@media (prefers-reduced-motion: reduce) {
 		.icon {
 			transition: none;
+		}
+
+		.ray-burst,
+		.zzz {
+			animation: none;
+			display: none;
 		}
 	}
 </style>

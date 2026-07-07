@@ -53,7 +53,7 @@
 	.about {
 		grid-area: about;
 		display: grid;
-		gap: 0.5rem;
+		gap: 0.15rem;
 		max-width: 30rem;
 	}
 
@@ -69,6 +69,10 @@
 		color: var(--color-subtle);
 		font-size: 0.92rem;
 		line-height: 1.55;
+	}
+
+	.about :global(.local) {
+		margin-top: 0.85rem;
 	}
 
 	.socials {
