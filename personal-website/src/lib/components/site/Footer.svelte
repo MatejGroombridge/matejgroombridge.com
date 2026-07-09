@@ -53,7 +53,7 @@
 	.about {
 		grid-area: about;
 		display: grid;
-		gap: 0.5rem;
+		gap: 0.15rem;
 		max-width: 30rem;
 	}
 
@@ -71,10 +71,14 @@
 		line-height: 1.55;
 	}
 
+	.about :global(.local) {
+		margin-top: 0.85rem;
+	}
+
 	.socials {
 		grid-area: socials;
 		display: flex;
-		gap: 0.65rem;
+		gap: 1.1rem;
 		justify-self: end;
 		align-self: start;
 	}
@@ -83,23 +87,18 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		width: 2.25rem;
-		height: 2.25rem;
-		border: 1px solid var(--color-border);
-		border-radius: 999px;
-		color: var(--color-ink);
+		color: var(--color-subtle);
 		text-decoration: none;
 		transition:
 			color var(--duration-fast) ease,
-			border-color var(--duration-fast) ease,
-			background var(--duration-fast) ease;
+			transform var(--duration-fast) ease;
 	}
 
 	.socials a:hover,
 	.socials a:focus-visible {
 		color: var(--color-green);
-		border-color: var(--color-green);
-		background: var(--color-muted);
+		transform: translateY(-1px);
+		outline: none;
 	}
 
 	@media (max-width: 600px) {

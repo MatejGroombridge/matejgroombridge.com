@@ -14,12 +14,14 @@
 
 	function updateTime() {
 		const now = new Date();
-		timeStr = new Intl.DateTimeFormat('en-GB', {
-			hour: '2-digit',
+		timeStr = new Intl.DateTimeFormat('en-US', {
+			hour: 'numeric',
 			minute: '2-digit',
-			hour12: false,
+			hour12: true,
 			timeZone: LOCATION.timeZone
-		}).format(now);
+		})
+			.format(now)
+			.replace(/\s/g, '');
 	}
 
 	function weatherIcon(c: number | null): string {
@@ -61,7 +63,7 @@
 </script>
 
 <span class="local" aria-label="Local time and weather in {LOCATION.label}">
-	<span class="dot" aria-hidden="true"></span>
+	<span class="mark" aria-hidden="true">✘</span>
 	<span class="place">{LOCATION.label}</span>
 	<span class="sep" aria-hidden="true">·</span>
 	<span class="time">{timeStr || '--:--'}</span>
@@ -84,13 +86,10 @@
 		font-variant-numeric: tabular-nums;
 	}
 
-	.dot {
-		width: 7px;
-		height: 7px;
-		border-radius: 999px;
-		background: var(--color-green);
-		box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-green) 18%, transparent);
-		animation: pulse 2.5s ease-in-out infinite;
+	.mark {
+		font-size: 0.7rem;
+		color: var(--color-green);
+		margin-right: -0.25rem;
 	}
 
 	.place {
@@ -109,6 +108,7 @@
 		font-size: 1.05rem;
 		line-height: 1;
 		color: inherit;
+		margin-left: -0.3rem;
 		font-variation-settings:
 			'FILL' 1,
 			'wght' 400,
@@ -116,19 +116,4 @@
 			'opsz' 20;
 	}
 
-	@keyframes pulse {
-		0%,
-		100% {
-			opacity: 1;
-		}
-		50% {
-			opacity: 0.45;
-		}
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.dot {
-			animation: none;
-		}
-	}
 </style>

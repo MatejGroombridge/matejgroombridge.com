@@ -11,13 +11,14 @@
 	let { data }: { data: PageData } = $props();
 
 	const sortOptions: SortOption[] = [
+		{ value: 'default', label: 'Default' },
 		{ value: 'recent', label: 'Recently read' },
 		{ value: 'rating', label: 'Highest rated' },
 		{ value: 'title', label: 'Title A–Z' },
 		{ value: 'author', label: 'Author A–Z' }
 	];
 
-	let sortKey = $state('recent');
+	let sortKey = $state('default');
 
 	function parseRating(value: string): number {
 		const match = value.match(/([\d.]+)/);
@@ -35,7 +36,10 @@
 		if (sortKey === 'author') {
 			return books.sort((a, b) => a.author.localeCompare(b.author));
 		}
-		return books.sort((a, b) => (b.id ?? -1) - (a.id ?? -1));
+		if (sortKey === 'recent') {
+			return books.sort((a, b) => (b.id ?? -1) - (a.id ?? -1));
+		}
+		return books;
 	});
 </script>
 

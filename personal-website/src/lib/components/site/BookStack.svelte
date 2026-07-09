@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import type { BookNote } from '$lib/content/types';
 
 	type Props = {
@@ -14,36 +15,27 @@
 	// svelte-ignore state_referenced_locally
 	const sourcePool = pool ?? books;
 
-	// svelte-ignore state_referenced_locally
-	let displayed = $state<BookNote[]>([...books]);
-
-	function shuffle() {
-		if (sourcePool.length <= size) {
-			const next = [...sourcePool];
-			for (let i = next.length - 1; i > 0; i--) {
-				const j = Math.floor(Math.random() * (i + 1));
-				[next[i], next[j]] = [next[j], next[i]];
-			}
-			displayed = next;
-			return;
-		}
-
-		const currentSlugs = new Set(displayed.map((b) => b.slug));
-		const candidates = sourcePool.filter((b) => !currentSlugs.has(b.slug));
-		for (let i = candidates.length - 1; i > 0; i--) {
+	function shuffled(pool: BookNote[]) {
+		const next = [...pool];
+		for (let i = next.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
-			[candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+			[next[i], next[j]] = [next[j], next[i]];
 		}
-		displayed = candidates.slice(0, size);
+		return next;
 	}
+
+	// Deterministic on first render so SSR output matches the client's initial
+	// hydration pass — randomizing here would shuffle differently on the server
+	// vs. the client and scramble the keyed list during hydration.
+	// svelte-ignore state_referenced_locally
+	let displayed = $state(sourcePool.slice(0, size));
+
+	onMount(() => {
+		displayed = shuffled(sourcePool).slice(0, size);
+	});
 </script>
 
 <div class="bookstack">
-	<div class="toolbar">
-		<button type="button" class="shuffle" onclick={shuffle} aria-label="Shuffle books">
-			<span class="material-symbols-rounded" aria-hidden="true">shuffle</span>
-		</button>
-	</div>
 	<ul class="shelf" style="--count: {displayed.length};">
 		{#each displayed as book (book.slug)}
 			<li class="slot">
@@ -66,47 +58,6 @@
 	.bookstack {
 		display: grid;
 		gap: 0.85rem;
-	}
-
-	.toolbar {
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	.shuffle {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 2.1rem;
-		height: 2.1rem;
-		padding: 0;
-		border-radius: 999px;
-		border: 1px solid var(--color-border);
-		background: var(--color-surface);
-		color: var(--color-subtle);
-		cursor: pointer;
-		transition:
-			color var(--duration-fast) ease,
-			border-color var(--duration-fast) ease,
-			transform var(--duration-base) ease,
-			box-shadow var(--duration-fast) ease;
-	}
-
-	.shuffle .material-symbols-rounded {
-		font-size: 1.15rem;
-	}
-
-	.shuffle:hover,
-	.shuffle:focus-visible {
-		color: var(--color-green);
-		border-color: var(--color-green);
-		outline: none;
-		box-shadow: var(--shadow-soft);
-	}
-
-	.shuffle:active .material-symbols-rounded {
-		transform: rotate(180deg);
-		transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
 	}
 
 	.shelf {
@@ -218,9 +169,7 @@
 
 	@media (prefers-reduced-motion: reduce) {
 		.cover-wrap,
-		.meta,
-		.shuffle,
-		.shuffle .material-symbols-rounded {
+		.meta {
 			transition: none;
 		}
 	}

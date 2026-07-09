@@ -1,8 +1,9 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import BlockHead from '$lib/components/site/BlockHead.svelte';
 	import BookStack from '$lib/components/site/BookStack.svelte';
-	import PolaroidCard from '$lib/components/site/PolaroidCard.svelte';
 	import Seo from '$lib/components/site/Seo.svelte';
+	import TripGallery from '$lib/components/site/TripGallery.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import Card from '$lib/components/ui/Card.svelte';
 	import Section from '$lib/components/ui/Section.svelte';
@@ -23,19 +24,25 @@
 	}));
 	const featuredBooks = bookNotes.slice(0, 5);
 	const bookPool = bookNotes;
-	const tripOrder = ['centralwest24', 'goldcoast24', 'sydney25', 'southcoast24', 'space24'];
-	const featuredTrips = tripOrder
-		.map((slug) => photoTrips.find((t) => t.slug === slug))
-		.filter((t): t is (typeof photoTrips)[number] => Boolean(t));
 
-	const polaroidTilts = ['-7deg', '4deg', '-3deg', '6deg', '-2deg'];
-	const polaroidOffsets = [
-		{ x: '0rem', y: '0.6rem' },
-		{ x: '-1.5rem', y: '-0.8rem' },
-		{ x: '0.75rem', y: '1rem' },
-		{ x: '-0.75rem', y: '-0.4rem' },
-		{ x: '1rem', y: '0.5rem' }
-	];
+	function shuffled<T>(arr: readonly T[]): T[] {
+		const next = [...arr];
+		for (let i = next.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[next[i], next[j]] = [next[j], next[i]];
+		}
+		return next;
+	}
+
+	// Deterministic on first render so SSR output matches the client's initial
+	// hydration pass — randomizing here would shuffle differently on the server
+	// vs. the client and scramble the keyed masonry layout during hydration.
+	// svelte-ignore state_referenced_locally
+	let featuredTrips = $state(photoTrips.slice(0, 8));
+
+	onMount(() => {
+		featuredTrips = shuffled(photoTrips).slice(0, 8);
+	});
 </script>
 
 <Seo {...homePage.seo} canonical="/" />
@@ -44,7 +51,7 @@
 	<div class="hero-inner">
 		<div class="hero-grid">
 			<div class="hero-copy">
-				<h1 id="home-hero-title">{homePage.hero.title}</h1>
+				<h1 id="home-hero-title"><span data-preserve-case>Hi</span>{homePage.hero.title.slice(2)}</h1>
 				<p class="hero-body">{homePage.hero.body}</p>
 				<div class="hero-ctas">
 					{#each homePage.hero.ctas as cta}
@@ -67,6 +74,7 @@
 	</div>
 </section>
 
+{#if false}
 <Section id="home-body" tone="muted">
 	<BlockHead title={homeSections.currently.title} />
 	<div class="currently">
@@ -81,8 +89,9 @@
 		{/each}
 	</div>
 </Section>
+{/if}
 
-<Section>
+<Section tone="muted">
 	<BlockHead title={homeSections.about.title}>
 		{#snippet aside()}
 			<a class="aside-link" href={homeSections.about.asideHref}>
@@ -134,25 +143,8 @@
 		{/snippet}
 	</BlockHead>
 	<p class="intro">{homeSections.photography.intro}</p>
-	<div class="polaroid-grid">
-		{#each featuredTrips as trip, i}
-			<div
-				class="slot"
-				style="--rot: {polaroidTilts[i % polaroidTilts.length]}; --tx: {polaroidOffsets[
-					i % polaroidOffsets.length
-				].x}; --ty: {polaroidOffsets[i % polaroidOffsets.length].y};"
-			>
-				<PolaroidCard
-					href={`/photography/${trip.slug}`}
-					image={trip.coverImage}
-					alt="{trip.title} cover"
-					meta={String(trip.year)}
-					caption={trip.title}
-					subcaption={trip.subtitle}
-					ratio="4 / 3"
-				/>
-			</div>
-		{/each}
+	<div class="gallery-fade">
+		<TripGallery trips={featuredTrips} gap={15} maxColumnWidth={220} />
 	</div>
 </Section>
 
@@ -174,7 +166,6 @@
 	<div class="more-grid">
 		{#each homeMoreCards as card}
 			<Card href={card.href} class="more-card">
-				<span class="card-meta">{card.meta}</span>
 				<h3>{card.title}</h3>
 				<p>{card.body}</p>
 				<span class="card-cta">
@@ -343,15 +334,6 @@
 		margin: 0;
 	}
 
-	.more-grid :global(.card-meta) {
-		font-family: var(--font-heading);
-		font-size: 0.7rem;
-		font-weight: 700;
-		letter-spacing: 0.14em;
-		text-transform: uppercase;
-		color: var(--color-green);
-	}
-
 	.more-grid :global(.card-cta) {
 		font-family: var(--font-heading);
 		font-size: 0.85rem;
@@ -465,30 +447,12 @@
 		transform: translateX(3px);
 	}
 
-	.polaroid-grid {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		gap: 0;
-		padding: 1.5rem 0.5rem 2.5rem;
-	}
-
-	.slot {
-		flex: 0 0 auto;
-		width: clamp(140px, 16vw, 180px);
-		margin: 0 -1.75rem;
-		transform: translate(var(--tx, 0), var(--ty, 0));
-	}
-
-	.slot:nth-child(1) { z-index: 1; }
-	.slot:nth-child(2) { z-index: 2; }
-	.slot:nth-child(3) { z-index: 3; }
-	.slot:nth-child(4) { z-index: 2; }
-	.slot:nth-child(5) { z-index: 1; }
-
-	.slot :global(.polaroid) {
-		--rotate: var(--rot, 0deg);
+	.gallery-fade {
+		position: relative;
+		max-height: clamp(260px, 32vw, 340px);
+		overflow: hidden;
+		-webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+		mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
 	}
 
 	@media (max-width: 820px) {
@@ -531,13 +495,8 @@
 			margin-inline: auto;
 		}
 
-		.polaroid-grid {
-			padding: 1rem 0 1.5rem;
-		}
-
-		.slot {
-			width: clamp(120px, 32vw, 160px);
-			margin: 0 -1rem;
+		.gallery-fade {
+			max-height: clamp(200px, 60vw, 260px);
 		}
 
 		.row {

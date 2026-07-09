@@ -109,7 +109,9 @@
 		border-radius: var(--radius-lg);
 		overflow: hidden;
 		box-shadow: var(--shadow-subtle);
-		transition: transform 0.2s ease;
+		transition:
+			transform var(--duration-base) ease,
+			box-shadow var(--duration-base) ease;
 		cursor: pointer;
 
 		img {
@@ -117,12 +119,13 @@
 			width: 100%;
 			height: auto;
 			filter: brightness(85%);
-			transition: filter 0.25s ease;
+			transition: filter var(--duration-base) ease;
 		}
 
 		&:hover,
 		&:focus-visible {
-			transform: scale(1.03);
+			transform: translateY(-4px);
+			box-shadow: var(--shadow-soft);
 
 			img {
 				filter: brightness(95%);
@@ -135,7 +138,7 @@
 		}
 
 		&:focus-visible {
-			outline: 2px solid var(--color-accent, currentColor);
+			outline: 2px solid var(--color-green);
 			outline-offset: 2px;
 		}
 	}
@@ -182,8 +185,8 @@
 		opacity: 0;
 		transform: translateY(15px);
 		transition:
-			opacity 0.3s ease,
-			transform 0.3s ease;
+			opacity var(--duration-base) ease,
+			transform var(--duration-base) ease;
 	}
 
 	.trip-date-pos {
@@ -210,6 +213,14 @@
 			.trip-subtitle {
 				display: none;
 			}
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.trip,
+		.trip img,
+		.trip-subtitle {
+			transition: none;
 		}
 	}
 </style>
