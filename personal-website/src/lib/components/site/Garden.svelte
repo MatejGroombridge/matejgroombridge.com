@@ -315,6 +315,7 @@
 		for (const p of petals) {
 			p.phase += (0.035 + p.size * 0.02) * dt;
 			p.x += (p.vx + Math.sin(p.phase) * p.phaseAmp) * dt;
+			p.x = clamp(p.x, 4, Math.max(4, w - 4));
 			p.y += p.vy * dt;
 			p.rot += p.rotVel * dt;
 			p.life += dt;
