@@ -63,8 +63,7 @@
 	.shelf {
 		display: grid;
 		grid-template-columns: repeat(var(--count), minmax(0, 1fr));
-		grid-template-rows: auto auto;
-		grid-auto-flow: column;
+		grid-auto-rows: auto;
 		column-gap: clamp(0.85rem, 2vw, 1.5rem);
 		row-gap: 0.85rem;
 		list-style: none;
@@ -73,7 +72,10 @@
 	}
 
 	.slot {
-		display: contents;
+		display: grid;
+		grid-row: span 2;
+		grid-template-rows: subgrid;
+		min-width: 0;
 	}
 
 	.book {
@@ -87,8 +89,7 @@
 		display: block;
 		aspect-ratio: 2 / 3;
 		border-radius: 3px 5px 5px 3px;
-		filter: drop-shadow(0 8px 14px rgb(36 37 37 / 0.16))
-			drop-shadow(0 2px 4px rgb(36 37 37 / 0.1));
+		filter: drop-shadow(0 8px 14px rgb(36 37 37 / 0.16)) drop-shadow(0 2px 4px rgb(36 37 37 / 0.1));
 		transition:
 			transform var(--duration-base) cubic-bezier(0.2, 0.8, 0.2, 1),
 			filter var(--duration-base) ease;
@@ -151,19 +152,30 @@
 		outline-offset: 4px;
 	}
 
-	@media (max-width: 820px) {
+	// Column counts that divide the shelf evenly, so a wrapped row is never left
+	// with a single orphan cover.
+	@media (max-width: 760px) {
 		.shelf {
-			grid-template-columns: repeat(var(--count), clamp(120px, 32vw, 160px));
-			overflow-x: auto;
-			scroll-snap-type: x proximity;
-			padding-bottom: 0.5rem;
-			margin-inline: calc(-1 * clamp(1.25rem, 4vw, 1.75rem));
-			padding-inline: clamp(1.25rem, 4vw, 1.75rem);
-			scrollbar-width: thin;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			row-gap: 1.35rem;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.shelf {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 
-		.cover-wrap {
-			scroll-snap-align: start;
+		.meta {
+			padding-top: 0.6rem;
+		}
+
+		.title {
+			font-size: 0.85rem;
+		}
+
+		.author {
+			font-size: 0.72rem;
 		}
 	}
 

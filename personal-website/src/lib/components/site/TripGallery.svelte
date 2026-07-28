@@ -6,15 +6,18 @@
 		trips: readonly PhotoTrip[];
 		gap?: number;
 		maxColumnWidth?: number;
+		minColumns?: number;
 		loading?: 'lazy' | 'eager';
 	};
 
-	let { trips, gap = 15, maxColumnWidth = 250, loading = 'lazy' }: Props = $props();
+	let { trips, gap = 15, maxColumnWidth = 250, minColumns = 1, loading = 'lazy' }: Props = $props();
 
 	let galleryWidth = $state(0);
 	let dims = $state<Record<string, { w: number; h: number }>>({});
 
-	const columnCount = $derived(Math.max(1, Math.floor(galleryWidth / maxColumnWidth) || 1));
+	const columnCount = $derived(
+		Math.max(minColumns, Math.floor(galleryWidth / maxColumnWidth) || 1)
+	);
 	const columnWidth = $derived(
 		galleryWidth > 0 ? (galleryWidth - gap * (columnCount - 1)) / columnCount : maxColumnWidth
 	);
@@ -60,13 +63,16 @@
 	{#each columns as column, ci (ci)}
 		<div class="column">
 			{#each column as trip (trip.slug)}
-				<a class="trip" href={`/photography/${trip.slug}`} aria-label={`${trip.title}, ${trip.year}`}>
+				<a
+					class="trip"
+					href={`/photography/${trip.slug}`}
+					aria-label={`${trip.title}, ${trip.year}`}
+				>
 					<img
 						src={trip.coverImage}
 						alt={trip.title}
 						{loading}
-						onload={(e) =>
-							recordDimensions(trip.coverImage, e.currentTarget as HTMLImageElement)}
+						onload={(e) => recordDimensions(trip.coverImage, e.currentTarget as HTMLImageElement)}
 						onerror={handleImgError}
 					/>
 					<div class="overlay" aria-hidden="true"></div>
@@ -103,6 +109,7 @@
 		position: relative;
 		display: block;
 		width: 100%;
+		container-type: inline-size;
 		font-family: var(--font-heading, 'Poppins', Helvetica, arial);
 		color: white;
 		text-decoration: none;
@@ -165,10 +172,10 @@
 		flex-direction: column;
 		justify-content: center;
 		margin: 0.5em 0;
-		padding: 0 1em;
+		padding: 0 clamp(0.6rem, 5cqw, 1rem);
 
 		h3 {
-			font-size: 2.2em;
+			font-size: clamp(1.1rem, 13cqw, 2.2rem);
 			color: white;
 			font-weight: 600;
 			margin: 0;
@@ -178,7 +185,7 @@
 	}
 
 	.trip-subtitle {
-		font-size: 1.25em;
+		font-size: clamp(0.8rem, 7.5cqw, 1.25rem);
 		color: white;
 		margin: 0;
 		padding: 0;
@@ -194,13 +201,13 @@
 		top: 0;
 		right: 0;
 		display: flex;
-		padding: 0.3em 1.2em;
+		padding: clamp(0.2rem, 1.5cqw, 0.35rem) clamp(0.6rem, 5cqw, 1.2rem);
 	}
 
 	.trip-date {
 		color: white;
 		opacity: 0.7;
-		font-size: 1.2em;
+		font-size: clamp(0.75rem, 7cqw, 1.2rem);
 		font-weight: 700;
 		margin: 0;
 		text-align: right;

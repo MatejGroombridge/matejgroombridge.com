@@ -62,6 +62,7 @@ export const homeSections: {
 	writing: HomeBlockMeta;
 	photography: HomeBlockMeta;
 	booknotes: HomeBlockMeta;
+	contact: HomeBlockMeta;
 	more: HomeBlockMeta;
 } = {
 	currently: { title: 'Right now' },
@@ -88,6 +89,12 @@ export const homeSections: {
 		asideHref: '/booknotes',
 		intro: 'key takeaways etc. from books I\'ve read — lifestyle, philosophy, tech, whatever\'s interesting.'
 	},
+	contact: {
+		title: 'Get in touch',
+		asideLabel: 'Contact me',
+		asideHref: '/contact',
+		intro: 'got a question, a project, or just want to say hi? send a note and I\'ll reply asap.'
+	},
 	more: { title: 'More' }
 };
 
@@ -106,13 +113,6 @@ export const homeMoreCards: HomeMoreCard[] = [
 		body: 'a running log of what I\'m building, reading, and thinking about this year.',
 		cta: 'See what I\'m up to',
 		href: '/2026'
-	},
-	{
-		title: 'Get in touch',
-		meta: 'Say hi',
-		body: 'got a question, a project, or just want to chat? send me a note.',
-		cta: 'Contact me',
-		href: '/contact'
 	}
 ];
 

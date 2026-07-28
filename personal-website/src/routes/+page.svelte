@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import BlockHead from '$lib/components/site/BlockHead.svelte';
 	import BookStack from '$lib/components/site/BookStack.svelte';
+	import ContactForm from '$lib/components/site/ContactForm.svelte';
 	import Seo from '$lib/components/site/Seo.svelte';
 	import TripGallery from '$lib/components/site/TripGallery.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
@@ -10,6 +11,7 @@
 	import {
 		articles,
 		bookNotes,
+		contactForm,
 		homeCurrently,
 		homeIntro,
 		homeMoreCards,
@@ -144,7 +146,7 @@
 	</BlockHead>
 	<p class="intro">{homeSections.photography.intro}</p>
 	<div class="gallery-fade">
-		<TripGallery trips={featuredTrips} gap={15} maxColumnWidth={220} />
+		<TripGallery trips={featuredTrips} gap={15} maxColumnWidth={220} minColumns={2} />
 	</div>
 </Section>
 
@@ -158,22 +160,43 @@
 		{/snippet}
 	</BlockHead>
 	<p class="intro">{homeSections.booknotes.intro}</p>
-	<BookStack books={featuredBooks} pool={bookPool} count={5} />
+	<div class="shelf-fade">
+		<BookStack books={featuredBooks} pool={bookPool} count={5} />
+	</div>
 </Section>
 
-<Section>
-	<BlockHead title={homeSections.more.title} />
-	<div class="more-grid">
-		{#each homeMoreCards as card}
-			<Card href={card.href} class="more-card">
-				<h3>{card.title}</h3>
-				<p>{card.body}</p>
-				<span class="card-cta">
-					{card.cta}
-					<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
-				</span>
-			</Card>
-		{/each}
+{#if false}
+	<Section>
+		<BlockHead title={homeSections.more.title} />
+		<div class="more-grid">
+			{#each homeMoreCards as card}
+				<Card href={card.href} class="more-card">
+					<h3>{card.title}</h3>
+					<p>{card.body}</p>
+					<span class="card-cta">
+						{card.cta}
+						<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+					</span>
+				</Card>
+			{/each}
+		</div>
+	</Section>
+{/if}
+
+<Section id="contact">
+	<BlockHead title={homeSections.contact.title}>
+		{#snippet aside()}
+			<a class="aside-link" href={homeSections.contact.asideHref}>
+				<span class="label">{homeSections.contact.asideLabel}</span>
+				<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+			</a>
+		{/snippet}
+	</BlockHead>
+	<div class="contact-grid">
+		<div class="contact-details">
+			<p>{homeSections.contact.intro}</p>
+		</div>
+		<ContactForm definition={contactForm} />
 	</div>
 </Section>
 
@@ -294,14 +317,16 @@
 
 	.about p {
 		color: var(--color-subtle);
+		font-size: clamp(1rem, 1.3vw, 1.1rem);
+		line-height: 1.65;
 	}
 
 	.intro {
 		max-width: 620px;
 		margin-bottom: 2.25rem;
 		color: var(--color-subtle);
-		font-size: 0.95rem;
-		line-height: 1.6;
+		font-size: clamp(1rem, 1.3vw, 1.1rem);
+		line-height: 1.65;
 	}
 
 	.more-grid {
@@ -430,7 +455,11 @@
 		text-decoration: none;
 	}
 
-	.aside-link:hover {
+	// BlockHead's shared `.aside :global(a:hover)` rule underlines the whole
+	// anchor (including the icon glyph) and, since it targets the bare `a`
+	// element, it out-specifies a same-weight class selector here. Scope through
+	// `.aside` too so this reset wins instead of relying on source order.
+	:global(.aside) .aside-link:hover {
 		text-decoration: none;
 	}
 
@@ -447,6 +476,26 @@
 		transform: translateX(3px);
 	}
 
+	.contact-grid {
+		display: grid;
+		grid-template-columns: 0.75fr 1.25fr;
+		gap: clamp(1.75rem, 4.5vw, 3.75rem);
+		align-items: start;
+	}
+
+	.contact-details {
+		display: grid;
+		gap: 0.6rem;
+		align-content: start;
+	}
+
+	.contact-details p {
+		font-size: clamp(1rem, 1.3vw, 1.1rem);
+		color: var(--color-subtle);
+		line-height: 1.65;
+		margin: 0;
+	}
+
 	.gallery-fade {
 		position: relative;
 		max-height: clamp(260px, 32vw, 340px);
@@ -455,30 +504,58 @@
 		mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
 	}
 
+	// Full covers stay solid; only the caption fades — the shelf wraps to a
+	// single row at 4 books, so there's no extra content to tease/hide here.
+	.shelf-fade {
+		position: relative;
+		overflow: hidden;
+		-webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 100%);
+		mask-image: linear-gradient(to bottom, #000 78%, transparent 100%);
+	}
+
+	// Below this the shelf wraps to two rows, so switch to the same
+	// crop-and-tease treatment the mobile view already uses.
+	@media (max-width: 760px) {
+		.shelf-fade {
+			max-height: clamp(280px, 78vw, 340px);
+			-webkit-mask-image: linear-gradient(to bottom, #000 65%, transparent 100%);
+			mask-image: linear-gradient(to bottom, #000 65%, transparent 100%);
+		}
+	}
+
 	@media (max-width: 820px) {
 		.hero-grid {
 			grid-template-columns: 1fr;
-			gap: 1.75rem;
+			gap: 1.1rem;
 			text-align: center;
 			justify-items: center;
 		}
 
+		// Flatten the copy block so the portrait can be ordered between the blurb
+		// and the CTAs rather than sitting above the heading.
 		.hero-copy {
-			justify-items: center;
+			display: contents;
+		}
+
+		.hero-copy h1 {
+			order: 1;
 		}
 
 		.hero-body {
+			order: 2;
 			margin-inline: auto;
 		}
 
-		.hero-ctas {
-			justify-content: center;
-		}
-
 		.hero-portrait {
-			order: -1;
+			order: 3;
 			justify-self: center;
 			width: min(220px, 60vw);
+			margin-block: 0.35rem;
+		}
+
+		.hero-ctas {
+			order: 4;
+			justify-content: center;
 		}
 
 		.currently-item {
@@ -490,13 +567,20 @@
 		}
 	}
 
+	@media (max-width: 800px) {
+		.contact-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+	}
+
 	@media (max-width: 620px) {
 		.intro {
 			margin-inline: auto;
 		}
 
 		.gallery-fade {
-			max-height: clamp(200px, 60vw, 260px);
+			max-height: clamp(300px, 85vw, 360px);
 		}
 
 		.row {
