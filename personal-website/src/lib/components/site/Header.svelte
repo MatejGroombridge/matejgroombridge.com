@@ -176,8 +176,8 @@
 
 		.nav-links a {
 			justify-content: center;
-			padding: 0.4rem 0;
-			margin: 0.3em 0;
+			padding: 0.25rem 0;
+			margin: 0;
 			font-size: 1rem;
 			font-weight: 500;
 		}
