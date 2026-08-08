@@ -67,8 +67,8 @@
 				<img
 					src={homePage.hero.image.src}
 					alt={homePage.hero.image.alt}
-					width="320"
-					height="400"
+					width="260"
+					height="325"
 					loading="eager"
 				/>
 			</div>
@@ -103,7 +103,6 @@
 		{/snippet}
 	</BlockHead>
 	<div class="about">
-		<h2>{homeIntro.title}</h2>
 		<p>{homeIntro.body}</p>
 	</div>
 </Section>
@@ -160,9 +159,7 @@
 		{/snippet}
 	</BlockHead>
 	<p class="intro">{homeSections.booknotes.intro}</p>
-	<div class="shelf-fade">
-		<BookStack books={featuredBooks} pool={bookPool} count={5} />
-	</div>
+	<BookStack books={featuredBooks} pool={bookPool} count={5} />
 </Section>
 
 {#if false}
@@ -213,7 +210,7 @@
 
 	.hero-grid {
 		display: grid;
-		grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+		grid-template-columns: minmax(0, 1fr) minmax(180px, 260px);
 		gap: clamp(1.5rem, 5vw, 4rem);
 		align-items: center;
 	}
@@ -249,7 +246,7 @@
 
 	.hero-portrait {
 		justify-self: end;
-		width: min(320px, 100%);
+		width: min(260px, 100%);
 	}
 
 	.hero-portrait img {
@@ -500,27 +497,10 @@
 		position: relative;
 		max-height: clamp(260px, 32vw, 340px);
 		overflow: hidden;
+		padding-top: 6px;
+		margin-top: -6px;
 		-webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
 		mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
-	}
-
-	// Full covers stay solid; only the caption fades — the shelf wraps to a
-	// single row at 4 books, so there's no extra content to tease/hide here.
-	.shelf-fade {
-		position: relative;
-		overflow: hidden;
-		-webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 100%);
-		mask-image: linear-gradient(to bottom, #000 78%, transparent 100%);
-	}
-
-	// Below this the shelf wraps to two rows, so switch to the same
-	// crop-and-tease treatment the mobile view already uses.
-	@media (max-width: 760px) {
-		.shelf-fade {
-			max-height: clamp(280px, 78vw, 340px);
-			-webkit-mask-image: linear-gradient(to bottom, #000 65%, transparent 100%);
-			mask-image: linear-gradient(to bottom, #000 65%, transparent 100%);
-		}
 	}
 
 	@media (max-width: 820px) {

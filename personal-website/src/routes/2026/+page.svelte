@@ -46,21 +46,25 @@
 
 <Section id="projects">
 	<BlockHead title="Projects" />
-	<ul class="project-grid">
-		{#each year2026Projects as project}
-			<li>
-				<button type="button" class="project" onclick={() => openProject(project)}>
-					<span class="project-icon" aria-hidden="true">
-						<span class="material-symbols-rounded">{project.icon ?? 'bolt'}</span>
-					</span>
-					<div class="project-body">
-						<h3>{project.title}</h3>
-						<p>{project.description}</p>
-					</div>
-				</button>
-			</li>
-		{/each}
-	</ul>
+	{#if false}
+		<ul class="project-grid">
+			{#each year2026Projects as project}
+				<li>
+					<button type="button" class="project" onclick={() => openProject(project)}>
+						<span class="project-icon" aria-hidden="true">
+							<span class="material-symbols-rounded">{project.icon ?? 'bolt'}</span>
+						</span>
+						<div class="project-body">
+							<h3>{project.title}</h3>
+							<p>{project.description}</p>
+						</div>
+					</button>
+				</li>
+			{/each}
+		</ul>
+	{:else}
+		<p class="placeholder">I'm in the process of updating this section — check back soon.</p>
+	{/if}
 </Section>
 
 <!-- <Section id="focus">
@@ -94,6 +98,11 @@
 <ProjectModal project={activeProject} onclose={closeProject} />
 
 <style lang="scss">
+	.placeholder {
+		color: var(--color-subtle);
+		font-size: 0.95rem;
+	}
+
 	.project-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

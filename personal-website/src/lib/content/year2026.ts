@@ -87,7 +87,7 @@ export const year2026Projects: Project[] = [
 
 export const year2026Currently: CurrentlyItem[] = [
 	{ icon: 'place', label: 'Based in', value: 'Sydney, Australia' },
-	{ icon: 'code', label: 'Working on', value: 'Atlassian + this site' },
+	{ icon: 'code', label: 'Working on', value: 'this site' },
 	{ icon: 'menu_book', label: 'Reading', value: 'See book notes' },
 	// { icon: 'self_improvement', label: 'Focused on', value: 'Build more, scroll less' }
 ];
