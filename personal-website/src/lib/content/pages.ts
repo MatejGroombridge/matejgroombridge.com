@@ -6,14 +6,14 @@ export const homePage = {
 		title: 'Matej Groombridge',
 		description:
 			'Hi, my name is Matej Groombridge. I\'m a second year undergraduate student, UNSW ' +
-			'Co-op Scholar and Sydney-based Software Engineer, currently interning at Atlassian. ' +
+			'Co-op Scholar and Sydney-based Software Engineer, and ex-Atlassian intern. ' +
 			'Thanks for stopping by!'
 	},
 	hero: {
 		title: 'Hi, I\'m\nMatej.',
 		body:
 			'I\'m a second year undergraduate student, UNSW Co-op Scholar and Sydney-based ' +
-			'Software Engineer, currently interning at Atlassian.',
+			'Software Engineer, and ex-Atlassian intern.',
 		image: {
 			src: '/frontpage2.webp',
 			alt: 'Matej Groombridge',
@@ -36,17 +36,16 @@ export type HomeCurrentlyItem = {
 
 export const homeCurrently: HomeCurrentlyItem[] = [
 	{ icon: 'place', label: 'Based in', value: 'Sydney, Australia' },
-	{ icon: 'work', label: 'Interning at', value: 'Atlassian' },
+	{ icon: 'work', label: 'Interned at', value: 'Atlassian' },
 	{ icon: 'school', label: 'Studying', value: 'Software Engineering · UNSW Co-op' },
 	// { icon: 'self_improvement', label: 'Focused on', value: 'Build more, scroll less' }
 ];
 
 export const homeIntro = {
-	eyebrow: 'About this site',
-	title: 'what this actually is',
 	body:
-		'some software I\'m building, books I\'m reading, photos I\'m taking, and ideas I can\'t ' +
-		'stop turning over. no schedule, no algorithm — just the stuff I actually care about.'
+		'hey — I\'m Matej, 20, based in Sydney. this is just my corner of the internet: photos ' +
+		'I\'ve taken, stuff I\'m building, books I\'m reading, whatever\'s on my mind. no real plan ' +
+		'behind it, it just changes as I do. thanks for stopping by.'
 };
 
 type HomeBlockMeta = {
@@ -75,25 +74,25 @@ export const homeSections: {
 		title: 'Writing',
 		asideLabel: 'Read all',
 		asideHref: '/writing',
-		intro: 'Short essays on software, learning, and the things I keep thinking about.'
+		intro: 'I\'m picking up essay writing to refine my thoughts on topics that matter to me.'
 	},
 	photography: {
 		title: 'Photography',
 		asideLabel: 'See all',
 		asideHref: '/photography',
-		intro: 'an archive of cool places I\'ve photographed over the years — a few recent favourites below.'
+		intro: 'an archive — cool places I\'ve photographed over the years.'
 	},
 	booknotes: {
 		title: 'Book Notes',
-		asideLabel: 'Read all',
+		asideLabel: 'all books',
 		asideHref: '/booknotes',
-		intro: 'key takeaways etc. from books I\'ve read — lifestyle, philosophy, tech, whatever\'s interesting.'
+		intro: 'notes, quotes, reviews and key takeaways from books I\'ve read.'
 	},
 	contact: {
 		title: 'Get in touch',
 		asideLabel: 'Contact me',
 		asideHref: '/contact',
-		intro: 'got a question, a project, or just want to say hi? send a note and I\'ll reply asap.'
+		intro: 'send a message and I\'ll get back to you when I can.'
 	},
 	more: { title: 'More' }
 };
@@ -125,7 +124,7 @@ export const bookNotesPage = {
 	hero: {
 		eyebrow: 'Book Notes',
 		title: 'notes, quotes and reviews',
-		body: 'key takeaways etc. from books I\'ve read'
+		body: 'key takeaways and more from books I\'ve read.'
 	},
 	sections: []
 } as const satisfies PageContent;
@@ -139,7 +138,7 @@ export const photographyPage = {
 	hero: {
 		eyebrow: 'Photography',
 		title: 'Travel photography',
-		body: 'an archive — cool places I\'ve photographed over the years'
+		body: 'an archive — cool places I\'ve photographed over the years.'
 	},
 	sections: []
 } as const satisfies PageContent;

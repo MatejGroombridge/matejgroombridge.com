@@ -71,7 +71,6 @@
 	let canRevealed = $state(false);
 
 	function onTreeClick(key: TreeKey) {
-		glow[key] = 1;
 		if (canRevealed) return;
 		treeClicks += 1;
 		if (treeClicks >= 3) canRevealed = true;
@@ -669,12 +668,6 @@
 		outline: none;
 	}
 
-	.tree:focus-visible {
-		outline: 2px solid var(--color-green-soft);
-		outline-offset: 4px;
-		border-radius: 4px;
-	}
-
 	.main {
 		width: clamp(64px, 6.2vw, 80px);
 	}
@@ -801,7 +794,7 @@
 	.watering-can:focus-visible {
 		outline: 2px solid var(--color-green-soft);
 		outline-offset: 4px;
-		border-radius: 4px;
+		border-radius: var(--radius-sm);
 	}
 
 	@media (prefers-reduced-motion: reduce) {

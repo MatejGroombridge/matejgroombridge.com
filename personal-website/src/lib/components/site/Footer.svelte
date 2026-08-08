@@ -87,7 +87,7 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		color: var(--color-subtle);
+		color: var(--color-ink);
 		text-decoration: none;
 		transition:
 			color var(--duration-fast) ease,

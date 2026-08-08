@@ -33,7 +33,7 @@
 	.cover-wrap {
 		position: relative;
 		aspect-ratio: 2 / 3;
-		border-radius: 3px 5px 5px 3px;
+		border-radius: var(--radius-sm) var(--radius-md) var(--radius-md) var(--radius-sm);
 		filter: drop-shadow(0 6px 12px rgb(36 37 37 / 0.18))
 			drop-shadow(0 2px 4px rgb(36 37 37 / 0.1));
 		transition: filter 0.3s ease;
@@ -44,7 +44,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		border-radius: 3px 5px 5px 3px;
+		border-radius: var(--radius-sm) var(--radius-md) var(--radius-md) var(--radius-sm);
 	}
 
 	.spine {
@@ -57,7 +57,7 @@
 			rgb(0 0 0 / 0.08) 55%,
 			rgb(255 255 255 / 0.15) 100%
 		);
-		border-radius: 3px 0 0 3px;
+		border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 		pointer-events: none;
 	}
 

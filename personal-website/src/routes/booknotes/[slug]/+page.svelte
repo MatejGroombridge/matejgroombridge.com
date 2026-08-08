@@ -103,7 +103,7 @@
 	.hero-cover img {
 		width: clamp(180px, 22vw, 270px);
 		height: auto;
-		border-radius: 4px 8px 8px 4px;
+		border-radius: var(--radius-sm) var(--radius-md) var(--radius-md) var(--radius-sm);
 		box-shadow:
 			0 18px 38px rgb(36 37 37 / 0.18),
 			0 4px 10px rgb(36 37 37 / 0.1);

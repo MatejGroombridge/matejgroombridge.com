@@ -88,7 +88,7 @@
 		position: relative;
 		display: block;
 		aspect-ratio: 2 / 3;
-		border-radius: 3px 5px 5px 3px;
+		border-radius: var(--radius-sm) var(--radius-md) var(--radius-md) var(--radius-sm);
 		filter: drop-shadow(0 8px 14px rgb(36 37 37 / 0.16)) drop-shadow(0 2px 4px rgb(36 37 37 / 0.1));
 		transition:
 			transform var(--duration-base) cubic-bezier(0.2, 0.8, 0.2, 1),
@@ -100,7 +100,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		border-radius: 3px 5px 5px 3px;
+		border-radius: var(--radius-sm) var(--radius-md) var(--radius-md) var(--radius-sm);
 	}
 
 	.spine {
@@ -113,12 +113,13 @@
 			rgb(0 0 0 / 0.06) 60%,
 			rgb(255 255 255 / 0.16) 100%
 		);
-		border-radius: 3px 0 0 3px;
+		border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 		pointer-events: none;
 	}
 
 	.meta {
 		display: grid;
+		align-content: start;
 		gap: 0.2rem;
 		padding-top: 0.85rem;
 		border-top: 1px solid var(--color-line);
