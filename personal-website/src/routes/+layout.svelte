@@ -12,6 +12,17 @@
 
 	onMount(() => {
 		installPreserveCase(document.body);
+
+		if (siteSettings.analyticsId) {
+			window.dataLayer = window.dataLayer || [];
+			// gtag relies on `arguments`, so it cannot be an arrow function.
+			window.gtag = function gtag() {
+				// eslint-disable-next-line prefer-rest-params
+				window.dataLayer.push(arguments);
+			};
+			window.gtag('js', new Date());
+			window.gtag('config', siteSettings.analyticsId);
+		}
 	});
 </script>
 

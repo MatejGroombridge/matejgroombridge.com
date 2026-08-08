@@ -26,7 +26,7 @@ export type CurrentlyItem = {
 export const year2026Page = {
 	slug: '2026',
 	seo: {
-		title: '2026 | Matej Groombridge',
+		title: '2026',
 		description:
 			'A living page tracking what I\'m working on, building, and thinking about in 2026.'
 	},

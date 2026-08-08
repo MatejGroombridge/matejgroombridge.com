@@ -17,7 +17,7 @@ import type { Article } from './types';
  *     description: 'One-line summary used for previews and SEO fallbacks.',
  *     bodyPath: '/writing/on-something.md',
  *     seo: {
- *       title: 'On Something | Matej Groombridge',
+ *       title: 'On Something',
  *       description: 'One-line summary used for previews and SEO fallbacks.'
  *     }
  *   }
@@ -32,7 +32,7 @@ export const articles: Article[] = [
 			'The tools I use to publish writing on this site, and the ones I deliberately do not.',
 		bodyPath: '/writing/my-minimal-writing-stack.md',
 		seo: {
-			title: 'My Minimal Writing Stack | Matej Groombridge',
+			title: 'My Minimal Writing Stack',
 			description:
 				'The tools I use to publish writing on this site, and the ones I deliberately do not.'
 		}
@@ -46,7 +46,7 @@ export const articles: Article[] = [
 			'A small set of rules about why and how I write here, light enough to actually follow.',
 		bodyPath: '/writing/a-writing-ethos-i-can-stick-to.md',
 		seo: {
-			title: 'A Writing Ethos I Can Stick To | Matej Groombridge',
+			title: 'A Writing Ethos I Can Stick To',
 			description:
 				'A small set of rules about why and how I write here, light enough to actually follow.'
 		}
@@ -60,7 +60,7 @@ export const articles: Article[] = [
 			'After years of telling myself I would start writing "soon," a short note on why I finally have.',
 		bodyPath: '/writing/why-im-writing-all-of-a-sudden.md',
 		seo: {
-			title: 'Why I\'m Writing All of a Sudden | Matej Groombridge',
+			title: 'Why I\'m Writing All of a Sudden',
 			description:
 				'After years of telling myself I would start writing "soon," a short note on why I finally have.'
 		}

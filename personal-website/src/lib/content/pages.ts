@@ -146,7 +146,7 @@ export const photographyPage = {
 export const writingPage = {
 	slug: 'writing',
 	seo: {
-		title: 'Writing | Matej Groombridge',
+		title: 'Writing',
 		description:
 			'Essays, notes, and short pieces by Matej Groombridge on software, learning, and life.'
 	},
@@ -161,7 +161,7 @@ export const writingPage = {
 export const contactPage = {
 	slug: 'contact',
 	seo: {
-		title: 'Contact | Matej Groombridge',
+		title: 'Contact',
 		description: 'Get in touch with Matej Groombridge about photography, software, or the site.'
 	},
 	hero: {
