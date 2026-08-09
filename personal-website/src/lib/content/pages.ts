@@ -41,11 +41,27 @@ export const homeCurrently: HomeCurrentlyItem[] = [
 	// { icon: 'self_improvement', label: 'Focused on', value: 'Build more, scroll less' }
 ];
 
-export const homeIntro = {
-	body:
-		'hey — I\'m Matej, 20, based in Sydney. this is just my corner of the internet: photos ' +
-		'I\'ve taken, stuff I\'m building, books I\'m reading, whatever\'s on my mind. no real plan ' +
-		'behind it, it just changes as I do. thanks for stopping by.'
+// A paragraph is a run of plain text and inline links, so the copy can carry its
+// own links without the markup living in the page component.
+export type IntroPart = string | { text: string; href: string };
+
+export const homeIntro: { body: IntroPart[][] } = {
+	body: [
+		['hey 👋 if we haven\'t met, my name is Matej.'],
+		[
+			'the purpose of this site has changed a bit over the years but in its current form ' +
+				'I\'m using it mostly as a place to showcase my creative pursuits.'
+		],
+		[
+			'you can expect to find my photography, notes on books I\'ve read, and soon some of ' +
+				'my software development projects and writings as well.'
+		],
+		[
+			'I\'m always keen to connect with people so feel free to ',
+			{ text: 'reach out', href: '/contact' },
+			'!'
+		]
+	]
 };
 
 type HomeBlockMeta = {
@@ -67,7 +83,7 @@ export const homeSections: {
 	currently: { title: 'Right now' },
 	about: {
 		title: 'About',
-		asideLabel: 'See the 2026 page',
+		asideLabel: 'What I\'m up to in 2026',
 		asideHref: '/2026'
 	},
 	writing: {
@@ -90,8 +106,6 @@ export const homeSections: {
 	},
 	contact: {
 		title: 'Get in touch',
-		asideLabel: 'Contact me',
-		asideHref: '/contact',
 		intro: 'send a message and I\'ll get back to you when I can.'
 	},
 	more: { title: 'More' }
@@ -146,7 +160,7 @@ export const photographyPage = {
 export const writingPage = {
 	slug: 'writing',
 	seo: {
-		title: 'Writing | Matej Groombridge',
+		title: 'Writing',
 		description:
 			'Essays, notes, and short pieces by Matej Groombridge on software, learning, and life.'
 	},
@@ -161,7 +175,7 @@ export const writingPage = {
 export const contactPage = {
 	slug: 'contact',
 	seo: {
-		title: 'Contact | Matej Groombridge',
+		title: 'Contact',
 		description: 'Get in touch with Matej Groombridge about photography, software, or the site.'
 	},
 	hero: {
@@ -175,7 +189,7 @@ export const contactPage = {
 export const contactForm = {
 	name: 'contact',
 	subject: 'New website enquiry',
-	successMessage: 'Thanks for getting in touch. I\'ll reply asap.',
+	successMessage: 'thanks for getting in touch. I\'ll get back to you soon',
 	fields: [
 		{ name: 'name', label: 'Name', type: 'text', required: true },
 		{ name: 'email', label: 'Email', type: 'email', required: true },

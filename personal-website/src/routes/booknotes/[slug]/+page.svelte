@@ -43,7 +43,7 @@
 </Section>
 
 {#if data.related.length}
-	<Section class="booknote-related">
+	<Section class="booknote-related" animate={false}>
 		<h2 class="related-title">You Might Also Like...</h2>
 		<ul class="related-list">
 			{#each data.related as book}

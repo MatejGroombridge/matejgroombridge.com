@@ -106,5 +106,9 @@
 
 	.details p {
 		margin: 0;
+		// The global `p { color: var(--color-ink) }` applies directly and so beats the
+		// white inherited from .details — in light mode that rendered near-black text
+		// on this dark panel. Set it explicitly.
+		color: inherit;
 	}
 </style>

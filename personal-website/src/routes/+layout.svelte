@@ -12,6 +12,17 @@
 
 	onMount(() => {
 		installPreserveCase(document.body);
+
+		if (siteSettings.analyticsId) {
+			window.dataLayer = window.dataLayer || [];
+			// gtag relies on `arguments`, so it cannot be an arrow function.
+			window.gtag = function gtag() {
+				// eslint-disable-next-line prefer-rest-params
+				window.dataLayer.push(arguments);
+			};
+			window.gtag('js', new Date());
+			window.gtag('config', siteSettings.analyticsId);
+		}
 	});
 </script>
 
@@ -39,26 +50,9 @@
 </main>
 <Footer />
 
-<style>
-	.page-transition > :global(:not(.page-title):not(.hero-section):not(.writing-scope)),
-	.page-transition > :global(.writing-scope) > :global(:not(.page-title):not(.hero-section)) {
-		animation: page-rise 250ms ease backwards;
-	}
-
-	@keyframes page-rise {
-		from {
-			opacity: 0;
-			transform: translate3d(0, 20px, 0);
-		}
-		to {
-			opacity: 1;
-			transform: translate3d(0, 0, 0);
-		}
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.page-transition > :global(*) {
-			animation: none;
-		}
-	}
-</style>
+<!--
+	No page-level rise animation: it animated each whole <section>, so a section's
+	background (the muted grey bands) faded up along with its content. Section
+	content still animates on scroll via the `reveal` action, which wraps only the
+	inner container and leaves backgrounds static.
+-->

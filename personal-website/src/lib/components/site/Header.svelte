@@ -52,7 +52,6 @@
 <style lang="scss">
 	.site-header {
 		background: var(--color-cream);
-		border-bottom: 1px solid var(--color-header-border);
 	}
 
 	.nav {
@@ -128,7 +127,7 @@
 	.actions {
 		display: flex;
 		align-items: center;
-		gap: 0.5rem;
+		gap: 0.1rem;
 	}
 
 	.menu-toggle {
@@ -137,7 +136,7 @@
 		justify-content: center;
 		width: 2.4rem;
 		height: 2.4rem;
-		border: 1px solid var(--color-border);
+		border: 0;
 		border-radius: var(--radius-md);
 		background: transparent;
 		color: var(--color-ink);
@@ -180,10 +179,6 @@
 			margin: 0;
 			font-size: 1rem;
 			font-weight: 500;
-		}
-
-		.nav-icon {
-			display: none;
 		}
 
 		.nav-links a::after {

@@ -1,3 +1,4 @@
 [build]
-base = "legacy"
+base = "personal-website"
 command = "pnpm build"
+publish = "build"
