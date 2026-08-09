@@ -2,7 +2,7 @@ import type { SiteSettings } from './types';
 
 export const siteSettings = {
 	name: 'Matej Groombridge',
-	tagline: 'thanks for stopping by',
+	tagline: 'thanks for stopping by 👋',
 	baseUrl: 'https://www.matejgroombridge.com',
 	email: 'matejdpg@gmail.com',
 	analyticsId: 'G-LK1M7GLR61',

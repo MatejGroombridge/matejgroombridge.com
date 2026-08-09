@@ -41,7 +41,7 @@ export const year2026Page = {
 
 export const year2026Timeline: TimelineEvent[] = [
 	{
-		date: '2026-05-31',
+		date: '2026-08-09',
 		title: 'rebuilt matejgroombridge.com'
 	},
 	{
@@ -51,6 +51,10 @@ export const year2026Timeline: TimelineEvent[] = [
 	{
 		date: '2026-05-05',
 		title: 'entered my 20s'
+	},
+	{
+		date: '2026-01-10',
+		title: 'archived web design and tutoring pages'
 	}
 ];
 

@@ -30,23 +30,62 @@
 	// svelte-ignore state_referenced_locally
 	let displayed = $state(sourcePool.slice(0, size));
 
+	let viewport = $state<HTMLElement | undefined>();
+	let track = $state<HTMLElement | undefined>();
+	let offset = $state(0);
+
 	onMount(() => {
 		displayed = shuffled(sourcePool).slice(0, size);
+
+		// Reduced motion keeps the shelf as a plain horizontally scrollable strip
+		// rather than yoking it to page scroll.
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+		let frame = 0;
+
+		function update() {
+			frame = 0;
+			if (!viewport || !track) return;
+
+			const overflow = track.scrollWidth - viewport.clientWidth;
+			if (overflow <= 0) {
+				offset = 0;
+				return;
+			}
+
+			// Travel the full overflow across the whole time the shelf is on screen:
+			// 0 as its top meets the bottom of the viewport, 1 as its bottom leaves the top.
+			const rect = viewport.getBoundingClientRect();
+			const span = window.innerHeight + rect.height;
+			const progress = Math.min(1, Math.max(0, (window.innerHeight - rect.top) / span));
+			offset = -progress * overflow;
+		}
+
+		function schedule() {
+			if (!frame) frame = requestAnimationFrame(update);
+		}
+
+		// Wait a frame so the shuffled covers are laid out before measuring.
+		schedule();
+		window.addEventListener('scroll', schedule, { passive: true });
+		window.addEventListener('resize', schedule);
+
+		return () => {
+			if (frame) cancelAnimationFrame(frame);
+			window.removeEventListener('scroll', schedule);
+			window.removeEventListener('resize', schedule);
+		};
 	});
 </script>
 
-<div class="bookstack">
-	<ul class="shelf" style="--count: {displayed.length};">
+<div class="bookstack" bind:this={viewport}>
+	<ul class="shelf" bind:this={track} style="transform: translate3d({offset}px, 0, 0);">
 		{#each displayed as book (book.slug)}
 			<li class="slot">
-				<a class="book" href={`/booknotes/${book.slug}`}>
+				<a class="book" href={`/booknotes/${book.slug}`} aria-label={book.title}>
 					<span class="cover-wrap">
 						<img src={book.cover} alt="Cover of {book.title}" loading="lazy" />
 						<span class="spine" aria-hidden="true"></span>
-					</span>
-					<span class="meta">
-						<span class="title">{book.title}</span>
-						<span class="author">{book.author}</span>
 					</span>
 				</a>
 			</li>
@@ -56,30 +95,39 @@
 
 <style lang="scss">
 	.bookstack {
-		display: grid;
-		gap: 0.85rem;
+		// `overflow: hidden` is what clips the marquee, but it also clips the covers'
+		// drop shadows. Pad the clip box out far enough for the hover shadow (which
+		// reaches ~40px below the cover) and pull the same amount back off the
+		// margins, so the shadows are visible without shifting the layout.
+		// No horizontal inset: the covers line up with the section heading, and a
+		// clipped side shadow is invisible against the marquee's own clipping.
+		--shelf-pad-x: 0rem;
+		--shelf-pad-top: 1.25rem;
+		--shelf-pad-bottom: 2.75rem;
+
+		overflow: hidden;
+		margin: calc(var(--shelf-pad-top) * -1) calc(var(--shelf-pad-x) * -1)
+			calc(var(--shelf-pad-bottom) * -1);
+		padding: var(--shelf-pad-top) var(--shelf-pad-x) var(--shelf-pad-bottom);
 	}
 
 	.shelf {
-		display: grid;
-		grid-template-columns: repeat(var(--count), minmax(0, 1fr));
-		grid-auto-rows: auto;
-		column-gap: clamp(0.85rem, 2vw, 1.5rem);
-		row-gap: 0.85rem;
+		display: flex;
+		width: max-content;
+		gap: clamp(0.85rem, 2vw, 1.5rem);
 		list-style: none;
 		margin: 0;
-		padding: 0.25rem 0;
+		padding: 0;
+		will-change: transform;
 	}
 
 	.slot {
-		display: grid;
-		grid-row: span 2;
-		grid-template-rows: subgrid;
-		min-width: 0;
+		flex: 0 0 auto;
+		width: clamp(128px, 15vw, 176px);
 	}
 
 	.book {
-		display: contents;
+		display: block;
 		color: inherit;
 		text-decoration: none;
 	}
@@ -117,30 +165,6 @@
 		pointer-events: none;
 	}
 
-	.meta {
-		display: grid;
-		align-content: start;
-		gap: 0.2rem;
-		padding-top: 0.85rem;
-		border-top: 1px solid var(--color-line);
-		min-width: 0;
-		transition: transform var(--duration-base) ease;
-	}
-
-	.title {
-		font-family: var(--font-heading);
-		font-size: 0.92rem;
-		font-weight: 600;
-		line-height: 1.25;
-		color: var(--color-heading);
-		overflow-wrap: anywhere;
-	}
-
-	.author {
-		font-size: 0.78rem;
-		color: var(--color-subtle);
-	}
-
 	.book:hover .cover-wrap,
 	.book:focus-visible .cover-wrap {
 		transform: translateY(-5px);
@@ -153,36 +177,16 @@
 		outline-offset: 4px;
 	}
 
-	// Column counts that divide the shelf evenly, so a wrapped row is never left
-	// with a single orphan cover.
-	@media (max-width: 760px) {
-		.shelf {
-			grid-template-columns: repeat(3, minmax(0, 1fr));
-			row-gap: 1.35rem;
-		}
-	}
-
-	@media (max-width: 560px) {
-		.shelf {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-
-		.meta {
-			padding-top: 0.6rem;
-		}
-
-		.title {
-			font-size: 0.85rem;
-		}
-
-		.author {
-			font-size: 0.72rem;
-		}
-	}
-
 	@media (prefers-reduced-motion: reduce) {
-		.cover-wrap,
-		.meta {
+		.bookstack {
+			overflow-x: auto;
+		}
+
+		.shelf {
+			transform: none !important;
+		}
+
+		.cover-wrap {
 			transition: none;
 		}
 	}

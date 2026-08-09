@@ -53,7 +53,9 @@
 	<div class="hero-inner">
 		<div class="hero-grid">
 			<div class="hero-copy">
-				<h1 id="home-hero-title"><span data-preserve-case>Hi</span>{homePage.hero.title.slice(2)}</h1>
+				<h1 id="home-hero-title">
+					<span data-preserve-case>Hi</span>{homePage.hero.title.slice(2)}
+				</h1>
 				<p class="hero-body">{homePage.hero.body}</p>
 				<div class="hero-ctas">
 					{#each homePage.hero.ctas as cta}
@@ -77,20 +79,21 @@
 </section>
 
 {#if false}
-<Section id="home-body" tone="muted">
-	<BlockHead title={homeSections.currently.title} />
-	<div class="currently">
-		{#each homeCurrently as item}
-			<div class="currently-item">
-				<span class="currently-icon material-symbols-rounded" aria-hidden="true">{item.icon}</span>
-				<div class="currently-text">
-					<span class="currently-label">{item.label}</span>
-					<span class="currently-value">{item.value}</span>
+	<Section id="home-body" tone="muted">
+		<BlockHead title={homeSections.currently.title} />
+		<div class="currently">
+			{#each homeCurrently as item}
+				<div class="currently-item">
+					<span class="currently-icon material-symbols-rounded" aria-hidden="true">{item.icon}</span
+					>
+					<div class="currently-text">
+						<span class="currently-label">{item.label}</span>
+						<span class="currently-value">{item.value}</span>
+					</div>
 				</div>
-			</div>
-		{/each}
-	</div>
-</Section>
+			{/each}
+		</div>
+	</Section>
 {/if}
 
 <Section tone="muted">
@@ -103,7 +106,13 @@
 		{/snippet}
 	</BlockHead>
 	<div class="about">
-		<p>{homeIntro.body}</p>
+		{#each homeIntro.body as paragraph}
+			<p>
+				{#each paragraph as part}{#if typeof part === 'string'}{part}{:else}<a href={part.href}
+							>{part.text}</a
+						>{/if}{/each}
+			</p>
+		{/each}
 	</div>
 </Section>
 
@@ -159,7 +168,7 @@
 		{/snippet}
 	</BlockHead>
 	<p class="intro">{homeSections.booknotes.intro}</p>
-	<BookStack books={featuredBooks} pool={bookPool} count={5} />
+	<BookStack books={featuredBooks} pool={bookPool} count={10} />
 </Section>
 
 {#if false}
@@ -181,17 +190,13 @@
 {/if}
 
 <Section id="contact">
-	<BlockHead title={homeSections.contact.title}>
-		{#snippet aside()}
-			<a class="aside-link" href={homeSections.contact.asideHref}>
-				<span class="label">{homeSections.contact.asideLabel}</span>
-				<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
-			</a>
-		{/snippet}
-	</BlockHead>
+	<BlockHead title={homeSections.contact.title} />
 	<div class="contact-grid">
 		<div class="contact-details">
-			<p>{homeSections.contact.intro}</p>
+			<p>
+				{homeSections.contact.intro} more contact options can be found on my
+				<a href="/contact">contact page</a>.
+			</p>
 		</div>
 		<ContactForm definition={contactForm} />
 	</div>
@@ -199,7 +204,10 @@
 
 <style lang="scss">
 	.hero {
-		padding: clamp(2.5rem, 6vw, 4.75rem) 0 clamp(1.5rem, 4vw, 3rem);
+		display: flex;
+		align-items: center;
+		min-height: min(64vh, 620px);
+		padding: clamp(2.5rem, 6vw, 4.75rem) 0 clamp(2rem, 4vw, 3.5rem);
 	}
 
 	.hero-inner {
@@ -217,31 +225,31 @@
 
 	.hero-copy {
 		display: grid;
-		gap: 1.1rem;
+		gap: 0.9rem;
 		max-width: 560px;
 	}
 
 	.hero-copy h1 {
 		font-size: clamp(2.75rem, 7.2vw, 5.25rem);
 		font-weight: 700;
-		line-height: 1.02;
-		letter-spacing: -0.045em;
+		line-height: 1.15;
+		letter-spacing: -0.025em;
 		margin: 0;
 		white-space: pre-line;
 	}
 
 	.hero-body {
 		font-size: clamp(1.05rem, 1.45vw, 1.2rem);
-		line-height: 1.65;
+		line-height: 1.6;
 		color: var(--color-subtle);
-		max-width: 38ch;
+		max-width: 40ch;
 	}
 
 	.hero-ctas {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.65rem;
-		margin-top: 0.4rem;
+		margin-top: 0.85rem;
 	}
 
 	.hero-portrait {
@@ -305,11 +313,9 @@
 		display: grid;
 		gap: 0.85rem;
 		max-width: 60ch;
-	}
-
-	.about h2 {
-		font-size: clamp(1.4rem, 2.4vw, 1.95rem);
-		margin: 0;
+		// Opt out of the global mobile `body { text-align: center }` — this blurb is
+		// long enough that centring it hurts readability on narrow screens.
+		text-align: left;
 	}
 
 	.about p {
@@ -336,7 +342,9 @@
 		display: grid;
 		gap: 0.55rem;
 		align-content: start;
-		transition: transform var(--duration-base) ease, box-shadow var(--duration-base) ease;
+		transition:
+			transform var(--duration-base) ease,
+			box-shadow var(--duration-base) ease;
 	}
 
 	.more-grid :global(.more-card:hover) {
@@ -506,7 +514,7 @@
 	@media (max-width: 820px) {
 		.hero-grid {
 			grid-template-columns: 1fr;
-			gap: 1.1rem;
+			gap: 0.75rem;
 			text-align: center;
 			justify-items: center;
 		}
@@ -519,18 +527,21 @@
 
 		.hero-copy h1 {
 			order: 1;
+			font-size: clamp(3.9rem, 17vw, 5.25rem);
+			line-height: 1.05;
 		}
 
 		.hero-body {
 			order: 2;
 			margin-inline: auto;
+			max-width: 34ch;
 		}
 
 		.hero-portrait {
 			order: 3;
 			justify-self: center;
-			width: min(220px, 60vw);
-			margin-block: 0.35rem;
+			width: min(210px, 56vw);
+			margin-block: 0.5rem;
 		}
 
 		.hero-ctas {
