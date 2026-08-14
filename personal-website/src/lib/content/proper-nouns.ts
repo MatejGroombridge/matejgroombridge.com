@@ -21,7 +21,6 @@ export const properNouns: string[] = [
 
 	// Education / work
 	'UNSW',
-	'Co-op',
 	'Atlassian',
 
 	// Tech / brands

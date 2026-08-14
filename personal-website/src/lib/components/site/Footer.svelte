@@ -11,7 +11,7 @@
 	<Container>
 		<div class="inner">
 			<div class="about">
-				<p class="title">{siteSettings.name}</p>
+				<p class="title" data-preserve-case>{siteSettings.name.toUpperCase()}</p>
 				<p class="tagline">{siteSettings.tagline}</p>
 				<LocalTime />
 			</div>
@@ -62,7 +62,10 @@
 		font-family: var(--font-heading);
 		font-weight: 700;
 		font-size: 1rem;
-		letter-spacing: 0.02em;
+		// Matches the header brand: uppercase needs the wider tracking to stop
+		// the caps closing up on each other.
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
 	}
 
 	.tagline {
