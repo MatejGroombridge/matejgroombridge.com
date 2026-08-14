@@ -11,9 +11,9 @@ export const homePage = {
 	},
 	hero: {
 		title: 'Hi, I\'m\nMatej.',
-		body:
-			'I\'m a second year undergraduate student, UNSW Co-op Scholar and Sydney-based ' +
-			'Software Engineer, and ex-Atlassian intern.',
+		// Non-breaking space between 'UNSW' and 'co-op' so the phrase never
+		// splits across a line break on narrow screens.
+		body: 'sydney-based software engineer — UNSW\u00A0co-op scholar, previously at Atlassian',
 		image: {
 			src: '/frontpage2.webp',
 			alt: 'Matej Groombridge',

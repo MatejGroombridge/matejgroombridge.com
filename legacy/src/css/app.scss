@@ -1,9 +1,9 @@
 @import '_variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap'); //Poppins
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;0,900;1,400&display=swap'); //Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap'); //Figtree
 
 :root {
-	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-family: 'Figtree', Helvetica, sans-serif;
 }
 
 * {
@@ -121,7 +121,7 @@ p {
 	line-height: 1.6em;
 	margin: 0.5em 0;
 
-	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-family: 'Figtree', Helvetica, sans-serif;
 }
 
 a img {
@@ -224,7 +224,7 @@ section {
 		font-size: 19px;
 		line-height: 1.6em;
 
-		font-family: 'Montserrat', Helvetica, sans-serif;
+		font-family: 'Figtree', Helvetica, sans-serif;
 	}
 
 	a {
@@ -327,14 +327,14 @@ td:last-child {
 	margin: 0.5em 0;
 	line-height: 1.7em;
 
-	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-family: 'Figtree', Helvetica, sans-serif;
 }
 
 .medium-text {
 	font-size: 19px;
 	margin: 0.5em 1em 2em 1em;
 	line-height: 1.7em;
-	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-family: 'Figtree', Helvetica, sans-serif;
 }
 
 .testimonial-text {
@@ -1042,7 +1042,7 @@ input {
 	height: 2.5em;
 	width: 100%;
 
-	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-family: 'Figtree', Helvetica, sans-serif;
 	font-size: 16px;
 	color: $text-color;
 }
@@ -1055,7 +1055,7 @@ select {
 	height: 2.5em;
 	width: 100%;
 
-	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-family: 'Figtree', Helvetica, sans-serif;
 	font-size: 16px;
 	color: $text-color;
 }
@@ -1070,7 +1070,7 @@ textarea {
 
 	resize: none;
 
-	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-family: 'Figtree', Helvetica, sans-serif;
 	font-size: 16px;
 	color: $text-color;
 
