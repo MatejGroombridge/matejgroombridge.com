@@ -19,6 +19,7 @@
 		homeSections,
 		photoTrips
 	} from '$lib/content';
+	import { preserveCaseHtml } from '$lib/utils/preserveCase';
 
 	const featuredArticles = articles.slice(0, 3).map((article, index) => ({
 		...article,
@@ -54,9 +55,9 @@
 		<div class="hero-grid">
 			<div class="hero-copy">
 				<h1 id="home-hero-title">
-					<span data-preserve-case>Hi</span>{homePage.hero.title.slice(2)}
+					<span data-preserve-case>Hi</span>{@html preserveCaseHtml(homePage.hero.title.slice(2))}
 				</h1>
-				<p class="hero-body">{homePage.hero.body}</p>
+				<p class="hero-body">{@html preserveCaseHtml(homePage.hero.body)}</p>
 				<div class="hero-ctas">
 					{#each homePage.hero.ctas as cta}
 						<Button href={cta.href} variant={'variant' in cta ? cta.variant : undefined}
@@ -96,7 +97,7 @@
 	</Section>
 {/if}
 
-<Section tone="muted">
+<Section tone="muted" animate={false}>
 	<BlockHead title={homeSections.about.title}>
 		{#snippet aside()}
 			<a class="aside-link" href={homeSections.about.asideHref}>
@@ -229,7 +230,10 @@
 		max-width: 560px;
 	}
 
+	// Deliberate exception to "page title = --font-display": the home hero is the
+	// one place the heavy Poppins weight is the design, not a fallthrough.
 	.hero-copy h1 {
+		font-family: var(--font-ui);
 		font-size: clamp(2.75rem, 7.2vw, 5.25rem);
 		font-weight: 700;
 		line-height: 1.15;
@@ -293,7 +297,7 @@
 	}
 
 	.currently-label {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.7rem;
 		font-weight: 700;
 		letter-spacing: 0.14em;
@@ -302,7 +306,7 @@
 	}
 
 	.currently-value {
-		font-family: var(--font-heading);
+		font-family: var(--font-body);
 		font-size: 0.98rem;
 		font-weight: 600;
 		color: var(--color-heading);
@@ -365,7 +369,7 @@
 	}
 
 	.more-grid :global(.card-cta) {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.85rem;
 		font-weight: 600;
 		color: var(--color-green);
@@ -418,7 +422,7 @@
 
 	.number {
 		position: relative;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-variant-numeric: tabular-nums;
 		font-size: 0.72rem;
 		font-weight: 700;
@@ -444,7 +448,7 @@
 	}
 
 	.row .meta {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.7rem;
 		font-weight: 700;
 		letter-spacing: 0.14em;

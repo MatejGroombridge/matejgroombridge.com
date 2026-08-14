@@ -167,7 +167,7 @@
 	}
 
 	.period {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.72rem;
 		font-weight: 700;
 		letter-spacing: 0.08em;
@@ -188,7 +188,7 @@
 	}
 
 	.modal-label {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.68rem;
 		font-weight: 700;
 		letter-spacing: 0.12em;
@@ -206,7 +206,7 @@
 	}
 
 	.tech li {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.72rem;
 		font-weight: 600;
 		color: var(--color-ink);
@@ -229,7 +229,7 @@
 		padding: 0.5rem 0.9rem;
 		border-radius: 999px;
 		border: 1px solid var(--color-border);
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.82rem;
 		font-weight: 600;
 		color: var(--color-ink);

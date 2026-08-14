@@ -28,8 +28,16 @@ $subtle: #4d524f;
 	--color-surface: #fffdf8;
 	--color-border: rgb(36 37 37 / 0.08);
 	--color-header-border: rgb(36 37 37 / 0.06);
+	// Three roles, and only three. Pick by what the text *does*, not by tag:
+	// - body    → anything read as a sentence, name, or value (prose, subtitles,
+	//             card descriptions, field values, form inputs)
+	// - ui      → labels and chrome (nav, brand, buttons, tags, eyebrows, meta,
+	//             numerals, form labels, section heads, card titles)
+	// - display → page titles and editorial prose headings
+	// `--font-prose` (Lora) is a fourth family scoped to long-form writing only;
+	// see routes/writing/+layout.svelte.
 	--font-body: 'Figtree', Helvetica, sans-serif;
-	--font-heading: 'Poppins', Helvetica, sans-serif;
+	--font-ui: 'Poppins', Helvetica, sans-serif;
 	--font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
 	--size-page: min(880px, calc(100vw - clamp(2.5rem, 6vw, 3rem)));
 	--size-prose: 64ch;
@@ -138,7 +146,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: var(--font-heading);
+	font-family: var(--font-ui);
 	color: var(--color-heading);
 	line-height: 1.15;
 	margin: 0;

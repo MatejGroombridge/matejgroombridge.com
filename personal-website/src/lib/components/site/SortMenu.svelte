@@ -89,7 +89,7 @@
 		border: none;
 		padding: 0.1rem 0.15rem;
 		margin: 0;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.78rem;
 		font-weight: 700;
 		letter-spacing: 0.18em;

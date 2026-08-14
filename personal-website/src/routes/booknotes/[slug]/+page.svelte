@@ -85,16 +85,22 @@
 		max-width: 36ch;
 	}
 
+	// Page title, so it matches the Fraunces `h1` every PageTitle route renders.
 	.hero-text h1 {
+		font-family: var(--font-display);
+		font-optical-sizing: auto;
+		font-variation-settings: 'SOFT' 50;
+		font-weight: 500;
 		font-size: clamp(2rem, 4.4vw, 3rem);
 		line-height: 1.2;
-		letter-spacing: -0.04em;
+		letter-spacing: -0.025em;
 	}
 
+	// "By {author}" reads as a sentence, not a label.
 	.hero-text h2 {
-		font-family: var(--font-heading);
+		font-family: var(--font-body);
 		font-size: clamp(1.05rem, 1.6vw, 1.35rem);
-		font-weight: 500;
+		font-weight: 400;
 		color: var(--color-subtle);
 		letter-spacing: -0.01em;
 		margin-top: 0.4rem;
@@ -126,7 +132,7 @@
 	}
 
 	.facts dt {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.7rem;
 		font-weight: 700;
 		letter-spacing: 0.14em;
@@ -136,7 +142,7 @@
 
 	.facts dd {
 		margin: 0;
-		font-family: var(--font-heading);
+		font-family: var(--font-body);
 		font-weight: 600;
 		color: var(--color-heading);
 		font-size: 0.98rem;
@@ -241,7 +247,7 @@
 	}
 
 	.related-book-title {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-weight: 600;
 		font-size: 1rem;
 		color: var(--color-heading);

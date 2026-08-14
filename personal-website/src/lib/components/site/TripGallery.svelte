@@ -110,7 +110,7 @@
 		display: block;
 		width: 100%;
 		container-type: inline-size;
-		font-family: var(--font-heading, 'Poppins', Helvetica, arial);
+		font-family: var(--font-ui);
 		color: white;
 		text-decoration: none;
 		border-radius: var(--radius-lg);

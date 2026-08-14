@@ -44,7 +44,7 @@
 	helper={lastUpdated ? `Last updated ${lastUpdated}` : undefined}
 />
 
-<Section id="projects">
+<Section id="projects" animate={false}>
 	<BlockHead title="Projects" />
 	{#if false}
 		<ul class="project-grid">
@@ -79,7 +79,7 @@
 	</ul>
 </Section> -->
 
-<Section id="updates">
+<Section id="updates" animate={false}>
 	<BlockHead title="Updates" />
 	<ol class="updates">
 		{#each sortedTimeline as event}
@@ -197,7 +197,7 @@
 	}
 
 	.num {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-weight: 700;
 		font-size: 0.78rem;
 		letter-spacing: 0.08em;
@@ -226,7 +226,7 @@
 	}
 
 	.when {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.72rem;
 		font-weight: 700;
 		letter-spacing: 0.08em;

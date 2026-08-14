@@ -122,7 +122,7 @@
 		flex-direction: column;
 		gap: 0.1rem;
 		text-align: center;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		line-height: 1.2;
 	}
 

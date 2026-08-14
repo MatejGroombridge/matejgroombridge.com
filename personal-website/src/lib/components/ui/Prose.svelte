@@ -63,7 +63,7 @@
 
 	.has-dropcap :global(> p:first-of-type::first-letter) {
 		float: left;
-		font-family: 'Georgia', 'Times New Roman', serif;
+		font-family: var(--font-display);
 		font-size: 3.6em;
 		line-height: 0.88;
 		font-weight: 700;

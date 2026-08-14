@@ -12,7 +12,7 @@
 <PageTitle {...contactPage.hero} />
 <PageSections sections={contactPage.sections} />
 
-<Section id="contact-form">
+<Section id="contact-form" animate={false}>
 	<BlockHead title="Send a message" />
 	<div class="contact-grid">
 		<div class="details">
@@ -43,7 +43,7 @@
 	}
 
 	.email {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-weight: 600;
 		color: var(--color-green);
 		text-decoration: none;

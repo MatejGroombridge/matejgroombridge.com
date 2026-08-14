@@ -141,7 +141,7 @@
 		position: absolute;
 		top: 2px;
 		left: 55%;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.65rem;
 		font-weight: 700;
 		line-height: 1;

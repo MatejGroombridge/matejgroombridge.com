@@ -27,6 +27,31 @@ const NOUN_REGEX = new RegExp(
 	'g'
 );
 
+function escapeHtml(value: string): string {
+	return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+/**
+ * String-level version of the DOM walk below, safe to call on the server.
+ * Use it (with `{@html ...}`) for above-the-fold copy so proper nouns render
+ * with their real casing in the SSR markup instead of flipping from lowercase
+ * once hydration runs `installPreserveCase`.
+ */
+export function preserveCaseHtml(text: string): string {
+	// Match against the raw text (entries like "Alex & Brett Harris" would never
+	// match once "&" has been escaped), then escape each piece on the way out.
+	NOUN_REGEX.lastIndex = 0;
+	let html = '';
+	let cursor = 0;
+	let match: RegExpExecArray | null;
+	while ((match = NOUN_REGEX.exec(text)) !== null) {
+		html += escapeHtml(text.slice(cursor, match.index));
+		html += `<span data-preserve-case>${escapeHtml(match[0])}</span>`;
+		cursor = match.index + match[0].length;
+	}
+	return html + escapeHtml(text.slice(cursor));
+}
+
 function shouldSkipElement(el: Element): boolean {
 	if (SKIP_TAGS.has(el.tagName)) return true;
 	if (el.hasAttribute('data-preserve-case')) return true;

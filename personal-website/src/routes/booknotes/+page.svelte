@@ -46,7 +46,9 @@
 <Seo {...bookNotesPage.seo} canonical="/booknotes" />
 <PageTitle {...bookNotesPage.hero} />
 
-<Section>
+<!-- animate={false}: the grid sits just below the fold, so the reveal rise read
+	 as the whole library floating into place on every visit. -->
+<Section animate={false}>
 	<BlockHead title="Library">
 		{#snippet aside()}
 			<SortMenu options={sortOptions} value={sortKey} onChange={(v) => (sortKey = v)} />

@@ -64,7 +64,7 @@
 
 	.brand {
 		color: var(--color-heading);
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 1.125rem;
 		font-weight: 600;
 		letter-spacing: 0.06em;
@@ -86,7 +86,7 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 0.4rem;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.95rem;
 		font-weight: 500;
 		color: var(--color-ink);

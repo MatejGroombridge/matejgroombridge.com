@@ -28,7 +28,7 @@
 	}
 
 	.block-head h2 {
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 1.2rem;
 		font-weight: 700;
 		letter-spacing: 0.04em;
@@ -41,7 +41,7 @@
 		display: inline-flex;
 		align-items: baseline;
 		gap: 0.5rem;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.82rem;
 		font-weight: 600;
 	}

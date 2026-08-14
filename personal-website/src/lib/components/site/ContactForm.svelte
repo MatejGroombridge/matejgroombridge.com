@@ -111,7 +111,7 @@
 	label {
 		display: grid;
 		gap: 0.4rem;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.92rem;
 		font-weight: 600;
 	}

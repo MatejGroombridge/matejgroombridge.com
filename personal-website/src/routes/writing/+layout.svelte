@@ -45,8 +45,9 @@
 		font-style: italic;
 	}
 
+	// Prose sets the dropcap in --font-display already; writing just wants it
+	// a touch lighter than the default 700.
 	.writing-scope :global(.has-dropcap > p:first-of-type::first-letter) {
-		font-family: var(--font-display);
 		font-weight: 600;
 	}
 </style>

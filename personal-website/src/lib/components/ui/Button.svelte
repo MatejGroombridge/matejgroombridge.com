@@ -39,7 +39,7 @@
 		padding: 0.68rem 1rem;
 		border: 1px solid transparent;
 		border-radius: 999px;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.92rem;
 		font-weight: 600;
 		line-height: 1;

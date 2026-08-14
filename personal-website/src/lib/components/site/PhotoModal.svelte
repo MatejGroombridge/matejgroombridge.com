@@ -66,7 +66,7 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		cursor: pointer;
 		backdrop-filter: blur(6px);
 		-webkit-backdrop-filter: blur(6px);

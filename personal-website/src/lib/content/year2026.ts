@@ -50,7 +50,7 @@ export const year2026Timeline: TimelineEvent[] = [
 	},
 	{
 		date: '2026-05-05',
-		title: 'entered my 20s'
+		title: '20 🥳'
 	},
 	{
 		date: '2026-01-10',

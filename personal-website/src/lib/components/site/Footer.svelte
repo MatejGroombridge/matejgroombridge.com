@@ -59,7 +59,7 @@
 
 	.title {
 		color: var(--color-heading);
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-weight: 700;
 		font-size: 1rem;
 		// Matches the header brand: uppercase needs the wider tracking to stop

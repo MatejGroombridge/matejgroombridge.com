@@ -69,7 +69,7 @@
 
 	h3 {
 		margin: 0;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.98rem;
 		font-weight: 600;
 		line-height: 1.25;

@@ -17,7 +17,7 @@
 		border-radius: 999px;
 		background: var(--color-muted);
 		color: var(--color-green);
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.7rem;
 		font-weight: 700;
 		letter-spacing: 0.075em;

@@ -90,7 +90,7 @@
 
 	.meta {
 		color: var(--color-green);
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-size: 0.72rem;
 		font-weight: 700;
 		letter-spacing: 0.1em;

@@ -85,7 +85,7 @@
 
 	.number {
 		position: relative;
-		font-family: var(--font-heading);
+		font-family: var(--font-ui);
 		font-variant-numeric: tabular-nums;
 		font-size: 0.72rem;
 		font-weight: 700;
