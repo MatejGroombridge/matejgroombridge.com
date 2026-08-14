@@ -311,7 +311,7 @@
 
 	.about {
 		display: grid;
-		gap: 0.85rem;
+		gap: 0.65rem;
 		max-width: 60ch;
 		// Opt out of the global mobile `body { text-align: center }` — this blurb is
 		// long enough that centring it hurts readability on narrow screens.

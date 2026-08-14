@@ -49,12 +49,12 @@ export const homeIntro: { body: IntroPart[][] } = {
 	body: [
 		['hey 👋 if we haven\'t met, my name is Matej.'],
 		[
-			'the purpose of this site has changed a bit over the years but in its current form ' +
-				'I\'m using it mostly as a place to showcase my creative pursuits.'
+			'this site has changed a bit over the years but right now it\'s primarily where ' +
+				'I showcase my creative work.'
 		],
 		[
-			'you can expect to find my photography, notes on books I\'ve read, and soon some of ' +
-				'my software development projects and writings as well.'
+			'you can find my photography, notes on books I\'ve read, and soon some of my ' +
+				'software projects and writings too.'
 		],
 		[
 			'I\'m always keen to connect with people so feel free to ',
