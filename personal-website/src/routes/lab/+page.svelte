@@ -291,6 +291,11 @@
 				Try <kbd data-preserve-case>⌘K</kbd> anywhere on this page, and flip the site into dark mode with
 				the header toggle — everything below is built for both.
 			</p>
+			<a class="sibling" href="/lab/chrome">
+				<span class="lab-mono sibling-label">also in the lab</span>
+				<span class="sibling-title" data-preserve-case>Headers &amp; footers →</span>
+				<span class="sibling-note">Ten of each, with a working width switcher.</span>
+			</a>
 		</div>
 	</header>
 
@@ -529,6 +534,43 @@
 		border-bottom-width: 2px;
 		border-radius: var(--radius-sm);
 		background: var(--color-muted);
+	}
+
+	.sibling {
+		display: grid;
+		gap: 0.15rem;
+		margin-top: 0.5rem;
+		padding: 0.7rem 1rem;
+		border: 1px solid var(--lab-hairline);
+		border-radius: var(--radius-md);
+		background: var(--color-surface);
+		text-decoration: none;
+		transition:
+			border-color var(--duration-fast) ease,
+			transform var(--duration-fast) ease;
+	}
+
+	.sibling:hover {
+		border-color: var(--lab-accent);
+		transform: translateY(-2px);
+	}
+
+	.sibling-label {
+		font-size: 0.5rem;
+		color: var(--lab-accent);
+	}
+
+	.sibling-title {
+		font-family: var(--font-ui);
+		font-size: 0.95rem;
+		font-weight: 650;
+		letter-spacing: -0.02em;
+		color: var(--color-heading);
+	}
+
+	.sibling-note {
+		font-size: 0.8rem;
+		color: var(--color-subtle);
 	}
 
 	.layout {
