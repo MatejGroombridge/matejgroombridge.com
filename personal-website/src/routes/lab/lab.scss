@@ -1,0 +1,102 @@
+// ---------------------------------------------------------------------------
+// TEMPORARY — design concept sandbox styles.
+//
+// Scoped to `.lab` so nothing here can leak into the real site. Delete this
+// file together with `src/routes/lab/` when the concepts have been picked over.
+// ---------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&display=swap');
+
+.lab {
+	--lab-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+	--lab-kinetic: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+
+	// Concept demos want more room than the 880px reading measure the rest of
+	// the site uses, so the page-width token is widened for this subtree only.
+	--size-page: min(1180px, calc(100vw - clamp(1.5rem, 5vw, 3rem)));
+
+	--lab-rail: 232px;
+	--lab-panel: color-mix(in srgb, var(--color-surface) 92%, var(--color-muted));
+	--lab-grid-line: color-mix(in srgb, var(--color-ink) 7%, transparent);
+	--lab-hairline: color-mix(in srgb, var(--color-ink) 14%, transparent);
+	--lab-accent: var(--color-green);
+	--lab-accent-soft: color-mix(in srgb, var(--lab-accent) 18%, transparent);
+
+	color: var(--color-ink);
+}
+
+// The global stylesheet centres all body text under 640px. Concept demos are
+// laid out deliberately, so opt the whole sandbox out.
+@media (max-width: 640px) {
+	.lab {
+		text-align: left;
+	}
+}
+
+.lab ::selection {
+	background: var(--lab-accent);
+	color: var(--color-cream);
+}
+
+// --- shared lab chrome ------------------------------------------------------
+
+.lab-mono {
+	font-family: var(--lab-mono);
+	font-size: 0.68rem;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.lab-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	padding: 0.28rem 0.6rem;
+	border: 1px solid var(--lab-hairline);
+	border-radius: 999px;
+	font-family: var(--lab-mono);
+	font-size: 0.62rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--color-subtle);
+	white-space: nowrap;
+}
+
+.lab-chip[data-tone='accent'] {
+	border-color: color-mix(in srgb, var(--lab-accent) 45%, transparent);
+	background: var(--lab-accent-soft);
+	color: color-mix(in srgb, var(--lab-accent) 78%, var(--color-heading));
+}
+
+// Dotted engineering-paper backdrop used behind live demos.
+.lab-grid-bg {
+	background-image:
+		linear-gradient(var(--lab-grid-line) 1px, transparent 1px),
+		linear-gradient(90deg, var(--lab-grid-line) 1px, transparent 1px);
+	background-size: 28px 28px;
+	background-position: -1px -1px;
+}
+
+// Fine film grain. Kept as a data URI so the sandbox stays self-contained.
+.lab-grain::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	opacity: 0.32;
+	mix-blend-mode: soft-light;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.lab *,
+	.lab *::before,
+	.lab *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
