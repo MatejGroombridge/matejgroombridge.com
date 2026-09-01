@@ -49,9 +49,15 @@ export const properNouns: string[] = [
 	'Sydney Cricket Ground',
 	'Sydney Coastal Walk',
 	'Sydney',
+	'Cockle Bay Wharf',
+	'Darling Harbour',
+	'Circular Quay',
 	'Vaucluse',
 	'La Perouse',
 	'Wollongong',
+
+	// Events / festivals
+	'VIVID',
 
 	// Places — NSW / AU regions
 	'Snowy Mountains',

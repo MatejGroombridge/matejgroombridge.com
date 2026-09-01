@@ -2,6 +2,73 @@ import type { PhotoTrip } from './types';
 
 export const photoTrips = [
 	{
+		title: 'VIVID',
+		subtitle: 'Sydney',
+		year: 2026,
+		slug: 'vivid26',
+		coverImage: '/photography/trip-photos/vivid26.webp',
+		seo: {
+			title: 'VIVID Photography',
+			description: 'A minimal gallery of travel photography from VIVID, Sydney.'
+		},
+		images: [
+			{
+				src: '/photography/all-photos/vivid26_0.webp',
+				alt: 'VIVID, Sydney photo 1',
+				location: 'Darling Harbour, Sydney',
+				capturedAtLabel: '06/26',
+				camera: 'Sony α6700',
+				order: 0,
+				featured: true
+			},
+			{
+				src: '/photography/all-photos/vivid26_1.webp',
+				alt: 'VIVID, Sydney photo 2',
+				location: 'Darling Harbour, Sydney',
+				capturedAtLabel: '06/26',
+				camera: 'Sony α6700',
+				order: 1,
+				featured: false
+			},
+			{
+				src: '/photography/all-photos/vivid26_2.webp',
+				alt: 'VIVID, Sydney photo 3',
+				location: 'Circular Quay, Sydney',
+				capturedAtLabel: '06/26',
+				camera: 'Sony α6700',
+				order: 2,
+				featured: false
+			},
+			{
+				src: '/photography/all-photos/vivid26_3.webp',
+				alt: 'VIVID, Sydney photo 4',
+				location: 'Darling Harbour, Sydney',
+				capturedAtLabel: '06/26',
+				camera: 'Sony α6700',
+				order: 3,
+				featured: false
+			},
+			{
+				src: '/photography/all-photos/vivid26_4.webp',
+				alt: 'VIVID, Sydney photo 5',
+				location: 'Cockle Bay Wharf, Sydney',
+				capturedAtLabel: '06/26',
+				camera: 'Sony α6700',
+				order: 4,
+				featured: false
+			},
+			{
+				src: '/photography/all-photos/vivid26_5.webp',
+				alt: 'VIVID, Sydney photo 6',
+				location: 'Darling Harbour, Sydney',
+				capturedAtLabel: '06/26',
+				camera: 'Sony α6700',
+				order: 5,
+				featured: false
+			}
+		]
+	},
+	{
 		title: 'Sydney',
 		subtitle: 'Australia',
 		year: 2025,
