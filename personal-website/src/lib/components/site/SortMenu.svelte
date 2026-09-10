@@ -8,9 +8,13 @@
 		options: SortOption[];
 		value: string;
 		onChange: (value: string) => void;
+		/** Trigger text. Defaults to the sort control this was written for. */
+		label?: string;
+		/** Which edge the menu hangs from. Use 'start' for a left-hand control. */
+		align?: 'start' | 'end';
 	};
 
-	let { options, value, onChange }: Props = $props();
+	let { options, value, onChange, label = 'Sort', align = 'end' }: Props = $props();
 
 	let open = $state(false);
 	let menuEl = $state<HTMLDivElement | null>(null);
@@ -55,10 +59,16 @@
 		<span class="chevron material-symbols-rounded" class:open aria-hidden="true">
 			expand_more
 		</span>
-		<span class="label">Sort</span>
+		<span class="label">{label}</span>
 	</button>
 	{#if open}
-		<div bind:this={menuEl} class="menu" role="listbox" tabindex="-1">
+		<div
+			bind:this={menuEl}
+			class="menu"
+			class:start={align === 'start'}
+			role="listbox"
+			tabindex="-1"
+		>
 			{#each options as option (option.value)}
 				<button
 					type="button"
@@ -133,6 +143,11 @@
 		padding: 0.35rem;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.menu.start {
+		right: auto;
+		left: 0;
 	}
 
 	.option {

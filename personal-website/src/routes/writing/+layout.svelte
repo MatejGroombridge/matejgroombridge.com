@@ -41,13 +41,24 @@
 		line-height: 1.7;
 	}
 
+	// The shared Prose scale (~16-17px) is tuned for short page copy. Long-form
+	// reading wants more, so writing steps the whole scale up and keeps the
+	// headings proportional to it.
+	.writing-scope :global(.prose p),
+	.writing-scope :global(.prose li),
 	.writing-scope :global(.prose blockquote) {
-		font-style: italic;
+		font-size: clamp(1.05rem, 0.99rem + 0.2vw, 1.15rem);
 	}
 
-	// Prose sets the dropcap in --font-display already; writing just wants it
-	// a touch lighter than the default 700.
-	.writing-scope :global(.has-dropcap > p:first-of-type::first-letter) {
-		font-weight: 600;
+	.writing-scope :global(.prose h2) {
+		font-size: clamp(1.6rem, 2.4vw, 2rem);
+	}
+
+	.writing-scope :global(.prose h3) {
+		font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+	}
+
+	.writing-scope :global(.prose blockquote) {
+		font-style: italic;
 	}
 </style>

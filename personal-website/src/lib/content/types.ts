@@ -111,13 +111,65 @@ export type BookNote = {
 	seo: Seo;
 };
 
+/**
+ * One row of an article's table of contents.
+ *
+ * `id` must match the heading's anchor in the body. Headings are slugged from
+ * their own text, so `## I` becomes `id: 'i'` and `## Where the words live`
+ * becomes `id: 'where-the-words-live'`.
+ */
+export type ArticleSection = {
+	id: string;
+	/** Short marker shown before the label, e.g. 'I'. */
+	marker?: string;
+	label: string;
+};
+
+/**
+ * A superseded copy of an article, kept so readers can see what changed.
+ *
+ * Versions are identified by date alone — that is all the menu lists. Anything
+ * that needs saying about a version goes in `note`, which appears in the banner
+ * shown while it is open.
+ */
+export type ArticleVersion = {
+	id: string;
+	/** When this version was last modified. Its label everywhere it is listed. */
+	modified: string;
+	/** Markdown module name under `src/lib/content/writing/`, without `.md`. */
+	body: string;
+	/** One-line explanation of this version, shown in the banner. */
+	note?: string;
+};
+
 export type Article = {
 	slug: string;
 	title: string;
+	/** Standfirst shown under the title. Falls back to `description` when unset. */
+	subtitle?: string;
+	/**
+	 * Material Symbols Rounded ligature name, drawn large beside the title as the
+	 * article's mark — the writing equivalent of a book note's cover. Browse names
+	 * at https://fonts.google.com/icons. Omit for no mark.
+	 */
+	icon?: string;
 	published: string;
 	readingTime?: string;
 	description: string;
-	bodyPath?: string;
+	/**
+	 * Markdown module name under `src/lib/content/writing/`, without `.md`.
+	 * Compiled by mdsvex, so the file may contain GFM footnotes and raw HTML.
+	 */
+	body?: string;
+	/**
+	 * Author-written short version of the body. Keep its headings identical to
+	 * the full body so the table of contents still resolves in both modes.
+	 */
+	abridged?: string;
+	abridgedReadingTime?: string;
+	contents?: ArticleSection[];
+	/** Earlier versions, newest first. The version menu hides when this is empty. */
+	versions?: ArticleVersion[];
 	seo: Seo;
 };
 
