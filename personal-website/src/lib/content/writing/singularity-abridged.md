@@ -44,7 +44,7 @@ the common misconception is that AI models become uniformly "smarter" across eac
 
 (2) increases in inference compute — the computer power a model uses while working on your problem — have unlocked what we see as "reasoning". this lets a model iterate, test multiple solutions, self-correct and output its chain of thought.
 
-(3) the data points used to train models are now in the trillions, increasing at an average rate of 2.5x per year.
+(3) the data points used to train models are now in the trillions, increasing at an average rate of around 3.7x per year.
 
 (4) agentic scaffolding has enabled intricate, long-horizon work. agents can now spin off other agents to work on sub-tasks and report back, and can hold the equivalent of around 750,000 words in context at once — executing across massive codebases without losing track of what they know.
 
@@ -112,7 +112,7 @@ just because the future is good doesn't mean it will be painless. even the best 
 
 right now AI is being developed in an arms race. the two big players are the USA and China, and the driving force behind their relentless investment is simple — whoever is first to develop superintelligence wields a power that can overturn the current global hegemony and reinvent civilisation at its core.
 
-American companies have held the dominant market share since chatbots came to prevalence — OpenAI, Anthropic and Google combined take up roughly 90% of global traffic, building proprietary models and selling access on a subscription or per-token basis.
+American companies have held the dominant market share since chatbots came to prevalence — OpenAI, Anthropic and Google combined take up roughly 90% of global enterprise LLM spend, building proprietary models and selling access on a subscription or per-token basis.
 
 China has taken a very different approach. frontier Chinese labs — DeepSeek, Qwen, Kimi and the likes — have historically lagged somewhat in pure performance, yet what sets them apart is their blanket open weight policy: every model they train is uploaded to the web for anyone to run locally, and their cloud counterparts undercut American pricing by 5-10x. on the surface this is charitable, but I think it's strategic at its core — if you can't beat the leaders in raw performance, destroy their pricing and capture global mindshare instead. the intelligence gap has typically sat at around 3-9 months, and a stable gap just means the race continues indefinitely.
 
