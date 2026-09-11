@@ -167,22 +167,33 @@ export function remarkArticleFootnotes() {
 
 		const known = new Set(definitions.map((definition) => definition.id));
 
+		/** @param {string} id */
+		const referenceHtml = (id) =>
+			`<sup class="fn-ref" id="fnref-${escapeAttribute(id)}">` +
+			`<a href="#fn-${escapeAttribute(id)}" aria-label="Footnote ${escapeAttribute(id)}">` +
+			`${escapeHtml(id)}</a></sup>`;
+
 		// 2. Turn each surviving `[^id]` into a superscript link.
 		walk(tree, (node, parent) => {
 			if (!parent?.children) return;
+
+			// A reference inside raw HTML — `<cite>Anthropic[^5]</cite>` — never
+			// becomes a linkReference, because remark keeps the whole tag as one
+			// html node. Swap it in the string instead so attributions can cite.
+			if (node.type === 'html' && node.value?.includes('[^')) {
+				node.value = node.value.replace(/\[\^([^\]\s]+)\]/g, (match, id) =>
+					known.has(id) ? referenceHtml(id) : match
+				);
+				return;
+			}
+
 			const id = footnoteId(node);
 			if (!id || !known.has(id)) return;
 
 			const index = parent.children.indexOf(node);
 			if (index === -1) return;
 
-			parent.children.splice(index, 1, {
-				type: 'html',
-				value:
-					`<sup class="fn-ref" id="fnref-${escapeAttribute(id)}">` +
-					`<a href="#fn-${escapeAttribute(id)}" aria-label="Footnote ${escapeAttribute(id)}">` +
-					`${escapeHtml(id)}</a></sup>`
-			});
+			parent.children.splice(index, 1, { type: 'html', value: referenceHtml(id) });
 		});
 
 		// 3. Append the notes list.
@@ -200,7 +211,12 @@ export function remarkArticleFootnotes() {
 		tree.children ??= [];
 		tree.children.push({
 			type: 'html',
-			value: `<section class="footnotes" aria-label="Notes"><ol>${items}</ol></section>`
+			// A <details> so the notes start folded; the page opens it when a
+			// reference is followed and folds it again on the way back.
+			value:
+				`<details class="footnotes"><summary>footnotes` +
+				`<span class="footnotes-chevron material-symbols-rounded" aria-hidden="true">expand_more</span>` +
+				`</summary><ol>${items}</ol></details>`
 		});
 	};
 }

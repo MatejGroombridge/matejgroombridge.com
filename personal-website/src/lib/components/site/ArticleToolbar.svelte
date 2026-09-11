@@ -1,19 +1,19 @@
 <!--
-	Reader controls for an article: reading mode, contents, and version history.
+	Reader controls for an article: contents on the left, version history on the
+	right.
 
-	Reading mode and version reuse `SortMenu`, so they are literally the same
-	control the book notes and photography pages sort with — same type, same
-	menu, same behaviour. Contents is a plain toggle wearing the same trigger
-	styling.
+	The version menu carries reading mode too — Full article / Abridged sit above
+	the dated versions, separated by a rule. They are independent choices, so the
+	menu renders them as two `SortMenu` groups rather than one flat list: you can
+	be reading the abridged current copy, or an archived one, and the menu shows
+	both facts at once.
 
 	Every control is optional and hides itself when the article has nothing to
-	offer — an article with no abridged copy shows no mode menu, one with no
-	earlier versions shows no version menu. That keeps a plain article's toolbar
-	down to whatever it actually earns.
+	offer, so a plain article's toolbar shows only what it actually earns.
 -->
 <script lang="ts">
 	import SortMenu from './SortMenu.svelte';
-	import type { SortOption } from './SortMenu.svelte';
+	import type { SortGroup, SortOption } from './SortMenu.svelte';
 	import type { ArticleSection, ArticleVersion } from '$lib/content/types';
 
 	type Props = {
@@ -46,40 +46,44 @@
 		onversion
 	}: Props = $props();
 
-	// Reading mode and the contents list describe the live article. An archived
-	// copy has neither, so those controls go away rather than sit there inert.
-	const showModeSwitch = $derived(hasAbridged && !archived);
+	// The contents list describes the live article. An archived copy is a
+	// snapshot with its own headings, so the toggle goes rather than sit inert.
 	const hasContents = $derived(sections.length > 0 && !archived);
-	const hasVersions = $derived(versions.length > 0);
+	const hasMenu = $derived(hasAbridged || versions.length > 0);
 
 	const modeOptions: SortOption[] = [
-		{ value: 'full', label: 'Full article' },
-		{ value: 'abridged', label: 'Abridged' }
+		{ value: 'full', label: 'full article' },
+		{ value: 'abridged', label: 'abridged' }
 	];
 
-	// The trigger carries the current mode, because unlike sorting there is no
-	// other cue on the page telling you which copy you are reading.
-	const modeLabel = $derived(mode === 'abridged' ? 'Abridged' : 'Full article');
+	const menuGroups = $derived.by(() => {
+		const groups: SortGroup[] = [];
 
-	const versionOptions = $derived<SortOption[]>([
-		{ value: 'current', label: currentDate },
-		...versions.map((version) => ({ value: version.id, label: version.modified }))
-	]);
+		if (hasAbridged) {
+			groups.push({
+				// Reading an archive means neither mode is current, so nothing is marked.
+				value: archived ? '' : mode,
+				options: modeOptions,
+				onChange: (value) => onmode(value === 'abridged' ? 'abridged' : 'full')
+			});
+		}
+
+		if (versions.length > 0) {
+			groups.push({
+				value: versionId ?? 'current',
+				options: [
+					{ value: 'current', label: currentDate },
+					...versions.map((version) => ({ value: version.id, label: version.modified }))
+				],
+				onChange: (value) => onversion(value === 'current' ? null : value)
+			});
+		}
+
+		return groups;
+	});
 </script>
 
 <div class="toolbar">
-	{#if showModeSwitch}
-		<SortMenu
-			label={modeLabel}
-			align="start"
-			options={modeOptions}
-			value={mode}
-			onChange={(value) => onmode(value === 'abridged' ? 'abridged' : 'full')}
-		/>
-	{/if}
-
-	<div class="spacer"></div>
-
 	{#if hasContents}
 		<button
 			type="button"
@@ -89,17 +93,15 @@
 			aria-controls="article-contents"
 			onclick={oncontents}
 		>
-			Contents
+			<span class="icon material-symbols-rounded" aria-hidden="true">segment</span>
+			<span class="label">Contents</span>
 		</button>
 	{/if}
 
-	{#if hasVersions}
-		<SortMenu
-			label="Version"
-			options={versionOptions}
-			value={versionId ?? 'current'}
-			onChange={(value) => onversion(value === 'current' ? null : value)}
-		/>
+	<div class="spacer"></div>
+
+	{#if hasMenu}
+		<SortMenu label="Version" groups={menuGroups} />
 	{/if}
 </div>
 
@@ -115,10 +117,11 @@
 		flex: 1 1 auto;
 	}
 
-	// Matches SortMenu's trigger, so the toggle sits level with the two menus.
+	// Matches SortMenu's trigger, so the toggle sits level with the menu opposite.
 	.trigger {
 		display: inline-flex;
 		align-items: center;
+		gap: 0.3rem;
 		background: transparent;
 		border: none;
 		padding: 0.1rem 0.15rem;
@@ -128,10 +131,21 @@
 		font-weight: 700;
 		letter-spacing: 0.18em;
 		text-transform: uppercase;
-		color: var(--color-subtle);
+		// Body ink rather than SortMenu's grey: against the article these are
+		// controls the reader is meant to reach for, not secondary chrome.
+		color: var(--color-ink);
 		cursor: pointer;
 		border-radius: var(--radius-sm);
 		transition: color 0.15s ease;
+	}
+
+	.toolbar :global(.sort-menu .trigger) {
+		color: var(--color-ink);
+	}
+
+	.toolbar :global(.sort-menu .trigger:hover),
+	.toolbar :global(.sort-menu .trigger:focus-visible) {
+		color: var(--color-heading);
 	}
 
 	.trigger:hover,
@@ -144,9 +158,19 @@
 		color: var(--color-green);
 	}
 
+	// Sized against the small-caps label rather than the 1.1rem the chevron uses,
+	// which left it looming over the word next to it.
+	.icon {
+		font-size: 0.95rem;
+		line-height: 1;
+		font-variation-settings: 'opsz' 20;
+	}
+
+	.label {
+		line-height: 1;
+	}
+
 	@media (max-width: 640px) {
-		// Two clean rows — reading mode, then the rest — rather than letting the
-		// controls wrap mid-cluster.
 		.toolbar {
 			justify-content: center;
 			column-gap: 1.5rem;
@@ -162,6 +186,11 @@
 		.trigger {
 			font-size: 0.72rem;
 			letter-spacing: 0.16em;
+			gap: 0.2rem;
+		}
+
+		.icon {
+			font-size: 0.9rem;
 		}
 	}
 </style>

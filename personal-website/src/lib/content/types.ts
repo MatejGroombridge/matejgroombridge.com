@@ -153,6 +153,11 @@ export type Article = {
 	 * at https://fonts.google.com/icons. Omit for no mark.
 	 */
 	icon?: string;
+	/**
+	 * Hand-drawn SVG marks (URLs under /static) drawn as a floating cluster beside
+	 * the title instead of `icon`. Three read best: top, bottom-left, bottom-right.
+	 */
+	marks?: string[];
 	published: string;
 	readingTime?: string;
 	description: string;

@@ -50,12 +50,10 @@
 	// Headed like the article's own roman-numeral sections.
 	.contents-title {
 		margin: 0 0 1rem;
-		font-family: var(--font-display);
-		font-optical-sizing: auto;
-		font-variation-settings: 'SOFT' 50;
-		font-weight: 500;
+		font-family: var(--font-ui);
+		font-weight: 700;
 		font-size: clamp(1.25rem, 1.6vw, 1.45rem);
-		letter-spacing: -0.02em;
+		letter-spacing: -0.03em;
 		line-height: 1.25;
 		color: var(--color-heading);
 	}
@@ -88,10 +86,11 @@
 		outline-offset: 2px;
 	}
 
+	// Mirrors the numerals it points at, so the row reads as one type system.
 	.marker {
-		font-family: var(--font-display);
-		font-size: 0.9rem;
-		font-weight: 600;
+		font-family: var(--font-ui);
+		font-size: 0.82rem;
+		font-weight: 700;
 		color: var(--color-subtle);
 		text-align: right;
 	}

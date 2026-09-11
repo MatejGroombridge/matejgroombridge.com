@@ -2,10 +2,13 @@
 	import type { PageData } from './$types';
 	import type { Component } from 'svelte';
 	import ArticleContents from '$lib/components/site/ArticleContents.svelte';
+	import ArticleMarks from '$lib/components/site/ArticleMarks.svelte';
 	import ArticleToolbar from '$lib/components/site/ArticleToolbar.svelte';
 	import Prose from '$lib/components/ui/Prose.svelte';
 	import Section from '$lib/components/ui/Section.svelte';
 	import Seo from '$lib/components/site/Seo.svelte';
+	import SubscribeForm from '$lib/components/site/SubscribeForm.svelte';
+	import { subscribeForm } from '$lib/content/pages';
 	import { loadArticleBody } from '$lib/content/articleBodies';
 
 	let { data }: { data: PageData } = $props();
@@ -46,6 +49,8 @@
 	// stray band across the page — so the whole strip goes.
 	const hasToolbar = $derived(Boolean(data.abridged) || sections.length > 0 || versions.length > 0);
 
+	const hasMark = $derived(Boolean(data.article.marks?.length || data.article.icon));
+
 	async function selectVersion(id: string | null) {
 		versionId = id;
 		// Archives are stored whole, so reading mode returns to the full text.
@@ -84,6 +89,36 @@
 		}
 		activeSection = current;
 	}
+
+	/**
+	 * The notes render as a folded <details>. Following a reference unfolds it
+	 * before the browser jumps (so the target has a position), and returning
+	 * folds it again once the jump has happened — the reference sits above the
+	 * notes, so closing them doesn't move it.
+	 */
+	function handleBodyClick(event: MouseEvent) {
+		const anchor = (event.target as HTMLElement).closest('a');
+		if (!anchor) return;
+		const href = anchor.getAttribute('href') ?? '';
+		const notes = (event.currentTarget as HTMLElement).querySelector<HTMLDetailsElement>(
+			'details.footnotes'
+		);
+		if (!notes) return;
+
+		const toNote = anchor.closest('.fn-ref') && href.startsWith('#fn-');
+		const toReference = anchor.classList.contains('fn-back') && href.startsWith('#fnref-');
+		if (!toNote && !toReference) return;
+
+		// The site scrolls smoothly, but a footnote is a round trip of thousands of
+		// pixels — gliding there and back takes seconds. Jump instead, restoring
+		// the smooth behaviour once the router has done its scroll.
+		const root = document.documentElement;
+		root.style.scrollBehavior = 'auto';
+		setTimeout(() => (root.style.scrollBehavior = ''), 250);
+
+		if (toNote) notes.open = true;
+		else requestAnimationFrame(() => (notes.open = false));
+	}
 </script>
 
 <svelte:window onscroll={trackActiveSection} />
@@ -97,7 +132,7 @@
 	proper-noun walker), so it renders exactly as written.
 -->
 <Section animate={false} class="article-hero">
-	<header class="hero" class:has-mark={Boolean(data.article.icon)}>
+	<header class="hero" class:has-mark={hasMark}>
 		<div class="hero-text">
 			<h1 data-preserve-case>{data.article.title}</h1>
 			{#if standfirst}
@@ -112,8 +147,12 @@
 			</p>
 		</div>
 
-		{#if data.article.icon}
-			<!-- Decorative: the title already names the piece. -->
+		<!-- Decorative either way: the title already names the piece. -->
+		{#if data.article.marks?.length}
+			<div class="hero-mark">
+				<ArticleMarks marks={data.article.marks} />
+			</div>
+		{:else if data.article.icon}
 			<div class="hero-mark" aria-hidden="true">
 				<span class="material-symbols-rounded">{data.article.icon}</span>
 			</div>
@@ -163,7 +202,9 @@
 		</div>
 	{/if}
 
-	<article class="body" data-preserve-case>
+	<!-- Delegated: the links inside are keyboard-reachable themselves. -->
+	<!-- svelte-ignore a11y_no_noninteractive_element_interactions, a11y_click_events_have_key_events -->
+	<article class="body" data-preserve-case onclick={handleBodyClick}>
 		{#if loadingVersion}
 			<p class="status">Loading that version…</p>
 		{:else if body}
@@ -180,7 +221,7 @@
 {#if data.related.length}
 	<Section class="article-related" animate={false}>
 		<div class="column closing">
-			<h2 class="related-title">More Writing</h2>
+			<h2 class="related-title">more writing</h2>
 			<ul class="related-list">
 				{#each data.related as article (article.slug)}
 					<li>
@@ -195,19 +236,24 @@
 	</Section>
 {/if}
 
-<Section class="article-footnote" animate={false}>
+<Section class="article-subscribe" animate={false}>
 	<div class="column closing">
-		<p class="footnote">
-			Thanks for reading. If any of this landed — or missed — I'd love to hear
-			<a href="/contact">your thoughts</a>.
+		<h2 class="related-title">stay updated</h2>
+		<p class="subscribe-blurb">
+			I plan to publish more projects in the future — leave your details and I'll send you the next
+			one when it goes up.
 		</p>
+		<SubscribeForm definition={subscribeForm} />
 	</div>
 </Section>
 
 <style lang="scss">
 	// Same rhythm as PageTitle, which heads photography, book notes and the rest.
+	// PageTitle also carries an eyebrow tag above its h1; this hero does not, so
+	// the extra top padding stands in for it and lands the title at the same
+	// height as every other page.
 	:global(.section.article-hero) {
-		padding-top: clamp(2rem, 4.5vw, 3rem);
+		padding-top: clamp(3.25rem, 8vw, 6.5rem);
 		padding-bottom: clamp(1rem, 2vw, 1.5rem);
 	}
 
@@ -239,6 +285,13 @@
 		align-content: center;
 		max-width: 640px;
 		min-width: 0;
+	}
+
+	// Lifted a little above the vertical centre so the cluster reads level with
+	// the title rather than the byline.
+	.hero-mark {
+		align-self: start;
+		margin-top: -0.75rem;
 	}
 
 	// A large monochrome glyph standing in for cover art. Light weight keeps it
@@ -287,7 +340,8 @@
 		font-size: 0.78rem;
 		font-weight: 600;
 		letter-spacing: 0.02em;
-		color: var(--color-subtle);
+		// Same ink as the body copy: the grey read as disabled next to the title.
+		color: var(--color-ink);
 	}
 
 	.dot {
@@ -306,9 +360,11 @@
 		border-bottom: 1px solid var(--color-border);
 	}
 
+	// The closing sections each carry the same top padding; this adds a little
+	// more after the notes so the essay and the signup read as separate things.
 	:global(.section.article-body) {
 		padding-top: clamp(2.5rem, 5vw, 3.75rem);
-		padding-bottom: clamp(1.5rem, 3vw, 2.25rem);
+		padding-bottom: clamp(1.25rem, 2.5vw, 2rem);
 	}
 
 	:global(.section.article-archive-note) {
@@ -357,13 +413,18 @@
 
 	// A little breathing room above an anchor the reader has just jumped to.
 	.body :global(.prose h2),
-	.body :global(.prose h3) {
+	.body :global(.prose h3),
+	.body :global(.prose h4) {
 		scroll-margin-top: 2rem;
 	}
 
 	// Roman-numeral section markers need room to breathe between movements.
 	.body :global(.prose h2) {
 		margin-top: 2.75rem;
+	}
+
+	.body :global(.prose h4) {
+		margin-top: 2.25rem;
 	}
 
 	.body :global(.prose > :first-child) {
@@ -380,6 +441,69 @@
 		margin: 2rem 0;
 	}
 
+	// Pull quote: centred and italic between a pair of quote marks, rather than
+	// the rule-on-the-left the shared Prose component uses. Laying it out as a
+	// flex column lets the closing mark be ordered before the attribution, so the
+	// quote closes around the words and the source sits outside it.
+	// Set in Fraunces' italic with the WONK axis on, which swaps in its quirkier
+	// letterforms — the one place on the site that voice is used.
+	.body :global(.prose blockquote) {
+		display: flex;
+		flex-direction: column;
+		// Inset from the reading column so the quote reads as a held-apart moment
+		// rather than another paragraph.
+		max-width: 34rem;
+		margin: clamp(2.25rem, 4.5vw, 3.25rem) auto;
+		padding: 0;
+		border-left: 0;
+		text-align: center;
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 400;
+		font-optical-sizing: auto;
+		font-variation-settings:
+			'SOFT' 50,
+			'WONK' 1;
+		font-size: clamp(1.4rem, 1.2rem + 0.6vw, 1.85rem);
+		line-height: 1.35;
+		color: var(--color-green);
+	}
+
+	.body :global(.prose blockquote p) {
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		color: inherit;
+	}
+
+	// Marks hug the first and last letter rather than sitting on their own lines.
+	.body :global(.prose blockquote p:first-of-type)::before {
+		content: '\201C';
+	}
+
+	.body :global(.prose blockquote p:last-of-type)::after {
+		content: '\201D';
+	}
+
+	// Ordered after the closing mark, so the quote shuts around the words only.
+	// Set in the reading face at body size so the source reads as part of the
+	// essay, not as a caption; any link belongs in a footnote, not here.
+	.body :global(.prose blockquote cite) {
+		order: 1;
+		margin-top: 1.1rem;
+		font-family: var(--font-prose);
+		font-size: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
+		font-style: normal;
+		font-weight: 500;
+		font-variation-settings: normal;
+		letter-spacing: 0;
+		color: var(--color-heading);
+	}
+
+	.body :global(.prose blockquote cite)::before {
+		content: '\2014\00A0';
+	}
+
 	// Raw HTML is allowed in article bodies, so keep any media the author drops
 	// in from breaking the measure.
 	.body :global(.prose img),
@@ -394,6 +518,23 @@
 
 	.body :global(.prose figure) {
 		margin: 1.75rem 0;
+	}
+
+	// Hand-drawn diagrams: black ink on a transparent ground, held a little
+	// narrower than the text so they read as an aside, not a full-bleed image.
+	.body :global(.prose .diagram) {
+		margin: clamp(2rem, 4vw, 2.75rem) auto;
+		max-width: 30rem;
+	}
+
+	.body :global(.prose .diagram img) {
+		margin: 0;
+		border-radius: 0;
+	}
+
+	// The SVG is an <img>, so it can't pick up `currentColor`; flip the ink instead.
+	:global([data-theme='dark']) .body :global(.prose .diagram img) {
+		filter: invert(1) brightness(0.9);
 	}
 
 	.body :global(.prose figcaption) {
@@ -441,41 +582,83 @@
 	}
 
 	// Closing sections are headed exactly like the article's own roman-numeral
-	// sections, so they read as further movements of the piece.
+	// sections, so they read as further movements of the piece. The notes
+	// heading doubles as the <summary> that unfolds them.
 	.related-title,
-	.body :global(.footnotes)::before {
+	.body :global(.footnotes summary) {
 		display: block;
-		margin: 0 0 1.1rem;
-		font-family: var(--font-display);
-		font-optical-sizing: auto;
-		font-variation-settings: 'SOFT' 50;
-		font-weight: 500;
+		margin: 0;
+		font-family: var(--font-ui);
+		font-weight: 700;
 		font-size: clamp(1.25rem, 1.6vw, 1.45rem);
-		letter-spacing: -0.02em;
+		letter-spacing: -0.03em;
 		line-height: 1.25;
 		color: var(--color-heading);
 	}
 
-	.body :global(.footnotes)::before {
-		content: 'footnotes';
+	.related-title {
+		margin-bottom: 1.1rem;
+	}
+
+	.body :global(.footnotes summary) {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.2rem;
+		list-style: none;
+		cursor: pointer;
+		user-select: none;
+		border-radius: var(--radius-sm);
+	}
+
+	.body :global(.footnotes summary::-webkit-details-marker) {
+		display: none;
+	}
+
+	.body :global(.footnotes summary:hover),
+	.body :global(.footnotes summary:focus-visible) {
+		color: var(--color-green);
+		outline: none;
+	}
+
+	.body :global(.footnotes-chevron) {
+		font-size: 1.35rem;
+		line-height: 1;
+		font-variation-settings: 'opsz' 24;
+		transition: transform 0.2s ease;
+	}
+
+	.body :global(.footnotes[open] .footnotes-chevron) {
+		transform: rotate(180deg);
 	}
 
 	.body :global(.footnotes ol) {
 		display: grid;
 		gap: 0.55rem;
-		margin: 0;
+		margin: 1.1rem 0 0;
 		padding-left: 1.35rem;
 	}
 
-	.body :global(.fn-item) {
+	// The list number takes its size from the item, so the note size lives here
+	// rather than on `.fn-body` — otherwise the numerals sit at body size beside
+	// smaller text.
+	.body :global(.footnotes .fn-item) {
 		padding: 0.15rem 0.35rem;
 		border-radius: var(--radius-sm);
+		font-size: 0.92rem;
+		line-height: 1.6;
 		scroll-margin-top: 2rem;
 	}
 
+	.body :global(.footnotes .fn-item)::marker {
+		font-family: var(--font-ui);
+		font-size: 0.78rem;
+		font-weight: 600;
+		color: var(--color-subtle);
+	}
+
 	.body :global(.fn-body) {
-		font-size: 0.92rem;
-		line-height: 1.6;
+		font-size: inherit;
+		line-height: inherit;
 		color: var(--color-subtle);
 	}
 
@@ -539,21 +722,29 @@
 		padding: clamp(1.75rem, 3.5vw, 2.5rem) 0 0;
 	}
 
-	:global(.section.article-footnote) {
-		padding: clamp(2.5rem, 5vw, 3.5rem) 0 clamp(3rem, 6vw, 4.5rem);
+	// Last thing on the page, so it carries the run-out to the footer that the
+	// sign-off paragraph used to.
+	:global(.section.article-subscribe) {
+		padding: clamp(1.75rem, 3.5vw, 2.5rem) 0 clamp(3.5rem, 7vw, 5.5rem);
+	}
+
+	// Two short fields and a button: full measure made the inputs look padded out.
+	:global(.section.article-subscribe .subscribe) {
+		max-width: 30rem;
+	}
+
+	.subscribe-blurb {
+		max-width: 46ch;
+		margin: 0 0 1.1rem;
+		font-size: 0.92rem;
+		line-height: 1.6;
+		color: var(--color-subtle);
 	}
 
 	// Only one rule in the closing run — the one above the notes, marking where
 	// the essay ends. Everything after it is separated by space alone.
 	.closing {
 		padding-top: 0;
-	}
-
-	.footnote {
-		max-width: 56ch;
-		font-size: 0.85rem;
-		line-height: 1.6;
-		color: var(--color-subtle);
 	}
 
 	@media (max-width: 720px) {
@@ -572,6 +763,8 @@
 		// The mark leads on a narrow screen — it reads before the words do.
 		.hero-mark {
 			order: -1;
+			align-self: center;
+			margin-top: 0;
 		}
 
 		.hero-mark .material-symbols-rounded {

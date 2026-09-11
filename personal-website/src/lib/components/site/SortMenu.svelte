@@ -4,17 +4,36 @@
 		label: string;
 	};
 
-	type Props = {
-		options: SortOption[];
+	/**
+	 * An independently-selected block of options. Pass `groups` instead of a flat
+	 * `options` list when one menu holds two unrelated choices — the article
+	 * reader puts reading mode above version history that way.
+	 */
+	export type SortGroup = {
 		value: string;
+		options: SortOption[];
 		onChange: (value: string) => void;
+	};
+
+	type Props = {
+		options?: SortOption[];
+		value?: string;
+		onChange?: (value: string) => void;
+		/** Two or more selection blocks, rendered in order with a rule between. */
+		groups?: SortGroup[];
 		/** Trigger text. Defaults to the sort control this was written for. */
 		label?: string;
 		/** Which edge the menu hangs from. Use 'start' for a left-hand control. */
 		align?: 'start' | 'end';
 	};
 
-	let { options, value, onChange, label = 'Sort', align = 'end' }: Props = $props();
+	let { options, value, onChange, groups, label = 'Sort', align = 'end' }: Props = $props();
+
+	// A flat list is just the one-group case, so the markup below only has to
+	// handle groups.
+	const blocks = $derived<SortGroup[]>(
+		groups ?? [{ value: value ?? '', options: options ?? [], onChange: onChange ?? (() => {}) }]
+	);
 
 	let open = $state(false);
 	let menuEl = $state<HTMLDivElement | null>(null);
@@ -24,8 +43,8 @@
 		open = !open;
 	}
 
-	function select(next: string) {
-		onChange(next);
+	function select(block: SortGroup, next: string) {
+		block.onChange(next);
 		open = false;
 		buttonEl?.focus();
 	}
@@ -69,17 +88,22 @@
 			role="listbox"
 			tabindex="-1"
 		>
-			{#each options as option (option.value)}
-				<button
-					type="button"
-					class="option"
-					class:selected={option.value === value}
-					role="option"
-					aria-selected={option.value === value}
-					onclick={() => select(option.value)}
-				>
-					{option.label}
-				</button>
+			{#each blocks as block, index (index)}
+				{#if index > 0}
+					<span class="group-rule" role="presentation"></span>
+				{/if}
+				{#each block.options as option (option.value)}
+					<button
+						type="button"
+						class="option"
+						class:selected={option.value === block.value}
+						role="option"
+						aria-selected={option.value === block.value}
+						onclick={() => select(block, option.value)}
+					>
+						{option.label}
+					</button>
+				{/each}
 			{/each}
 		</div>
 	{/if}
@@ -148,6 +172,12 @@
 	.menu.start {
 		right: auto;
 		left: 0;
+	}
+
+	.group-rule {
+		height: 1px;
+		margin: 0.3rem 0.35rem;
+		background: var(--color-border);
 	}
 
 	.option {

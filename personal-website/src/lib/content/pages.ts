@@ -5,12 +5,12 @@ export const homePage = {
 	seo: {
 		title: 'Matej Groombridge',
 		description:
-			'Hi, my name is Matej Groombridge. I\'m a second year undergraduate student, UNSW ' +
+			"Hi, my name is Matej Groombridge. I'm a second year undergraduate student, UNSW " +
 			'Co-op Scholar and Sydney-based Software Engineer, and ex-Atlassian intern. ' +
 			'Thanks for stopping by!'
 	},
 	hero: {
-		title: 'Hi, I\'m\nMatej.',
+		title: "Hi, I'm\nMatej.",
 		// Non-breaking space between 'UNSW' and 'co-op' so the phrase never
 		// splits across a line break on narrow screens.
 		body: 'sydney-based software engineer — UNSW\u00A0co-op scholar, previously at Atlassian',
@@ -21,7 +21,7 @@ export const homePage = {
 		},
 		ctas: [
 			{ label: 'Get in touch', href: '/contact' },
-			{ label: '2026', href: '/2026', variant: 'ghost' },
+			{ label: '2026', href: '/2026', variant: 'ghost' }
 			// { label: 'Read my writing', href: '/writing', variant: 'secondary' },
 		]
 	},
@@ -37,7 +37,7 @@ export type HomeCurrentlyItem = {
 export const homeCurrently: HomeCurrentlyItem[] = [
 	{ icon: 'place', label: 'Based in', value: 'Sydney, Australia' },
 	{ icon: 'work', label: 'Interned at', value: 'Atlassian' },
-	{ icon: 'school', label: 'Studying', value: 'Software Engineering · UNSW Co-op' },
+	{ icon: 'school', label: 'Studying', value: 'Software Engineering · UNSW Co-op' }
 	// { icon: 'self_improvement', label: 'Focused on', value: 'Build more, scroll less' }
 ];
 
@@ -47,17 +47,17 @@ export type IntroPart = string | { text: string; href: string };
 
 export const homeIntro: { body: IntroPart[][] } = {
 	body: [
-		['hey 👋 if we haven\'t met, my name is Matej.'],
+		["hey 👋 if we haven't met, my name is Matej."],
 		[
-			'this site has changed a bit over the years but right now it\'s primarily where ' +
+			"this site has changed a bit over the years but right now it's primarily where " +
 				'I showcase my creative work.'
 		],
 		[
-			'you can find my photography, notes on books I\'ve read, and soon some of my ' +
+			"you can find my photography, notes on books I've read, and soon some of my " +
 				'software projects and writings too.'
 		],
 		[
-			'I\'m always keen to connect with people so feel free to ',
+			"I'm always keen to connect with people so feel free to ",
 			{ text: 'reach out', href: '/contact' },
 			'!'
 		]
@@ -83,30 +83,30 @@ export const homeSections: {
 	currently: { title: 'Right now' },
 	about: {
 		title: 'About',
-		asideLabel: 'What I\'m up to in 2026',
+		asideLabel: "What I'm up to in 2026",
 		asideHref: '/2026'
 	},
 	writing: {
 		title: 'Writing',
 		asideLabel: 'Read all',
 		asideHref: '/writing',
-		intro: 'I\'m picking up essay writing to refine my thoughts on topics that matter to me.'
+		intro: "I'm picking up essay writing to refine my thoughts on topics that matter to me."
 	},
 	photography: {
 		title: 'Photography',
 		asideLabel: 'See all',
 		asideHref: '/photography',
-		intro: 'an archive — cool places I\'ve photographed over the years.'
+		intro: "an archive — cool places I've photographed over the years."
 	},
 	booknotes: {
 		title: 'Book Notes',
 		asideLabel: 'all books',
 		asideHref: '/booknotes',
-		intro: 'notes, quotes, reviews and key takeaways from books I\'ve read.'
+		intro: "notes, quotes, reviews and key takeaways from books I've read."
 	},
 	contact: {
 		title: 'Get in touch',
-		intro: 'send a message and I\'ll get back to you when I can.'
+		intro: "send a message and I'll get back to you when I can."
 	},
 	more: { title: 'More' }
 };
@@ -123,8 +123,8 @@ export const homeMoreCards: HomeMoreCard[] = [
 	{
 		title: '2026',
 		meta: 'Living page',
-		body: 'a running log of what I\'m building, reading, and thinking about this year.',
-		cta: 'See what I\'m up to',
+		body: "a running log of what I'm building, reading, and thinking about this year.",
+		cta: "See what I'm up to",
 		href: '/2026'
 	}
 ];
@@ -138,7 +138,7 @@ export const bookNotesPage = {
 	hero: {
 		eyebrow: 'Book Notes',
 		title: 'notes, quotes and reviews',
-		body: 'key takeaways and more from books I\'ve read.'
+		body: "key takeaways and more from books I've read."
 	},
 	sections: []
 } as const satisfies PageContent;
@@ -152,7 +152,7 @@ export const photographyPage = {
 	hero: {
 		eyebrow: 'Photography',
 		title: 'Travel photography',
-		body: 'an archive — cool places I\'ve photographed over the years.'
+		body: "an archive — cool places I've photographed over the years."
 	},
 	sections: []
 } as const satisfies PageContent;
@@ -167,7 +167,7 @@ export const writingPage = {
 	hero: {
 		eyebrow: 'Writing',
 		title: 'my writing',
-		body: 'I\'m picking up essay writing to refine my thoughts on topics that matter to me.'
+		body: "I'm picking up essay writing to refine my thoughts on topics that matter to me."
 	},
 	sections: []
 } as const satisfies PageContent;
@@ -181,15 +181,36 @@ export const contactPage = {
 	hero: {
 		eyebrow: 'Contact',
 		title: 'want to get in touch?',
-		body: 'send a message and I\'ll get back to you when I can.'
+		body: "send a message and I'll get back to you when I can."
 	},
 	sections: []
 } as const satisfies PageContent;
 
+/**
+ * Article subscribe form. Submissions arrive by email through the same EmailJS
+ * service the contact form uses, so each signup lands in the inbox rather than
+ * in a managed list — see `SubscribeForm` for what that does and does not cover.
+ */
+export const subscribeForm = {
+	name: 'article-subscribe',
+	subject: 'Email SignUp',
+	successMessage: "success. I'll keep you in the loop",
+	fields: [
+		{ name: 'name', label: 'Name', type: 'text', placeholder: 'name' },
+		{
+			name: 'email',
+			label: 'Email address',
+			type: 'email',
+			required: true,
+			placeholder: 'email'
+		}
+	]
+} as const satisfies FormDefinition;
+
 export const contactForm = {
 	name: 'contact',
 	subject: 'New website enquiry',
-	successMessage: 'thanks for getting in touch. I\'ll get back to you soon',
+	successMessage: "thanks for getting in touch. I'll get back to you soon",
 	fields: [
 		{ name: 'name', label: 'Name', type: 'text', required: true },
 		{ name: 'email', label: 'Email', type: 'email', required: true },

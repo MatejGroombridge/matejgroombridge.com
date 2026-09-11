@@ -22,14 +22,15 @@
 		--font-prose: 'Lora', 'Iowan Old Style', Georgia, serif;
 	}
 
+	// Headings match the book notes body: Poppins at the weight and tracking the
+	// rest of the site sets its headings in. Only the prose itself stays serif.
 	.writing-scope :global(.prose h2),
 	.writing-scope :global(.prose h3),
 	.writing-scope :global(.prose h4) {
-		font-family: var(--font-display);
-		font-optical-sizing: auto;
-		font-variation-settings: 'SOFT' 50;
-		font-weight: 500;
-		letter-spacing: -0.02em;
+		font-family: var(--font-ui);
+		font-weight: 700;
+		letter-spacing: -0.03em;
+		line-height: 1.15;
 		color: var(--color-heading);
 	}
 
@@ -45,8 +46,7 @@
 	// reading wants more, so writing steps the whole scale up and keeps the
 	// headings proportional to it.
 	.writing-scope :global(.prose p),
-	.writing-scope :global(.prose li),
-	.writing-scope :global(.prose blockquote) {
+	.writing-scope :global(.prose li) {
 		font-size: clamp(1.05rem, 0.99rem + 0.2vw, 1.15rem);
 	}
 
@@ -56,6 +56,11 @@
 
 	.writing-scope :global(.prose h3) {
 		font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+	}
+
+	// Sub-section markers (i., ii.) sit just above body size — a step, not a shout.
+	.writing-scope :global(.prose h4) {
+		font-size: clamp(1.15rem, 1.4vw, 1.25rem);
 	}
 
 	.writing-scope :global(.prose blockquote) {
