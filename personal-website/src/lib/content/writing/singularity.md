@@ -174,6 +174,10 @@ I think perhaps there is a more sinister consequence of the situation we're curr
 
 one last thing worth addressing before we move on: discourse around AI often comes back to the question, are we in an AI bubble? I think it's undeniable that AI is seeing incredible amounts of over-investment. circular financing between AI companies in the US is estimated to be north of $800 billion in 2026 — Nvidia invests in OpenAI, OpenAI goes to Oracle for compute, and Oracle buys Nvidia chips to fulfil it — the cycle continues.[^24] AI-driven growth is accounting for greater proportions of the S&P500 and AI CEOs are becoming ever more infamous for their incessant pre-IPO hype, irrespective of whether the companies are actually returning a profit year on year.
 
+<figure class="diagram">
+  <img src="/writing/media/circular-financing-diagram.png" alt="A hand-drawn loop: OpenAI pays Oracle for compute, Oracle pays Nvidia for chips, Nvidia invests in OpenAI, with dollar signs in the middle." loading="lazy" />
+</figure>
+
 my intuition is that the whole bubble question matters a lot less than it may at first appear. the money behind AI is unusually resistant to a sudden pop — vast amounts of funding are tied to national strategy rather than quarterly returns, and revenue, however unprofitable the labs remain, is still climbing. what we're seeing globally is consistent intelligence and capability gains with minimal signs of stagnation, which coupled with the heated competition between the US and China and their respective governments' interest in reaching AI dominance, I see little reason why investors should all of a sudden find a reason to pull the plug on AI. that's not to say a correction won't happen. valuations may halve and funding tighten considerably, yet the data centres that are being built will continue being built and labs won't stop training. a burst bubble might slow the progress of AI but it certainly won't reverse it.
 
 ## VII

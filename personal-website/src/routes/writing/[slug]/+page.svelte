@@ -623,9 +623,9 @@
 		outline: none;
 	}
 
-	// Unfold / fold glyphs at the far edge — a toggle, not a chevron.
+	// A caret at the far edge, pointing down while folded and up while open.
 	.body :global(.footnotes summary)::after {
-		content: 'unfold_more';
+		content: 'expand_more';
 		font-family: 'Material Symbols Rounded';
 		font-size: 1.3rem;
 		line-height: 1;
@@ -635,7 +635,7 @@
 	}
 
 	.body :global(.footnotes[open] summary)::after {
-		content: 'unfold_less';
+		content: 'expand_less';
 	}
 
 	.body :global(.footnotes summary:hover)::after {
