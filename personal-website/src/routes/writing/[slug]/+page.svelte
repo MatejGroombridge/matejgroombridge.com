@@ -623,22 +623,19 @@
 		outline: none;
 	}
 
-	// A small-caps word at the far edge, set like the toolbar's CONTENTS and
-	// VERSION triggers so the page has one vocabulary for its controls.
+	// Unfold / fold glyphs at the far edge — a toggle, not a chevron.
 	.body :global(.footnotes summary)::after {
-		content: 'show';
-		font-family: var(--font-ui);
-		font-size: 0.78rem;
-		font-weight: 700;
-		letter-spacing: 0.18em;
-		text-transform: uppercase;
+		content: 'unfold_more';
+		font-family: 'Material Symbols Rounded';
+		font-size: 1.3rem;
 		line-height: 1;
+		font-variation-settings: 'opsz' 24;
 		color: var(--color-subtle);
 		transition: color 0.15s ease;
 	}
 
 	.body :global(.footnotes[open] summary)::after {
-		content: 'hide';
+		content: 'unfold_less';
 	}
 
 	.body :global(.footnotes summary:hover)::after {
