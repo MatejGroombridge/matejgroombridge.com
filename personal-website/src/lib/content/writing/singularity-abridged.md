@@ -22,15 +22,15 @@ the final reason is the one I think holds the most weight: self-improvement. AI 
 
 METR, a research non-profit, measures the longest task (timed against human experts) a model can complete with 50% reliability. the model that powered ChatGPT on release scored 36 seconds; Anthropic's Claude Opus 4.6, released in Feb of this year, reached an insane time horizon of 12 hours. this measure has increased exponentially year on year, with a doubling time of less than 6 months, and shows little to no sign of stagnation.
 
-<figure class="diagram">
-  <img src="/writing/media/singularity-diagram.svg" alt="A hand-drawn graph of intelligence over time. AI follows an exponential curve that crosses the roughly linear line of human intelligence around 2026 and climbs towards infinity." loading="lazy" />
-</figure>
-
 for the average consumer these changes are virtually unnoticeable — the more advanced capabilities are left out of chatbots or hidden behind paywalls, feeding an illusion of stagnation. yet AI progress is accelerating more rapidly than ever before.
 
 a couple of definitions. I'll define artificial general intelligence (AGI) as an AI system capable of matching or exceeding average human performance on virtually every cognitive task, as opposed to "narrow" AI which excels in one area but cannot generalise. artificial superintelligence (ASI) is the theoretical next step, where machine intelligence completely outperforms the best human minds in every single field.
 
-the bet that I and many top experts are making is that in the coming decade AI will reach an inflection point, whereby it autonomously completes all stages of the research process and begins to recursively self-improve at an unstoppable rate. at this point, every day becomes historic. automating research is the final step before an AI singularity, and the trends above suggest we're closer than most people realise.
+<figure class="diagram">
+  <img src="/writing/media/singularity-diagram.png" alt="A hand-drawn graph of intelligence over time. AI follows an exponential curve that crosses the roughly linear line of human intelligence around 2026 and climbs towards infinity." loading="lazy" />
+</figure>
+
+the bet that I and many top experts are making is that in the coming decade AI will reach an inflection point, whereby it autonomously completes all stages of the research process and begins to recursively self-improve at an unstoppable rate. at this point, every day becomes historic. automating research is the final step before an AI singularity, and the trends suggest we're closer than most people realise.
 
 ## III
 
@@ -70,7 +70,13 @@ so what have we established? AI is accelerating fast, under a paradigm that show
 
 the exciting and scary thing about an exponential AI takeoff is that the future becomes fundamentally unpredictable.
 
-in astrophysics, the event horizon of a black hole (the origin of the term singularity) is the point where gravity becomes so strong that not even light can escape — what lies beyond is a mystery. we're fast approaching an AI event horizon, where the intelligence differential across generations of AI systems becomes so large that humans cannot possibly model what comes next. nobody can honestly claim to know what lies beyond, but that's never going to stop people from trying. what follows is my attempt at tracing the optimistic, best-case scenario of controlled, human-aligned superintelligence — informed guesswork, but none of it off the cards.
+in astrophysics, the event horizon of a black hole (the origin of the term singularity) is the point where gravity becomes so strong that not even light can escape — what lies beyond is a mystery.
+
+<figure class="diagram diagram-tall">
+  <img src="/writing/media/event-horizon-diagram.png" alt="A hand-drawn funnel: arrows fall inward from a wide rim, past a ring labelled event horizon, into a black cone that narrows to a point labelled singularity." loading="lazy" />
+</figure>
+
+we're fast approaching an AI event horizon, where the intelligence differential across generations of AI systems becomes so large that humans cannot possibly model what comes next. nobody can honestly claim to know what lies beyond, but that's never going to stop people from trying. what follows is my attempt at tracing the optimistic, best-case scenario of controlled, human-aligned superintelligence — informed guesswork, but none of it off the cards.
 
 #### i.
 

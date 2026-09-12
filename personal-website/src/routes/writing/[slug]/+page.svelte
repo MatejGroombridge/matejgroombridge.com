@@ -364,7 +364,7 @@
 	// more after the notes so the essay and the signup read as separate things.
 	:global(.section.article-body) {
 		padding-top: clamp(2.5rem, 5vw, 3.75rem);
-		padding-bottom: clamp(1.25rem, 2.5vw, 2rem);
+		padding-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
 	}
 
 	:global(.section.article-archive-note) {
@@ -532,6 +532,13 @@
 		border-radius: 0;
 	}
 
+	// Portrait drawings would tower at the diagram width; cap them by height.
+	.body :global(.prose .diagram-tall img) {
+		width: auto;
+		max-height: 24rem;
+		margin-inline: auto;
+	}
+
 	// The SVG is an <img>, so it can't pick up `currentColor`; flip the ink instead.
 	:global([data-theme='dark']) .body :global(.prose .diagram img) {
 		filter: invert(1) brightness(0.9);
@@ -598,41 +605,46 @@
 		margin-bottom: 1.1rem;
 	}
 
+	// The heading spans the column so the toggle can sit at the far edge.
 	.body :global(.footnotes summary) {
-		display: inline-flex;
+		display: flex;
 		align-items: center;
-		gap: 0.2rem;
+		justify-content: space-between;
 		list-style: none;
 		cursor: pointer;
 		user-select: none;
-		border-radius: var(--radius-sm);
 	}
 
 	.body :global(.footnotes summary::-webkit-details-marker) {
 		display: none;
 	}
 
-	.body :global(.footnotes summary:hover),
 	.body :global(.footnotes summary:focus-visible) {
-		color: var(--color-green);
 		outline: none;
 	}
 
-	.body :global(.footnotes-chevron) {
-		font-size: 1.35rem;
+	// Plus to open, minus to close — a plain toggle rather than a chevron.
+	.body :global(.footnotes summary)::after {
+		content: 'add';
+		font-family: 'Material Symbols Rounded';
+		font-size: 1.25rem;
 		line-height: 1;
 		font-variation-settings: 'opsz' 24;
-		transition: transform 0.2s ease;
+		color: var(--color-subtle);
 	}
 
-	.body :global(.footnotes[open] .footnotes-chevron) {
-		transform: rotate(180deg);
+	.body :global(.footnotes[open] summary)::after {
+		content: 'remove';
+	}
+
+	.body :global(.footnotes summary:hover)::after {
+		color: var(--color-heading);
 	}
 
 	.body :global(.footnotes ol) {
 		display: grid;
-		gap: 0.55rem;
-		margin: 1.1rem 0 0;
+		gap: 0.2rem;
+		margin: 0.9rem 0 0;
 		padding-left: 1.35rem;
 	}
 

@@ -217,9 +217,8 @@ export function remarkArticleFootnotes() {
 			// A <details> so the notes start folded; the page opens it when a
 			// reference is followed and folds it again on the way back.
 			value:
-				`<details class="footnotes"><summary>footnotes` +
-				`<span class="footnotes-chevron material-symbols-rounded" aria-hidden="true">expand_more</span>` +
-				`</summary><ol>${items}</ol></details>`
+				// The open/closed indicator is drawn by the page's CSS (summary::after).
+				`<details class="footnotes"><summary>footnotes</summary><ol>${items}</ol></details>`
 		});
 	};
 }
