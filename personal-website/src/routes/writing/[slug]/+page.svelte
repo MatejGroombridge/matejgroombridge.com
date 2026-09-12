@@ -623,18 +623,22 @@
 		outline: none;
 	}
 
-	// Plus to open, minus to close — a plain toggle rather than a chevron.
+	// A small-caps word at the far edge, set like the toolbar's CONTENTS and
+	// VERSION triggers so the page has one vocabulary for its controls.
 	.body :global(.footnotes summary)::after {
-		content: 'add';
-		font-family: 'Material Symbols Rounded';
-		font-size: 1.25rem;
+		content: 'show';
+		font-family: var(--font-ui);
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
 		line-height: 1;
-		font-variation-settings: 'opsz' 24;
 		color: var(--color-subtle);
+		transition: color 0.15s ease;
 	}
 
 	.body :global(.footnotes[open] summary)::after {
-		content: 'remove';
+		content: 'hide';
 	}
 
 	.body :global(.footnotes summary:hover)::after {
