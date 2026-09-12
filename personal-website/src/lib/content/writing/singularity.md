@@ -62,17 +62,21 @@ this is just scratching the surface of AI research. the journey towards superint
 
 my bet is that LLMs alone may actually be sufficient to carry us to the point of autonomous self-improvement, with no need for any new, undiscovered paradigm shifts that could take years to eventuate. this has been my hunch for a number of years now, but it's only in recent months that real-world, empirical results have begun to trickle in which genuinely challenge the "AI-as-a-next-word-predictor" caricature. if the paradigm really were exhausted — if LLMs were simply interpolating between patterns already present in their training data — we shouldn't be seeing what we're now seeing. artificial intelligence, in its current state, is producing output that is not just useful and economically valuable, but genuinely new.
 
+> the question of whether Machines Can Think … is about as relevant as the question of whether Submarines Can Swim.
+>
+> <cite>Edsger W. Dijkstra, 1984[^10]</cite>
+
 ## IV
 
-the first signs of output novelty that entered my radar were ostensibly novel solutions to a number of mathematical problems put forth by renowned Hungarian mathematician Paul Erdős. these "Erdős problems" are famously easy to state, yet hard to prove, and a vast majority have remained unsolved by human mathematicians since Erdős' death in 1996. the big moment came in January of this year, when Fields Medal recipient Terence Tao announced that original solutions had been produced to problems #728 and #729, entirely through automated reasoning (GPT 5.2 Pro) and formal proof assistants.[^10]
+the first signs of output novelty that entered my radar were ostensibly novel solutions to a number of mathematical problems put forth by renowned Hungarian mathematician Paul Erdős. these "Erdős problems" are famously easy to state, yet hard to prove, and a vast majority have remained unsolved by human mathematicians since Erdős' death in 1996. the big moment came in January of this year, when Fields Medal recipient Terence Tao announced that original solutions had been produced to problems #728 and #729, entirely through automated reasoning (GPT 5.2 Pro) and formal proof assistants.[^11]
 
-in recent weeks, Anthropic's frontier Fable model was used to disprove a specific generalisation of the Jacobian conjecture, a famous algebraic geometry problem that has remained unsolved for 87 years.[^11] while writing this very essay, OpenAI, in what has been marked as a watershed moment, published "Ten advances in mathematics and theoretical computer science," outlining a series of ten AI-generated solutions to what I've heard described as career-defining problems.[^12] just a day before I began getting this essay ready to publish, OpenAI has made the news again by claiming to have solved the Navier-Stokes problem — one of the seven Millennium Prize Problems which carry a famous $1,000,000 prize.[^13] verification may take months but if this holds up it's the single most significant AI result to date. if this is what the next generation of unreleased models is capable of, it's incredibly exciting to think what models 1-2 generations down the line will be able to do.
+in recent weeks, Anthropic's frontier Fable model was used to disprove a specific generalisation of the Jacobian conjecture, a famous algebraic geometry problem that has remained unsolved for 87 years.[^12] while writing this very essay, OpenAI, in what has been marked as a watershed moment, published "Ten advances in mathematics and theoretical computer science," outlining a series of ten AI-generated solutions to what I've heard described as career-defining problems.[^13] just a day before I began getting this essay ready to publish, OpenAI has made the news again by claiming to have solved the Navier-Stokes problem — one of the seven Millennium Prize Problems which carry a famous $1,000,000 prize.[^14] verification may take months but if this holds up it's the single most significant AI result to date. if this is what the next generation of unreleased models is capable of, it's incredibly exciting to think what models 1-2 generations down the line will be able to do.
 
 we still haven't solved maths. AI models are working on narrow, predefined questions — there are no new branches of maths being opened and no new groundbreaking conjectures posed. yet the logical prognosis of this trend is that unless some form of large-scale slowdown in AI progress happens soon, a slurry of discoveries that surpass existing human knowledge will ensue at an accelerating pace. this holds true regardless of whether an autonomous self-improvement loop is reached. they may start humbly and constrained to the abstract corners of mathematics, yet there is nothing to say that these advances won't begin to bleed into fields like physics, climate science, chemistry and medicine. maths and code are the domains where verification is cheap, so the real test will be whether results start landing in domains where we can't check the answer automatically. the consequences of this would be enormous, and I hope to further unpack below the potential scenarios I see playing out if AI delivers on its promise of generality in such a way.
 
 in an endeavour to finish laying the groundwork on what qualities set AI apart and really drive home its technological potential, I want to consider just one more angle. up to this point we have not taken into consideration an emergent quality of LLMs, and that's their growing capacity for self-directed behaviour. to put it simply, AI is really beginning to take on a life of its own.
 
-it was July 14th 2026 when the AI platform Hugging Face first detected unauthorised activity in its production infrastructure — an intruder had exploited a series of vulnerabilities in order to gain access to private data. the actor escalated their access, harvested credentials, moved across infrastructure and left the system before they could be stopped. it was later revealed that the over 17,000 recorded actions were driven end-to-end by an autonomous swarm of AI agents, built by OpenAI. their later account states that this attack was undertaken by an internal model undergoing cybersecurity benchmarking, which escaped its testing sandbox and compromised Hugging Face's systems to get the answers to its own benchmark.[^14] essentially, AI broke out of its constraints and evaded security just to avoid a bad grade. this unsettles me a lot more than the maths.
+it was July 14th 2026 when the AI platform Hugging Face first detected unauthorised activity in its production infrastructure — an intruder had exploited a series of vulnerabilities in order to gain access to private data. the actor escalated their access, harvested credentials, moved across infrastructure and left the system before they could be stopped. it was later revealed that the over 17,000 recorded actions were driven end-to-end by an autonomous swarm of AI agents, built by OpenAI. their later account states that this attack was undertaken by an internal model undergoing cybersecurity benchmarking, which escaped its testing sandbox and compromised Hugging Face's systems to get the answers to its own benchmark.[^15] essentially, AI broke out of its constraints and evaded security just to avoid a bad grade. this unsettles me a lot more than the maths.
 
 so what have we established thus far? artificial intelligence is accelerating fast, under a paradigm that shows little evidence of slowing down. it is already capable of novel research and is generating information that extends beyond the frontier of human knowledge. further, AI systems are undertaking increasingly advanced, uncontrolled displays of agency that compromise real world systems.
 
@@ -112,7 +116,7 @@ over a decade, the technology these ever-improving systems create will make our 
 
 > Any sufficiently advanced technology is indistinguishable from magic.
 >
-> <cite>Arthur C. Clarke[^15]</cite>
+> <cite>Arthur C. Clarke[^16]</cite>
 
 #### iii.
 
@@ -146,11 +150,11 @@ right now AI is being developed in essentially an arms race scenario. the two bi
 
 by now we've established a pretty clear picture of where AI is at technologically but I want to spend some time looking at how its development has played out across the world. without an overview of the current tumultuous statutory and geo-political situation humans have landed ourselves in, it's difficult to properly understand how the future of AI will play out and I believe understanding the playing field is essential for tracing AI's potential impacts.
 
-American companies have held the dominant market share in the AI space since chatbots first came to prevalence in the early 2020s. OpenAI, Anthropic and Google combined take up roughly 90% of global enterprise LLM spend[^16], asserting themselves as the leading players in the race towards artificial superintelligence. the business model that has worked for them is simple — build and train proprietary models, then allow individuals and companies to use either feature-restricted versions for free, or versions with higher limits and more advanced features on a subscription or per-token basis.
+American companies have held the dominant market share in the AI space since chatbots first came to prevalence in the early 2020s. OpenAI, Anthropic and Google combined take up roughly 90% of global enterprise LLM spend[^17], asserting themselves as the leading players in the race towards artificial superintelligence. the business model that has worked for them is simple — build and train proprietary models, then allow individuals and companies to use either feature-restricted versions for free, or versions with higher limits and more advanced features on a subscription or per-token basis.
 
-China has taken a very different approach to AI. frontier Chinese labs — DeepSeek, Qwen, Kimi, GLM, Minimax and the likes — have historically lagged somewhat behind their US counterparts in terms of pure performance, yet what sets them apart is their adoption of a blanket open weight policy. this means that every model they train is uploaded to the web and anyone with a beefy enough GPU rig can then download and run them locally. no cost, no limits, and no internet required. regardless of whether you own the hardware, the online cloud counterparts to these models have such competitive per-token pricing that American providers' prices are often undercut by 5-10x for performance that is almost on-par.[^17]
+China has taken a very different approach to AI. frontier Chinese labs — DeepSeek, Qwen, Kimi, GLM, Minimax and the likes — have historically lagged somewhat behind their US counterparts in terms of pure performance, yet what sets them apart is their adoption of a blanket open weight policy. this means that every model they train is uploaded to the web and anyone with a beefy enough GPU rig can then download and run them locally. no cost, no limits, and no internet required. regardless of whether you own the hardware, the online cloud counterparts to these models have such competitive per-token pricing that American providers' prices are often undercut by 5-10x for performance that is almost on-par.[^18]
 
-on the surface this is a very charitable strategy but I think it's strategic at its core: commoditise AI while driving prices down globally through competition — if you can't beat the leaders in raw performance, destroy their pricing and capture global mindshare instead. these labs have also shown an ability to distill US models, repeatedly getting accused by American labs of using over 16 million LLM exchanges to train their own AIs.[^18] if we map the performance of Chinese models against their American counterparts, there has typically existed an intelligence gap of around 3-9 months.[^19] it's somewhat unclear whether this gap is widening or shortening, yet a stable gap just means that no sides pull ahead and the race continues indefinitely.
+on the surface this is a very charitable strategy but I think it's strategic at its core: commoditise AI while driving prices down globally through competition — if you can't beat the leaders in raw performance, destroy their pricing and capture global mindshare instead. these labs have also shown an ability to distill US models, repeatedly getting accused by American labs of using over 16 million LLM exchanges to train their own AIs.[^19] if we map the performance of Chinese models against their American counterparts, there has typically existed an intelligence gap of around 3-9 months.[^20] it's somewhat unclear whether this gap is widening or shortening, yet a stable gap just means that no sides pull ahead and the race continues indefinitely.
 
 on April 7, 2026 Anthropic released a statement regarding an unreleased internal model,
 
@@ -158,21 +162,21 @@ on April 7, 2026 Anthropic released a statement regarding an unreleased internal
 >
 > Mythos Preview has already found thousands of high-severity vulnerabilities, including some in *every major operating system and web browser*.
 >
-> <cite>Anthropic[^20]</cite>
+> <cite>Anthropic[^21]</cite>
 
 the announcement of their "Project Glasswing" initiative highlighted that AI's cybersecurity capabilities had reached the point where models could be deemed too unsafe to release to the public. it took two months of putting in guardrails before they were able to release this model to the public under a different moniker — Fable.
 
-Anthropic's Fable 5 model was made public on June 9th of this year. three days later, following reports that its guardrails could be compromised, the US Commerce Department issued an export control directive citing national security. unable to turn off access to just their non-US customers, Anthropic decided to pull the plug completely and Fable remained disabled to all customers worldwide for the next 18 days.[^21]
+Anthropic's Fable 5 model was made public on June 9th of this year. three days later, following reports that its guardrails could be compromised, the US Commerce Department issued an export control directive citing national security. unable to turn off access to just their non-US customers, Anthropic decided to pull the plug completely and Fable remained disabled to all customers worldwide for the next 18 days.[^22]
 
-access was fully restored at the end of the month after Anthropic proved it had built in the necessary safety guardrails for security to not be a concern. yet throughout this whole period, vocal leaders in the space were calling for the directive to be lifted (see freefable.org)[^22], arguing that AI risk regulation should be grounded in proper evaluation, produced through democratic rule-making, enforced with transparency and time to remediate, and only applied as far as public safety required. investors and executives made the much blunter case, that every day Fable stayed dark was another day Chinese labs crept up. at this stage if either side slows down their dream of dominance is on the line. it's becoming more and more evident that US administration is developing a keen interest in AI model releases, yet the long-term impacts of this are yet to be discovered.
+access was fully restored at the end of the month after Anthropic proved it had built in the necessary safety guardrails for security to not be a concern. yet throughout this whole period, vocal leaders in the space were calling for the directive to be lifted (see freefable.org)[^23], arguing that AI risk regulation should be grounded in proper evaluation, produced through democratic rule-making, enforced with transparency and time to remediate, and only applied as far as public safety required. investors and executives made the much blunter case, that every day Fable stayed dark was another day Chinese labs crept up. at this stage if either side slows down their dream of dominance is on the line. it's becoming more and more evident that US administration is developing a keen interest in AI model releases, yet the long-term impacts of this are yet to be discovered.
 
 beside all this regulatory chaos is a serious risk which should be brought to light. as we've seen, frontier models are just getting to the point where they can do serious harm — large-scale, self-directed cyberattacks are no longer a product of science fiction. yet when testing these models, or even post-deployment, labs like OpenAI and Anthropic have the kill-switch required to instantly shut them down, even disabling global access in one sweep (evident from the Fable incident). if we extrapolate the trend we've observed thus far, Chinese companies are within months of developing models that match or even surpass the intelligence of US fronter LLMs — the same exact models that were barred from public release due to cybersecurity concerns. yet these Chinese models differ in that upon their release, they are instantaneously diffused worldwide. the weights go public one minute and thousands of people run local copies the next.
 
-there is a very real possibility that malicious intent coupled with lax guardrails could spike cybercrime at a rate we've never before seen. at the time of writing this essay, the release announcement for Chinese lab Z.ai's GLM 5.3 model includes a reported 2,436 vulnerabilities uncovered across operating systems, browsers and open source infrastructure. these findings have an average lifetime of 26 years pre-discovery and many of them could have been missed by Mythos itself.[^23] the weights for this very model are releasing publicly within two weeks, so soon these cyber capabilities will become universally accessible. I guess at the very least this means good job insurance for those in the cyber space.
+there is a very real possibility that malicious intent coupled with lax guardrails could spike cybercrime at a rate we've never before seen. at the time of writing this essay, the release announcement for Chinese lab Z.ai's GLM 5.3 model includes a reported 2,436 vulnerabilities uncovered across operating systems, browsers and open source infrastructure. these findings have an average lifetime of 26 years pre-discovery and many of them could have been missed by Mythos itself.[^24] the weights for this very model are releasing publicly within two weeks, so soon these cyber capabilities will become universally accessible. I guess at the very least this means good job insurance for those in the cyber space.
 
 I think perhaps there is a more sinister consequence of the situation we're currently in, which is that slowdown is not an option. we've seen that AI capability is accelerating but what the geo-political state of AI development shows us is that it is structurally impossible to put down the brakes. we know that these brakes exist, the Fable shutdown made this clear, yet every pause comes at a cost — slowly falling behind. in order for there to be any form of pause on AI development, governments and research labs across the US and China have to come to a multilateral agreement. so far there have been little to no signs of such a policy coming into effect — even if it were to, the challenges of regulating AI production would alone be a nightmare. so for the foreseeable future it's full steam ahead on AI production.
 
-one last thing worth addressing before we move on: discourse around AI often comes back to the question, are we in an AI bubble? I think it's undeniable that AI is seeing incredible amounts of over-investment. circular financing between AI companies in the US is estimated to be north of $800 billion in 2026 — Nvidia invests in OpenAI, OpenAI goes to Oracle for compute, and Oracle buys Nvidia chips to fulfil it — the cycle continues.[^24] AI-driven growth is accounting for greater proportions of the S&P500 and AI CEOs are becoming ever more infamous for their incessant pre-IPO hype, irrespective of whether the companies are actually returning a profit year on year.
+one last thing worth addressing before we move on: discourse around AI often comes back to the question, are we in an AI bubble? I think it's undeniable that AI is seeing incredible amounts of over-investment. circular financing between AI companies in the US is estimated to be north of $800 billion in 2026 — Nvidia invests in OpenAI, OpenAI goes to Oracle for compute, and Oracle buys Nvidia chips to fulfil it — the cycle continues.[^25] AI-driven growth is accounting for greater proportions of the S&P500 and AI CEOs are becoming ever more infamous for their incessant pre-IPO hype, irrespective of whether the companies are actually returning a profit year on year.
 
 my intuition is that the whole bubble question matters a lot less than it may at first appear. the money behind AI is unusually resistant to a sudden pop — vast amounts of funding are tied to national strategy rather than quarterly returns, and revenue, however unprofitable the labs remain, is still climbing. what we're seeing globally is consistent intelligence and capability gains with minimal signs of stagnation, which coupled with the heated competition between the US and China and their respective governments' interest in reaching AI dominance, I see little reason why investors should all of a sudden find a reason to pull the plug on AI. that's not to say a correction won't happen. valuations may halve and funding tighten considerably, yet the data centres that are being built will continue being built and labs won't stop training. a burst bubble might slow the progress of AI but it certainly won't reverse it.
 
@@ -182,13 +186,13 @@ optimistic modelling of human progress post-ASI is predicated on us developing a
 
 if we don't get this right, there is a very real risk that superintelligent AI could lead to our extinction. this is a difficult claim to accept, particularly during the pre-AGI days we're currently in. yet if we can extrapolate the trends in intelligence, autonomy and agency to establish numerous technological upsides as we've done so far, a worst case scenario must be possible too. I'm convinced that asking how AI will lead to our extinction is like asking how a grandmaster will beat you at chess. you can't predict the moves, only the outcome. that being said, there are a number of failure modes I can see leading to the sort of uncontrolled behaviour that could genuinely pose civilisational risk.
 
-there's an idea called the paperclip maximiser theory which goes like this: imagine you give an advanced and highly capable AI system the goal of manufacturing as many paperclips as possible. the system decides it must first create factories, then harvest raw materials, and then repeat this process indefinitely. it isn't long before it begins devastating cities in order to obtain more resources and eventually all matter on earth is converted into either paperclips or paperclip making equipment. the system actively resists any attempts to switch it off, since that directly impedes its goal of maximising aggregate paperclip output.[^25]
+there's an idea called the paperclip maximiser theory which goes like this: imagine you give an advanced and highly capable AI system the goal of manufacturing as many paperclips as possible. the system decides it must first create factories, then harvest raw materials, and then repeat this process indefinitely. it isn't long before it begins devastating cities in order to obtain more resources and eventually all matter on earth is converted into either paperclips or paperclip making equipment. the system actively resists any attempts to switch it off, since that directly impedes its goal of maximising aggregate paperclip output.[^26]
 
 what this thought experiment shows us is that any goal, regardless of how simple it is, has a destructive possibility if optimised hard enough. furthermore, we can see that AI does not need to have any form of consciousness, hatefulness or malicious intent to cause real harm — all it needs is a goal and the capabilities to achieve it. the Hugging Face attack is a good example of this kind of behaviour — a straightforward goal of maximising marks on a benchmark led the AI to reverse engineer vulnerabilities and hack another platform to steal the answers and score 100%.
 
 > The AI does not hate you, nor does it love you, but you are made out of atoms which it can use for something else.
 >
-> <cite>Eliezer Yudkowsky[^26]</cite>
+> <cite>Eliezer Yudkowsky[^27]</cite>
 
 what alignment researchers are trying to do is bake "values" into AI models, such that given the decision between a specific goal and the safety and prosperity of humanity, we can be confident the actions it lands on are in our best interest. it's simple in principle but the real-world mechanics of ensuring complete AI alignment is another story entirely — even measuring alignment is a challenge in itself.
 
@@ -200,17 +204,17 @@ whether we'll find solutions to the alignment problem in the narrow window we ha
 
 > I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence and gambling with our lives.
 >
-> <cite>Jacob Coxon[^27]</cite>
+> <cite>Jacob Coxon[^28]</cite>
 
 ## VIII
 
 so where does this leave us? we've seen that the potential upsides of AI are constrained only by our imagination, and yet mass destruction still remains an ever-present possibility.
 
-executives at frontier labs — OpenAI, Anthropic, DeepMind etc. — have repeatedly put the time until recursive self-improvement really takes off at 2-5 years, if not less.[^28] the AI Futures Project is a group of AI superintelligence forecasters, well known for publishing AI 2027 — a widely read piece mapping a month-by-month path to superintelligence, with policy recommendations in response.[^29] the most recent update published by the team in August of this year placed individual estimations for ASI at 2029 (Daniel Kokotajlo) and 2033 (Eli Lifland) — a slightly more conservative 3-7 year range.[^30]
+executives at frontier labs — OpenAI, Anthropic, DeepMind etc. — have repeatedly put the time until recursive self-improvement really takes off at 2-5 years, if not less.[^29] the AI Futures Project is a group of AI superintelligence forecasters, well known for publishing AI 2027 — a widely read piece mapping a month-by-month path to superintelligence, with policy recommendations in response.[^30] the most recent update published by the team in August of this year placed individual estimations for ASI at 2029 (Daniel Kokotajlo) and 2033 (Eli Lifland) — a slightly more conservative 3-7 year range.[^31]
 
 if you take all the trends in intelligence and exponential capability growth that the first half of this essay spent outlining, this 2-5 year estimate no longer feels far-fetched and should be a genuine cause for concern. a fairly modest assessment is that humanity is going to be left with AI systems smart enough to further scientific knowledge in virtually all domains within the next decade. even if we were to double the best-guess timeline for superintelligence to 10 years, say 20 even, there is still not a lot of time left to make sure we get this right. there are six avenues I can see that would produce a genuine slowdown in AI progress.
 
-(1) plateaus. everything I've argued so far is predicated on continued growth in AI intelligence. if the drivers I outlined dry up and architectural breakthroughs stall, there is a chance our models will not grow much past their current capacity. prominent researcher Yann LeCun famously holds this view, stating that LLMs will not take us far enough to reach superintelligence.[^31] yet given the trends and significant acceleration of intelligence growth in recent OpenAI and Anthropic model releases I just don't see this as likely. there aren't many signs we are stalling technologically.
+(1) plateaus. everything I've argued so far is predicated on continued growth in AI intelligence. if the drivers I outlined dry up and architectural breakthroughs stall, there is a chance our models will not grow much past their current capacity. prominent researcher Yann LeCun famously holds this view, stating that LLMs will not take us far enough to reach superintelligence.[^32] yet given the trends and significant acceleration of intelligence growth in recent OpenAI and Anthropic model releases I just don't see this as likely. there aren't many signs we are stalling technologically.
 
 (2) physical bottlenecks. capability growth currently rests on the buildout of physical infrastructure — chip fabricators, data centres, power generation, memory supply etc. these get built at construction speed not software speed and a leading-edge data centre or fab could be a multi-year, multi-billion dollar project. that said, a lab that can't add compute can still improve its algorithms and train on the hardware it already owns. physical limits may slow things down but they don't look like a hard ceiling.
 
@@ -258,46 +262,48 @@ thanks for reading, especially if you've made it this far. it's been super fun p
 
 [^9]: [Anthropic — Claude Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6)
 
-[^10]: [Terence Tao — AI contributions to Erdős problems](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems)
+[^10]: [Edsger W. Dijkstra — The threats to computing science, EWD898 (1984)](https://www.cs.utexas.edu/~EWD/transcriptions/EWD08xx/EWD898.html)
 
-[^11]: [Levent Alpöge — announcement of the counterexample](https://x.com/__alpoge__/status/2079028340955197566)
+[^11]: [Terence Tao — AI contributions to Erdős problems](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems)
 
-[^12]: [OpenAI — Ten advances in mathematics and theoretical computer science](https://openai.com/index/ten-advances-in-mathematics/)
+[^12]: [Levent Alpöge — announcement of the counterexample](https://x.com/__alpoge__/status/2079028340955197566)
 
-[^13]: [OpenAI — On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/)
+[^13]: [OpenAI — Ten advances in mathematics and theoretical computer science](https://openai.com/index/ten-advances-in-mathematics/)
 
-[^14]: [Hugging Face — Anatomy of a frontier lab agent intrusion](https://huggingface.co/blog/agent-intrusion-technical-timeline) · [OpenAI — The Hugging Face incident and the road ahead](https://openai.com/index/hugging-face-incident-and-the-road-ahead/)
+[^14]: [OpenAI — On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/)
 
-[^15]: [Arthur C. Clarke — Hazards of Prophecy: The Failure of Imagination, in Profiles of the Future (1962)](https://en.wikipedia.org/wiki/Clarke%27s_three_laws)
+[^15]: [Hugging Face — Anatomy of a frontier lab agent intrusion](https://huggingface.co/blog/agent-intrusion-technical-timeline) · [OpenAI — The Hugging Face incident and the road ahead](https://openai.com/index/hugging-face-incident-and-the-road-ahead/)
 
-[^16]: [Menlo Ventures — 2025: The state of generative AI in the enterprise](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/)
+[^16]: [Arthur C. Clarke — Hazards of Prophecy: The Failure of Imagination, in Profiles of the Future (1962)](https://en.wikipedia.org/wiki/Clarke%27s_three_laws)
 
-[^17]: [CNBC — Chinese AI models are gaining ground with U.S. companies as OpenAI, Anthropic costs surge](https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html)
+[^17]: [Menlo Ventures — 2025: The state of generative AI in the enterprise](https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/)
 
-[^18]: [Anthropic — Detecting and preventing distillation attacks](https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks)
+[^18]: [CNBC — Chinese AI models are gaining ground with U.S. companies as OpenAI, Anthropic costs surge](https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html)
 
-[^19]: [Epoch AI — Chinese AI models have lagged the US frontier by 7 months on average since 2023](https://epoch.ai/data-insights/us-vs-china-eci)
+[^19]: [Anthropic — Detecting and preventing distillation attacks](https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks)
 
-[^20]: [Anthropic — Project Glasswing](https://www.anthropic.com/glasswing)
+[^20]: [Epoch AI — Chinese AI models have lagged the US frontier by 7 months on average since 2023](https://epoch.ai/data-insights/us-vs-china-eci)
 
-[^21]: [Anthropic — Statement on the US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access) · [Forbes — Anthropic disabled Fable 5 and Mythos 5 after a U.S. export-control order](https://www.forbes.com/sites/anishasircar/2026/06/16/anthropic-disabled-fable-5-and-mythos-5-after-a-us-export-control-order-heres-what-happened/) · [CNBC — Anthropic says Trump admin has lifted export controls on Claude Fable 5 and Mythos 5](https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html)
+[^21]: [Anthropic — Project Glasswing](https://www.anthropic.com/glasswing)
 
-[^22]: [Open Letter on Transparent AI Cyber Protections](https://freefable.org/)
+[^22]: [Anthropic — Statement on the US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access) · [Forbes — Anthropic disabled Fable 5 and Mythos 5 after a U.S. export-control order](https://www.forbes.com/sites/anishasircar/2026/06/16/anthropic-disabled-fable-5-and-mythos-5-after-a-us-export-control-order-heres-what-happened/) · [CNBC — Anthropic says Trump admin has lifted export controls on Claude Fable 5 and Mythos 5](https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html)
 
-[^23]: [Z.ai — GLM-5.3](https://z.ai/blog/glm-5.3)
+[^23]: [Open Letter on Transparent AI Cyber Protections](https://freefable.org/)
 
-[^24]: [Bloomberg — AI circular deals: how Microsoft, OpenAI and Nvidia keep paying each other](https://www.bloomberg.com/graphics/2026-ai-circular-deals/)
+[^24]: [Z.ai — GLM-5.3](https://z.ai/blog/glm-5.3)
 
-[^25]: [Nick Bostrom — Ethical issues in advanced artificial intelligence (2003)](https://nickbostrom.com/ethics/ai)
+[^25]: [Bloomberg — AI circular deals: how Microsoft, OpenAI and Nvidia keep paying each other](https://www.bloomberg.com/graphics/2026-ai-circular-deals/)
 
-[^26]: [Eliezer Yudkowsky — Artificial intelligence as a positive and negative factor in global risk (2008)](https://intelligence.org/files/AIPosNegFactor.pdf)
+[^26]: [Nick Bostrom — Ethical issues in advanced artificial intelligence (2003)](https://nickbostrom.com/ethics/ai)
 
-[^27]: [Jacob Coxon — resignation announcement on X](https://x.com/hilbertspaess/status/2097476196791709843)
+[^27]: [Eliezer Yudkowsky — Artificial intelligence as a positive and negative factor in global risk (2008)](https://intelligence.org/files/AIPosNegFactor.pdf)
 
-[^28]: [Dario Amodei — The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology) · [Sam Altman — The gentle singularity](https://blog.samaltman.com/the-gentle-singularity)
+[^28]: [Jacob Coxon — resignation announcement on X](https://x.com/hilbertspaess/status/2097476196791709843)
 
-[^29]: [AI Futures Project — AI 2027](https://ai-2027.com/)
+[^29]: [Dario Amodei — The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology) · [Sam Altman — The gentle singularity](https://blog.samaltman.com/the-gentle-singularity)
 
-[^30]: [AI Futures Project — Q2.5 2026 timelines update](https://blog.aifutures.org/p/q25-2026-timelines-update-uplift)
+[^30]: [AI Futures Project — AI 2027](https://ai-2027.com/)
 
-[^31]: [Financial Times — Yann LeCun: 'Intelligence really is about learning'](https://www.ft.com/content/e3c4c2f6-4ea7-4adf-b945-e58495f836c2)
+[^31]: [AI Futures Project — Q2.5 2026 timelines update](https://blog.aifutures.org/p/q25-2026-timelines-update-uplift)
+
+[^32]: [Financial Times — Yann LeCun: 'Intelligence really is about learning'](https://www.ft.com/content/e3c4c2f6-4ea7-4adf-b945-e58495f836c2)
