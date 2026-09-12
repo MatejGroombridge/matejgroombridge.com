@@ -644,7 +644,7 @@
 
 	.body :global(.footnotes ol) {
 		display: grid;
-		gap: 0;
+		gap: 0.25rem;
 		margin: 0.9rem 0 0;
 		padding-left: 1.35rem;
 	}
@@ -660,6 +660,11 @@
 		scroll-margin-top: 2rem;
 	}
 
+	// Prose spaces list items apart; notes are a reference list, not prose.
+	.body :global(.footnotes .fn-item + .fn-item) {
+		margin-top: 0;
+	}
+
 	.body :global(.footnotes .fn-item)::marker {
 		font-family: var(--font-ui);
 		font-size: 0.78rem;
@@ -673,18 +678,19 @@
 		color: var(--color-subtle);
 	}
 
+	// Zero line-height on the glyph so it sits in the text line without
+	// stretching it; the note stays a single, tight line.
 	.body :global(.fn-back) {
-		display: inline-block;
 		margin-left: 0.3rem;
-		vertical-align: -0.15em;
 		color: var(--color-green);
 		text-decoration: none;
-		line-height: 1;
 	}
 
 	.body :global(.fn-back .material-symbols-rounded) {
+		display: inline;
 		font-size: 1.05em;
-		line-height: 1;
+		line-height: 0;
+		vertical-align: -0.2em;
 		font-variation-settings: 'opsz' 20;
 	}
 
