@@ -644,7 +644,7 @@
 
 	.body :global(.footnotes ol) {
 		display: grid;
-		gap: 0.25rem;
+		gap: 0.5rem;
 		margin: 0.9rem 0 0;
 		padding-left: 1.35rem;
 	}
