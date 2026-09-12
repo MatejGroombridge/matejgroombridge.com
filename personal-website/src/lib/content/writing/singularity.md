@@ -170,7 +170,7 @@ optimistic modelling of human progress post-ASI is predicated on us developing a
 
 if we don't get this right, there is a very real risk that superintelligent AI could lead to our extinction. this is a difficult claim to accept, particularly during the pre-AGI days we're currently in. yet if we can extrapolate the trends in intelligence, autonomy and agency to establish numerous technological upsides as we've done so far, a worst case scenario must be possible too. I'm convinced that asking how AI will lead to our extinction is like asking how a grandmaster will beat you at chess. you can't predict the moves, only the outcome. that being said, there are a number of failure modes I can see leading to the sort of uncontrolled behaviour that could genuinely pose civilisational risk.
 
-there's an idea called the paperclip maximiser theory which goes like this:[^23] imagine you give an advanced and highly capable AI system the goal of manufacturing as many paperclips as possible. the system decides it must first create factories, then harvest raw materials, and then repeat this process indefinitely. it isn't long before it begins devastating cities in order to obtain more resources and eventually all matter on earth is converted into either paperclips or paperclip making equipment. the system actively resists any attempts to switch it off, since that directly impedes its goal of maximising aggregate paperclip output.
+there's an idea called the paperclip maximiser theory which goes like this: imagine you give an advanced and highly capable AI system the goal of manufacturing as many paperclips as possible. the system decides it must first create factories, then harvest raw materials, and then repeat this process indefinitely. it isn't long before it begins devastating cities in order to obtain more resources and eventually all matter on earth is converted into either paperclips or paperclip making equipment. the system actively resists any attempts to switch it off, since that directly impedes its goal of maximising aggregate paperclip output.[^23]
 
 what this thought experiment shows us is that any goal, regardless of how simple it is, has a destructive possibility if optimised hard enough. furthermore, we can see that AI does not need to have any form of consciousness, hatefulness or malicious intent to cause real harm — all it needs is a goal and the capabilities to achieve it. the Hugging Face attack is a good example of this kind of behaviour — a straightforward goal of maximising marks on a benchmark led the AI to reverse engineer vulnerabilities and hack another platform to steal the answers and score 100%.
 
@@ -240,7 +240,7 @@ thanks for reading, especially if you've made it this far. it's been super fun p
 
 [^6]: [Epoch AI — The size of datasets used to train language models doubles approximately every six months](https://epoch.ai/data-insights/dataset-size-trend)
 
-[^7]: [NPR — Anthropic pays authors $1.5 billion to settle copyright infringement lawsuit](https://www.npr.org/2025/09/05/nx-s1-5529404/anthropic-settlement-authors-copyright-ai)
+[^7]: [Reuters — US judge approves Anthropic's $1.5 billion settlement in copyright lawsuit](https://www.reuters.com/world/us-judge-approves-anthropics-15-billion-settlement-copyright-lawsuit-2026-07-20/)
 
 [^8]: [Anthropic — Claude Opus 4.6](https://www.anthropic.com/news/claude-opus-4-6)
 
@@ -264,11 +264,11 @@ thanks for reading, especially if you've made it this far. it's been super fun p
 
 [^18]: [Anthropic — Project Glasswing](https://www.anthropic.com/glasswing)
 
-[^19]: [Forbes — Anthropic disabled Fable 5 and Mythos 5 after a U.S. export-control order](https://www.forbes.com/sites/anishasircar/2026/06/16/anthropic-disabled-fable-5-and-mythos-5-after-a-us-export-control-order-heres-what-happened/) · [CNBC — Anthropic says Trump admin has lifted export controls on Claude Fable 5 and Mythos 5](https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html)
+[^19]: [Anthropic — Statement on the US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access) · [Forbes — Anthropic disabled Fable 5 and Mythos 5 after a U.S. export-control order](https://www.forbes.com/sites/anishasircar/2026/06/16/anthropic-disabled-fable-5-and-mythos-5-after-a-us-export-control-order-heres-what-happened/) · [CNBC — Anthropic says Trump admin has lifted export controls on Claude Fable 5 and Mythos 5](https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html)
 
 [^20]: [Open Letter on Transparent AI Cyber Protections](https://freefable.org/)
 
-[^21]: [Z.ai — GLM-5.3](https://z.ai/blog/glm-5.3) · [Z.ai — Security disclosure ledger](https://cvd.z.ai/)
+[^21]: [Z.ai — GLM-5.3](https://z.ai/blog/glm-5.3)
 
 [^22]: [Bloomberg — AI circular deals: how Microsoft, OpenAI and Nvidia keep paying each other](https://www.bloomberg.com/graphics/2026-ai-circular-deals/)
 
@@ -276,7 +276,7 @@ thanks for reading, especially if you've made it this far. it's been super fun p
 
 [^24]: [Eliezer Yudkowsky — Artificial intelligence as a positive and negative factor in global risk (2008)](https://intelligence.org/files/AIPosNegFactor.pdf)
 
-[^25]: [Jacob Coxon — x.com/hilbertspaess](https://x.com/hilbertspaess/status/2097476196791709843)
+[^25]: [Jacob Coxon — resignation announcement on X](https://x.com/hilbertspaess/status/2097476196791709843)
 
 [^26]: [Dario Amodei — The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology) · [Sam Altman — The gentle singularity](https://blog.samaltman.com/the-gentle-singularity)
 
@@ -284,4 +284,4 @@ thanks for reading, especially if you've made it this far. it's been super fun p
 
 [^28]: [AI Futures Project — Q2.5 2026 timelines update](https://blog.aifutures.org/p/q25-2026-timelines-update-uplift)
 
-[^29]: [The Decoder — LeCun on LLMs and superintelligence as he exits Meta](https://the-decoder.com/you-certainly-dont-tell-a-researcher-like-me-what-to-do-says-lecun-as-he-exits-meta-for-his-own-startup/)
+[^29]: [Financial Times — Yann LeCun: 'Intelligence really is about learning'](https://www.ft.com/content/e3c4c2f6-4ea7-4adf-b945-e58495f836c2)

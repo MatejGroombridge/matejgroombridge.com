@@ -203,7 +203,10 @@ export function remarkArticleFootnotes() {
 					`<li class="fn-item" id="fn-${escapeAttribute(id)}">` +
 					`<div class="fn-body">${inlineToHtml(children)}` +
 					`<a class="fn-back" href="#fnref-${escapeAttribute(id)}" ` +
-					`aria-label="Back to reference ${escapeAttribute(id)}">&#8617;</a>` +
+					// An icon-font glyph rather than U+21A9: the reading face has no arrow, and
+					// the system fallback Android picks is a different size to the one macOS does.
+					`aria-label="Back to reference ${escapeAttribute(id)}">` +
+					`<span class="material-symbols-rounded" aria-hidden="true">keyboard_return</span></a>` +
 					`</div></li>`
 			)
 			.join('');

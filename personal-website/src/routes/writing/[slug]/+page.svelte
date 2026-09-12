@@ -556,21 +556,19 @@
 		scroll-margin-top: 2rem;
 	}
 
+	// Ink-coloured so the markers sit quietly in the text; green only on hover.
 	.body :global(.fn-ref a) {
 		font-family: var(--font-ui);
 		font-weight: 700;
-		color: var(--color-green);
+		color: inherit;
 		text-decoration: none;
-		padding: 0 0.15em;
-		border-radius: var(--radius-sm);
 	}
 
 	.body :global(.fn-ref a:hover) {
-		background: var(--color-muted);
+		color: var(--color-green);
 	}
 
-	// Both ends of the jump highlight, so the reader keeps their place.
-	.body :global(.fn-ref:target a),
+	// The note lights up on arrival, so the reader keeps their place.
 	.body :global(.fn-item:target) {
 		background: var(--color-muted-strong);
 	}
@@ -663,14 +661,22 @@
 	}
 
 	.body :global(.fn-back) {
-		margin-left: 0.35rem;
+		display: inline-block;
+		margin-left: 0.3rem;
+		vertical-align: -0.15em;
 		color: var(--color-green);
 		text-decoration: none;
-		font-size: 0.95em;
+		line-height: 1;
+	}
+
+	.body :global(.fn-back .material-symbols-rounded) {
+		font-size: 1.05em;
+		line-height: 1;
+		font-variation-settings: 'opsz' 20;
 	}
 
 	.body :global(.fn-back:hover) {
-		text-decoration: underline;
+		color: var(--color-heading);
 	}
 
 	// --- Related + closing ---------------------------------------------------
