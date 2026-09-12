@@ -644,7 +644,7 @@
 
 	.body :global(.footnotes ol) {
 		display: grid;
-		gap: 0.2rem;
+		gap: 0;
 		margin: 0.9rem 0 0;
 		padding-left: 1.35rem;
 	}
@@ -653,10 +653,10 @@
 	// rather than on `.fn-body` — otherwise the numerals sit at body size beside
 	// smaller text.
 	.body :global(.footnotes .fn-item) {
-		padding: 0.15rem 0.35rem;
+		padding: 0.05rem 0.35rem;
 		border-radius: var(--radius-sm);
 		font-size: 0.92rem;
-		line-height: 1.6;
+		line-height: 1.45;
 		scroll-margin-top: 2rem;
 	}
 
