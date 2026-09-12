@@ -62,7 +62,7 @@ this is just scratching the surface of AI research. the journey towards superint
 
 my bet is that LLMs alone may actually be sufficient to carry us to the point of autonomous self-improvement, with no need for any new, undiscovered paradigm shifts that could take years to eventuate. this has been my hunch for a number of years now, but it's only in recent months that real-world, empirical results have begun to trickle in which genuinely challenge the "AI-as-a-next-word-predictor" caricature. if the paradigm really were exhausted — if LLMs were simply interpolating between patterns already present in their training data — we shouldn't be seeing what we're now seeing. artificial intelligence, in its current state, is producing output that is not just useful and economically valuable, but genuinely new.
 
-> the question of whether Machines Can Think … is about as relevant as the question of whether Submarines Can Swim.
+> the question of whether machines can think … is about as relevant as the question of whether submarines can swim.
 >
 > <cite>Edsger W. Dijkstra, 1984[^10]</cite>
 
