@@ -196,6 +196,7 @@ export const subscribeForm = {
 	subject: 'Email SignUp',
 	successMessage: "success. I'll keep you in the loop",
 	fields: [
+		{ name: 'name', label: 'Name', type: 'text', placeholder: 'name' },
 		{
 			name: 'email',
 			label: 'Email address',

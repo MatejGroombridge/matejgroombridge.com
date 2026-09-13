@@ -1,6 +1,6 @@
 <!--
-	Single-field signup for new essays, sent through the same EmailJS service the
-	contact form uses.
+	Short signup for new essays — name and email — sent through the same EmailJS
+	service the contact form uses.
 
 	That means each signup arrives as an email rather than joining a managed list:
 	there is no double opt-in, no unsubscribe link and no stored list to send
@@ -27,7 +27,7 @@
 	let status = $state<'idle' | 'sending' | 'success' | 'error'>('idle');
 	let errorMessage = $state('');
 
-	// Browser autofill keys off these, so the field fills in one tap.
+	// Browser autofill keys off these, so both fields fill in one tap.
 	const autocomplete: Record<string, FullAutoFill> = { name: 'name', email: 'email' };
 
 	async function handleSubmit(event: SubmitEvent) {
@@ -93,9 +93,11 @@
 		gap: 0.7rem;
 	}
 
-	// One line at every width: the field gives way, the button keeps its size.
+	// One line where it fits; on a phone the name takes its own line and the
+	// email field stays beside the button.
 	.row {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 0.6rem;
 	}
 
@@ -138,6 +140,12 @@
 
 	.status.error {
 		color: #c0392b;
+	}
+
+	@media (max-width: 520px) {
+		input[name='name'] {
+			flex-basis: 100%;
+		}
 	}
 
 	.visually-hidden {
