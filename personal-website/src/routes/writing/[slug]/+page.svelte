@@ -240,8 +240,8 @@
 	<div class="column closing">
 		<h2 class="related-title">stay updated</h2>
 		<p class="subscribe-blurb">
-			I plan to publish more projects in the future — leave your details and I'll send you the next
-			one when it goes up.
+			if you want my future projects sent straight to your inbox, chuck me your details and I'll keep
+			you in the loop.
 		</p>
 		<SubscribeForm definition={subscribeForm} />
 	</div>
@@ -809,7 +809,8 @@
 	// but a full essay set ragged-on-both-sides is hard to follow, so the body
 	// alone opts back into a flush left edge.
 	@media (max-width: 640px) {
-		.body :global(.prose) {
+		.body :global(.prose),
+		.closing {
 			text-align: left;
 		}
 	}
