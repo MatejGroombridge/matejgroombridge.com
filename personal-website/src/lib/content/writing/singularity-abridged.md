@@ -176,7 +176,7 @@ I think we're beginning to leave behind the infancy stages of AI. It has infiltr
 
 I really do think AI is the biggest challenge humanity will ever face, and facing it starts with understanding where we're at and where we may be heading. That conviction is a big part of why I wrote this.
 
-The things happening in AI are massive, yet they land on us all individually in small and personal ways — the videographer who laments the commoditisation of his craft, the professor grading artificial slop, the young man who can't draw himself away from AI-generated ASMR reels. I find myself oscillating between excitement and unease fairly regularly, and I'm not really expecting that to resolve.
+The things happening in AI are massive, yet they land on us all individually in small and personal ways — the videographer who laments the commoditisation of his craft, the professor grading artificial slop, the young man who can't draw himself away from AI-generated ASMR reels. To be honest I fairly regularly oscillate between excitement and unease, and I'm not really expecting that to resolve.
 
 It's important not to fall into fatalism. The future is never as clear as we make it out to be, and as humans we've shown ourselves uniquely capable of adapting to change — I like to think the indomitable human spirit will continue to see us through. At the same time, AI is not going to magically disappear. Accept that the future is going to bring significant change and ride the wave as best you can. Continue to invest in the things that AI won't replace — relationships, faith, experiences, health — and don't lose sight of the bigger picture.
 
