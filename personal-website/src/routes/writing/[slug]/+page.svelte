@@ -138,7 +138,9 @@
 			{#if standfirst}
 				<p class="standfirst" data-preserve-case>{standfirst}</p>
 			{/if}
-			<p class="byline">
+			<!-- Preserved server-side: otherwise "Sep" renders lowercase until the
+			     proper-noun walker runs on hydration and flickers. -->
+			<p class="byline" data-preserve-case>
 				<span>{data.article.published}</span>
 				{#if readingTime}
 					<span class="dot" aria-hidden="true">·</span>
