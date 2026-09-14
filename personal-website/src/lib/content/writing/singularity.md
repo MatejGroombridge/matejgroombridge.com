@@ -160,7 +160,7 @@ On the surface this is a very charitable strategy but I think it's strategic at 
 
 On April 7, 2026 Anthropic released a statement regarding an unreleased internal model,
 
-> Claude Mythos Preview is a general-purpose, unreleased frontier model that reveals a stark fact: AI models have reached a level of coding capability where they can surpass all but the most skilled humans at finding and exploiting software vulnerabilities. Mythos Preview has already found thousands of high-severity vulnerabilities, including some in every major operating system and web browser.
+> Claude Mythos Preview is a general-purpose, unreleased frontier model that reveals a stark fact: AI models have reached a level of coding capability where they can surpass all but the most skilled humans at finding and exploiting software vulnerabilities. Mythos Preview has already found thousands of high-severity vulnerabilities, including some in *every major operating system and web browser*.
 >
 > <cite>Anthropic[^22]</cite>
 
