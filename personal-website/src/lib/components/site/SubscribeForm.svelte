@@ -93,8 +93,8 @@
 		gap: 0.7rem;
 	}
 
-	// One line where it fits; on a phone the name takes its own line and the
-	// email field stays beside the button.
+	// One line where it fits; on a phone the email field stays beside the
+	// button and the name drops to its own line beneath.
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -145,6 +145,7 @@
 	@media (max-width: 520px) {
 		input[name='name'] {
 			flex-basis: 100%;
+			order: 1;
 		}
 	}
 
