@@ -52,7 +52,7 @@
 	const hasMenu = $derived(hasAbridged || versions.length > 0);
 
 	const modeOptions: SortOption[] = [
-		{ value: 'full', label: 'full article' },
+		{ value: 'full', label: 'full version' },
 		{ value: 'abridged', label: 'abridged' }
 	];
 
