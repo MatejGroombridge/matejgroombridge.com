@@ -240,7 +240,7 @@
 	<div class="column closing">
 		<h2 class="related-title">stay updated</h2>
 		<p class="subscribe-blurb">
-			if you want my future projects sent straight to your inbox, chuck me your details and I'll keep
+			if you want any future projects sent straight to your inbox, chuck me your details and I'll keep
 			you in the loop.
 		</p>
 		<SubscribeForm definition={subscribeForm} />
