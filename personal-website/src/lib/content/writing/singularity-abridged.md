@@ -1,4 +1,4 @@
-*This is an abridged copy, cut down to roughly half the length by AI. The argument and the words are mine; the trimming isn't. The full essay carries the sources.*
+*This is an abridged summary cut down to roughly half the length by AI.*
 
 ## I
 
