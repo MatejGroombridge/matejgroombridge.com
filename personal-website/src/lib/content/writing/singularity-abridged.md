@@ -32,7 +32,7 @@ A couple of definitions. AI has historically shown a jagged frontier of intellig
   <img src="/writing/media/singularity-diagram.png" alt="A hand-drawn graph of intelligence over time. AI follows an exponential curve that crosses the roughly linear line of human intelligence around 2026 and climbs towards infinity." loading="lazy" />
 </figure>
 
-The bet that many top experts are making — and one I share — is that in the coming decade AI will reach an inflection point, whereby it autonomously completes all stages of the research process and begins to recursively self-improve at an unstoppable rate. At this point, every day becomes historic. Automating research is the final step before an AI singularity, and the trends suggest we're closer than most people realise.
+The bet that many top experts are making which I share is that in the coming decade AI will reach an inflection point, whereby it autonomously completes all stages of the research process and begins to recursively self-improve at an unstoppable rate. At this point, every day becomes historic. Automating research is the final step before an AI singularity, and the trends suggest we're closer than most people realise.
 
 ## III
 
