@@ -64,7 +64,7 @@ export const articles: Article[] = [
 			'/writing/media/logo-gemini.svg'
 		],
 		published: 'Sep 14, 2026',
-		readingTime: '40 min read',
+		readingTime: '38 min read',
 		description: 'where AI stands in 2026, and why the next five years decide everything.',
 		body: 'singularity',
 		abridged: 'singularity-abridged',
