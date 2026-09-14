@@ -76,7 +76,7 @@
 			/>
 		{/each}
 		<Button type="submit" disabled={status === 'sending'}>
-			{status === 'sending' ? 'Signing up…' : 'Subscribe'}
+			{status === 'sending' ? 'signing up…' : 'subscribe'}
 		</Button>
 	</div>
 
@@ -93,8 +93,8 @@
 		gap: 0.7rem;
 	}
 
-	// One line where it fits; on a phone the email field stays beside the
-	// button and the name drops to its own line beneath.
+	// One line where it fits; on a phone the email field takes the first line
+	// and the name sits beside the button on the second.
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -143,9 +143,8 @@
 	}
 
 	@media (max-width: 520px) {
-		input[name='name'] {
+		input[name='email'] {
 			flex-basis: 100%;
-			order: 1;
 		}
 	}
 
