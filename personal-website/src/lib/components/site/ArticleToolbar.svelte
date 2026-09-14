@@ -101,7 +101,8 @@
 	<div class="spacer"></div>
 
 	{#if hasMenu}
-		<SortMenu label="Version" groups={menuGroups} />
+		<!-- The trigger names what is open, so the reader can tell at a glance. -->
+		<SortMenu label={archived ? 'archived' : mode === 'abridged' ? 'abridged' : 'full version'} groups={menuGroups} />
 	{/if}
 </div>
 
