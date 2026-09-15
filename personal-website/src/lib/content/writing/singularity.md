@@ -176,7 +176,11 @@ There is a very real possibility that malicious intent coupled with lax guardrai
 
 I think perhaps there is a more sinister consequence of the situation we're currently in, which is that slowdown is not an option. We've seen that AI capability is accelerating but what the geo-political state of AI development shows us is that it is structurally impossible to put down the brakes. We know that these brakes exist, the Fable shutdown made this clear, yet every pause comes at a cost — slowly falling behind. In order for there to be any form of pause on AI development, governments and research labs across the US and China have to come to a multilateral agreement. So far there have been little to no signs of such a policy coming into effect — even if it were to, the challenges of regulating AI production would alone be a nightmare. So for the foreseeable future it's full steam ahead on AI production.
 
-One last thing worth addressing before we move on: discourse around AI often comes back to the question, are we in an AI bubble? I think it's undeniable that AI is seeing incredible amounts of over-investment. Circular financing between AI companies in the US is estimated to be north of $800 billion in 2026 — Nvidia invests in OpenAI, OpenAI goes to Oracle for compute, and Oracle buys Nvidia chips to fulfil it — the cycle continues.[^26] AI-driven growth is accounting for greater proportions of the S&P500 and AI CEOs are becoming ever more infamous for their incessant pre-IPO hype, irrespective of whether the companies are actually returning a profit year on year.
+> The only control or “guardrails” that AI needs is a STRONG AND SMART (High IQ!) PRESIDENT … There is a SICK conspiracy going on against AI and Data Centers, and the only one that is happy about it is China. WHOEVER WINS AI, WINS!
+>
+> <cite>President Donald Trump, 2026[^26]</cite>
+
+One last thing worth addressing before we move on: discourse around AI often comes back to the question, are we in an AI bubble? I think it's undeniable that AI is seeing incredible amounts of over-investment. Circular financing between AI companies in the US is estimated to be north of $800 billion in 2026 — Nvidia invests in OpenAI, OpenAI goes to Oracle for compute, and Oracle buys Nvidia chips to fulfil it — the cycle continues.[^27] AI-driven growth is accounting for greater proportions of the S&P500 and AI CEOs are becoming ever more infamous for their incessant pre-IPO hype, irrespective of whether the companies are actually returning a profit year on year.
 
 My intuition is that the whole bubble question matters a lot less than it may at first appear. The money behind AI is unusually resistant to a sudden pop — vast amounts of funding are tied to national strategy rather than quarterly returns, and revenue, however unprofitable the labs remain, is still climbing. What we're seeing globally is consistent intelligence and capability gains with minimal signs of stagnation, which coupled with the heated competition between the US and China and their respective governments' interest in reaching AI dominance, I see little reason why investors should all of a sudden find a reason to pull the plug on AI. That's not to say a correction won't happen. Valuations may halve and funding tighten considerably, yet the data centres that are being built will continue being built and labs won't stop training. A burst bubble might slow the progress of AI but it certainly won't reverse it.
 
@@ -186,13 +190,13 @@ Optimistic modelling of human progress post-ASI is predicated on us developing a
 
 If we don't get this right, there is a very real risk that superintelligent AI could lead to our extinction. This is a difficult claim to accept, particularly during the pre-ASI days we're currently in. Yet if we can extrapolate the trends in intelligence, autonomy and agency to establish numerous technological upsides as we've done so far, a worst case scenario must be possible too. I'm convinced that asking how AI will lead to our extinction is like asking how a grandmaster will beat you at chess. You can't predict the moves, only the outcome. That being said, there are a number of failure modes I can see leading to the sort of uncontrolled behaviour that could genuinely pose civilisational risk.
 
-There's an idea called the paperclip maximiser theory which goes like this: imagine you give an advanced and highly capable AI system the goal of manufacturing as many paperclips as possible. The system decides it must first create factories, then harvest raw materials, and then repeat this process indefinitely. It isn't long before it begins devastating cities in order to obtain more resources and eventually all matter on earth is converted into either paperclips or paperclip making equipment. The system actively resists any attempts to switch it off, since that directly impedes its goal of maximising aggregate paperclip output.[^27]
+There's an idea called the paperclip maximiser theory which goes like this: imagine you give an advanced and highly capable AI system the goal of manufacturing as many paperclips as possible. The system decides it must first create factories, then harvest raw materials, and then repeat this process indefinitely. It isn't long before it begins devastating cities in order to obtain more resources and eventually all matter on earth is converted into either paperclips or paperclip making equipment. The system actively resists any attempts to switch it off, since that directly impedes its goal of maximising aggregate paperclip output.[^28]
 
 What this thought experiment shows us is that any goal, regardless of how simple it is, has a destructive possibility if optimised hard enough. Furthermore, we can see that AI does not need to have any form of consciousness, hatefulness or malicious intent to cause real harm — all it needs is a goal and the capabilities to achieve it. The Hugging Face attack is a good example of this kind of behaviour — a straightforward goal of maximising marks on a benchmark led the AI to reverse engineer vulnerabilities and hack another platform to steal the answers and score 100%.
 
 > The AI does not hate you, nor does it love you, but you are made out of atoms which it can use for something else.
 >
-> <cite>Eliezer Yudkowsky[^28]</cite>
+> <cite>Eliezer Yudkowsky[^29]</cite>
 
 What alignment researchers are trying to do is bake "values" into AI models, such that given the decision between a specific goal and the safety and prosperity of humanity, we can be confident the actions it lands on are in our best interest. It's simple in principle but the real-world mechanics of ensuring complete AI alignment is another story entirely — even measuring alignment is a challenge in itself.
 
@@ -204,17 +208,17 @@ Whether we'll find solutions to the alignment problem in the narrow window we ha
 
 > I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence and gambling with our lives.
 >
-> <cite>Jacob Coxon[^29]</cite>
+> <cite>Jacob Coxon[^30]</cite>
 
 ## VIII
 
 So where does this leave us? We've seen that the potential upsides of AI are constrained only by our imagination, and yet mass destruction still remains an ever-present possibility.
 
-Executives at frontier labs have repeatedly put the time until recursive self-improvement really takes off at 2-5 years, if not less.[^30] The AI Futures Project is a group of AI superintelligence forecasters, well known for publishing AI 2027 — a widely read piece mapping a month-by-month path to superintelligence, with policy recommendations in response.[^31] The most recent update published by the team in August of this year placed individual estimations for ASI at 2029 (Daniel Kokotajlo) and 2033 (Eli Lifland) — a slightly more conservative 3-7 year range.[^32]
+Executives at frontier labs have repeatedly put the time until recursive self-improvement really takes off at 2-5 years, if not less.[^31] The AI Futures Project is a group of AI superintelligence forecasters, well known for publishing AI 2027 — a widely read piece mapping a month-by-month path to superintelligence, with policy recommendations in response.[^32] The most recent update published by the team in August of this year placed individual estimations for ASI at 2029 (Daniel Kokotajlo) and 2033 (Eli Lifland) — a slightly more conservative 3-7 year range.[^33]
 
 If you take all the trends in intelligence and exponential capability growth that the first half of this essay spent outlining, this 2-5 year estimate no longer feels far-fetched and should be a genuine cause for concern. A fairly modest assessment is that humanity is going to be left with AI systems smart enough to further scientific knowledge in virtually all domains within the next decade. Even if we were to double the best-guess timeline for superintelligence to 10 years, say 20 even, there is still not a lot of time left to make sure we get this right. There are six avenues I can see that would produce a genuine slowdown in AI progress.
 
-(1) Plateaus. Everything I've argued so far is predicated on continued growth in AI intelligence. If the drivers I outlined dry up and architectural breakthroughs stall, there is a chance our models will not grow much past their current capacity. Prominent researcher Yann LeCun famously holds this view, stating that LLMs will not take us far enough to reach superintelligence.[^33] Yet given the trends and significant acceleration of intelligence growth in recent OpenAI and Anthropic model releases I just don't see this as likely. There aren't many signs we are stalling technologically.
+(1) Plateaus. Everything I've argued so far is predicated on continued growth in AI intelligence. If the drivers I outlined dry up and architectural breakthroughs stall, there is a chance our models will not grow much past their current capacity. Prominent researcher Yann LeCun famously holds this view, stating that LLMs will not take us far enough to reach superintelligence.[^34] Yet given the trends and significant acceleration of intelligence growth in recent OpenAI and Anthropic model releases I just don't see this as likely. There aren't many signs we are stalling technologically.
 
 (2) Physical bottlenecks. Capability growth currently rests on the buildout of physical infrastructure — chip fabricators, data centres, power generation, memory supply etc. These get built at construction speed not software speed and a leading-edge data centre or fab could be a multi-year, multi-billion dollar project. That said, a lab that can't add compute can still improve its algorithms and train on the hardware it already owns. Physical limits may slow things down but they don't look like a hard ceiling.
 
@@ -294,18 +298,20 @@ Thanks for reading, especially if you've made it this far. It's been super fun p
 
 [^25]: [Z.ai — GLM-5.3](https://z.ai/blog/glm-5.3)
 
-[^26]: [Bloomberg — AI circular deals: how Microsoft, OpenAI and Nvidia keep paying each other](https://www.bloomberg.com/graphics/2026-ai-circular-deals/)
+[^26]: [Donald Trump on Truth Social, Sep 14, 2026](https://truthsocial.com/@realDonaldTrump/posts/117269745153543631)
 
-[^27]: [Nick Bostrom — Ethical issues in advanced artificial intelligence (2003)](https://nickbostrom.com/ethics/ai)
+[^27]: [Bloomberg — AI circular deals: how Microsoft, OpenAI and Nvidia keep paying each other](https://www.bloomberg.com/graphics/2026-ai-circular-deals/)
 
-[^28]: [Eliezer Yudkowsky — Artificial intelligence as a positive and negative factor in global risk (2008)](https://intelligence.org/files/AIPosNegFactor.pdf)
+[^28]: [Nick Bostrom — Ethical issues in advanced artificial intelligence (2003)](https://nickbostrom.com/ethics/ai)
 
-[^29]: [Jacob Coxon — resignation announcement on X](https://x.com/hilbertspaess/status/2097476196791709843)
+[^29]: [Eliezer Yudkowsky — Artificial intelligence as a positive and negative factor in global risk (2008)](https://intelligence.org/files/AIPosNegFactor.pdf)
 
-[^30]: [Dario Amodei — The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology) · [Sam Altman — The gentle singularity](https://blog.samaltman.com/the-gentle-singularity)
+[^30]: [Jacob Coxon — resignation announcement on X](https://x.com/hilbertspaess/status/2097476196791709843)
 
-[^31]: [AI Futures Project — AI 2027](https://ai-2027.com/)
+[^31]: [Dario Amodei — The adolescence of technology](https://darioamodei.com/essay/the-adolescence-of-technology) · [Sam Altman — The gentle singularity](https://blog.samaltman.com/the-gentle-singularity)
 
-[^32]: [AI Futures Project — Q2.5 2026 timelines update](https://blog.aifutures.org/p/q25-2026-timelines-update-uplift)
+[^32]: [AI Futures Project — AI 2027](https://ai-2027.com/)
 
-[^33]: [Financial Times — Yann LeCun: 'Intelligence really is about learning'](https://www.ft.com/content/e3c4c2f6-4ea7-4adf-b945-e58495f836c2)
+[^33]: [AI Futures Project — Q2.5 2026 timelines update](https://blog.aifutures.org/p/q25-2026-timelines-update-uplift)
+
+[^34]: [Financial Times — Yann LeCun: 'Intelligence really is about learning'](https://www.ft.com/content/e3c4c2f6-4ea7-4adf-b945-e58495f836c2)
