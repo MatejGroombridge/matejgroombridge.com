@@ -51,6 +51,10 @@
 
 	const hasMark = $derived(Boolean(data.article.marks?.length || data.article.icon));
 
+	// The signup is parked until there is a list worth sending to. Flip this to
+	// bring it back; the body section carries the run-out to the footer meanwhile.
+	const showSubscribe = false;
+
 	async function selectVersion(id: string | null) {
 		versionId = id;
 		// Archives are stored whole, so reading mode returns to the full text.
@@ -197,7 +201,7 @@
 	</Section>
 {/if}
 
-<Section class="article-body" animate={false}>
+<Section class={showSubscribe ? 'article-body' : 'article-body article-body-last'} animate={false}>
 	{#if showContents && contentsAvailable}
 		<div class="contents-inline">
 			<ArticleContents {sections} activeId={activeSection} />
@@ -238,6 +242,7 @@
 	</Section>
 {/if}
 
+{#if showSubscribe}
 <Section class="article-subscribe" animate={false}>
 	<div class="column closing">
 		<h2 class="related-title">stay updated</h2>
@@ -248,6 +253,7 @@
 		<SubscribeForm definition={subscribeForm} />
 	</div>
 </Section>
+{/if}
 
 <style lang="scss">
 	// Same rhythm as PageTitle, which heads photography, book notes and the rest.
@@ -367,6 +373,11 @@
 	:global(.section.article-body) {
 		padding-top: clamp(2.5rem, 5vw, 3.75rem);
 		padding-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
+	}
+
+	// With nothing after it, the body takes the run-out the signup used to carry.
+	:global(.section.article-body-last) {
+		padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
 	}
 
 	:global(.section.article-archive-note) {
