@@ -155,8 +155,10 @@
 		outline: none;
 	}
 
+	// Open is the usual state now, so it reads as settled ink rather than a
+	// highlight.
 	.trigger.active {
-		color: var(--color-green);
+		color: var(--color-heading);
 	}
 
 	// Sized against the small-caps label rather than the 1.1rem the chevron uses,

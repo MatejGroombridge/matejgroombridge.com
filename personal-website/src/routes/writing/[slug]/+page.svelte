@@ -10,11 +10,32 @@
 	import SubscribeForm from '$lib/components/site/SubscribeForm.svelte';
 	import { subscribeForm } from '$lib/content/pages';
 	import { loadArticleBody } from '$lib/content/articleBodies';
+	import { onMount } from 'svelte';
 
 	let { data }: { data: PageData } = $props();
 
 	let mode = $state<'full' | 'abridged'>('full');
-	let showContents = $state(false);
+	// Open by default so the essay's structure is visible before the first
+	// section; a reader who hides it stays hidden on later visits.
+	const CONTENTS_KEY = 'article-contents';
+	let showContents = $state(true);
+
+	onMount(() => {
+		try {
+			if (localStorage.getItem(CONTENTS_KEY) === 'hidden') showContents = false;
+		} catch {
+			// Storage can be unavailable (private mode, blocked); the default stands.
+		}
+	});
+
+	function toggleContents() {
+		showContents = !showContents;
+		try {
+			localStorage.setItem(CONTENTS_KEY, showContents ? 'shown' : 'hidden');
+		} catch {
+			// Nothing to remember with, which is fine.
+		}
+	}
 	let versionId = $state<string | null>(null);
 	let activeSection = $state<string | null>(null);
 
@@ -179,7 +200,7 @@
 				archived={Boolean(selectedVersion)}
 				currentDate={data.article.published}
 				onmode={selectMode}
-				oncontents={() => (showContents = !showContents)}
+				oncontents={toggleContents}
 				onversion={selectVersion}
 			/>
 		</div>
