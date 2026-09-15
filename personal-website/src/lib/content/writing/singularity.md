@@ -178,7 +178,7 @@ I think perhaps there is a more sinister consequence of the situation we're curr
 
 > The only control or “guardrails” that AI needs is a STRONG AND SMART (High IQ!) PRESIDENT … There is a SICK conspiracy going on against AI and Data Centers, and the only one that is happy about it is China. WHOEVER WINS AI, WINS!
 >
-> <cite>President Donald Trump, 2026[^26]</cite>
+> <cite>President Donald Trump, today[^26]</cite>
 
 One last thing worth addressing before we move on: discourse around AI often comes back to the question, are we in an AI bubble? I think it's undeniable that AI is seeing incredible amounts of over-investment. Circular financing between AI companies in the US is estimated to be north of $800 billion in 2026 — Nvidia invests in OpenAI, OpenAI goes to Oracle for compute, and Oracle buys Nvidia chips to fulfil it — the cycle continues.[^27] AI-driven growth is accounting for greater proportions of the S&P500 and AI CEOs are becoming ever more infamous for their incessant pre-IPO hype, irrespective of whether the companies are actually returning a profit year on year.
 
