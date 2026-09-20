@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import ArticleMarks from '$lib/components/site/ArticleMarks.svelte';
 	import BlockHead from '$lib/components/site/BlockHead.svelte';
 	import BookStack from '$lib/components/site/BookStack.svelte';
 	import ContactForm from '$lib/components/site/ContactForm.svelte';
@@ -20,6 +21,9 @@
 		photoTrips
 	} from '$lib/content';
 	import { preserveCaseHtml } from '$lib/utils/preserveCase';
+
+	// The newest essay gets the spotlight under the hero.
+	const spotlight = articles[0];
 
 	const featuredArticles = articles.slice(0, 3).map((article, index) => ({
 		...article,
@@ -117,6 +121,36 @@
 	</div>
 </Section>
 
+{#if spotlight}
+	<!-- The newest essay, set straight on the page like a small second hero
+	     rather than boxed in a card, so it reads as the site's own voice. -->
+	<Section id="writing" animate={false}>
+		<a class="spotlight" href={`/writing/${spotlight.slug}`}>
+			<div class="spotlight-copy">
+				<!-- Set in small caps like the block-head titles, date included. -->
+				<p class="spotlight-eyebrow">
+					<span class="kind">writing</span>
+					<span class="dot" aria-hidden="true">·</span>
+					<span class="kind">{spotlight.published}</span>
+				</p>
+				<h3 class="spotlight-title" data-preserve-case>{spotlight.title}</h3>
+				{#if spotlight.subtitle}
+					<p class="spotlight-standfirst" data-preserve-case>{spotlight.subtitle}</p>
+				{/if}
+				<span class="spotlight-cta">
+					<span class="label">read the essay</span>
+					<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+				</span>
+			</div>
+			{#if spotlight.marks?.length}
+				<div class="spotlight-mark" aria-hidden="true">
+					<ArticleMarks marks={spotlight.marks} />
+				</div>
+			{/if}
+		</a>
+	</Section>
+{/if}
+
 {#if false && featuredArticles.length}
 	<Section tone="muted">
 		<BlockHead title={homeSections.writing.title}>
@@ -144,7 +178,7 @@
 	</Section>
 {/if}
 
-<Section>
+<Section tone="muted">
 	<BlockHead title={homeSections.photography.title}>
 		{#snippet aside()}
 			<a class="aside-link" href={homeSections.photography.asideHref}>
@@ -159,7 +193,7 @@
 	</div>
 </Section>
 
-<Section tone="muted">
+<Section>
 	<BlockHead title={homeSections.booknotes.title}>
 		{#snippet aside()}
 			<a class="aside-link" href={homeSections.booknotes.asideHref}>
@@ -190,7 +224,7 @@
 	</Section>
 {/if}
 
-<Section id="contact">
+<Section id="contact" tone="muted">
 	<BlockHead title={homeSections.contact.title} />
 	<div class="contact-grid">
 		<div class="contact-details">
@@ -254,6 +288,114 @@
 		flex-wrap: wrap;
 		gap: 0.65rem;
 		margin-top: 0.85rem;
+	}
+
+	// --- Spotlight ------------------------------------------------------------
+	// One essay, laid out like its own hero in miniature: copy on the left, the
+	// drawn marks on the right, the whole block a single link.
+	// No heading to fill the band, so the block takes a little extra height to
+	// sit as squarely as the headed sections around it.
+	:global(.section#writing) {
+		padding-block: clamp(3.5rem, 7.5vw, 5.75rem);
+	}
+
+	.spotlight {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: center;
+		gap: clamp(1.5rem, 4vw, 3.5rem);
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.spotlight:focus-visible {
+		outline: 2px solid var(--color-green);
+		outline-offset: 3px;
+	}
+
+	.spotlight-copy {
+		display: grid;
+		gap: 0.7rem;
+		justify-items: start;
+		min-width: 0;
+	}
+
+	.spotlight-eyebrow {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		margin: 0;
+		font-family: var(--font-ui);
+		font-size: 0.78rem;
+		font-weight: 600;
+		letter-spacing: 0.02em;
+		color: var(--color-subtle);
+	}
+
+	.spotlight-eyebrow .dot {
+		color: var(--color-green);
+	}
+
+	// The proper-noun walker wraps "Sep" in a preserve-case span with an
+	// !important reset, so the uppercase has to be declared just as loudly and
+	// reach the wrapped text too.
+	.spotlight-eyebrow .kind,
+	.spotlight-eyebrow .kind :global([data-preserve-case]) {
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		text-transform: uppercase !important;
+	}
+
+	// The essay's own title face, so the card reads as a window onto that page.
+	// Pulled up to the eyebrow so the label belongs to the title.
+	.spotlight-title {
+		margin: -0.3rem 0 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+		font-weight: 500;
+		line-height: 1.1;
+		letter-spacing: -0.02em;
+		color: var(--color-heading);
+	}
+
+	// Measured so the standfirst breaks before "decide everything"
+	// rather than stranding the last word.
+	.spotlight-standfirst {
+		margin: 0;
+		max-width: 39ch;
+		font-size: clamp(1rem, 1.2vw, 1.08rem);
+		line-height: 1.6;
+		color: var(--color-subtle);
+	}
+
+	// Set like the "see all →" links on the block heads, so the page has one
+	// kind of call to action.
+	.spotlight-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		margin-top: 0.35rem;
+		font-family: var(--font-ui);
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: var(--color-green);
+	}
+
+	.spotlight-cta .material-symbols-rounded {
+		font-size: 1rem;
+		transition: transform var(--duration-fast) ease;
+	}
+
+	.spotlight:hover .spotlight-cta .label {
+		text-decoration: underline;
+	}
+
+	.spotlight:hover .spotlight-cta .material-symbols-rounded {
+		transform: translateX(3px);
+	}
+
+	.spotlight-mark {
+		justify-self: end;
 	}
 
 	.hero-portrait {
@@ -511,8 +653,10 @@
 		overflow: hidden;
 		padding-top: 6px;
 		margin-top: -6px;
-		-webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
-		mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+		// Fade starts lower and ends short of fully clear, so the bottom row is
+		// still legible rather than dissolving.
+		-webkit-mask-image: linear-gradient(to bottom, #000 68%, rgb(0 0 0 / 0.25) 100%);
+		mask-image: linear-gradient(to bottom, #000 68%, rgb(0 0 0 / 0.25) 100%);
 	}
 
 	@media (max-width: 820px) {
@@ -570,6 +714,25 @@
 	}
 
 	@media (max-width: 620px) {
+		.spotlight {
+			grid-template-columns: 1fr;
+			justify-items: center;
+			text-align: center;
+		}
+
+		.spotlight-copy {
+			justify-items: center;
+		}
+
+		.spotlight-eyebrow {
+			justify-content: center;
+		}
+
+		.spotlight-mark {
+			order: -1;
+			justify-self: center;
+		}
+
 		.intro {
 			margin-inline: auto;
 		}
