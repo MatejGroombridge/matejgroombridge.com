@@ -6,7 +6,7 @@
 
 ## Overview & Impressions
 
-The War of Art presents a refreshing take on creativity. Pressfield diagnoses Resistance as the main barrier between us and our work, and the book is instructive and practical about how to beat it. Its runthrough of the many symptoms of Resistance is particularly helpful, since awareness already breaks down many creative barriers. I appreciated its treatment of creativity as a skill and a discipline rather than something that strikes when inspiration happens to arrive. It got a bit wishy-washy and spiritual near the end but overall this was a very good read.
+The War of Art presents a refreshing take on creativity. Pressfield diagnoses Resistance as the main barrier between us and our work, and the book is instructive and practical about how to beat it. Its run-through of the many symptoms of Resistance is particularly helpful, since awareness already breaks down many creative barriers. I appreciated its treatment of creativity as a skill and a discipline rather than something that strikes when inspiration happens to arrive. It got a bit wishy-washy and spiritual near the end but overall this was a very good read.
 
 ## Top Quotes
 

@@ -1,12 +1,12 @@
 ## The Book in 3 Sentences
 
-1. There is only one substance - God or Nature - and everything that exists, including our minds and bodies, follows from it with strict necessity
+1. There is only one substance - God or Nature - and everything that exists, including our minds and bodies, follows from it with strict necessity.
 2. Our belief in free will and divine purpose is simply ignorance of the causes that determine us.
 3. Freedom is not escaping the passive emotions that push us around but understanding them, turning confused ideas into adequate ones until an emotion ceases to be a passion.
 
 ## Overview & Impressions
 
-I found Ethics to be very intellectually dense but worth the effort. Spinoza builds his entire non-dualist, panpsychist system geometrically, from definitions and axioms through propositions and proofs, so you can clearly see how each idea rests on the last. The proofs are sometimes hard to follow, and occasionally it felt like he had reached a conclusion first and constructed the proof retrospectively to lead to a certain intuition. The digressions where he expands on an idea in a more digestible way were helpful in understanding the implications of his propositions. I'm a big fan of his ideas, especially on behaviour, desire and free will, and the intellectual rigour is appreciate despite some of the later parts feeling a bit weaker. A fairly demanding read but insighful and paradigm shifting.
+I found Ethics to be very intellectually dense but worth the effort. Spinoza builds his entire non-dualist, panpsychist system geometrically, from definitions and axioms through propositions and proofs, so you can clearly see how each idea rests on the last. The proofs are sometimes hard to follow, and occasionally it felt like he had reached a conclusion first and constructed the proof retrospectively to lead to a certain intuition. The digressions where he expands on an idea in a more digestible way were helpful in understanding the implications of his propositions. I'm a big fan of his ideas, especially on behaviour, desire and free will, and the intellectual rigour is appreciated despite some of the later parts feeling a bit weaker. A fairly demanding read but insightful and paradigm shifting.
 
 ## Top Quotes
 
