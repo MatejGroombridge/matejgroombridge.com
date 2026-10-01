@@ -42,7 +42,7 @@ We learn helplessness - forget our abillity to choose.
 
 Remember to choose to. Or others will for you.
 
-## Chapter 3
+## III
 
 Instead of going small on lots of mediocre bets, go big on a few big bets.
 
@@ -60,7 +60,7 @@ Make deliberate tradeoffs and resist the urge to do both.
 
 We neeed to be prepared to choose family, health, friends or work.
 
-## Chapter 4
+## IV
 
 i.e. how to discern the vital few from the trivial many.
 
@@ -70,7 +70,7 @@ To discern what is essential we need - space, listening, playing, sleeping and s
 
 These are not trivial diversions, they help find trivial diversions.
 
-## Chapter 5
+## V
 
 If you’re too busy to think, you’re too busy.
 
@@ -84,7 +84,7 @@ Set aside time just to think.
 
 Spend the first 20 minutes of your morning reading timeless old books → It can change your assumptions about what really matters.
 
-## Chapter 6
+## VI
 
 In every set of facts, something essential is hidden.
 
@@ -106,7 +106,7 @@ Look for unusual details.
 
 Clarify the questions and don’t stray from it.
 
-## Chapter 7
+## VII
 
 Play - anything we do simply for the joy of doing rather than as a means to an end.
 
@@ -118,7 +118,7 @@ Play is essential.
 -   antidote to stress → allows clear thinking. Draw to reduce stress.
 -   helps executive function.
 
-## Chapter 8
+## VIII
 
 Don’t sabotage yourself. Get at least 8 hours of sleep consistently.
 
@@ -128,7 +128,7 @@ Sleep breeds creativity.
 
 If you’re an early bird or night owl, try taking naps to boost your creativity.
 
-## Chapter 9
+## IX
 
 If it isn’t a clear yes, its a clear no.
 
@@ -138,7 +138,7 @@ Say yes to the top 10% of opportunities.
 
 Use narrow, explicit criteria when discerning.
 
-## Chapter 10
+## X
 
 Have a concrete _and_ inspirational intent.
 
@@ -148,7 +148,7 @@ Make one decision that eliminates thousands of later ones .
 
 Live with intent.
 
-## Chapter 11
+## XI
 
 The right “no” spoken at the right time can change the course of history.
 
@@ -176,7 +176,7 @@ The book includes a list of techniques for saying no: the awkward pause, the sof
 
 Saying no is its own leadership capability.
 
-## Chapter 12
+## XII
 
 Sunk cost bias - the tendency to continue to invest into something we know is a losing proposition, simply because we have already incurred a cost that can’t be recouped.
 
@@ -200,7 +200,7 @@ Get over FOMO. Carry out a reverse pilot - remove something and see if it has an
 
 Uncommitting is harder than not committing in the first place.
 
-## Chapter 13
+## XIII
 
 Making things better often means subtracting something
 
@@ -212,7 +212,7 @@ Lower the ration of words to ideas when writing.
 
 Not everything needs to be changed. Know when to show restraint.
 
-## Chapter 14
+## XIV
 
 Set boundaries.
 
@@ -224,7 +224,7 @@ Their problem is not your problem.
 
 Make a list of “dealbrakers” - requests you simply refuse to say yes to. Whenever you feel violated by someone’s request, write it down. This is probably a dealbraker.
 
-## Chapter 15
+## XV
 
 Buffer - something that prevents two things from coming into contact and harming each-other.
 
@@ -236,7 +236,7 @@ Prepare for all scenarios.
 
 Add 50% to your time estimate.
 
-## Chapter 16
+## XVI
 
 Find the point in a system that holds everything up and fix it.
 
@@ -244,7 +244,7 @@ Find this constraint in your own life. What obstacle is holding you back from ac
 
 Don’t default to bandaid solutions.
 
-## Chapter 17
+## XVII
 
 Positive reinforcement works better than punishment.
 
@@ -260,7 +260,7 @@ Focus on minimal viable progress.
 
 Create visual indicators of progress.
 
-## Chapter 18
+## XVIII
 
 Design a routine that enshrines what is essential, making execution almost effortless.
 
@@ -278,7 +278,7 @@ Mix up your routines to avoid boredom.
 
 Tackle your routines one by one.
 
-## Chapter 19
+## XIX
 
 Keep your mind focused on the present - enjoy the moment.
 
@@ -296,7 +296,7 @@ Practice mindfulness.
 
 Write a list of essentials, prioritise them and go through them one by one.
 
-## Chapter 20
+## XX
 
 Essentialism is not just something you _do_. It is something you _are_.
 

@@ -20,7 +20,7 @@ I found Siddhartha to be a genuinely transformative read. It is incredibly deep,
 
 # Summary, Quotes & Notes
 
-## THE SON OF THE BRAHMAN
+## The Son of the Brahman
 
 For a long time, Siddhartha had been partaking in the discussions of the wise men, practising debate with Govinda, practising with Govinda the art of reflection, the service of meditation. He already knew how to speak the Om silently, the word of words, to speak it silently into himself while inhaling, to speak it silently out of himself while exhaling, with all the concentration of his soul, the forehead surrounded by the glow of the clear-thinking spirit. He already knew to feel Atman in the depths of his being, indestructible, one with the universe.
 
@@ -28,7 +28,7 @@ Siddhartha was thus loved by everyone. He was a source of joy for everybody, he 
 
 He had started to suspect that his venerable father and his other teachers, that the wise Brahmans had already revealed to him the most and best of their wisdom, that they had already filled his expecting vessel with their richness, and the vessel was not full, the spirit was not content, the soul was not calm, the heart was not satisfied.
 
-## WITH THE SAMANAS
+## With the Samanas
 
 goal stood before Siddhartha, a single goal: to become empty, empty of thirst, empty of wishing, empty of dreams, empty of joy and sorrow. Dead to himself, not to be a self any more, to find tranquility with an emptied heard, to be open to miracles in unselfish thoughts, that was his goal. Once all of my self was overcome and had died, once every desire and every urge was silent in the heart, then the ultimate part of me had to awake, the innermost of my being, which is no longer my self, the great secret.
 
@@ -38,7 +38,7 @@ And Siddhartha said quietly, as if he was talking to himself: "What is meditatio
 
 Siddhartha answered: "How old, would you think, is our oldest Samana, our venerable teacher?" Quoth Govinda: "Our oldest one might be about sixty years of age." And Siddhartha: "He has lived for sixty years and has not reached the nirvana. He'll turn seventy and eighty, and you and me, we will grow just as old and will do our exercises, and will fast, and will meditate. But we will not reach the nirvana, he won't and we won't. Oh Govinda, I believe out of all the Samanas out there, perhaps not a single one, not a single one, will reach the nirvana. We find comfort, we find numbness, we learn feats, to deceive others. But the most important thing, the path of paths, we will not find."
 
-## GOTAMA
+## Gotama
 
 the two Samanas recognised him solely by the perfection of his calm, by the quietness of his appearance, in which there was no searching, no desire, no imitation, no effort to be seen, only light and peace.
 
@@ -46,19 +46,19 @@ He felt little curiosity for the teachings, he did not believe that they would t
 
 "I wish that you, oh exalted one, would not be angry with me," said the young man. "I have not spoken to you like this to argue with you, to argue about words. You are truly right, there is little to opinions. But let me say this one more thing: I have not doubted in you for a single moment. I have not doubted for a single moment that you are Buddha, that you have reached the goal, the highest goal towards which so many thousands of Brahmans and sons of Brahmans are on their way. You have found salvation from death. It has come to you in the course of your own search, on your own path, through thoughts, through meditation, through realizations, through enlightenment. It has not come to you by means of teachings! And—thus is my thought, oh exalted one,—nobody will obtain salvation by means of teachings! You will not be able to convey and say to anybody, oh venerable one, in words and through teachings what has happened to you in the hour of enlightenment! The teachings of the enlightened Buddha contain much, it teaches many to live righteously, to avoid evil. But there is one thing which these so clear, these so venerable teachings do not contain: they do not contain the mystery of what the exalted one has experienced for himself, he alone among hundreds of thousands. This is what I have thought and realized, when I have heard the teachings. This is why I am continuing my travels—not to seek other, better teachings, for I know there are none, but to depart from all teachings and all teachers and to reach my goal by myself or to die. But often, I'll think of this day, oh exalted one, and of this hour, when my eyes beheld a holy man."
 
-## AWAKENING
+## Awakening
 
 "How deaf and stupid have I been!" he thought, walking swiftly along. "When someone reads a text, wants to discover its meaning, he will not scorn the symbols and letters and call them deceptions, coincidence, and worthless hull, but he will read them, he will study and love them, letter by letter. But I, who wanted to read the book of the world and the book of my own being, I have, for the sake of a meaning I had anticipated before I read, scorned the symbols and letters, I called the visible world a deception, called my eyes and my tongue coincidental and worthless forms without substance. No, this is over, I have awakened, I have indeed awakened and have not been born before this very day."
 
 Govinda had become a monk, and a thousand monks were his brothers, wore the same robe as he, believed in his faith, spoke his language. But he, Siddhartha, where did he belong to? With whom would he share his life? Whose language would he speak? Out of this moment, when the world melted away all around him, when he stood alone like a star in the sky, out of this moment of a cold and despair, Siddhartha emerged, more a self than before, more firmly concentrated. He felt: This had been the last tremor of the awakening, the last struggle of this birth. And it was not long until he walked again in long strides, started to proceed swiftly and impatiently, heading no longer for home, no longer to his father, no longer back.
 
-## KAMALA
+## Kamala
 
 She beckoned him with her eyes, he tilted his head so that his face touched hers and placed his mouth on that mouth which was like a freshly cracked fig. For a long time, Kamala kissed him, and with a deep astonishment Siddhartha felt how she taught him, how wise she was, how she controlled him, rejected him, lured him, and how after this first one there was to be a long, a well ordered, well tested sequence of kisses, everyone different from the others, he was still to receive. Breathing deeply, he remained standing where he was, and was in this moment astonished like a child about the cornucopia of knowledge and things worth learning, which revealed itself before his eyes.
 
 "You were willing. Look, Kamala: When you throw a rock into the water, it will speed on the fastest course to the bottom of the water. This is how it is when Siddhartha has a goal, a resolution. Siddhartha does nothing, he waits, he thinks, he fasts, but he passes through the things of the world like a rock through water, without doing anything, without stirring; he is drawn, he lets himself fall. His goal attracts him, because he doesn't let anything enter his soul which might oppose the goal. This is what Siddhartha has learned among the Samanas. This is what fools call magic and of which they think it would be effected by means of the daemons. Nothing is effected by daemons, there are no daemons. Everyone can perform magic, everyone can reach his goals, if he is able to think, if he is able to wait, if he is able to fast."
 
-## WITH THE CHILDLIKE PEOPLE
+## With the Childlike People
 
 “I am without possessions. But I am so voluntarily, and therefore I am not destitute.”
 
@@ -82,7 +82,7 @@ At times he felt, deep in his chest, a dying, quiet voice, which admonished him 
 
 At some time, when I'll be older, I'd want to bear your child. And yet, my dear, you've remained a Samana, and yet you do not love me, you love nobody. Isn't it so?" "It might very well be so," Siddhartha said tiredly. "I am like you. You also do not love—how else could you practise love as a craft? Perhaps, people of our kind can't love. The childlike people can; that's their secret."
 
-## SANSARA
+## Sansara
 
 For a long time, Siddhartha had lived the life of the world and of lust, though without being a part of it.
 
@@ -94,7 +94,7 @@ Thus he gambled with high stakes and mercilessly, hating himself, mocking himsel
 
 That entire day, he sat under the mango-tree, thinking of his father, thinking of Govinda, thinking of Gotama. Did he have to leave them to become a Kamaswami? He still sat there, when the night had fallen. When, looking up, he caught sight of the stars, he thought: "Here I'm sitting under my mango-tree, in my pleasure-garden." He smiled a little—was it really necessary, was it right, was it not as foolish game, that he owned a mango-tree, that he owned a garden? He also put an end to this, this also died in him. He rose, bid his farewell to the mango-tree, his farewell to the pleasure-garden. Since he had been without food this day, he felt strong hunger, and thought of his house in the city, of his chamber and bed, of the table with the meals on it. He smiled tiredly, shook himself, and bid his farewell to these things. In the same hour of the night, Siddhartha left his garden, left the city, and never came back.
 
-## BY THE RIVER
+## By the River
 
 A hang bent over the bank of the river, a coconut-tree; Siddhartha leaned against its trunk with his shoulder, embraced the trunk with one arm, and looked down into the green water, which ran and ran under him, looked down and found himself to be entirely filled with the wish to let go and to drown in these waters. A frightening emptiness was reflected back at him by the water, answering to the terrible emptiness in his soul. Yes, he had reached the end. There was nothing left for him, except to annihilate himself, except to smash the failure into which he had shaped his life, to throw it away, before the feet of mockingly laughing gods.
 
@@ -104,17 +104,17 @@ Not eternal is the world of appearances, not eternal, anything but eternal are o
 
 Wondrous indeed was my life, so he thought, wondrous detours it has taken. As I boy, I had only to do with gods and offerings. As a youth, I had only to do with asceticism, with thinking and meditation, was searching for Brahman, worshipped the eternal in the Atman. But as a young man, I followed the penitents, lived in the forest, suffered of heat and frost, learned to hunger, taught my body to become dead. Wonderfully, soon afterwards, insight came towards me in the form of the great Buddha's teachings, I felt the knowledge of the oneness of the world circling in me like my own blood. But I also had to leave Buddha and the great knowledge. I went and learned the art of love with Kamala, learned trading with Kamaswami, piled up money, wasted money, learned to love my stomach, learned to please my senses. I had to spend many years losing my spirit, to unlearn thinking again, to forget the oneness. Isn't it just as if I had turned slowly and on a long detour from a man into a child, from a thinker into a childlike person? And yet, this path has been very good; and yet, the bird in my chest has not died. But what a path has this been! I had to pass through so much stupidity, through so much vices, through so many errors, through so much disgust and disappointments and woe, just to become a child again and to be able to start over. But it was right so, my heart says "Yes" to it, my eyes smile to it. I've had to experience despair, I've had to sink down to the most foolish one of all thoughts, to the thought of suicide, in order to be able to experience divine grace, to hear Om again, to be able to sleep properly and awake properly again. I had to become a fool, to find Atman in me again. I had to sin, to be able to live again. Where else might my path lead me to? It is foolish, this path, it moves in loops, perhaps it is going around in a circle. Let it go as it likes, I want to to take it. Wonderfully, he felt joy rolling like waves in his chest.
 
-## THE FERRYMAN
+## The Ferryman
 
 "It is this what you mean, isn't it: that the river is everywhere at once, at the source and at the mouth, at the waterfall, at the ferry, at the rapids, in the sea, in the mountains, everywhere at once, and that there is only the present time for it, not the shadow of the past, not the shadow of the future?" "This it is," said Siddhartha. "And when I had learned it, I looked at my life, and it was also a river, and the boy Siddhartha was only separated from the man Siddhartha and from the old man Siddhartha by a shadow, not by something real. Also, Siddhartha's previous births were no past, and his death and his return to Brahma was no future. Nothing was, nothing will be; everything is, everything has existence and is present."
 
 Oh, was not all suffering time, were not all forms of tormenting oneself and being afraid time, was not everything hard, everything hostile in the world gone and overcome as soon as one had overcome time, as soon as time would have been put out of existence by one's thoughts?
 
-## THE SON
+## The Son
 
 "Ask the river about it, my friend! Hear it laugh about it! Would you actually believe that you had committed your foolish acts in order to spare your son from committing them too? And could you in any way protect your son from Sansara? How could you? By means of teachings, prayer, admonition? My dear, have you entirely forgotten that story, that story containing so many lessons, that story about Siddhartha, a Brahman's son, which you once told me here on this very spot? Who has kept the Samana Siddhartha safe from Sansara, from sin, from greed, from foolishness? Were his father's religious devotion, his teachers warnings, his own knowledge, his own search able to keep him safe? Which father, which teacher had been able to protect him from living his life for himself, from soiling himself with life, from burdening himself with guilt, from drinking the bitter drink for himself, from finding his path for himself? Would you think, my dear, anybody might perhaps be spared from taking this path? That perhaps your little son would be spared, because you love him, because you would like to keep him from suffering and pain and disappointment? But even if you would die ten times for him, you would not be able to take the slightest part of his destiny upon yourself."
 
-## OM
+## Om
 
 Slowly blossomed, slowly ripened in Siddhartha the realisation, the knowledge, what wisdom actually was, what the goal of his long search was. It was nothing but a readiness of the soul, an ability, a secret art, to think every moment, while living his life, the thought of oneness, to be able to feel and inhale the oneness.
 
@@ -122,7 +122,7 @@ Siddhartha made an effort to listen better. The image of his father, his own ima
 
 In this hour, Siddhartha stopped fighting his fate, stopped suffering. On his face flourished the cheerfulness of a knowledge, which is no longer opposed by any will, which knows perfection, which is in agreement with the flow of events, with the current of life, full of sympathy for the pain of others, full of sympathy for the pleasure of others, devoted to the flow, belonging to the oneness.
 
-## GOVINDA
+## Govinda
 
 "When someone is searching," said Siddhartha, "then it might easily happen that the only thing his eyes still see is that what he searches for, that he is unable to find anything, to let anything enter his mind, because he always thinks of nothing but the object of his search, because he has a goal, because he is obsessed by the goal. Searching means: having a goal. But finding means: being free, being open, having no goal. You, oh venerable one, are perhaps indeed a searcher, because, striving for your goal, there are many things you don't see, which are directly in front of your eyes."
 

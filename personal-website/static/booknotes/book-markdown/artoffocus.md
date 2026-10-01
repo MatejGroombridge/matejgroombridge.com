@@ -286,7 +286,7 @@ Radical acceptance of present- moment reality is the start of the solution to mo
 
 Fight with it until you realize the futility in fighting with fabrication. Then, let go. When you least expect it, the creative breakthrough will come, and the season of intensity will be at your doorstep. It’s not a battle, but a dance.
 
-### II REINVENT YOURSELF
+### II. Reinvent Yourself
 
 The human superpower is choice. We no longer need to outsource our choices to biological, sociological, or psychological drives.
 

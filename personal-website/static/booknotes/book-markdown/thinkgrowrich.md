@@ -18,7 +18,7 @@ Fascinating ideas. Applicable to all areas of achievement. Quite wordy and the l
 # Summary, Notes & Quotes
 All achievement, all earned riches, have their beginning in an idea.
 
-## Chapter 1: Thoughts Are Things
+## I. Thoughts Are Things
 > “Thoughts are things,” and powerful things at that, when they are mixed with definiteness of purpose, persistence, and a burning desire for their translation into riches, or other material objects.
 
 When you are truly ready for something, it will show itself to you.
@@ -45,7 +45,7 @@ To achieve anything, you need desire.
 
 > Whatever the mind of man can **conceive** and **believe** it can **achieve.**
 
-## Chapter 2: Desire
+## II. Desire
 Success come to those who create a definite goal and place all their energy, all their will power, all their effort, everything, back into that goal.
 
 By giving yourself no possible way of retreat you either win or perish.
@@ -70,7 +70,7 @@ You can turn handicaps into assets.
 
 There is nothing, right or wrong, which belief, plus burning desire, cannot make real. The only limitations to our minds are those we acknowledge.
 
-## Chapter 3: Faith
+## III. Faith
 Faith is a state of mind which may be induced, or created, by affirmation or repeated instructions to the subconscious mind.
 
 Repeating affirmations to your subconscious mind is the only known method to create faith. This is more effective if you pair the words with strong emotions.
@@ -102,7 +102,7 @@ To the stronger or faster man,
 But soon or late the man who wins
 Is the man WHO THINKS HE CAN.”
 
-## Chapter 4: Autosuggestion
+## IV. Autosuggestion
 Autosuggestion is a term which applies to all suggestions and all self-administered stimuli which reach one’s mind through the five senses. It is talking to your subconscious mind.
 
 Ideas the enter the subconscious mind influence our behaviour.
@@ -117,7 +117,7 @@ Repetition is required. Scepticism is characteristic but will eventually turn in
 
 If your subconscious expects something, it will give you plans to achieve it.
 
-## Chapter 5: Specialised Knowledge
+## V. Specialised Knowledge
 There are two kinds of knowledge, general and specialised. General knowledge is useless when it comes to money accumulation.
 
 Knowledge will not attract money, unless it is organized, and intelligently directed, through practical plans of action, to the definite end of accumulation of money.
@@ -144,7 +144,7 @@ We rise to high positions or remain at the bottom because of conditions we can c
 
 Both success and failure are largely the results of habit.
 
-## Chapter 6: Imagination
+## VI. Imagination
 Man can create anything which he can imagine. Man’s only limitation, within reason, lies in his development and use of his imagination.
 
 There are two forms of imagination. Synthetic, which involves repurposing old concepts into new ideas, and creative, which involves the creation of new ideas through hunches or inspirations.
@@ -159,7 +159,7 @@ There is no standard price on ideas. The creator of ideas makes his own price, a
 
 > When the idea was first planted in my mind, it was coaxed, nursed, and enticed to remain alive. Gradually, the idea became a giant under its own power, and it coaxed, nursed, and drove me. Ideas are like that. First you give life and action and guidance to ideas, then they take on power of their own and sweep aside all opposition.
 
-## Chapter 7: Organised Planning
+## VII. Organised Planning
 Meeting with a group of people can help you create ideas and make good plans.
 
 The majority fail because of their lack of persistence in creating new plans to take the place of those which fail.
@@ -205,14 +205,14 @@ Capitalism denies no one the right to accumulate riches in proportion to the val
 
 > Success requires no explanations. Failure permits no alibis.
 
-## Chapter 8: Decision
+## VIII. Decision
 Make decision quickly and definitely and change them slowly.
 
 People who fail are, generally, easily influenced by the opinions of others. If you need facts/information from someone, get it quietly, without disclosing your purpose.
 
 Know what you want and you’ll generally get it.
 
-## Chapter 9: Persistence
+## IX. Persistence
 Willpower mixed with desire is very powerful.
 
 Go back to chapter 2 and complete the exercise. The eagerness with which you carry this out is indicative of your desire to accumulate riches. If you are indifferent, you haven’t yet developed a “money consciousness” which is essential to have certainty of achieving great wealth.
@@ -243,7 +243,7 @@ The time to nurse an idea is at the time of its birth. Every minute it lives, gi
 
 Riches do not respond to wishes. They respond only to definite plans, backed by definite desires, through constant persistence.
 
-## Chapter 10: Power of the Master Mind
+## X. Power of the Master Mind
 Plans are inert and useless, without sufficient power to translate them into action. Power may be defined as “organized and intelligently directed knowledge.”
 
 These are sources of knowledge: infinite intelligence, accumulated experience (eg. a library), experiment and research.
@@ -262,9 +262,9 @@ Poverty needs no plan. It needs no one to aid it, because it is bold and ruthles
 
 HAPPINESS is found in DOING Not merely in POSSESSING
 
-## Chapter 11: [Redacted]
+## XI. [Redacted]
 
-## Chapter 12: The Subconscious Mind
+## XII. The Subconscious Mind
 The subconscious mind consists of a field of consciousness, in which every impulse of thought that reaches the conscious mind through any of the five senses, is classified and recorded, and from which thoughts may be recalled or withdrawn as letters may be taken from a filing cabinet.
 
 You may voluntarily plant in your subconscious mind any plan, thought, or purpose which you desire to translate into its physical or monetary equivalent.
@@ -285,7 +285,7 @@ If you pray for a thing, but have fear as you pray that you may not receive it, 
 
 > Anybody can wish for riches, and most people do, but only a few know that a definite plan, plus a burning desire for wealth, are the only dependable means of accumulating wealth.
 
-## Chapter 13: The Brain
+## XIII. The Brain
 Your brain is capable of picking up vibrations of thought which are being released by other people’s brains.
 
 When stimulated, you become more susceptible to picking up these vibrations.
@@ -296,7 +296,7 @@ Telepathy is thus possible.
 
 > The ladder of success is never crowded at the top.
 
-## Chapter 14: The Sixth Sense
+## XIV. The Sixth Sense
 The sixth sense is the portion of the subconscious mind which has been referred to as creative imagination.
 
 Through the aid of the sixth sense, you will warned of impending dangers in time to avoid them, and notified of opportunities in time to embrace them.
@@ -307,7 +307,7 @@ My experience has taught me that the next best thing to being truly great is to 
 
 The sixth sense is not something that one can take off and put on at will. Ability to use this great power comes slowly, through application of the other principles outlined in this book.
 
-## Chapter 15: The Six Ghosts of Fear
+## XV. The Six Ghosts of Fear
 Before you can put any portion of this philosophy into successful use, your mind must be prepared to receive it. The preparation is not difficult. It begins with study, analysis, and understanding of three enemies which you shall have to clear out—indecision, doubt, and fear. The Sixth Sense will never function while these three negatives, or any one of them, remain in your mind.
 
 Indecision is the seedling of fear.

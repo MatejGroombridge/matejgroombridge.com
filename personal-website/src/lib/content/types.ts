@@ -104,9 +104,13 @@ export type BookNote = {
 	readingTime: string;
 	rating: string;
 	bookstore?: string;
-	link?: string;
 	description: string;
 	cover: string;
+	/**
+	 * How the grid card fits the cover into its 2:3 frame. Defaults to 'cover'
+	 * (crop). Use 'contain' for square covers so the whole artwork shows.
+	 */
+	coverFit?: 'cover' | 'contain';
 	bodyPath?: string;
 	seo: Seo;
 };

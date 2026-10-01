@@ -10,7 +10,6 @@ export const bookNotes = [
 		readingTime: 'Mid 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382',
 		description:
 			'Essentialism means doing less, better. So many people suffer from overcommitment and saying yes to everything. By only doing what is essential you gain time, clarity and fulfillment.',
 		cover: '/booknotes/book-cover/essentialism.webp',
@@ -22,6 +21,25 @@ export const bookNotes = [
 		}
 	},
 	{
+		id: null,
+		slug: 'siddhartha',
+		title: 'Siddhartha',
+		author: 'Herman Hesse',
+		published: '1922',
+		readingTime: 'Mid-Late 2025',
+		rating: '10/10',
+		bookstore: 'Amazon',
+		description:
+			'Siddhartha is a novel by Hermann Hesse that deals with the spiritual journey of self-discovery of a man named Siddhartha during the time of the Gautama Buddha.',
+		cover: '/booknotes/book-cover/siddhartha.webp',
+		bodyPath: '/booknotes/book-markdown/siddhartha.md',
+		seo: {
+			title: 'Siddhartha | Summary, Notes & Quotes',
+			description:
+				'The book in three sentences: Siddhartha is a novel by Hermann Hesse that deals with the spiritual journey of self-discovery of a man named Siddhartha during the time of the Gautama Buddha.'
+		}
+	},
+	{
 		id: 0,
 		slug: 'borntorun',
 		title: 'Born To Run',
@@ -30,7 +48,6 @@ export const bookNotes = [
 		readingTime: 'October 2022',
 		rating: '10/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Born-Run-Christopher-McDougall/dp/0307279189',
 		description:
 			'Humans were born with the innate capacity to run long distances. This is a crucial part of our lives but its importance has slowly been lost over time.',
 		cover: '/booknotes/book-cover/borntorun.webp',
@@ -42,6 +59,25 @@ export const bookNotes = [
 		}
 	},
 	{
+		id: 26,
+		slug: 'ethics',
+		title: 'Ethics',
+		author: 'Benedict de Spinoza',
+		published: '1677',
+		readingTime: 'Mid 2026',
+		rating: '9/10',
+		bookstore: 'Amazon',
+		description:
+			'Ethics is Spinoza’s geometrically argued account of God or Nature, the mind and the emotions, and of how understanding the causes that determine us is the path to freedom and blessedness.',
+		cover: '/booknotes/book-cover/ethics.webp',
+		bodyPath: '/booknotes/book-markdown/ethics.md',
+		seo: {
+			title: 'Ethics | Summary, Notes & Quotes',
+			description:
+				'The book in three sentences: Ethics is Spinoza’s geometrically argued account of God or Nature, the mind and the emotions, and of how understanding the causes that determine us is the path to freedom and blessedness.'
+		}
+	},
+	{
 		id: null,
 		slug: 'atmamun',
 		title: 'Atmamun',
@@ -50,7 +86,6 @@ export const bookNotes = [
 		readingTime: 'Late 2023',
 		rating: '10/10',
 		bookstore: 'Amazon',
-		link: '',
 		description:
 			'Atmamun serves as a great introduction to the nature of the mind, the trap of the ego and the pursuit of true internal freedom.',
 		cover: '/booknotes/book-cover/atmamun.webp',
@@ -70,7 +105,6 @@ export const bookNotes = [
 		readingTime: 'May 2023',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Excellent-Advice-Living-Wisdom-Earlier/dp/0593654528',
 		description:
 			'Excellent Advice for Living is a collection of aphorisms from writer, editor and photographer Kevin Kelly. The book is packed full of timeless advice that covers an astonishing range, from right living to setting ambitious goals, optimising generosity, and cultivating compassion.',
 		cover: '/booknotes/book-cover/excellentadvice.webp',
@@ -82,6 +116,25 @@ export const bookNotes = [
 		}
 	},
 	{
+		id: 22,
+		slug: 'zarathustra',
+		title: 'Thus Spoke Zarathustra',
+		author: 'Friedrich Nietzsche',
+		published: '1883',
+		readingTime: 'Early 2026',
+		rating: '7/10',
+		bookstore: 'Amazon',
+		description:
+			'Thus Spoke Zarathustra is Friedrich Nietzsche’s philosophical novel in which the prophet Zarathustra comes down from his mountain to teach the death of God, the Übermensch, the will to power and the eternal recurrence.',
+		cover: '/booknotes/book-cover/zarathustra.webp',
+		bodyPath: '/booknotes/book-markdown/zarathustra.md',
+		seo: {
+			title: 'Thus Spoke Zarathustra | Summary, Notes & Quotes',
+			description:
+				'The book in three sentences: Thus Spoke Zarathustra is Friedrich Nietzsche’s philosophical novel in which the prophet Zarathustra comes down from his mountain to teach the death of God, the Übermensch, the will to power and the eternal recurrence.'
+		}
+	},
+	{
 		id: 15,
 		slug: 'fiveam',
 		title: 'The 5AM Club',
@@ -90,7 +143,6 @@ export const bookNotes = [
 		readingTime: 'Oct 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/AM-Club-Morning-Elevate-Life/dp/1443460710/ref=sr_1_1?crid=919A1DKTBH7L&keywords=the+5am+club&qid=1674680908&s=books&sprefix=the+5am+club%2Cstripbooks-intl-ship%2C369&sr=1-1',
 		description:
 			'The 5AM Club is a morning routine developed by Robin Sharma wherein you rise at 5am. A structured and consistent morning routine which starts at 5am can act as a catalyst for greater productivity, health, and happiness. By owning your morning, you elevate your life.',
 		cover: '/booknotes/book-cover/fiveam.webp',
@@ -110,10 +162,10 @@ export const bookNotes = [
 		readingTime: 'Mid 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/Whats-About-Little-Black-Books/dp/1921441852',
 		description:
 			'Without a God, life would be without meaning. We are defined through our relationship to God. Our purpose in life is to glorify God in everything we do.',
 		cover: '/booknotes/book-cover/life.webp',
+		coverFit: 'contain',
 		bodyPath: '/booknotes/book-markdown/life.md',
 		seo: {
 			title: "What's Life All About? | Summary, Notes & Quotes",
@@ -122,23 +174,22 @@ export const bookNotes = [
 		}
 	},
 	{
-		id: null,
-		slug: 'siddhartha',
-		title: 'Siddhartha',
-		author: 'Herman Hesse',
-		published: '1922',
-		readingTime: 'Mid-Late 2025',
-		rating: '10/10',
+		id: 25,
+		slug: 'artofwar',
+		title: 'The Art of War',
+		author: 'Sun Tzu',
+		published: '5th century BC',
+		readingTime: 'Mid 2026',
+		rating: '9/10',
 		bookstore: 'Amazon',
-		link: '',
 		description:
-			'Siddhartha is a novel by Hermann Hesse that deals with the spiritual journey of self-discovery of a man named Siddhartha during the time of the Gautama Buddha.',
-		cover: '/booknotes/book-cover/siddhartha.webp',
-		bodyPath: '/booknotes/book-markdown/siddhartha.md',
+			'The Art of War is Sun Tzu’s ancient Chinese treatise on strategy, teaching that the greatest victory is won without fighting through preparation, deception, adaptability and knowing both yourself and your enemy.',
+		cover: '/booknotes/book-cover/artofwar.webp',
+		bodyPath: '/booknotes/book-markdown/artofwar.md',
 		seo: {
-			title: 'Siddhartha | Summary, Notes & Quotes',
+			title: 'The Art of War | Summary, Notes & Quotes',
 			description:
-				'The book in three sentences: Siddhartha is a novel by Hermann Hesse that deals with the spiritual journey of self-discovery of a man named Siddhartha during the time of the Gautama Buddha.'
+				'The book in three sentences: The Art of War is Sun Tzu’s ancient Chinese treatise on strategy, teaching that the greatest victory is won without fighting through preparation, deception, adaptability and knowing both yourself and your enemy.'
 		}
 	},
 	{
@@ -150,7 +201,6 @@ export const bookNotes = [
 		readingTime: 'Aug 2023',
 		rating: '10/10',
 		bookstore: 'Amazon',
-		link: '',
 		description:
 			'$100M Leads is a fantastic guide that demystifies the art of getting strangers to buy your stuff. ',
 		cover: '/booknotes/book-cover/100milleads.webp',
@@ -162,6 +212,25 @@ export const bookNotes = [
 		}
 	},
 	{
+		id: 23,
+		slug: 'warofart',
+		title: 'The War of Art',
+		author: 'Steven Pressfield',
+		published: '2002',
+		readingTime: 'Early 2026',
+		rating: '9/10',
+		bookstore: 'Amazon',
+		description:
+			'The War of Art is Steven Pressfield’s guide to beating Resistance - the inner force behind procrastination, fear and self-doubt - by turning pro and treating creative work as a daily discipline.',
+		cover: '/booknotes/book-cover/warofart.webp',
+		bodyPath: '/booknotes/book-markdown/warofart.md',
+		seo: {
+			title: 'The War of Art | Summary, Notes & Quotes',
+			description:
+				'The book in three sentences: The War of Art is Steven Pressfield’s guide to beating Resistance - the inner force behind procrastination, fear and self-doubt - by turning pro and treating creative work as a daily discipline.'
+		}
+	},
+	{
 		id: null,
 		slug: 'keepthefaith',
 		title: 'Keep the Faith',
@@ -170,7 +239,6 @@ export const bookNotes = [
 		readingTime: 'Early 2025',
 		rating: '10/10',
 		bookstore: 'Amazon',
-		link: '',
 		description:
 			'Keep the Faith is a thorough and intellectually honest guide to dealing with doubt from a Christian perspective.',
 		cover: '/booknotes/book-cover/keepthefaith.webp',
@@ -190,7 +258,6 @@ export const bookNotes = [
 		readingTime: 'Early 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Love-Yourself-Like-Your-Depends/dp/0008374708/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1655326495&sr=1-3',
 		description:
 			'Loving yourself deeply is a choice you can make and a skill that can be worked on. As you love yourself, life loves you back.',
 		cover: '/booknotes/book-cover/loveyourself.webp',
@@ -210,7 +277,6 @@ export const bookNotes = [
 		readingTime: 'Late 2021',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/4-Hour-Workweek-Escape-Live-Anywhere/dp/0307465357/ref=sr_1_1?crid=31BUWCPF5OPHM&keywords=4+hour+workweek+by+tim+ferris&qid=1674683264&sprefix=4hour+workweek%2Caps%2C315&sr=8-1',
 		description:
 			'Anyone can live life with complete freedom. To achieve this freedom you need to reframe your view of the world. Before you can live your dream lifestyle you need to automate your cash flow and divorce yourself from a job.',
 		cover: '/booknotes/book-cover/fhww.webp',
@@ -230,7 +296,6 @@ export const bookNotes = [
 		readingTime: 'Early 2023',
 		rating: '10/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Almanack-Naval-Ravikant-Wealth-Happiness-ebook/dp/B08FF8MTM6',
 		description:
 			'Everyone is capable of living a rich, happy and fulfilled life. All you need to achieve your ideal lifestyle is the right knowledge and habits.',
 		cover: '/booknotes/book-cover/navalmanack.webp',
@@ -250,7 +315,6 @@ export const bookNotes = [
 		readingTime: 'Oct 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/Power-Now-Guide-Spiritual-Enlightenment/dp/1577314808',
 		description:
 			'Virtually everyone hears a voice, or several voices, in their head all the time. You can free yourself from your mind by focusing on the present.',
 		cover: '/booknotes/book-cover/now.webp',
@@ -262,6 +326,25 @@ export const bookNotes = [
 		}
 	},
 	{
+		id: 24,
+		slug: 'narcissusandgoldmund',
+		title: 'Narcissus and Goldmund',
+		author: 'Hermann Hesse',
+		published: '1930',
+		readingTime: 'Mid 2026',
+		rating: '10/10',
+		bookstore: 'Amazon',
+		description:
+			'Narcissus and Goldmund is a novel by Hermann Hesse about two friends in a medieval monastery - Narcissus, the ascetic thinker, and Goldmund, the sensual artist - and the very different paths each takes toward wholeness.',
+		cover: '/booknotes/book-cover/narcissusandgoldmund.webp',
+		bodyPath: '/booknotes/book-markdown/narcissusandgoldmund.md',
+		seo: {
+			title: 'Narcissus and Goldmund | Summary, Notes & Quotes',
+			description:
+				'The book in three sentences: Narcissus and Goldmund is a novel by Hermann Hesse about two friends in a medieval monastery - Narcissus, the ascetic thinker, and Goldmund, the sensual artist - and the very different paths each takes toward wholeness.'
+		}
+	},
+	{
 		id: 7,
 		slug: 'strategic',
 		title: 'Strategic Mindset',
@@ -270,7 +353,6 @@ export const bookNotes = [
 		readingTime: 'March 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Strategic-Mindset-Identify-Matters-Strategy/dp/B099ZX9BK7',
 		description:
 			'Productivity isn\u2019t about doing things right, rather doing the right things that move you closer to your goals. Strategic productivity involves anticipating roadblocks and key moves, striving to make each action impactful.',
 		cover: '/booknotes/book-cover/strategic.webp',
@@ -290,7 +372,6 @@ export const bookNotes = [
 		readingTime: 'Late 2025',
 		rating: '10/10',
 		bookstore: 'Amazon',
-		link: '',
 		description:
 			'The Practice of the Presence of God is a collection of letters and conversations from a 17th-century monk who discovered that the most direct path to spiritual depth was through maintaining a continuous, conversational awareness of God in every moment.',
 		cover: '/booknotes/book-cover/presenceofgod.webp',
@@ -310,7 +391,6 @@ export const bookNotes = [
 		readingTime: 'September 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Surrender-Experiment-Michael-Singer/dp/080414110X',
 		description:
 			'The Surrender Experiment tells the story that unfolded after the author, Michael Singer, experienced a deep spiritual awakening and decided to let go of all personal preferences and let life determine his path.',
 		cover: '/booknotes/book-cover/surrender.webp',
@@ -330,7 +410,6 @@ export const bookNotes = [
 		readingTime: 'Mid 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713',
 		description:
 			'Prioritise where you put your energy. Find your values. Don\u2019t take life so seriously.',
 		cover: '/booknotes/book-cover/subtleart.webp',
@@ -350,7 +429,6 @@ export const bookNotes = [
 		readingTime: 'Early 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/Do-Hard-Things-Rebellion-Expectations/dp/1601428294/ref=sr_1_1?crid=2B4CSMVPG56L6&keywords=do+hard+things&qid=1655240467&s=books&sprefix=do+hard+thi%2Cstripbooks-intl-ship%2C253&sr=1-1',
 		description:
 			'Teenagers are capable of doing amazing things but fail to reach the full potential because of the low expectations that society puts on us. Youth is the molding stage of men.',
 		cover: '/booknotes/book-cover/dohardthings.webp',
@@ -370,7 +448,6 @@ export const bookNotes = [
 		readingTime: 'Mid 2025',
 		rating: '10/10',
 		bookstore: 'Amazon',
-		link: '',
 		description:
 			'How to Live presents 27 contradictory yet equally valid philosophies for life, persuading the reader of the absolute truth of each path before dismantling it with the next.',
 		cover: '/booknotes/book-cover/howtolive.webp',
@@ -390,7 +467,6 @@ export const bookNotes = [
 		readingTime: 'Mid 2024',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: '',
 		description:
 			'The Screwtape Letters is engaging account of human temptation, comedic in its satire of bureaucratic evil yet theologically deep and practical.',
 		cover: '/booknotes/book-cover/screwtape.webp',
@@ -410,7 +486,6 @@ export const bookNotes = [
 		readingTime: 'Early 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/Dopamine-Detox-Remove-Distractions-Productivity-ebook/dp/B098MHBF23/ref=sr_1_1?crid=3HLFRLRDW2AY9&keywords=dopamine+detox&qid=1655240448&s=books&sprefix=dopamine+detox%2Cstripbooks-intl-ship%2C256&sr=1-1',
 		description:
 			'Over-stimulation stops us from being able to focus and complete difficult tasks. By taking a break from addicting and stimulating activities, we can start to build back our attention span and large, hard tasks will become easier and more enjoyable to complete.',
 		cover: '/booknotes/book-cover/dopaminedetox.webp',
@@ -430,7 +505,6 @@ export const bookNotes = [
 		readingTime: 'Mid 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Way-Superior-Man-Spiritual-Challenges-ebook/dp/B004A8ZWM4',
 		description:
 			"The Way of the Superior Man is a playbook for living a life of fulfilment for men. It explores some of the most important issues in mens' lives - work, love and spirituality - offering a practical philosophy for living a masculine life of integrity, authenticity, and freedom. ",
 		cover: '/booknotes/book-cover/superiorman.webp',
@@ -442,6 +516,25 @@ export const bookNotes = [
 		}
 	},
 	{
+		id: 27,
+		slug: 'neverfinished',
+		title: 'Never Finished',
+		author: 'David Goggins',
+		published: '2022',
+		readingTime: 'Late 2026',
+		rating: '9/10',
+		bookstore: 'Amazon',
+		description:
+			'Never Finished is David Goggins’ sequel to Can’t Hurt Me - a mix of hard-won personal stories and practical lessons on discipline, mental toughness and why the pursuit of greatness never ends.',
+		cover: '/booknotes/book-cover/neverfinished.webp',
+		bodyPath: '/booknotes/book-markdown/neverfinished.md',
+		seo: {
+			title: 'Never Finished | Summary, Notes & Quotes',
+			description:
+				'The book in three sentences: Never Finished is David Goggins’ sequel to Can’t Hurt Me - a mix of hard-won personal stories and practical lessons on discipline, mental toughness and why the pursuit of greatness never ends.'
+		}
+	},
+	{
 		id: 17,
 		slug: 'grades',
 		title: '10 Steps to Earning Awesome Grades',
@@ -450,7 +543,6 @@ export const bookNotes = [
 		readingTime: 'Mid 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Steps-Earning-Awesome-Grades-Studying/dp/1517004446',
 		description:
 			'This book teaches you to become a more effective learner and boosts your productivity. It will not only help you earn better grades, but also cut down on your study time.',
 		cover: '/booknotes/book-cover/grades.webp',
@@ -470,7 +562,6 @@ export const bookNotes = [
 		readingTime: 'Dec 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Tao-Te-Ching-Lao-Tzu/dp/014044131X/ref=sr_1_5?crid=3NTEDY2CEDSUO&keywords=tao+te+ching+by+lao+tzu&qid=1674642761&sprefix=tao+te+ching%2Caps%2C502&sr=8-5',
 		description:
 			'The book in 3 sentences: Surrender to the flow of life. Live a simple, honest life, in balance with the Universe. Accept things as they are.',
 		cover: '/booknotes/book-cover/taoteching.webp',
@@ -490,7 +581,6 @@ export const bookNotes = [
 		readingTime: 'Feb 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/Think-Grow-Rich-Landmark-Bestseller/dp/1585424331',
 		description:
 			'Your mindset determines your success. Whatever the mind can conceive and believe, the mind can achieve. Becoming wealthy and successful is something you have control over.',
 		cover: '/booknotes/book-cover/thinkgrowrich.webp',
@@ -510,7 +600,6 @@ export const bookNotes = [
 		readingTime: 'Late 2024',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: '',
 		description:
 			'The Art of Focus is a very enlightening read that feels like a survival guide for the modern mind.',
 		cover: '/booknotes/book-cover/artoffocus.webp',
@@ -530,7 +619,6 @@ export const bookNotes = [
 		readingTime: 'Early 2022',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Unlimited-Memory-Advanced-Learning-Strategies/dp/1631611356/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=&sr=',
 		description:
 			'Good memory is a superpower. Special techniques can make remembering large amounts of information easy. Memory is a skill that can be improved through regular practice.',
 		cover: '/booknotes/book-cover/unlimitedmemory.webp',
@@ -550,7 +638,6 @@ export const bookNotes = [
 		readingTime: 'May 2023',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Anything-You-Want-Lessons-Entrepreneur/dp/1591848261',
 		description:
 			'Following your passion and ruthlessly putting your customers first is a recipe for a successful business. Your business can be as creative, unconventional, unique, and quirky as you want. Never forget why you\u2019re doing what you\u2019re doing so that you don\u2019t fall off track.',
 		cover: '/booknotes/book-cover/anythingyouwant.webp',
@@ -562,6 +649,25 @@ export const bookNotes = [
 		}
 	},
 	{
+		id: 28,
+		slug: 'whitenights',
+		title: 'White Nights',
+		author: 'Fyodor Dostoevsky',
+		published: '1848',
+		readingTime: 'Late 2026',
+		rating: '8/10',
+		bookstore: 'Amazon',
+		description:
+			'White Nights is an early short story by Fyodor Dostoevsky about a lonely dreamer in St Petersburg who, over four nights, falls in love with a young woman waiting for another man.',
+		cover: '/booknotes/book-cover/whitenights.webp',
+		bodyPath: '/booknotes/book-markdown/whitenights.md',
+		seo: {
+			title: 'White Nights | Summary, Notes & Quotes',
+			description:
+				'White Nights is an early short story by Fyodor Dostoevsky about a lonely dreamer in St Petersburg who, over four nights, falls in love with a young woman waiting for another man.'
+		}
+	},
+	{
 		id: null,
 		slug: 'realitytransurfing',
 		title: 'Reality Transurfing',
@@ -570,7 +676,6 @@ export const bookNotes = [
 		readingTime: '2024-25',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Reality-Transurfing-Steps-Vadim-Zeland/dp/1532814658',
 		description:
 			'Reality Transurfing is a comprehensive metaphysical framework that challenges the conventional idea that we must fight to achieve our goals. ',
 		cover: '/booknotes/book-cover/realitytransurfing.webp',
@@ -590,7 +695,6 @@ export const bookNotes = [
 		readingTime: 'Late 2021',
 		rating: '10/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com/Atomic-Habits-Proven-Build-Break-ebook/dp/B01N5AX61W/ref=sr_1_1?crid=1CASCOZWXVN5Y&keywords=atomic+habits&qid=1655240409&s=books&sprefix=atomic+habi%2Cstripbooks-intl-ship%2C355&sr=1-1',
 		description:
 			'Atomic habits are tiny behaviour changes that add up to massive improvements. To make a behaviour effortless: make it obvious, attractive, easy and satisfying.',
 		cover: '/booknotes/book-cover/atomichabits.webp',
@@ -610,7 +714,6 @@ export const bookNotes = [
 		readingTime: 'Early 2023',
 		rating: '8/10',
 		bookstore: 'Amazon',
-		link: 'https://www.amazon.com.au/Vagabonding-Uncommon-Guide-Long-Term-Travel/dp/0812992180/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=',
 		description:
 			'Anyone can live a life of long-term travel. The best form of travel is a deliberate immersion into another culture for an extended period of time. You can get the most out of long-term travel by adopting a mindset of simplicity, spontaneity, openness to new experiences and self-discovery.',
 		cover: '/booknotes/book-cover/vagabonding.webp',

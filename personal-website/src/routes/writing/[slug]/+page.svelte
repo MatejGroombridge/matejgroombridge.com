@@ -264,16 +264,16 @@
 {/if}
 
 {#if showSubscribe}
-<Section class="article-subscribe" animate={false}>
-	<div class="column closing">
-		<h2 class="related-title">stay updated</h2>
-		<p class="subscribe-blurb">
-			if you want any future projects sent straight to your inbox, chuck me your details and I'll keep
-			you in the loop.
-		</p>
-		<SubscribeForm definition={subscribeForm} />
-	</div>
-</Section>
+	<Section class="article-subscribe" animate={false}>
+		<div class="column closing">
+			<h2 class="related-title">stay updated</h2>
+			<p class="subscribe-blurb">
+				if you want any future projects sent straight to your inbox, chuck me your details and I'll
+				keep you in the loop.
+			</p>
+			<SubscribeForm definition={subscribeForm} />
+		</div>
+	</Section>
 {/if}
 
 <style lang="scss">
@@ -445,98 +445,8 @@
 		color: var(--color-subtle);
 	}
 
-	// A little breathing room above an anchor the reader has just jumped to.
-	.body :global(.prose h2),
-	.body :global(.prose h3),
-	.body :global(.prose h4) {
-		scroll-margin-top: 2rem;
-	}
-
-	// Roman-numeral section markers need room to breathe between movements.
-	.body :global(.prose h2) {
-		margin-top: 2.75rem;
-	}
-
-	.body :global(.prose h4) {
-		margin-top: 2.25rem;
-	}
-
-	.body :global(.prose > :first-child) {
-		margin-top: 0;
-	}
-
-	.body :global(.prose a) {
-		text-decoration-color: var(--color-green);
-	}
-
-	.body :global(.prose hr) {
-		border: 0;
-		border-top: 1px solid var(--color-border);
-		margin: 2rem 0;
-	}
-
-	// Pull quote: centred and italic between a pair of quote marks, rather than
-	// the rule-on-the-left the shared Prose component uses. Laying it out as a
-	// flex column lets the closing mark be ordered before the attribution, so the
-	// quote closes around the words and the source sits outside it.
-	// Set in Fraunces' italic with the WONK axis on, which swaps in its quirkier
-	// letterforms — the one place on the site that voice is used.
-	.body :global(.prose blockquote) {
-		display: flex;
-		flex-direction: column;
-		// Inset from the reading column so the quote reads as a held-apart moment
-		// rather than another paragraph.
-		max-width: 34rem;
-		margin: clamp(2.25rem, 4.5vw, 3.25rem) auto;
-		padding: 0;
-		border-left: 0;
-		text-align: center;
-		font-family: var(--font-display);
-		font-style: italic;
-		font-weight: 400;
-		font-optical-sizing: auto;
-		font-variation-settings:
-			'SOFT' 50,
-			'WONK' 1;
-		font-size: clamp(1.4rem, 1.2rem + 0.6vw, 1.85rem);
-		line-height: 1.35;
-		color: var(--color-green);
-	}
-
-	.body :global(.prose blockquote p) {
-		font-family: inherit;
-		font-size: inherit;
-		line-height: inherit;
-		color: inherit;
-	}
-
-	// Marks hug the first and last letter rather than sitting on their own lines.
-	.body :global(.prose blockquote p:first-of-type)::before {
-		content: '\201C';
-	}
-
-	.body :global(.prose blockquote p:last-of-type)::after {
-		content: '\201D';
-	}
-
-	// Ordered after the closing mark, so the quote shuts around the words only.
-	// Set in the reading face at body size so the source reads as part of the
-	// essay, not as a caption; any link belongs in a footnote, not here.
-	.body :global(.prose blockquote cite) {
-		order: 1;
-		margin-top: 1.1rem;
-		font-family: var(--font-prose);
-		font-size: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
-		font-style: normal;
-		font-weight: 500;
-		font-variation-settings: normal;
-		letter-spacing: 0;
-		color: var(--color-heading);
-	}
-
-	.body :global(.prose blockquote cite)::before {
-		content: '\2014\00A0';
-	}
+	// Headings, quotes, rules and the reading face come from LongForm (via the
+	// writing layout); what follows is specific to essays.
 
 	// Raw HTML is allowed in article bodies, so keep any media the author drops
 	// in from breaking the measure.
@@ -839,11 +749,9 @@
 		}
 	}
 
-	// The site centres all copy under 640px. That reads fine for short blocks,
-	// but a full essay set ragged-on-both-sides is hard to follow, so the body
-	// alone opts back into a flush left edge.
+	// The body's flush-left edge on narrow screens comes from LongForm; the
+	// closing run follows it so the two line up.
 	@media (max-width: 640px) {
-		.body :global(.prose),
 		.closing {
 			text-align: left;
 		}

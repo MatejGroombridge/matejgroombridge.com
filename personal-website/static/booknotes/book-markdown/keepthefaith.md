@@ -24,7 +24,7 @@ I found Keep the Faith to be a thorough and intellectually honest guide to deali
 
 # Summary, Quotes & Notes
 
-## Part 1: Shift the way you think
+## I. Shift the way you think
 
 God says the truth about him is plain from looking at creation. The world around us declares his glory.
 
@@ -102,7 +102,7 @@ The bible balances healthy realism with a radical positivity about humanity.
 
 Without Christ’s redemption, we simply can’t think straight any more.
 
-## Part 2: Shift the way you act
+## II. Shift the way you act
 
 It’s not easy to keep going when your reasonable, intelligent, successful friends think you’ve gone mad.
 

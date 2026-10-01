@@ -22,7 +22,7 @@ Using the latest productivity app doesn’t help much either. While technologies
 
 Strategic productivity means using your time in a way that enables you to achieve maximum results with minimum effort.
 
-## Part 1: Planning Effectively
+## I. Planning Effectively
 You cannot hit a target you don’t set.
 
 Efficiency is doing things right while effectiveness is doing the right things. There is no point doing things right if those things don’t move you closer to your goals.
@@ -112,7 +112,7 @@ The benefits can be summarised as follows:
 
 Ask yourself: What would I need to have completed by the third quarter of the year to ensure I’ll hit my target by the end of the fourth? What about the second and first quarters?
 
-## Part 2: Effectiveness vs. Efficiency
+## II. Effectiveness vs. Efficiency
 ### Day 4 - Being strategic during your day
 > Be strategic about productivity—do less exceptionally well, instead of doing more in an average way. 
 > Laurie Buchanan, life coach and author.
@@ -165,7 +165,7 @@ Benefits of this framework include: removal of friction, decreased self-doubt, e
 
 If you doubt your ability or motivation to complete a certain task, take note of it and make adjustments by changing its scope, giving yourself more time, or eliminating it when relevant.
 
-## Part 3 - Thinking smart
+## III. Thinking smart
 Smart questions —> effective thinking —> intelligent actions —> tangible results.
 
 ### Day 5 - Asking yourself smart questions

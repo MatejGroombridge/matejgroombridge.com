@@ -20,7 +20,7 @@ Reality Transurfing is a comprehensive metaphysical framework that challenges th
 
 # Summary, Quotes & Notes
 
-## Chapter 1
+## I
 
 Anyone who has ever been involved in some kind of creative work will know the happiness and fulfilment that comes with creating something with your own hands.
 
@@ -128,7 +128,7 @@ You do not have to fight for happiness.
 
 You simply have to choose an alternative reality that is more to your liking.
 
-## Chapter 2
+## II
 
 The stronger your desire to avoid something, the more likely it is that you will encounter it.
 
@@ -168,7 +168,7 @@ To avoid getting stuck in a suspended state, find your own pendulums.
 
 It is essential to acquire the habit of remembering what you know.
 
-## Chapter 3
+## III
 
 The wave of good fortune is an accumulation of favourable life lines in the alternatives space.
 
@@ -188,7 +188,7 @@ Pendulums cannot throw you off the wave of fortune once remembering has become a
 
 The habit of remembering is developed through consistent practice.
 
-## Chapter 4
+## IV
 
 it is impossible to explain why equilibrium should exist in nature in the first place or more specifically, where balanced forces originate from and why indeed they exist at all.
 
@@ -280,7 +280,7 @@ Do not try to overcome obstacles; reduce the amount of importance you project on
 
 Take care without worrying.
 
-## Chapter 5
+## V
 
 Everyone creates the separate layer of their own world.
 
@@ -298,7 +298,7 @@ Do not allow negative information into your layer.
 
 “Do not allow” does not mean strive to avoid, but rather, to intentionally ignore, to express no interest.
 
-## Chapter 6
+## VI
 
 The mind analyzes data, received from the information field by the subconscious and endows it with symbolic form producing a painting, a melody, a poem, mathematical formula etc.
 
@@ -376,7 +376,7 @@ Having let go of attachment to control you will find you have genuine control of
 
 If you move harmoniously with the flow of alternatives the world will meet you half way.
 
-## Chapter 7
+## VII
 
 There is a very simply way of reducing importance which is to come to terms with the possibility of defeat at the very beginning.
 
@@ -442,7 +442,7 @@ In order to reduce the importance associated with the goal the possibility of fa
 
 Once you have accepted the possibility of failure, do not think, just move in the direction of your goal.
 
-## Chapter 8
+## VIII
 
 The feeling of clarity without words, knowledge without faith, confidence without hesitation comes from the unity that exists between heart and mind.
 
@@ -498,7 +498,7 @@ If it is not clear to you how to achieve your goal, focus on visualising the sli
 
 The slide will take you in the necessary direction.
 
-## Chapter 9
+## IX
 
 The mind has will but is incapable of feeling outer intention.
 
@@ -580,7 +580,7 @@ When the will to have is free of the desire to have the pendulum has nothing to 
 
 You calmly take what is yours without insistence, just like you take the post from your letter box.
 
-## Chapter 10
+## X
 
 A foreign goal is always punishing, coerced and feels like an obligation.
 
@@ -634,7 +634,7 @@ Do not allow yourself to be influenced by others.
 
 Trust yourself.
 
-## Chapter 11
+## XI
 
 However banal it may sound, it is absolutely essential to regularly stretch and exercise the back.
 
@@ -670,7 +670,7 @@ During the exercises pay attention to the central meridians.
 
 Intention lies in focused concentration not gusto and diligence.
 
-## Chapter 12
+## XII
 
 The only effective way of reducing stress when you are in the hot-seat is to accept the possibility of failure beforehand.
 
@@ -720,7 +720,7 @@ Allow yourself the luxury of having shortcomings and lacking strengths.
 
 The excess potential of inner importance is dissipated through action.
 
-## Chapter 13
+## XIII
 
 True, calm coordination does not relate to anything external and so it requires neither confirmation nor proof.
 
@@ -818,7 +818,7 @@ Live your slide where the goal has already been achieved.
 
 Then outer intention will have its way and apples will fall to the sky.
 
-## Chapter 14
+## XIV
 
 Turning the key releases tension and frees the energy of intention.
 
@@ -842,7 +842,7 @@ The world is a mirror that reflects your relationship to it.
 
 You win your freedom by ending the battle.
 
-## Chapter 15
+## XV
 
 The soul does not want money.
 
@@ -872,7 +872,7 @@ Trust the voice of your heart above other people’s opinions including my own.
 
 If you do not control reality, reality will control you.
 
-## Chapter 16
+## XVI
 
 The life goal and purpose of all living beings is to shape reality.
 
@@ -922,7 +922,7 @@ In order to create your own game you have to give yourself
 
 permission to be yourself.
 
-## Chapter 17
+## XVII
 
 Bronnikov developed an entire system of special (and at the same time very straight forward) exercises enabling ordinary individuals to develop these abilities.
 
@@ -978,7 +978,7 @@ If you express an intention, consider it the intention of God. How then could yo
 
 Do not ask, do not demand, do not struggle, just create.
 
-## Chapter 18
+## XVIII
 
 The mirror principles: The world like a mirror reflects your relationship to it.
 
@@ -1008,7 +1008,7 @@ To materialise a slide you must turn it methodically in your mind’s eye for a 
 
 Do not suppress your emotions – change your relationship to the problem.
 
-## Chapter 19
+## XIX
 
 Doubts in the successful completion of a project usually arise when the mind tries to work out the path and means to achieving the goal.
 

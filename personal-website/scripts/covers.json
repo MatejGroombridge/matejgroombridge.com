@@ -1,0 +1,128 @@
+{
+	"zarathustra": {
+		"isbn": "9780140441185"
+	},
+	"warofart": {
+		"isbn": "9781936891023"
+	},
+	"narcissusandgoldmund": {
+		"isbn": "9780312421670"
+	},
+	"artofwar": {
+		"isbn": "9780140455526"
+	},
+	"ethics": {
+		"isbn": "9780140435719"
+	},
+	"neverfinished": {
+		"isbn": "9781544534060"
+	},
+	"essentialism": {
+		"isbn": "9780804137409"
+	},
+	"borntorun": {
+		"isbn": "9780307279187",
+		"manual": true
+	},
+	"atmamun": {
+		"isbn": "9781532762727",
+		"manual": true
+	},
+	"excellentadvice": {
+		"isbn": "9780593654521"
+	},
+	"fiveam": {
+		"isbn": "9781443456623"
+	},
+	"life": {
+		"isbn": "9781921441851",
+		"manual": true
+	},
+	"siddhartha": {
+		"isbn": "9780141189574",
+		"manual": true
+	},
+	"100milleads": {
+		"isbn": "9781963349047"
+	},
+	"keepthefaith": {
+		"isbn": "9781921896774"
+	},
+	"loveyourself": {
+		"isbn": "9780062968722",
+		"manual": true
+	},
+	"fhww": {
+		"isbn": "9780307465351"
+	},
+	"navalmanack": {
+		"isbn": "9781544514215"
+	},
+	"now": {
+		"isbn": "9781577314806"
+	},
+	"strategic": {
+		"isbn": "9798526010467",
+		"manual": true
+	},
+	"presenceofgod": {
+		"isbn": "9781590302507",
+		"manual": true
+	},
+	"surrender": {
+		"isbn": "9780804141109"
+	},
+	"subtleart": {
+		"isbn": "9780062457714",
+		"manual": true
+	},
+	"dohardthings": {
+		"isbn": "9781601421128"
+	},
+	"howtolive": {
+		"isbn": "9781991152305"
+	},
+	"screwtape": {
+		"isbn": "9780060652937",
+		"manual": true
+	},
+	"dopaminedetox": {
+		"isbn": "9798525995178"
+	},
+	"superiorman": {
+		"isbn": "9781591792574",
+		"manual": true
+	},
+	"grades": {
+		"isbn": "9781978632271"
+	},
+	"taoteching": {
+		"isbn": "9780140441314"
+	},
+	"thinkgrowrich": {
+		"isbn": "9781585424337"
+	},
+	"artoffocus": {
+		"isbn": "9781936961153"
+	},
+	"unlimitedmemory": {
+		"isbn": "9781631619984"
+	},
+	"anythingyouwant": {
+		"isbn": "9781991153319",
+		"manual": true
+	},
+	"realitytransurfing": {
+		"isbn": "9781532814655"
+	},
+	"atomichabits": {
+		"isbn": "9780735211292"
+	},
+	"vagabonding": {
+		"isbn": "9780812992182",
+		"manual": true
+	},
+	"whitenights": {
+		"isbn": "9780241252086"
+	}
+}

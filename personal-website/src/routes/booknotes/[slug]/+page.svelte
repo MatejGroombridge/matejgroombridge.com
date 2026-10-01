@@ -1,7 +1,10 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import SvelteMarkdown from '@humanspeak/svelte-markdown';
+	import LongForm from '$lib/components/ui/LongForm.svelte';
+	import Prose from '$lib/components/ui/Prose.svelte';
 	import Section from '$lib/components/ui/Section.svelte';
+	import BookNoteHeading from '$lib/components/site/BookNoteHeading.svelte';
 	import Seo from '$lib/components/site/Seo.svelte';
 	import Tag from '$lib/components/ui/Tag.svelte';
 
@@ -25,45 +28,70 @@
 
 <Section tone="muted" animate={false} class="book-bar">
 	<dl class="facts">
-		<div><dt>Author</dt><dd>{data.book.author}</dd></div>
-		<div><dt>Published</dt><dd>{data.book.published}</dd></div>
-		<div><dt>My Rating</dt><dd>{data.book.rating}</dd></div>
-		<div><dt>When I read it</dt><dd>{data.book.readingTime}</dd></div>
+		<div>
+			<dt>Author</dt>
+			<dd>{data.book.author}</dd>
+		</div>
+		<div>
+			<dt>Published</dt>
+			<dd>{data.book.published}</dd>
+		</div>
+		<div>
+			<dt>My Rating</dt>
+			<dd>{data.book.rating}</dd>
+		</div>
+		<div>
+			<dt>When I read it</dt>
+			<dd>{data.book.readingTime}</dd>
+		</div>
 	</dl>
 </Section>
 
-<Section class="booknote-body">
-	<article class="article">
-		{#if data.markdown}
-			<SvelteMarkdown source={data.markdown} />
-		{:else}
-			<p>{data.book.description}</p>
-		{/if}
-	</article>
-</Section>
-
-{#if data.related.length}
-	<Section class="booknote-related" animate={false}>
-		<h2 class="related-title">You Might Also Like...</h2>
-		<ul class="related-list">
-			{#each data.related as book}
-				<li>
-					<a href={`/booknotes/${book.slug}`}>
-						<span class="related-book-title">{book.title}</span>
-						<span class="related-book-author">{book.author}</span>
-					</a>
-				</li>
-			{/each}
-		</ul>
+<!--
+	Everything from here down reads like an essay: LongForm supplies the face,
+	scale and pull quotes the writing pages use. Notes are written in sentence
+	case, so `data-preserve-case` renders them as written rather than lowercased.
+-->
+<LongForm>
+	<Section class="booknote-body" animate={false}>
+		<article class="body" data-preserve-case>
+			<Prose>
+				{#if data.markdown}
+					<SvelteMarkdown source={data.markdown} renderers={{ heading: BookNoteHeading }} />
+				{:else}
+					<p>{data.book.description}</p>
+				{/if}
+			</Prose>
+		</article>
 	</Section>
-{/if}
 
-<Section class="booknote-disclaimer" animate={false}>
-	<p class="disclaimer">
-		This is a book summary and may not reflect my attitudes or beliefs on certain topics. I'd love
-		to hear <a href="/contact">your thoughts</a>.
-	</p>
-</Section>
+	{#if data.related.length}
+		<Section class="booknote-related" animate={false}>
+			<div class="column notes-end">
+				<h2 class="related-title">more book notes</h2>
+				<ul class="related-list">
+					{#each data.related as book (book.slug)}
+						<li>
+							<a href={`/booknotes/${book.slug}`}>
+								<span class="related-book-title" data-preserve-case>{book.title}</span>
+								<span class="related-book-author" data-preserve-case>{book.author}</span>
+							</a>
+						</li>
+					{/each}
+				</ul>
+			</div>
+		</Section>
+	{/if}
+
+	<Section class="booknote-disclaimer" animate={false}>
+		<div class="column">
+			<p class="disclaimer">
+				This is a book summary and may not reflect my attitudes or beliefs on certain topics. I'd
+				love to hear <a href="/contact">your thoughts</a>.
+			</p>
+		</div>
+	</Section>
+</LongForm>
 
 <style lang="scss">
 	:global(.section.booknote-hero) {
@@ -149,76 +177,101 @@
 		line-height: 1.4;
 	}
 
-	.article {
+	// The body, related list and disclaimer share the reading column, like the
+	// essay pages.
+	.body,
+	.column {
 		max-width: var(--size-prose);
-		margin: 0 auto;
+		margin-inline: auto;
 	}
 
-	.article :global(h1) {
-		font-size: clamp(1.75rem, 2.8vw, 2.25rem);
-		letter-spacing: -0.035em;
-		margin: 1.8rem 0 0.6rem;
+	:global(.section.booknote-body) {
+		padding-top: clamp(2.5rem, 5vw, 3.75rem);
+		padding-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
 	}
 
-	.article :global(h2) {
-		font-size: clamp(1.35rem, 2vw, 1.7rem);
-		letter-spacing: -0.03em;
-		margin: 1.8rem 0 0.5rem;
+	// The note's own sections ("The Book in 3 Sentences", "Top Quotes",
+	// "Summary, Quotes & Notes") match the essays' roman-numeral markers.
+	.body :global(.prose h1),
+	.body :global(.prose h2) {
+		font-size: clamp(1.6rem, 2.4vw, 2rem);
+		margin-top: 2.75rem;
 	}
 
-	.article :global(h3) {
-		font-size: clamp(1.08rem, 1.4vw, 1.22rem);
-		margin: 1.4rem 0 0.4rem;
+	// Inside the notes, chapters run far more often, so they step down to the
+	// essay's h3 size and their sub-headings to its h4.
+	.body :global(.prose h1 ~ h2) {
+		font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+		margin-top: 2.25rem;
 	}
 
-	.article :global(p),
-	.article :global(li) {
-		font-size: clamp(1rem, 1vw, 1.06rem);
-		line-height: 1.75;
+	// A chapter that is only a numeral ("IV") is one to four characters, so it
+	// can carry the essays' section-marker size without shouting — and where a
+	// book's parts are bare numerals over named chapters (Zarathustra), the size
+	// gap makes the structure readable. Nested numerals (h3) stay small.
+	.body :global(.prose h1 ~ h2.bare-numeral) {
+		font-size: clamp(1.6rem, 2.4vw, 2rem);
+		margin-top: 2.75rem;
 	}
 
-	.article :global(p) {
-		margin: 0.95rem 0;
+	.body :global(.prose h3) {
+		font-size: clamp(1.15rem, 1.4vw, 1.25rem);
+		margin-top: 1.75rem;
 	}
 
-	.article :global(ul),
-	.article :global(ol) {
-		padding-left: 1.25rem;
-		margin: 0.95rem 0;
+	// A heading's top margin separates it from the text above. When it follows
+	// another heading directly ("Summary, Quotes & Notes" then "I", or a part
+	// then its first chapter) the two belong together, so they sit close.
+	// `article`/`div` lift this above the size-specific margins above.
+	article.body :global(div.prose :is(h1, h2, h3) + :is(h2, h3, .bare-numeral)) {
+		margin-top: 1.1rem;
 	}
 
-	.article :global(li) {
-		margin: 0.25rem 0;
+	// The body renders as written, but its headings follow the site's lowercase
+	// mode the way the essays' headings do. `!important` is needed to get past
+	// the preserve-case opt-out on the article, which is itself `!important`.
+	:global(:root[data-case='lower']) article.body :global(.prose :is(h1, h2, h3, h4)) {
+		text-transform: lowercase !important;
 	}
 
-	.article :global(a) {
-		text-decoration-color: var(--color-green);
-	}
-
-	.article :global(blockquote) {
-		background: var(--color-muted);
+	// Quotes keep the notes' own treatment — set off by a green rule in the
+	// reading colour — rather than the essays' centred pull quote. `article`
+	// lifts these above LongForm's blockquote rules, which match them otherwise.
+	article.body :global(.prose blockquote) {
+		display: block;
+		max-width: none;
+		margin: 1.25rem 0;
+		padding: 0.1rem 0 0.1rem 1rem;
+		background: none;
 		border-left: 3px solid var(--color-green);
-		margin: 1rem 0;
-		padding: 0.65rem 0.9rem;
-		border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-		color: var(--color-subtle);
+		text-align: left;
+		font-family: var(--font-prose);
+		font-size: clamp(1.05rem, 0.99rem + 0.2vw, 1.15rem);
+		font-weight: 400;
+		font-variation-settings: normal;
+		line-height: 1.7;
+		color: var(--color-ink);
 	}
 
-	.article :global(blockquote p) {
+	article.body :global(.prose blockquote p) {
+		margin: 0;
 		font-style: italic;
-		margin: 0.25rem 0;
 	}
 
-	.article :global(hr) {
-		border: 0;
-		border-top: 1px solid var(--color-border);
-		margin: 1.5rem 0;
+	article.body :global(.prose blockquote p:first-of-type)::before,
+	article.body :global(.prose blockquote p:last-of-type)::after {
+		content: none;
 	}
 
+	// Closing sections are headed exactly like the essays' closing run.
 	.related-title {
-		font-size: clamp(1.5rem, 2.4vw, 2rem);
-		letter-spacing: -0.035em;
-		margin-bottom: 1.25rem;
+		margin: 0 0 1.1rem;
+		font-family: var(--font-ui);
+		font-weight: 700;
+		font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+		letter-spacing: -0.03em;
+		line-height: 1.25;
+		color: var(--color-heading);
 	}
 
 	.related-list {
@@ -226,8 +279,7 @@
 		padding: 0;
 		margin: 0;
 		display: grid;
-		gap: 0.65rem;
-		max-width: 70ch;
+		gap: 0.1rem;
 	}
 
 	.related-list a {
@@ -235,9 +287,8 @@
 		flex-wrap: wrap;
 		align-items: baseline;
 		justify-content: space-between;
-		gap: 0.5rem 1rem;
-		padding: 0.65rem 0;
-		border-bottom: 1px dashed var(--color-border);
+		gap: 0.35rem 1.5rem;
+		padding: 0.5rem 0;
 		text-decoration: none;
 		transition: color var(--duration-fast) ease;
 	}
@@ -247,9 +298,10 @@
 	}
 
 	.related-book-title {
-		font-family: var(--font-ui);
-		font-weight: 600;
-		font-size: 1rem;
+		font-family: var(--font-prose);
+		font-size: clamp(1.05rem, 0.99rem + 0.2vw, 1.15rem);
+		font-weight: 500;
+		line-height: 1.4;
 		color: var(--color-heading);
 	}
 
@@ -258,20 +310,40 @@
 	}
 
 	.related-book-author {
-		font-size: 0.85rem;
+		font-family: var(--font-ui);
+		font-size: 0.75rem;
+		font-weight: 600;
+		letter-spacing: 0.02em;
 		color: var(--color-subtle);
 	}
 
+	:global(.section.booknote-related) {
+		padding: 0;
+	}
+
+	// Whatever ends the notes (a paragraph, a quote) shouldn't add its own margin
+	// to the measured gap above the rule.
+	.body :global(.prose > :last-child) {
+		margin-bottom: 0;
+	}
+
+	// Where the notes end, the same rule and run-up the essays draw above their
+	// footnotes: 3.5-5.5rem from the last line (less the body section's own
+	// bottom padding, which already sits in that gap), then the rule.
+	.notes-end {
+		margin-top: calc(clamp(3.5rem, 7vw, 5.5rem) - clamp(0.75rem, 1.5vw, 1.25rem));
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--color-border);
+	}
+
 	:global(.section.booknote-disclaimer) {
-		padding-top: clamp(1.5rem, 3vw, 2.5rem);
-		padding-bottom: clamp(2.5rem, 5vw, 4rem);
+		padding-top: clamp(1.75rem, 3.5vw, 2.5rem);
+		padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
 	}
 
 	.disclaimer {
-		max-width: 56ch;
-		margin: 0 auto;
-		text-align: center;
 		font-size: 0.85rem;
+		line-height: 1.6;
 		color: var(--color-subtle);
 	}
 
@@ -293,6 +365,20 @@
 
 		.related-list a {
 			justify-content: center;
+		}
+	}
+
+	// Long-form copy keeps a flush left edge on narrow screens (see LongForm);
+	// the closing run follows it so the two line up.
+	@media (max-width: 640px) {
+		.column {
+			text-align: left;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.related-list a {
+			transition: none;
 		}
 	}
 

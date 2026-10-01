@@ -18,7 +18,7 @@ Really good book. Lots of actionable tips. Opened my eyes to the amazing effects
 
 # Summary, Notes & Quotes
 
-## Chapter 1
+## I
 
 Habits compound over time. A consistent 1% improvement constitutes to large results in the long term. Bad habits compound into toxic results.
 
@@ -41,7 +41,7 @@ You are not the reason for having trouble changing habits, it's your system.
 
 > You do not rise to the level of your goals. You fall to the level of your systems.
 
-## Chapter 2
+## II
 
 There are 3 levels of behaviour change:
 
@@ -66,7 +66,7 @@ Developing a habits is a simple two-step process:
 
 The real reason habits matter is not because they can get you better results (although they can do that), but because they can change your beliefs about yourself.
 
-## Chapter 3
+## III
 
 Behaviors followed by satisfying consequences tend to be repeated and those that produce unpleasant consequences are less likely to be repeated.
 
@@ -83,7 +83,7 @@ The process of building a habit can be divided into four steps: cue, craving, re
 
 The Four Laws of Behavior Change are a simple set of rules we can use to build better habits. They are (1) make it obvious, (2) make it attractive, (3) make it easy, and (4) make it satisfying.
 
-## Chapter 4
+## IV
 
 With practice, your brain will pick up on minute cues and predict outcomes without conscious thought. You don't need to be aware of the cue for the habit to begin.
 
@@ -95,7 +95,7 @@ Pointing and Calling is an excercise where you point at stuff and call out every
 
 The Habits Scorecard is a simple exercise you can use to become more aware of your behavior. It involves writing a list of your daily habits, followed by whether the individual habit is good, bad or neutral.
 
-## Chapter 5
+## V
 
 The 1st Law of Behavior Change is make it obvious.
 
@@ -109,7 +109,7 @@ Habit stacking is another technique to make your habit obvious. It's formula is:
 
 The cue needs to be specific and actionable if you want to create a habit.
 
-## Chapter 6
+## VI
 
 People often choose products not because of what they are, but because of where they are. Environment has a massive impact on your behaviour.
 
@@ -125,7 +125,7 @@ Stop thinking about your environment as filled with objects. Start thinking abou
 
 It is easier to build new habits in a new environment because you are not fighting against old cues.
 
-## Chapter 7
+## VII
 
 The inversion of the 1st Law of Behavior Change is make it invisible. If you want to quit a bad habit, change your environment to remove all cues.
 
@@ -143,7 +143,7 @@ Self-control will only work in the short term so rather than using your willpowe
 
 # 2 - Make it Attractive
 
-## Chapter 8
+## VIII
 
 The more attractive that an opportunity is, the more likely it will become a habit.
 
@@ -155,7 +155,7 @@ Temptation bundling is a strategy to make your habits more attractive. To do it,
 
 After [CURRENT HABIT], I will [HABIT I NEED]. After [HABIT I NEED], I will [HABIT I WANT].
 
-## Chapter 9
+## IX
 
 The things that we find attractive are directly influenced by our culture. If something that we do is praised by our culture then we are more likely to form a habit around it.
 
@@ -172,7 +172,7 @@ The normal behavior of the 'tribe' often overpowers the desired behavior of the 
 
 If a behavior can get us approval, respect, and praise, we find it attractive.
 
-## Chapter 10
+## X
 
 To break a bad habit you can invert the second law of behaviour change and make it unnatractive.
 
@@ -188,7 +188,7 @@ Habits are attractive when we associate them with positive feelings and unattrac
 
 # 3 - Make it Easy
 
-## Chapter 11
+## XI
 
 The 3rd Law of Behavior Change is make it easy.
 
@@ -200,7 +200,7 @@ Habit formation is the process by which a behavior becomes progressively more au
 
 The amount of time you have been performing a habit is not as important as the number of times you have performed it.
 
-## Chapter 12
+## XII
 
 Human behavior follows the Law of Least Effort. We will naturally gravitate toward the option that requires the least amount of work.
 
@@ -210,7 +210,7 @@ Reduce the friction associated with good behaviors. When friction is low, habits
 
 Prime your environment to make future actions easier.
 
-## Chapter 13
+## XIII
 
 Habits can be completed in a few seconds but continue to impact your behavior for minutes or hours afterward.
 
@@ -224,7 +224,7 @@ The more you ritualise the beginning of a process, the more likely it becomes th
 
 A habit must be established before it can be improved.
 
-## Chapter 14
+## XIV
 
 The inversion of the 3rd Law of Behavior Change is make it difficult.
 
@@ -238,7 +238,7 @@ Using technology to automate your habits is the most reliable and effective way 
 
 # 4 - Make it Satisfying
 
-## Chapter 15
+## XV
 
 The 4th Law of Behavior Change is make it satisfying.
 
@@ -252,7 +252,7 @@ To get a habit to stick you need to feel immediately successful— even if it’
 
 The first three laws of behavior change—make it obvious, make it attractive, and make it easy—increase the odds that a behavior will be performed this time. The fourth law of behavior change—make it satisfying—increases the odds that a behavior will be repeated next time.
 
-## Chapter 16
+## XVI
 
 One of the most satisfying feelings is the feeling of making progress.
 
@@ -270,7 +270,7 @@ The first mistake is never the one that ruins you. It is the spiral of repeated 
 
 Just because you can measure something doesn’t mean it’s the most important thing. Goodhart's law states: “When a measure becomes a target, it ceases to be a good measure.” In our data-driven world, we tend to overvalue numbers and undervalue anything ephemeral, soft, and difficult to quantify.
 
-## Chapter 17
+## XVII
 
 The inversion of the 4th Law of Behavior Change is make it unsatisfying.
 
@@ -315,7 +315,7 @@ Play a game that favors your strengths. If you can’t find a game that favors y
 
 Genes do not eliminate the need for hard work. They clarify it. They tell us what to work hard on.
 
-## Chapter 19
+## XIX
 
 The Goldilocks Rule states that humans experience peak motivation when working on tasks that are right on the edge of their current abilities. It can put you in the flow state.
 
@@ -331,7 +331,7 @@ Professionals stick to the schedule; amateurs let life get in the way.
 
 The only way to become excellent is to be endlessly fascinated by doing the same thing over and over. You have to fall in love with boredom.
 
-## Chapter 20
+## XX
 
 The upside of habits is that we can do things without thinking. The downside is that we stop paying attention to little errors.
 
@@ -358,7 +358,7 @@ Redifine yourself: "I'm an athlete" becomes "I'm the type of person who is menta
 
 When chosen effectively, an identity can be flexible rather than brittle. Like water flowing around an obstacle, your identity works with the changing circumstances rather than against them.
 
-## Chapter 21 - Conclusion
+## XXI. Conclusion
 
 The holy grail of habit change is not a single 1 percent improvement, but a thousand of them.
 

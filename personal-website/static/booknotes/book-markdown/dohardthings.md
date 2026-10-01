@@ -19,7 +19,7 @@ A great Christian book about doing hard things. Packed with lots of encouraging 
 
 # Summary, Notes & Quotes
 
-## Chapter 3
+## III
 The myth that the teen years are a time to goof off is holding back our generation.
 
 The term teenager is less than 70 years old.
@@ -42,7 +42,7 @@ By only doing the easiest things, we waste some of our best years and never reac
 
 We are far more capable than we think
 
-## Chapter 4
+## IV
 
 A common belief is that we as teens still have plenty of time to goof off so why change now.
 
@@ -62,7 +62,7 @@ Is how you're spending your time right now preparing you for what you hope to be
 
 There are 5 kinds of hard: things that are outside your comfort zone, that go beyond what's expected or required, that arr too big to accomplish alone, that don't earn an immediate payoff, that challenge the cultural norm. They are all God given opportunities that can produce massive results.
 
-## Chapter 5
+## V
 
 ### How to do hard things that make you step out of your comfort zone:
 
@@ -104,7 +104,7 @@ It's not dragons and monsters that keep us behind our fences, but the fear of th
 
 What would your life look like if you put your faith in God and stepped outside your comfort zone?
 
-## Chapter 6
+## VI
 
 ### How to do hard things that go beyond what's expected or required:
 
@@ -131,7 +131,7 @@ A commitment to growth kills complacency.
 > The highest form of success which comes, not to the man who desires mere easy peace, but to the man who does not shrink from danger, from hardship, or from bitter toil, and who out of these wins the splendid ultimate triumph. — Theodore Roosevelt
 > 
 
-## Chapter 7
+## VII
 
 ### How to do hard things that are too big for you to do alone:
 
@@ -171,7 +171,7 @@ Success should also be measured by how well you work as a team. Even the little 
 
 When God calls on you, he will bring the help you need to get the job done.
 
-## Chapter 8
+## VIII
 
 ### How to do small hard things that don’t pay off immediately:
 
@@ -189,7 +189,7 @@ We get tripped up because we enjoy the harvest but don’t enjoy sowing and cult
 
 These small actions can bring glory to God.
 
-## Chapter 9
+## IX
 ### How to do hard things that go against the crowd:
 
 It is hard to stand up for what you believe in front of other people who don’t share your convictions. We are scared of losing friends, popularity or opportunities, etc.
@@ -212,7 +212,7 @@ To decide whether to stand up for something, use these six principles: What does
 
 Doing what is right always matters.
 
-## Chapter 10
+## X
 We are the salt of the earth — we have been placed here to preserve it until he returns.
 
 We need to be living in the Truth — the total reality — that Jesus has revealed.

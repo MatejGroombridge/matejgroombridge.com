@@ -1,3 +1,5 @@
+import { bookNotes } from './booknotes';
+
 /**
  * Proper nouns that should keep their original capitalisation even when
  * lowercase mode is on. Add new names here as content grows.
@@ -10,7 +12,7 @@
  * - Longer entries are matched before shorter ones, so "South Coast" wins
  *   over "Coast" and "Snowy Mountains" wins over "Snowy".
  */
-export const properNouns: string[] = [
+const manualNouns: string[] = [
 	// Pronoun
 	'I',
 
@@ -128,70 +130,13 @@ export const properNouns: string[] = [
 	'Saturday',
 	'Sunday',
 
-	// Book authors
-	'Greg McKeown',
-	'Christopher McDougall',
-	'Kapil Gupta',
-	'Kevin Kelly',
-	'Robin Sharma',
-	'Scott Petty',
-	'Herman Hesse',
-	'Alex Hormozi',
-	'Martin Ayers',
-	'Kamal Ravikant',
-	'Tim Ferriss',
-	'Eric Jorgenson',
-	'Eckhart Tolle',
-	'Thibaut Meurisse',
-	'Brother Lawrence',
-	'Michael Singer',
-	'Mark Manson',
-	'Alex & Brett Harris',
-	'Derek Sivers',
-	'C.S. Lewis',
-	'David Deida',
-	'Thomas Frank',
-	'Lao Tzu',
-	'Napoleon Hill',
-	'Dan Koe',
-	'Kevin Horsley',
-	'Vadim Zeland',
-	'James Clear',
-	'Rolff Potts',
+	// Short forms of book titles / names used in prose outside the book notes
 	'Naval Ravikant',
-
-	// Book titles / phrases unique enough to preserve verbatim
-	'Essentialism',
-	'Born To Run',
-	'Atmamun',
-	'Excellent Advice for Living',
-	'The 5AM Club',
 	'5AM Club',
-	"What's Life All About?",
-	'Siddhartha',
-	'$100 Million Leads',
-	'Keep the Faith',
-	'Love Yourself Like Your Life Depends on It',
-	'The 4-Hour Workweek',
-	'4-Hour Workweek',
-	'The Almanack of Naval Ravikant',
-	'The Power of Now',
-	'Strategic Mindset',
-	'The Practice of the Presence of God',
-	'The Surrender Experiment',
-	'The Subtle Art of Not Giving A F*ck',
-	'Do Hard Things',
-	'How To Live',
-	'The Screwtape Letters',
-	'Dopamine Detox',
-	'The Way of the Superior Man',
-	'10 Steps to Earning Awesome Grades',
-	'Tao Te Ching',
-	'Think and Grow Rich',
-	'The Art of Focus',
-	'Unlimited Memory',
-	'Anything You Want',
-	'Reality Transurfing',
-	'Atomic Habits',
-	'Vagabonding'
+	'4-Hour Workweek'
+];
+
+export const properNouns: string[] = [
+	...manualNouns,
+	...bookNotes.flatMap((book) => [book.title, book.author])
 ];

@@ -27,8 +27,8 @@ Most rules of the "real world" are wrong and tend to be a collection of illusion
 
 > Reality is negotiable. Outside of science and law, all rules can be bent or broken, and it doesn’t require being unethical.
 
-## Part 1 - Define
-### Chapter 1:
+## I. Define
+### I
 
 > Reality is merely an illusion, abliet a very persistent one.
 > Albert Einstein
@@ -64,7 +64,7 @@ The first step to becoming part of the NR is to remove false assumptions.
 
 It is pointless to have goals of making slighlty more money than you already have. Rather, you should focus on things that really matter.
 
-### Chapter 2
+### II
 You can do better in life by challenging your self-imposed rules rather than official rules and you don't have to be unethical about it. An example of this is Dick Fosbury who changed the high jump technique, won the gold medal and was copied by almost every other athlete.
 
 Sports evolve when sacred cows are killed, when basic assumptions are tested. The same is true in life and in lifestyles.
@@ -102,7 +102,7 @@ Some stress is good. Eustress is healthful and growth stimulating stress. You sh
 2. How has doing what you “should” resulted in subpar experiences or regret for not having done something else?
 3. Look at what you’re currently doing and ask yourself, “What would happen if I did the opposite of the people around me? What will I sacrifice if I continue on this track for 5, 10, or 20 years?
 
-### Chapter 3
+### III
 Most people will chose not to do something because of the uncertainty that goes along with it.
 
 Most people will choose unhappiness over uncertainty.
@@ -126,7 +126,7 @@ to postpone action?
 
 Your answers will probably surprise you.
 
-### Chapter 4
+### IV
 It is much easier than you think to be able to contact a billionaire or a celebrity.
 
 Doing the unrealistic is often easier than doing the realistic.
@@ -163,7 +163,7 @@ The next section of the chapter is about the process of dreamlining, which I wou
 Stare into people's eyes until they look away. It doesn't have to be weird. If they ask you why you did it say that you thought they were and old friend of yours.
 
 ## Elimination
-### Chapter 5:
+### V
 Forget all about time management. It is pointless to be busy. Busyness is used as a guise for avoiding the few uncomfortable but important tasks that you have to do.
 
 As an employee, liberation comes before automation (DELA) because you are being forced to work a 9-5 job.
@@ -214,7 +214,7 @@ Shorten your schedule to force yourself to prioritise better.
 
 **Comfort Challenge #2:** If someone asks a question like "What should we do/eat etc?" offer a solution and don't deflect it back on them.
 
-### Chapter 6
+### VI
 > What information consumes is rather obvious: it consumes the attention of its recipients. Hence, a wealth of information creates a poverty of attention and a need to allocate that attention efficiently among the overabundance of information sources that might consume it.
 
 Problems will solve themselves if you stop listening to information and empowering others.
@@ -252,7 +252,7 @@ Stopping something is often 10 times better than finishing it.
 **Comfort challenge #3:** 
 Get the phone numbers of 2 attractive people of the opposite sex each day. You can throw them out afterwards. The mall is a good place to do this. 
 
-### Chapter 7
+### VII
 Learn to be difficult when it counts. Being asserrtive will get you preferentail treatment without having to beg or fight for it.
 
 An interruption is anything that prevents the start to end completion of a task.
@@ -333,7 +333,7 @@ Bosses are supervisors, not slave masters.
 For the next two days, do as all good two-year-olds do and say “no” to all requests. A simple “I really can’t—sorry; I’ve got too much on my plate right now” will do as a catch-all response.
 
 ## Automation
-### Chapter 8
+### VIII
 Any task that is long, repetitive or boring can be outsourced. You can get cheap digital personal assistants from third world countries like India.
 
 Remote management and communication are two of the NR's most important skills
@@ -374,7 +374,7 @@ Set an order of importance for the tasks to be done in.
 **COMFORT CHALLENGE** - Criticism Sandwich:
 Praise someone, then deliver criticism and then close with a topic-shifting praise
 
-### Chapter 9
+### IX
 *NOTE: The following chapters are a bit outdated*
 
 A great way to make tons of money is through starting a business. You need to find what you are going to sell. Chose something that won't cost over $500 to test, will take under 4 weeks to fully automate and won't require more than 1 day per week of management.
@@ -409,7 +409,7 @@ To become an expert in 4 weeks: 1) join 2 or 3 official-sounding related trade o
 **COMFORT CHALLENGE:**
 Call at least one potential superstar mentor per day for three days.
 
-### Chapter 10
+### X
 To get an accurate indicator of commercial viability, don’t ask people if they would buy—ask them to buy.
 
 Microtesting involves using inexpensive advertisements to test consumer response to a product prior to manufacturing. This can be done cheap and fast through the internet.
@@ -425,7 +425,7 @@ Calculate your results and decide whether to divest or invest.
 **COMFORT CHALLENGE:**
 Go to a market and try to bid down items that are over $150 to under $100
 
-### Chapter 11
+### XI
 Once you have a product that sells, it's time to remove the human element and automate it.
 
 Calculate profit margins using higher than anticipated expenses.
@@ -457,7 +457,7 @@ Make your company look big: Don't be a CEO or Founder, this screams startup (vic
 Randomly lie down in public for about 10 seconds. Its fun to do with friends watching.
 
 ## Liberation
-### Chapter 12
+### XII
 If you are able to work remotely, you can travel the world without your boss even knowing.
 
 Make your company invest in you so that it becomes harder for them to fire you.
@@ -468,7 +468,7 @@ Propose a revocable remote work trial period (1 or 2 day a week). Make sure that
 
 Another technique is to use a pre-planned emergency as a way of remote working and then proving to your boss the increased efficiency like the previous technique.
 
-### Chapter 13
+### XIII
 Getting fired is often a Godsend.
 
 Pride is stupid. Being able to quit things is crucial.
@@ -485,7 +485,7 @@ There are two types of mistakes: mistakes of ambition and mistakes of sloth. 1) 
 
 Imagine that your business has gone bankrupt and you have been fired from your job. What would you do to survive?
 
-### Chapter 14
+### XIV
 Extended world travel can be enjoyed by anyone no matter their financial status. You can get trips across the world for under $500.
 
 Instead of travelling the world after you retire at 65, spread it out throughout your life in shorter trips (or longer!). These are known as mini-retirements and are recurring.
@@ -508,7 +508,7 @@ Rather than pack for all contingencies, bring the absolute minimum and allocate 
 
 Start by going to an overseas country that isn't dangerous.
 
-### Chapter 15
+### XV
 Having too much free time is bad for you.
 
 In the beginning it will be enough to go out and live all your dreams.
@@ -544,7 +544,7 @@ Revisit dreamlines and make new ones.
 
 It is fine to work again, as long as that's what you would rather be doing.
 
-### Chapter 16
+### XVI
 #### Common New Rich mistakes:
 1. Losing sight of dreams and falling into work for works sake.
 2. Micromanaging and emailing to fill time.
@@ -560,7 +560,7 @@ It is fine to work again, as long as that's what you would rather be doing.
 12. Viewing one product, job, or project as the end-all and be-all of your existence.
 13. Ignoring the social rewards of life.
 
-### Chapter 17
+### XVII
 > Life is neither a problem to be solved nor a game to be won.
 
 > So be bold and don’t worry about what people think. They don’t do it that often anyway.

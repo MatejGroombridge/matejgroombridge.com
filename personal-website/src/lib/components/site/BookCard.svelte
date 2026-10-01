@@ -10,7 +10,13 @@
 
 <a class="book-card" href={`/booknotes/${book.slug}`}>
 	<div class="cover-wrap">
-		<img class="cover" src={book.cover} alt="Cover of {book.title}" loading="lazy" />
+		<img
+			class="cover"
+			class:contain={book.coverFit === 'contain'}
+			src={book.cover}
+			alt="Cover of {book.title}"
+			loading="lazy"
+		/>
 		<span class="spine" aria-hidden="true"></span>
 	</div>
 	<div class="text">
@@ -34,8 +40,7 @@
 		position: relative;
 		aspect-ratio: 2 / 3;
 		border-radius: var(--radius-sm) var(--radius-md) var(--radius-md) var(--radius-sm);
-		filter: drop-shadow(0 6px 12px rgb(36 37 37 / 0.18))
-			drop-shadow(0 2px 4px rgb(36 37 37 / 0.1));
+		filter: drop-shadow(0 6px 12px rgb(36 37 37 / 0.18)) drop-shadow(0 2px 4px rgb(36 37 37 / 0.1));
 		transition: filter 0.3s ease;
 	}
 
@@ -45,6 +50,12 @@
 		height: 100%;
 		object-fit: cover;
 		border-radius: var(--radius-sm) var(--radius-md) var(--radius-md) var(--radius-sm);
+
+		// Square covers sit whole on a dark field instead of being cropped.
+		&.contain {
+			object-fit: contain;
+			background: #1c1c1c;
+		}
 	}
 
 	.spine {
