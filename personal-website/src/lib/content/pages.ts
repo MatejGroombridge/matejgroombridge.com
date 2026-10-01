@@ -187,9 +187,9 @@ export const contactPage = {
 } as const satisfies PageContent;
 
 /**
- * Standalone page at /media-policy. Its body lives in `media-policy.md` beside
- * this file; `contents` labels the roman-numeral headings there, the same way
- * an article's contents list does.
+ * Standalone page at /media-policy, laid out like an article. Its body lives in
+ * `media-policy.md` beside this file; `contents` labels the roman-numeral
+ * headings there, the same way an article's contents list does.
  */
 export const mediaPolicyPage = {
 	slug: 'media-policy',
@@ -199,11 +199,11 @@ export const mediaPolicyPage = {
 			'How Matej Groombridge approaches the writing, book notes, photography and code on this site, and where AI does and does not fit in.'
 	},
 	hero: {
-		eyebrow: 'Policy',
 		title: 'AI & media policy',
 		body: "how I approach the writing, book notes, photos and code on this site — and where AI does and doesn't fit in."
 	},
-	updated: 'October 2026',
+	updated: 'Oct 1, 2026',
+	readingTime: '8 min read',
 	contents: [
 		{ id: 'i', marker: 'I', label: 'where I stand on AI' },
 		{ id: 'ii', marker: 'II', label: 'my own writing' },
