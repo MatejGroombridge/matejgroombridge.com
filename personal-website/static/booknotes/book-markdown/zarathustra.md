@@ -1,24 +1,20 @@
 ## The Book in 3 Sentences
 
-1. God is dead, and with him every external source of meaning; rather than despair, Zarathustra calls humanity to become a bridge to the Übermensch - a being who creates their own values and says a full yes to life as it is.
+1. In a paradigm where God is dead and with him every external source of meaning, Zarathustra calls humanity to become a bridge to the Übermensch - a being who creates their own values and says a full yes to life as it is.
 2. The greatest obstacle is the spirit of gravity: pity, herd morality, resentment and the longing for an afterlife, all of which are ways of saying no to this life and to oneself.
 3. The test of whether you truly affirm life is the eternal recurrence - could you will to live this exact life, with every joy and every suffering, again and again for eternity, and love it?
 
 ## Overview & Impressions
 
-I found Thus Spoke Zarathustra to be quite dense and hard to follow. It is written as a winding, often confusing story told in parables and poetic speeches, and I am not sure it was the best entry point to Nietzsche. Even so, a lot of his central ideas come through clearly, particularly the Übermensch and the will to power. I think I would have got much more out of it coming in with more context, or reading it alongside some commentary. Worth reading, but perhaps not as your first Nietzsche.
+I found Thus Spoke Zarathustra to be quite dense and hard to follow. It's written as a winding, often confusing story told in parables and poetic speeches, and I'm not sure it was the best entry point to Nietzsche. Even so, a lot of his central ideas come through clearly, particularly around the Übermensch and the will to power. I think I would have got much more out of it coming in with more context or reading it alongside some commentary. Probably worth reading, but go about it differently to how I did.
 
 ## Top Quotes
 
 > Man is something that should be overcome. What have you done to overcome him?
 
-> The child is innocence and forgetfulness, a new beginning, a sport, a self-propelling wheel, a first motion, a sacred Yes.
-
 > You must be ready to burn yourself in your own flame: how could you become new, if you had not first become ashes?
 
 > One repays a teacher badly if one remains only a pupil.
-
-> In your friend you should possess your best enemy. Your heart should feel closest to him when you oppose him.
 
 > He who wants to learn to fly one day must first learn to stand and to walk and to run and to climb and to dance - you cannot learn to fly by flying!
 

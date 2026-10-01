@@ -1,26 +1,18 @@
 ## The Book in 3 Sentences
 
-1. Resistance is the invisible, universal force that stops us from doing our work - it shows up as procrastination, fear, self-doubt, rationalisation and a dozen other disguises, and it is strongest exactly where the work matters most.
-2. The only way past it is to turn pro: show up every day, treat your creative work like a job regardless of how you feel, and measure yourself by whether you did the work rather than by the result.
-3. Beyond Resistance lies the higher realm: once you commit, the Muse and unseen forces come to your aid, and the artist must work territorially - for the love of the work itself, as if he were the last person on earth - rather than hierarchically for rank and the approval of others.
+1. Resistance is the invisible, universal force that stops us from doing our work and it shows up as procrastination, fear, self-doubt, rationalisation and a dozen other disguises, exactly where the work matters most.
+2. The only way past resistance is to turn pro: show up every day, treat your creative work like a job regardless of how you feel and measure yourself by whether you did the work rather than by the result.
+3. The artist must work for the love of the work itself and once you commit the Muse will come to your aid.
 
 ## Overview & Impressions
 
-I found The War of Art to be a refreshing take on creativity. Pressfield diagnoses Resistance as the main barrier between us and our work, and the book is instructive and practical about how to beat it. Its run-through of the many symptoms of Resistance is particularly helpful, as simply being able to recognise them breaks down a lot of creative barriers. I especially appreciated its treatment of creativity as a skill and a discipline rather than something that strikes when inspiration happens to arrive. It got a bit wishy-washy and spiritual near the end, but overall it is a very good read.
+The War of Art presents a refreshing take on creativity. Pressfield diagnoses Resistance as the main barrier between us and our work, and the book is instructive and practical about how to beat it. Its runthrough of the many symptoms of Resistance is particularly helpful, since awareness already breaks down many creative barriers. I appreciated its treatment of creativity as a skill and a discipline rather than something that strikes when inspiration happens to arrive. It got a bit wishy-washy and spiritual near the end but overall this was a very good read.
 
 ## Top Quotes
 
-> Rule of thumb: The more important a call or action is to our soul’s evolution, the more Resistance we will feel toward pursuing it.
-
-> Resistance has no strength of its own; its power derives entirely from our fear of it.
+> The more important a call or action is to our soul’s evolution, the more Resistance we will feel toward pursuing it.
 
 > He knows that by toiling beside the front door of technique, he leaves room for genius to enter by the back.
-
-> There’s no mystery to turning pro. It’s a decision brought about by an act of will.
-
-> The critic hates most that which he would have done himself if he had had the guts.
-
-> Our job in this lifetime is not to shape ourselves into some ideal we imagine we ought to be, but to find out who we already are and become it.
 
 > Of any activity you do, ask yourself: If I were the last person on earth, would I still do it?
 

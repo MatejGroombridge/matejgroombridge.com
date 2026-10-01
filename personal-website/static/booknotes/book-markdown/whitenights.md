@@ -1,6 +1,6 @@
 ## Overview & Impressions
 
-I found White Nights to be a bittersweet yet beautiful read. It follows a lonely young dreamer in St Petersburg who, over four nights, meets a young woman named Nastenka and quietly falls in love with her while she waits for the return of another man. The prose is lovely, and much of the story is carried by the dialogue between the two, which is earnest, tender and at times painfully self-aware. The plot is simple but engaging, and it is short enough to read in a single sitting. I don’t usually add fiction to my book notes, but this one felt like it belonged here.
+White Nights is a bittersweet yet beautiful read. It follows a lonely young man in St Petersburg who over four nights meets a young woman named Nastenka and falls in love with her while she waits for the return of another man. The prose was lovely to read and much of the story is carried by the dialogue between the two. The plot is simple but engaging and it's short enough to read in a couple sittings. This was my first exposure to Dostoevsky and its made me keen to read more of his work. I don’t usually add fiction to my book notes but this one felt like it belonged here.
 
 ## Quotes
 

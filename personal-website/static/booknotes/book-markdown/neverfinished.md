@@ -1,24 +1,20 @@
 ## The Book in 3 Sentences
 
-1. Greatness is not a destination but a way of being, and the moment you believe you have arrived is the moment you start to decline; you are either getting better or getting worse, so you are never finished.
-2. Motivation is unreliable - what carries you through is discipline built by choosing the hard thing every day, treating every workout and task as a Mental Lab for testing how much pressure your mind can take, and winning the One-Second Decision to think rather than react when everything in you wants to quit.
+1. Greatness is not a destination but a way of being and you are either getting better or getting worse (you are never finished).
+2. What carries you through resistance is discipline built by choosing the hard thing every day, treating every challenge as a mental lab for testing how much pressure your mind can take, and winning the one second decision to think rather than react when everything in you wants to quit.
 3. Goggins backs this up with his own story - a broken childhood, getting lost and nearly freezing during the Moab 240, smokejumper training in his late forties and open-heart surgery - to show that belief is cultivated through work, failure is just another attempt, and your past sets no ceiling unless you let it.
 
 ## Overview & Impressions
 
-I found Never Finished to be full of very practical advice on developing grit, infused with Goggins’ own experiences which are genuinely inspiring. It is one of the few non-fiction books I have been able to read for hours at length without putting down. I could only get my hands on the clean edition, but even so it was quite moving and shifted the standards I aspire to. I have heard it is a weaker version of Can’t Hurt Me though, so that may be the one more worth reading.
+I found Never Finished to be full of very practical advice on developing grit, infused with Goggins’ own experiences which are genuinely inspiring. It is one of the few non-fiction books I have been able to read for hours at length without putting down. I could only get my hands on the clean edition, but even so it was quite moving and I'd say it shifted the standards I aspire to. I have heard it's a weaker version of Can’t Hurt Me though, so that may be the book more worth reading.
 
 ## Top Quotes
 
 > When you are a full-time savage, it’s a lifestyle. There is no “want to.” There is only “must do.”
 
-> You don’t need six-pack abs when your mind is steel-plated.
-
 > If you must retreat, quit when it’s easy, not when it’s hard.
 
 > With discipline as your medium, your life will become a work of art.
-
-> Humility is the antidote to self-pity. It keeps you rooted in reality and your emotions in check.
 
 > While most people stop when they’re tired, I stop when I am done.
 
@@ -30,7 +26,7 @@ I found Never Finished to be full of very practical advice on developing grit, i
 
 I believed I could evolve, and that same belief has given me the strength and focus to persevere whenever I’ve been challenged for over two decades.
 
-## I. Maximize Minimal Potential
+## I
 
 There are a lot of born losers out there. Every day, babies are born into poverty and broken families, like I was.
 
@@ -50,8 +46,6 @@ All of us are dealt circumstances in life we don’t have any power to control.
 
 I was always destined to be that one warrior. Content to be the one who sharpens his sword alone.
 
-### Evolution No. 1
-
 It’s not always the childhood minefield that screws us up. There is no shortage of psychological and emotional snags in adult life.
 
 We cannot afford to remain afraid of cutting away dead weight to save ourselves.
@@ -60,7 +54,7 @@ All our dreams and visions come with expiration dates etched in invisible ink.
 
 It’s time to switch your focus to the things that will slingshot you forward.
 
-## II. Merry Christmas
+## II
 
 Accepting your full truth, including all your faults, imperfections, and missteps, allows you to evolve, expand your possibilities, seek redemption, and explore your true potential.
 
@@ -71,8 +65,6 @@ Nothing is permanent. Life is the ultimate competitor.
 A savage is an individual who defies odds, who has a will that cannot be tamed, and who, when knocked down, will always get back up!
 
 I would not be able to inspire people by simply talking about the things I did in my past. I gave myself one rule before joining social media: if I can’t live it, I won’t speak it.
-
-### Evolution No. 2
 
 Never waste a single thing.
 
@@ -96,7 +88,7 @@ I see hate as just another fuel source.
 
 When I bed down at night, I listen to my haters.
 
-## III. The Mental Lab
+## III
 
 If I paid close attention to my impulses, insecurities, and actions, dropped the shame, and remained willing to dissect my self-doubt, anxiety, and fear, I would find the strength and motivation to transform my life.
 
@@ -123,8 +115,6 @@ You are either getting better, or you’re getting worse.
 The reason I can run at a relatively quick clip for a long time is due to my training volume but also because when I run, I focus on my stride, remain conscious of where and how my feet strike the ground and on my head and shoulder position. I visualize myself running with a tray of full water glasses on my head. I don’t want any sway or bounce at all. I remain still yet relaxed and let my core and legs carry me forward.
 
 To me, it’s about achieving mental and physical greatness.
-
-### Evolution No. 3
 
 Many dreams die while suffering.
 
@@ -160,7 +150,7 @@ It’s all well and good to have success and reach a certain level, but I really
 
 There are 86,400 seconds in a day. Losing just one of those seconds can change the outcome of your day and, potentially, your life.
 
-## IV. A Savage Reborn
+## IV
 
 I’m not beating any world-class runner based on speed alone, but if it’s a hot sufferfest, I have a chance.
 
@@ -198,8 +188,6 @@ I wasn’t hungry anymore.
 
 I realized how much I missed the feeling of being obsessed, the buzz I get from draining the tank dry. I’d deprived myself of it for way too long. If you want to maximize minimal potential and become great in any field, you must embrace your savage side and become imbalanced, at least for a period of time. You’ll need to funnel every minute of every single day into the pursuit of that degree, that starting spot, that job, that edge. Your mind must never leave the cockpit. Sleep at the library or the office. Hoop long past sundown and fall asleep watching film of your next opponent. There are no days off, and there is no downtime when you are obsessed with being great. That is what it takes to be the best ever at what you do. Know that your dedication will be misunderstood. Some relationships may break down. The savage is not a socialized beast, and an imbalanced lifestyle often appears selfish from the outside. But the reason I’ve been able to help so many people with my life story is precisely because I embraced being that imbalanced while I pursued the impossible dream of becoming the hardest person ever. That’s a mythical title, but it became my compass bearing, my North Star.
 
-### Evolution No. 4
-
 For some victims, their trauma is so devastating that they lose all their self-respect and self-awareness. They are torn down to the studs. Foundational aspects of their character pounded to dust.
 
 In abusive relationships, it’s almost always gradual, which is why it burns so deep. Until one day, you wake up owned by the person who is destroying you.
@@ -216,7 +204,7 @@ I have cracked open anger several times. It has warmed me when I was freezing, i
 
 Your anger will be purifying and the human mind loves progress.
 
-## V. Disciple of Discipline
+## V
 
 The aftermath of every 100-mile race I’d completed included a tidal wave of pain and suffering, along with a humiliating loss of control of my most basic bodily functions.
 
@@ -274,8 +262,6 @@ It will always be up to you to find the lesson in every challenging situation an
 
 All the years I knew him, he’d never said, “Good job,” to me. I never once heard him say, “I love you.” But when they announced my name and I marched across that stage in my Dress Blues to officially become an airman like him, we locked eyes, and I watched one solitary tear snake down his cheek. Sgt. Jack was beaming, and it was obvious that he was proud as hell to be my grandfather.
 
-### Evolution No. 5
-
 Your problems and your past aren’t on anybody else’s agenda.
 
 Pity is a soothing balm that turns toxic.
@@ -298,7 +284,7 @@ The higher I climb in my life, the more I realize how much I need to mop that fl
 
 I call this “trained humility.”
 
-## VI. The Art of Getting Hit in the Mouth
+## VI
 
 It’s funny how our goals are only as elastic as our sense of self, of who we are and what we think we can accomplish.
 
@@ -386,8 +372,6 @@ I didn’t raise my arms or pump my fists, and nobody seemed to notice one man f
 
 From the outside looking in, my Moab 240 was a disaster. I got lost, nearly froze my tail off, and had multiple medical meltdowns. I went off course twice. It was messy, but I consider it one of my top five performances ever because I never should have completed that distance in the time allowed. But I did.
 
-### Evolution No. 6
-
 Small minds and weak people kill big dreams.
 
 If you have the wrong folks around you, there’s a good chance they could be sucking the life right out of you and making sure that you go nowhere.
@@ -424,7 +408,7 @@ Don’t ever tell me you want to run a marathon because I will sign you up for a
 
 Most people can’t handle that level of intensity. But that’s the kind of backing I want. The type that comes with an expectation of effort and demands hours, weeks, and even years of hard work.
 
-## VII. The Reckoning
+## VII
 
 Unfortunate situations never last, but I knew that a bad attitude always lingers and can turn any setback into a tailspin.
 
@@ -474,8 +458,6 @@ We all must mentally recharge from time to time. Some people like to golf. Other
 
 That is a monumental output, and the reason I pulled it off is because I am focused on being my best at all times.
 
-### Evolution No. 7
-
 It is the uncommon story, the uncommon leader, that inspires others to seek more of themselves, work harder, and rise to the occasion.
 
 The first step in becoming one of these unsung heroes is learning how to become a self-leader.
@@ -514,7 +496,7 @@ It will ground you.
 
 Who will you become and what do you want to stand for? Are you ready to be the standard?
 
-## VIII. Play Until the Whistle
+## VIII
 
 Ever since I decided to not be fat anymore, my whole life has been wrapped around my physical being. While mindset has always been number one for me, I achieved my mindset through physical training and monumental physical challenges that provided an immediate return on investment. That is not the only way to become mentally tough, but it does happen faster when you run thousands of miles, swim long distances in cold water, or do thousands of pull-ups. When you invest that volume of pain and suffering in yourself, it will produce mental toughness.
 
@@ -539,8 +521,6 @@ Although running is what I’m known for, I’m actually a better cyclist.
 Over the next several weeks, I became extremely lonely. All my physical therapy, study sessions, and bike rides were solo missions. It was monotonous and draining, and the worst part was knowing it would be exactly the same tomorrow and the next day and the day after that.
 
 I’m an introvert, and being the center of attention is not natural for me.
-
-### Evolution No. 8
 
 Most people live their whole lives without ever contemplating what it means to be great.
 
@@ -570,7 +550,7 @@ After that comes the real work. Fighting those demons every morning and all day 
 
 They want you to quit before you get to pliability, where the sacrifice, hard work, and isolation that felt so heavy for so long become your haven. Where after struggling to visualize greatness for years, it is effortless. That’s when momentum will gather like an updraft and send you airborne and spiraling toward the outer limits of your known world. It’s time to level-up and seek out that blue-to-black line. The line that separates good from great. It is within each one of us.
 
-## IX. Wringing Out the Soul
+## IX
 
 The harder it rained or snowed, the longer I’d run because I knew that nobody would ever do something that miserable if they didn’t have to.
 

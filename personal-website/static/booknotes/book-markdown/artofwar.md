@@ -1,28 +1,20 @@
 ## The Book in 3 Sentences
 
-1. The supreme art of war is to win without fighting - the best general subdues the enemy through planning, deception and positioning so that battle, if it happens at all, is already decided before it begins.
+1. The supreme art of war is to win without fighting, wherein battle, if it happens at all, is already decided before it begins.
 2. Victory comes from knowing yourself and knowing your enemy, from adapting like water to the shape of the ground, and from striking where the opponent is unprepared rather than where he is strong.
 3. Written as thirteen short chapters of maxims on strategy, terrain, spies and the use of energy, its lessons apply as much to business, negotiation and personal conflict as to the battlefield.
 
 ## Overview & Impressions
 
-I found The Art of War to be a simple, intuitive and clean read. It is very short and easy to follow, and much of the text is principles of strategy and tactics that can be applied across all sorts of areas of life. I also appreciated the war-specific guidance, as the details around provisions, terrain and the like add some dimensionality to the piece rather than leaving it as pure abstraction. I picked up the Penguin edition in the Sydney domestic terminal on the way to Melbourne and had it finished not long after. Well worth a couple of hours.
+I found The Art of War to be a simple, intuitive and clean read. It is very short and easy to follow, and much of the text is principles of strategy and tactics that can be applied across all sorts of areas of life. I appreciated the somewhat random war-specific guidance, as the details around provisions, terrain and the like added some spice to the piece rather than leaving it as pure abstraction. I picked up the Penguin edition in the Sydney domestic terminal on the way to Melbourne. Well worth a couple of hours.
 
 ## Top Quotes
-
-> All warfare is based on deception.
 
 > Supreme excellence consists in breaking the enemy’s resistance without fighting.
 
 > If you know the enemy and know yourself, you need not fear the result of a hundred battles.
 
 > The victorious strategist only seeks battle after the victory has been won, whereas he who is destined to defeat first fights and afterwards looks for victory.
-
-> Just as water retains no constant shape, so in warfare there are no constant conditions.
-
-> Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt.
-
-> Move not unless you see an advantage; use not your troops unless there is something to be gained; fight not unless the position is critical.
 
 # Summary, Quotes & Notes
 

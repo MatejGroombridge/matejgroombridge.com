@@ -1,26 +1,20 @@
 ## The Book in 3 Sentences
 
 1. Brother Lawrence, a 17th-century lay brother who spent fifteen years working in a monastery kitchen, found that the most direct way to God was not elaborate methods, penances or set devotions but a simple, continual conversation with Him in every moment of the day.
-2. Holiness, he argues, does not depend on changing our work but on doing what we already do for God’s sake, so that picking up a straw or cooking for the brothers becomes as much prayer as kneeling in church.
-3. The practice is hard at first and the mind wanders constantly, but by gently returning to God each time without discouragement it becomes a habit, and in his letters he shows that this sense of God’s presence can sustain joy even through sickness and suffering.
+2. Holiness does not depend on changing our work but on doing what we already do for God’s sake, so that picking up a straw or cooking becomes as much prayer as kneeling in church.
+3. The practice is hard at first and the mind wanders constantly, but by gently returning to God each time without discouragement it becomes a habit, and this sense of God’s presence can sustain joy even through sickness and suffering.
 
 ## Overview & Impressions
 
-I found The Practice of the Presence of God to be a short, clear and inspirational read. Brother Lawrence’s approach to faith feels revolutionary yet somewhat obvious at the same time - rather than relying on set prayers and devotional methods, he simply keeps up a continual conversation with God throughout the day, in the kitchen as much as in the chapel. What makes it so compelling is that he lives it out; the conversations and letters show someone whose whole life has been shaped by the practice, not someone theorising about it. It sets a high bar, but it is also full of practical steps for building depth in your relationship with God.
+I found The Practice of the Presence of God to be a short, clear and inspirational read. Brother Lawrence’s approach to faith feels revolutionary yet somewhat obvious at the same time - rather than relying on set prayers and devotional methods he simply keeps up a continual conversation with God throughout the day. What makes it compelling is that he lives it out. The conversations and letters show someone whose whole life has been shaped by the practice, not someone theorising about it. It sets a high bar but it is also full of practical steps for building depth in your relationship with God.
 
 ## Top Quotes
 
 > The time of business does not with me differ from the time of prayer; and in the noise and clatter of my kitchen, while several persons are at the same time calling for different things, I possess God in as great tranquility as if I were upon my knees at the blessed sacrament.
 
-> Our sanctification did not depend upon changing our works, but in doing that for God’s sake, which we commonly do for our own.
-
 > We ought not to be weary of doing little things for the love of God, who regards not the greatness of the work, but the love with which it is performed.
 
 > There needed neither art nor science for going to God, but only a heart resolutely determined to apply itself to nothing but Him, or for His sake, and to love him only.
-
-> A little lifting up of the heart suffices.
-
-> You need not cry very loud; He is nearer to us than we are aware of.
 
 > We must know before we can love. In order to know God, we must often think of Him; and when we come to love Him, we shall then also think of Him often, for our heart will be with our treasure.
 
