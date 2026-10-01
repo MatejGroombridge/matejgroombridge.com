@@ -1,6 +1,6 @@
 This page sets out how I approach the writing, book notes, photography and code on this website, and the part AI plays in each of them.
 
-Over the last couple of years AI has crept into almost every corner of my creative and professional life, and I've found myself having to make more and more conscious decisions about where I want it and where I don't. I put this together for two reasons. The first is a little selfish — I wanted to pin down an ethos of sorts that I can hold myself to as I write more in the future. The second is that people ask me about my process fairly often, and it's nice to have somewhere to point them.
+Over the last couple of years AI has crept into almost every corner of my creative and professional life, and I've found myself having to make more and more conscious decisions about where I want it and where I don't. I put this together for two reasons. The first is a little selfish — I wanted to pin down an ethos of sorts that I can hold myself to as I write more in the future. The second is that people ask me about my process fairly often, and it's nice to have somewhere to point them. Underlying both is that I'm a big proponent of radical transparency — I think you should be able to tell exactly how much of what you're reading or looking at came from me.
 
 The short version:
 

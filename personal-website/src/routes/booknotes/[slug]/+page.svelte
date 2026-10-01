@@ -86,7 +86,8 @@
 	<Section class="booknote-disclaimer" animate={false}>
 		<div class="column">
 			<p class="disclaimer">
-				This is a book summary and may not reflect my attitudes or beliefs on certain topics. I'd
+				This is a book summary and not a reflection of my beliefs. Newer notes are
+				<a href="/media-policy#iii">drafted with AI</a> from my own highlights and impressions. I'd
 				love to hear <a href="/contact">your thoughts</a>.
 			</p>
 		</div>
@@ -341,7 +342,12 @@
 		padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
 	}
 
+	// Narrower than the reading column so it reads as a footnote to the page.
 	.disclaimer {
+		max-width: 30rem;
+		margin-inline: auto;
+		text-align: center;
+		text-wrap: balance;
 		font-size: 0.85rem;
 		line-height: 1.6;
 		color: var(--color-subtle);

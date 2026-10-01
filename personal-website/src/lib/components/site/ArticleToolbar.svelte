@@ -1,6 +1,6 @@
 <!--
-	Reader controls for an article: contents on the left, version history on the
-	right.
+	Reader controls for an article: contents on the left, the AI policy and
+	version history on the right.
 
 	The version menu carries reading mode too — Full article / Abridged sit above
 	the dated versions, separated by a rule. They are independent choices, so the
@@ -27,6 +27,8 @@
 		currentDate: string;
 		/** True while an archived version is open, which suppresses live-only controls. */
 		archived?: boolean;
+		/** Where the AI policy lives; the link is left out when not given. */
+		policyHref?: string;
 		onmode: (mode: 'full' | 'abridged') => void;
 		oncontents: () => void;
 		onversion: (id: string | null) => void;
@@ -41,6 +43,7 @@
 		versionId,
 		currentDate,
 		archived = false,
+		policyHref,
 		onmode,
 		oncontents,
 		onversion
@@ -100,10 +103,23 @@
 
 	<div class="spacer"></div>
 
-	{#if hasMenu}
-		<!-- The trigger names what is open, so the reader can tell at a glance. -->
-		<SortMenu label={archived ? 'archived' : mode === 'abridged' ? 'abridged' : 'full version'} groups={menuGroups} />
-	{/if}
+	<!-- Grouped so the right-hand pair sits closer than the toolbar's own gap. -->
+	<div class="end">
+		{#if policyHref}
+			<a class="trigger" href={policyHref}>
+				<span class="icon material-symbols-rounded" aria-hidden="true">auto_awesome</span>
+				<span class="label">AI policy</span>
+			</a>
+		{/if}
+
+		{#if hasMenu}
+			<!-- The trigger names what is open, so the reader can tell at a glance. -->
+			<SortMenu
+				label={archived ? 'archived' : mode === 'abridged' ? 'abridged' : 'full version'}
+				groups={menuGroups}
+			/>
+		{/if}
+	</div>
 </div>
 
 <style lang="scss">
@@ -116,6 +132,12 @@
 
 	.spacer {
 		flex: 1 1 auto;
+	}
+
+	.end {
+		display: flex;
+		align-items: center;
+		gap: 0.85rem;
 	}
 
 	// Matches SortMenu's trigger, so the toggle sits level with the menu opposite.
@@ -135,6 +157,7 @@
 		// Body ink rather than SortMenu's grey: against the article these are
 		// controls the reader is meant to reach for, not secondary chrome.
 		color: var(--color-ink);
+		text-decoration: none;
 		cursor: pointer;
 		border-radius: var(--radius-sm);
 		transition: color 0.15s ease;

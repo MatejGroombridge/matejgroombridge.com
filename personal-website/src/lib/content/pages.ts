@@ -196,11 +196,11 @@ export const mediaPolicyPage = {
 	seo: {
 		title: 'AI & Media Policy',
 		description:
-			'How Matej Groombridge approaches the writing, book notes, photography and code on this site, and where AI does and does not fit in.'
+			'How Matej Groombridge approaches the content and media on this site, and where AI does and does not fit in.'
 	},
 	hero: {
 		title: 'AI & media policy',
-		body: "how I approach the writing, book notes, photos and code on this site — and where AI does and doesn't fit in."
+		body: "how I approach the content & media on this site and where AI does and doesn't fit in."
 	},
 	updated: 'Oct 1, 2026',
 	readingTime: '8 min read',

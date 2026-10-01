@@ -66,10 +66,6 @@
 	// as it stood then, so the contents list is only offered for the live one.
 	const contentsAvailable = $derived(sections.length > 0 && !selectedVersion);
 
-	// A plain article earns no controls at all, and an empty toolbar is just a
-	// stray band across the page — so the whole strip goes.
-	const hasToolbar = $derived(Boolean(data.abridged) || sections.length > 0 || versions.length > 0);
-
 	const hasMark = $derived(Boolean(data.article.marks?.length || data.article.icon));
 
 	// The signup is parked until there is a list worth sending to. Flip this to
@@ -187,25 +183,25 @@
 	</header>
 </Section>
 
-{#if hasToolbar}
-	<Section animate={false} class="article-toolbar">
-		<div class="toolbar-rule">
-			<ArticleToolbar
-				{sections}
-				{versions}
-				hasAbridged={Boolean(data.abridged)}
-				{mode}
-				showContents={showContents && contentsAvailable}
-				{versionId}
-				archived={Boolean(selectedVersion)}
-				currentDate={data.article.published}
-				onmode={selectMode}
-				oncontents={toggleContents}
-				onversion={selectVersion}
-			/>
-		</div>
-	</Section>
-{/if}
+<!-- Always shown: even a plain article carries the AI policy link. -->
+<Section animate={false} class="article-toolbar">
+	<div class="toolbar-rule">
+		<ArticleToolbar
+			{sections}
+			{versions}
+			hasAbridged={Boolean(data.abridged)}
+			{mode}
+			showContents={showContents && contentsAvailable}
+			{versionId}
+			archived={Boolean(selectedVersion)}
+			currentDate={data.article.published}
+			policyHref="/media-policy"
+			onmode={selectMode}
+			oncontents={toggleContents}
+			onversion={selectVersion}
+		/>
+	</div>
+</Section>
 
 {#if selectedVersion}
 	<Section animate={false} class="article-archive-note">

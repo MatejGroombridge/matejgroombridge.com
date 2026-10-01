@@ -16,17 +16,20 @@
 				<LocalTime />
 			</div>
 
-			<div class="socials" aria-label="Social links">
-				{#each siteSettings.socials as social}
-					<a
-						href={social.href}
-						aria-label={social.label}
-						target={social.href.startsWith('http') ? '_blank' : undefined}
-						rel={social.href.startsWith('http') ? 'noreferrer' : undefined}
-					>
-						<Icon name={social.icon} />
-					</a>
-				{/each}
+			<div class="side">
+				<div class="socials" aria-label="Social links">
+					{#each siteSettings.socials as social}
+						<a
+							href={social.href}
+							aria-label={social.label}
+							target={social.href.startsWith('http') ? '_blank' : undefined}
+							rel={social.href.startsWith('http') ? 'noreferrer' : undefined}
+						>
+							<Icon name={social.icon} />
+						</a>
+					{/each}
+				</div>
+				<a class="policy" href="/media-policy">AI & media policy</a>
 			</div>
 		</div>
 	</Container>
@@ -74,16 +77,35 @@
 		line-height: 1.55;
 	}
 
+	.policy {
+		color: var(--color-subtle);
+		font-size: 0.85rem;
+		text-decoration: underline;
+		text-decoration-color: var(--color-border);
+		text-underline-offset: 0.2em;
+
+		&:hover {
+			color: var(--color-ink);
+			text-decoration-color: currentColor;
+		}
+	}
+
 	.about :global(.local) {
 		margin-top: 0.85rem;
 	}
 
-	.socials {
+	.side {
 		grid-area: socials;
-		display: flex;
-		gap: 1.1rem;
+		display: grid;
+		justify-items: end;
+		gap: 0.75rem;
 		justify-self: end;
 		align-self: start;
+	}
+
+	.socials {
+		display: flex;
+		gap: 1.1rem;
 	}
 
 	.socials a {
@@ -118,8 +140,9 @@
 			justify-items: center;
 		}
 
-		.socials {
+		.side {
 			justify-self: center;
+			justify-items: center;
 		}
 	}
 </style>
