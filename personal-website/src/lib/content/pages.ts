@@ -187,6 +187,32 @@ export const contactPage = {
 } as const satisfies PageContent;
 
 /**
+ * Standalone page at /media-policy. Its body lives in `media-policy.md` beside
+ * this file; `contents` labels the roman-numeral headings there, the same way
+ * an article's contents list does.
+ */
+export const mediaPolicyPage = {
+	slug: 'media-policy',
+	seo: {
+		title: 'AI & Media Policy',
+		description:
+			'How Matej Groombridge approaches the writing, book notes, photography and code on this site, and where AI does and does not fit in.'
+	},
+	hero: {
+		eyebrow: 'Policy',
+		title: 'AI & media policy',
+		body: "how I approach the writing, book notes, photos and code on this site — and where AI does and doesn't fit in."
+	},
+	updated: 'October 2026',
+	contents: [
+		{ id: 'i', marker: 'I', label: 'where I stand on AI' },
+		{ id: 'ii', marker: 'II', label: 'my own writing' },
+		{ id: 'iii', marker: 'III', label: 'book notes' },
+		{ id: 'iv', marker: 'IV', label: 'code and this website' }
+	]
+} as const;
+
+/**
  * Article subscribe form. Submissions arrive by email through the same EmailJS
  * service the contact form uses, so each signup lands in the inbox rather than
  * in a managed list — see `SubscribeForm` for what that does and does not cover.

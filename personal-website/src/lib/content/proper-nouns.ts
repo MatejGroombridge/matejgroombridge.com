@@ -46,6 +46,9 @@ const manualNouns: string[] = [
 	'Galaxy',
 	'EOS',
 	'SEO',
+	'AI',
+	'Claude',
+	'Kindle',
 
 	// Places — Sydney area
 	'Sydney Cricket Ground',
